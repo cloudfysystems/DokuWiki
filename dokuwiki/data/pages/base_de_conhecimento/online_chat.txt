@@ -1,0 +1,46 @@
+====== Online Chat ======
+O chat da Cloudfy é um dos [[.:canais_de_suporte]] com o cliente junto com o número <wrap em>(41) 9 9688-1688</wrap>((WhatsApp e ligações)) e do <wrap em>email: suporte@cloudfy.net.br</wrap>. A seguir iremos apresentar todas as funcionalidades do chat.
+\\ \\
+==== Iniciando uma conversa ====
+Para iniciar uma conversa clique no ícone {{:base_de_conhecimento:icone_chat.png?nolink|Icone do chat Online}}do chat, envie uma mensagem e aguarde até um de nossos agentes atendê-lo, indicado pela barra de status que irá mudar como mostrado na imagem abaixo.
+<WRAP round box>
+<WRAP half column centeralign>//**Iniciando conversa**//\\ {{:base_de_conhecimento:iniciar_conversa.png?nolink|Enviando mensagem no chat}}</WRAP>
+<WRAP half column centeralign>//**Atendimento pelo agente**//\\ {{:base_de_conhecimento:agente_atende.png?nolink|Atendimento pelo agente}}</WRAP></WRAP>
+\\ 
+==== Mostrar/Esconder o chat ==== 
+<WRAP group>
+<WRAP right><thumbnail>{{:base_de_conhecimento:mostrar_esconder_chat.png?nolink|}}</thumbnail></WRAP>
+<wrap info>Por padrão o chat já está visível e o símbolo {{:base_de_conhecimento:icone_chat.png?nolink&30x30|Ícone do chat Online}} estará localizado na parte inferior direita do site.</wrap>\\ 
+Para mostrar ou esconder o chat, clique no ícone {{:base_de_conhecimento:engrenagem.png?nolink|}}((localizado na parte superior direita do site)) e ele irá expandir, mostrando a opção para mostrar ou esconder o chat.\\ 
+<wrap important/>Note que o ícone {{:base_de_conhecimento:icone_chat.png?nolink&30x30|Ícone do chat Online}} irá desaparecer quando o chat estiver desabilitado, porém ele irá reaparecer caso um agente enviar uma mensagem para você.
+\\ 
+==== Opções do Menu ====
+Para acessar o Menu basta clicar no botão {{:base_de_conhecimento:menu_chat.png?nolink&20x20|Menu do Chat}} na barra de status do chat e o menu será expandido, mostrando as opções da imagem abaixo.
+<WRAP group>
+<WRAP left><thumbnail>{{:base_de_conhecimento:menu_expandido.png?nolink|Opções do Menu}}</thumbnail></WRAP>
+=== Encerrando uma conversa ===
+<wrap round important>Primeiramente, é importante mencionar que não é necessário encerrar uma conversa manualmente, o sistema irá encerrá-la automaticamente após alguns minutos de inatividade.</wrap>
+Para encerrar uma conversa manualmente, clique na opção do Menu(({{:base_de_conhecimento:encerrar_conversa.png?nolink| Encerrar sessão manualmente}})) e em “Encerrar a conversa” na mensagem de confirmação que irá aparecer.\\ \\ 
+<wrap safety>Pronto, a sua sessão já foi encerrada!!</wrap>\\ \\ 
+Agora você pode receber o histórico da conversa digitando seu e-mail no campo disponível e clicando no botão “Transcrição de E-mail” ou iniciar uma nova conversa clicando no botão “Começar Nova Conversa”</WRAP></WRAP>
+=== Mudar Nome ===
+Toda vez que uma conversa é iniciada o sistema informa ao agente o nome do cliente logado, caso outra pessoa esteja requisitando o suporte é possível alterar o nome através desta opção.
+=== Histórico da conversa ===
+Você pode enviar o histórico da conversa para seu e-mail a qualquer momento durante o atendimento, clicando no menu e na opção “Transcrição de E-mail”, ou após encerrar a sessão, como mencionado em Encerrando uma conversa.
+As opções acima só fornecerão o histórico da conversa atual. Caso queira o histórico de uma conversa antiga, solicite a um agente.
+=== Som Ligado/Desligado ===
+Com esta opção você pode ligar ou desligar o som de notificação de mensagens. Caso você esteja com esta opção ligada e não está ouvindo o som de notificação, verifique as configurações de som do seu navegador ou o Mixer de Volume do seu computador.
+=== Pop out Widget ===
+Esta opção abre uma janela pop-up da conversa com as mesmas funcionalidades do chat no site, porém com uma área maior de visualização ou até mesmo deixá-la em tela cheia.
+\\ 
+==== Outras funcionalidades do chat ====
+{{ :base_de_conhecimento:msg_opt.png?nolink |}}\\ 
+Além das opções do Menu você também pode enviar um emoticon clicando em {{:base_de_conhecimento:emoticon.png?nolink|}}, enviar um arquivo através do botão {{:base_de_conhecimento:anexar.png?nolink|}} e <wrap hi>avaliar a conversa com o botão</wrap> {{:base_de_conhecimento:avaliar.png?nolink|}}
+\\ 
+==== Horário de Atendimento ====
+<WRAP group>
+<WRAP left><thumbnail>{{:base_de_conhecimento:offline_form.png?nolink&300|Formulário Offline}}</thumbnail></WRAP>
+<WRAP round important>
+O Horário de Atendimento dos canais de suporte da Cloudfy são de <wrap em>Segunda a Sexta das 09:00 às 18:00</wrap>. Os atendimentos fora deste horário são exclusivamente para emergências.
+Você ainda poderá enviar mensagens para os canais de suporte, porém somente as mensagens classificadas como emergência serão retornadas pelos nossos agentes de plantão. Não se preocupe! As demais mensagens serão respondidas posteriormente durante o horário de atendimento.</WRAP>
+Fora dos horários de atendimento, o ícone do chat irá mudar para {{:base_de_conhecimento:offline_icone.png?nolink|Ícone Offline}}, indicando que o chat está offline. Para enviar uma mensagem, clique no ícone, preencha o formulário e aguarde o contato de um agente.</WRAP>

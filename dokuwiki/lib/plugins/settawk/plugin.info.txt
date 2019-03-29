@@ -1,0 +1,7 @@
+base   settawk
+author Cyrille Giquello
+email  cyrille@comptoir.net
+date   2016-07-31
+name   settawk plugin
+desc   Enable/disable CORS (Cross-Origin Resource Sharing). Used to enable CORS http headers to permits web client visiting other website to load some data from your dokuwiki website.
+url    http://savoirscommuns.comptoir.net

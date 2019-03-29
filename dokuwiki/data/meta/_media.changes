@@ -1,0 +1,86 @@
+1553171407	10.1.0.107	C	aplicativo:notas_fiscais:selecao_cupons.png	nelson.pires	created		24889
+1553171457	10.1.0.107	E	aplicativo:notas_fiscais:selecao_cupons.png	nelson.pires			5827
+1553195315	10.1.0.107	C	aplicativo:notas_fiscais:drop_down.png	nelson.pires	created		477
+1553525653	10.1.0.107	C	aplicativo:notas_fiscais:tipo_frete.png	nelson.pires	created		6262
+1553526133	10.1.0.107	E	aplicativo:notas_fiscais:tipo_frete.png	nelson.pires			2042
+1553532288	10.1.0.107	E	aplicativo:notas_fiscais:tipo_frete.png	nelson.pires			-305
+1553532322	10.1.0.107	E	aplicativo:notas_fiscais:tipo_frete.png	nelson.pires			-42
+1553532831	10.1.0.107	C	aplicativo:notas_fiscais:conferir_infos.png	nelson.pires	created		18621
+1553532941	10.1.0.107	E	aplicativo:notas_fiscais:conferir_infos.png	nelson.pires			4981
+1553533089	10.1.0.107	E	aplicativo:notas_fiscais:conferir_infos.png	nelson.pires			9
+1553632798	10.1.0.107	C	aplicativo:notas_fiscais:filtro_cupom.png	nelson.pires	created		9533
+1553634904	10.1.0.107	C	aplicativo:notas_fiscais:nfe_info_comp.png	nelson.pires	created		8775
+1553635706	10.1.0.107	C	aplicativo:notas_fiscais:tipo_cobranca_nfe.png	nelson.pires	created		9488
+1553696311	10.1.0.107	C	aplicativo:notas_fiscais:itens_nfe.png	nelson.pires	created		14987
+1553701793	10.1.0.107	E	aplicativo:notas_fiscais:conferir_infos.png	nelson.pires			10574
+1553716908	10.1.0.107	C	aplicativo:notas_fiscais:download_nfe.png	nelson.pires	criada		261
+1553716986	10.1.0.107	C	aplicativo:notas_fiscais:imprimir_nfe.png	nelson.pires	criada		320
+1553717080	10.1.0.107	C	aplicativo:notas_fiscais:email_nfe.png	nelson.pires	criada		515
+1553717108	10.1.0.107	C	aplicativo:notas_fiscais:cancelar_nfe.png	nelson.pires	criada		679
+1553717150	10.1.0.107	C	aplicativo:notas_fiscais:carta_correcao.png	nelson.pires	criada		287
+1553888010	10.1.0.107	C	base_de_conhecimento:agente_entrou_conversa.png	cloudfy	criada		6454
+1553888010	10.1.0.107	C	base_de_conhecimento:anexar.png	cloudfy	criada		550
+1553888010	10.1.0.107	C	base_de_conhecimento:agente_atende.png	cloudfy	criada		14171
+1553888011	10.1.0.107	C	base_de_conhecimento:avaliar.png	cloudfy	criada		534
+1553888011	10.1.0.107	C	base_de_conhecimento:emoticon.png	cloudfy	criada		626
+1553888011	10.1.0.107	C	base_de_conhecimento:encerrar_conversa.png	cloudfy	criada		2055
+1553888011	10.1.0.107	C	base_de_conhecimento:engrenagem.png	cloudfy	criada		676
+1553888011	10.1.0.107	C	base_de_conhecimento:icone_chat.png	cloudfy	criada		1583
+1553888011	10.1.0.107	C	base_de_conhecimento:iniciar_conversa.png	cloudfy	criada		8748
+1553888011	10.1.0.107	C	base_de_conhecimento:menu_chat.png	cloudfy	criada		284
+1553888011	10.1.0.107	C	base_de_conhecimento:menu_expandido.png	cloudfy	criada		5414
+1553888012	10.1.0.107	C	base_de_conhecimento:mostrar_esconder_chat.png	cloudfy	criada		13860
+1553888012	10.1.0.107	C	base_de_conhecimento:msg_opt.png	cloudfy	criada		2608
+1553888012	10.1.0.107	C	base_de_conhecimento:offline_form.png	cloudfy	criada		11571
+1553888012	10.1.0.107	C	base_de_conhecimento:offline_icone.png	cloudfy	criada		1367
+1553888299	10.1.0.107	D	base_de_conhecimento:agente_entrou_conversa.png	cloudfy	removida		-6454
+1553888385	10.1.0.107	D	aplicativo:suporte:agente_atende.png	cloudfy	removida		-14171
+1553888391	10.1.0.107	D	aplicativo:suporte:agente_entrou_conversa.png	cloudfy	removida		-6454
+1553888394	10.1.0.107	D	aplicativo:suporte:anexar.png	cloudfy	removida		-550
+1553888395	10.1.0.107	D	aplicativo:suporte:avaliar.png	cloudfy	removida		-534
+1553888403	10.1.0.107	D	aplicativo:suporte:emoticon.png	cloudfy	removida		-626
+1553888406	10.1.0.107	D	aplicativo:suporte:encerrar_conversa.png	cloudfy	removida		-2055
+1553888408	10.1.0.107	D	aplicativo:suporte:engrenagem.png	cloudfy	removida		-676
+1553888410	10.1.0.107	D	aplicativo:suporte:icone_chat.png	cloudfy	removida		-1583
+1553888414	10.1.0.107	D	aplicativo:suporte:iniciar_conversa.png	cloudfy	removida		-8748
+1553888417	10.1.0.107	D	aplicativo:suporte:menu_chat.png	cloudfy	removida		-284
+1553888419	10.1.0.107	D	aplicativo:suporte:menu_expandido.png	cloudfy	removida		-5414
+1553888422	10.1.0.107	D	aplicativo:suporte:mostrar_esconder_chat.png	cloudfy	removida		-13860
+1553888426	10.1.0.107	D	aplicativo:suporte:msg_opt.png	cloudfy	removida		-2608
+1553888429	10.1.0.107	D	aplicativo:suporte:offline_form.png	cloudfy	removida		-11571
+1553888432	10.1.0.107	D	aplicativo:suporte:offline_icone.png	cloudfy	removida		-1367
+1553888639	10.1.0.107	C	base_de_conhecimento:treinamento:cancelar_nfe.png	cloudfy	criada		679
+1553888639	10.1.0.107	C	base_de_conhecimento:treinamento:carta_correcao.png	cloudfy	criada		287
+1553888639	10.1.0.107	C	base_de_conhecimento:treinamento:conferir_infos.png	cloudfy	criada		34185
+1553888639	10.1.0.107	C	base_de_conhecimento:treinamento:download_nfe.png	cloudfy	criada		261
+1553888639	10.1.0.107	C	base_de_conhecimento:treinamento:drop_down.png	cloudfy	criada		477
+1553888639	10.1.0.107	C	base_de_conhecimento:treinamento:email_nfe.png	cloudfy	criada		515
+1553888640	10.1.0.107	C	base_de_conhecimento:treinamento:filtro_cupom.png	cloudfy	criada		9533
+1553888640	10.1.0.107	C	base_de_conhecimento:treinamento:imprimir_nfe.png	cloudfy	criada		320
+1553888640	10.1.0.107	C	base_de_conhecimento:treinamento:itens_nfe.png	cloudfy	criada		14987
+1553888640	10.1.0.107	C	base_de_conhecimento:treinamento:nfe_info_comp.png	cloudfy	criada		8775
+1553888640	10.1.0.107	C	base_de_conhecimento:treinamento:pesquisar_cliente.png	cloudfy	criada		3422
+1553888640	10.1.0.107	C	base_de_conhecimento:treinamento:realizar_nova_emissao.png	cloudfy	criada		30832
+1553888640	10.1.0.107	C	base_de_conhecimento:treinamento:selecao_cupons.png	cloudfy	criada		30716
+1553888640	10.1.0.107	C	base_de_conhecimento:treinamento:tipo_cobranca_nfe.png	cloudfy	criada		9488
+1553888641	10.1.0.107	C	base_de_conhecimento:treinamento:tipo_frete.png	cloudfy	criada		7957
+1553888723	10.1.0.107	C	base_de_conhecimento:cadastrar1.png	cloudfy	criada		1162
+1553888928	10.1.0.107	D	aplicativo:notas_fiscais:cancelar_nfe.png	cloudfy	removida		-679
+1553888930	10.1.0.107	D	aplicativo:notas_fiscais:carta_correcao.png	cloudfy	removida		-287
+1553888933	10.1.0.107	D	aplicativo:notas_fiscais:conferir_infos.png	cloudfy	removida		-34185
+1553888934	10.1.0.107	D	aplicativo:notas_fiscais:download_nfe.png	cloudfy	removida		-261
+1553888936	10.1.0.107	D	aplicativo:notas_fiscais:drop_down.png	cloudfy	removida		-477
+1553888938	10.1.0.107	D	aplicativo:notas_fiscais:email_nfe.png	cloudfy	removida		-515
+1553888941	10.1.0.107	D	aplicativo:notas_fiscais:tipo_cobranca_nfe.png	cloudfy	removida		-9488
+1553888943	10.1.0.107	D	aplicativo:notas_fiscais:tipo_frete.png	cloudfy	removida		-7957
+1553888946	10.1.0.107	D	aplicativo:notas_fiscais:selecao_cupons.png	cloudfy	removida		-30716
+1553888948	10.1.0.107	D	aplicativo:notas_fiscais:pesquisar_cliente.png	cloudfy	removida		-3422
+1553888950	10.1.0.107	D	aplicativo:notas_fiscais:realizar_nova_emissao.png	cloudfy	removida		-30832
+1553888952	10.1.0.107	D	aplicativo:notas_fiscais:nfe_info_comp.png	cloudfy	removida		-8775
+1553888953	10.1.0.107	D	aplicativo:notas_fiscais:itens_nfe.png	cloudfy	removida		-14987
+1553888955	10.1.0.107	D	aplicativo:notas_fiscais:imprimir_nfe.png	cloudfy	removida		-320
+1553888958	10.1.0.107	D	aplicativo:notas_fiscais:filtro_cupom.png	cloudfy	removida		-9533
+1553888964	10.1.0.107	D	aplicativo:cadastrar1.png	cloudfy	removida		-1162
+1553889051	10.1.0.107	C	desenvolvimento:checkbox_off.png	cloudfy	criada		231
+1553889101	10.1.0.107	D	aplicativo:suporte:chat_video.mp4	cloudfy	removida		-1178420
+1553889118	10.1.0.107	D	desenvolvimento:checkbox_off.png	cloudfy	removida		-231

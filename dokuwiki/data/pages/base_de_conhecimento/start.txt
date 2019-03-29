@@ -1,0 +1,11 @@
+====== Base de Conhecimento ======
+<panel type="primary" title="Bem vindo a Base de Conhecimento da Cloudfy!">
+<WRAP centeralign><text type="primary" size="x-large" transform="uppercase">**Qual é a sua dúvida?**</text>\\ {searchform ns=base_de_conhecimento}</WRAP>
+</panel>
+<WRAP group>
+<WRAP third column><panel type="primary" title="Artigos mais recentes">
+<list-group>
+{{changes>base_de_conhecimento&5&type=create,edit&render=list(nosummary)}}</list-group></panel></WRAP>
+</WRAP>
+
+~~NOCACHE~~

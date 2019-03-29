@@ -1,0 +1,200 @@
+
+<h1 class="sectionedit1" id="emitir_nf-e_utilizando_nfc-e">Emitir NF-e utilizando NFC-e</h1>
+<div class="level1">
+
+<p>
+A emissão de uma NF-e utilizando uma NFC-e é bem simples e a seguir iremos explicar passo a passo todo o processo de emissão.Se você já está familiarizado com o processo de <a href="/dokuwiki/doku.php?id=aplicativo:notas_fiscais:emissao_nfe" class="wikilink2" title="aplicativo:notas_fiscais:emissao_nfe" rel="nofollow">emissão de NF-e</a> pule para a <span class="curid"><a href="/dokuwiki/doku.php?id=aplicativo:notas_fiscais:emitir_nfe_de_nfce#etapa_2informacoes_do_produto" class="wikilink1" title="aplicativo:notas_fiscais:emitir_nfe_de_nfce">Etapa 2: Informações do Produto</a></span>, a etapa onde pode ser feita a seleção de cupons de venda.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Emitir NF-e utilizando NFC-e&quot;,&quot;hid&quot;:&quot;emitir_nf-e_utilizando_nfc-e&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-387&quot;} -->
+<h2 class="sectionedit2" id="iniciando_uma_nova_emissao">Iniciando uma nova emissão</h2>
+<div class="level2">
+
+<p>
+Navegue para o Menu <a href="http://localhost:8080/H02AP01/site/#/H02SF0109A" class="urlextern" title="http://localhost:8080/H02AP01/site/#/H02SF0109A" rel="nofollow">Nota Fiscal&gt;Emissão de NFe</a> e aperte no botão <span class="wrap_safety wrap_round ">REALIZAR UMA NOVA EMISSÃO</span> para iniciar o assistente de emissão de NFe.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:realizar_nova_emissao.png" class="media" alt="" /></div>
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Iniciando uma nova emiss\u00e3o&quot;,&quot;hid&quot;:&quot;iniciando_uma_nova_emissao&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;388-734&quot;} -->
+<h3 class="sectionedit3" id="etapa_1dados_do_cliente">Etapa 1: Dados do cliente</h3>
+<div class="level3">
+
+<p>
+Na primeira etapa do assistente você deve preencher as informações do cliente para o qual você deseja emitir a nota. Utilize o campo de pesquisa de cliente, exibido na imagem abaixo, para selecionar um cliente cadastrado.
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:pesquisar_cliente.png" class="mediacenter" alt="" /></div>
+<p>
+Ao selecionar o cliente, as informações restantes serão preenchidas automaticamente de acordo com o que foi cadastrado. Clique em continuar no final da tela para prosseguir para a próxima etapa.<br/>
+
+<span class="wrap_tip ">Caso o cliente não esteja cadastrado, você pode clicar no ícone <img src="/dokuwiki/lib/exe/fetch.php?w=30&amp;h=30&amp;tok=32a7af&amp;media=aplicativo:cadastrar1.png" class="media" alt="" width="30" height="30" /> e fazer o cadastro de um novo usuário sem sair da tela de emissão de nota.</span><br/>
+
+<span class="wrap_important ">Verifique se todos os campos <span class="wrap_em ">obrigatórios*</span> estão preenchidos.</span><br/>
+
+<span class="wrap_important ">Verifique se o cliente é contribuinte e em caso positivo, preencha corretamente a inscrição estadual.</span>
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Etapa 1: Dados do cliente&quot;,&quot;hid&quot;:&quot;etapa_1dados_do_cliente&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:3,&quot;range&quot;:&quot;735-1727&quot;} -->
+<h3 class="sectionedit4" id="etapa_2informacoes_do_produto">Etapa 2: Informações do Produto</h3>
+<div class="level3">
+
+<p>
+A segunda etapa é onde você seleciona os produtos e informações tributarias que farão parte da NF-e.<span class="wrap_info wrap_round ">É nesta etapa que é possível selecionar o cupom de venda que deseja transformar em NF-e.</span><br/>
+
+Clique no botão <span class="bs-wrap bs-wrap-button" data-btn-type="success" data-btn-size="sm">SELECIONAR CUPONS</span>, indicado na imagem abaixo, para abrir a tela de seleção de cupons.
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:selecao_cupons.png" class="mediacenter" alt="" /></div><div class="bs-wrap bs-wrap-panel panel panel-success"><div class="panel-body">
+<h4 id="selecionar_cupons">Selecionar Cupons</h4>
+
+
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:filtro_cupom.png" class="mediacenter" alt="" /></div>
+<p>
+Por padrão, os filtros de pesquisa de cupom estarão preenchidos da seguinte maneira:<br/>
+
+</p>
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:5,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_quarter wrap_column plugin_wrap"><div class="bs-wrap bs-wrap-thumbnail thumbnail"><strong>Data inicial:</strong><br/>
+Primeiro dia do mês atual</div></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:6,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:7,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_quarter wrap_column plugin_wrap"><div class="bs-wrap bs-wrap-thumbnail thumbnail"><strong>Data final:</strong><br/>
+Data atual</div></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:8,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:9,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_quarter wrap_column plugin_wrap"><div class="bs-wrap bs-wrap-thumbnail thumbnail"><strong>Tipo de venda:</strong><sup><a href="#fn__1" id="fnt__1" class="fn_top">1)</a></sup><br/>
+Ambos</div></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:10,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:11,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_quarter wrap_column plugin_wrap"><div class="bs-wrap bs-wrap-thumbnail thumbnail"><strong>Pesquisa de cliente:</strong><sup><a href="#fn__2" id="fnt__2" class="fn_top">2)</a></sup><br/>
+Cliente selecionado na primeira etapa</div></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:12,&quot;range&quot;:&quot;0-&quot;} -->
+<p>
+Altere os filtros conforme o necessário para achar o cupom que deseja.<br/>
+
+<span class="wrap_info wrap_round ">Se o cupom foi emitido sem cliente, deixe o campo cliente em branco e utilize os demais campos para filtrar a sua pesquisa.</span><br/>
+
+Após selecionar um ou mais cupons desejados, clique no botão <span class="bs-wrap bs-wrap-button" data-btn-type="primary" data-btn-size="xs">SELECIONAR</span> que irá aparecer ao lado do botão <span class="bs-wrap bs-wrap-button" data-btn-type="success" data-btn-size="xs">PESQUISAR</span> para importar todos os itens dos cupons selecionados para a NF-e.<br/>
+
+<span class="wrap_tip wrap_round ">Caso você tenha clientes que compram a prazo por exemplo, você pode selecionar todos os cupons a prazo do mês e gerar uma NF-e completa facilmente</span>
+</p>
+</div></div>
+<p>
+Após a inclusão dos itens você pode editar as informações de cada item conforme o necessário. Clique no botão <span class="bs-wrap bs-wrap-button" data-btn-type="primary" data-btn-size="xs">CONTINUAR</span> no canto inferior direito da página para prosseguir para a próxima etapa.
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:itens_nfe.png" class="mediacenter" alt="" /></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:13,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_alert wrap_round plugin_wrap">
+<p>
+Se algum dos itens estiver com <span class="wrap_em ">erro</span> na coluna <strong>Validação</strong>, deixe o mouse em cima do item para que as opções de ações <img src="/dokuwiki/lib/exe/fetch.php?w=50&amp;tok=89fbb6&amp;media=aplicativo:notas_fiscais:drop_down.png" class="media" alt="" width="50" /> apareçam. Clique na seta azul para abrir a tela de <strong>informações tributárias</strong> e arrume as informações necessárias.<br/>
+
+Você também pode selecionar mais de um produto, ir no botão <strong>Ações</strong> e clicar em <strong>Alterar tributação</strong> para alterar todos os produtos selecionados de uma vez.<br/>
+
+<strong>Sempre verifique com o seu contador as informações tributárias corretas dos seus produtos.</strong>
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:14,&quot;range&quot;:&quot;0-&quot;} -->
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Etapa 2: Informa\u00e7\u00f5es do Produto&quot;,&quot;hid&quot;:&quot;etapa_2informacoes_do_produto&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:4,&quot;range&quot;:&quot;1728-4508&quot;} -->
+<h3 class="sectionedit15" id="etapa_3dados_do_frete">Etapa 3: Dados do Frete</h3>
+<div class="level3">
+
+<p>
+Nesta etapa precisamos saber as informações sobre o frete e transportadora caso necessário.<br/>
+
+</p>
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:16,&quot;range&quot;:&quot;0-&quot;} --><div class="group plugin_wrap"><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:18,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_left wrap_centeralign wrap_round plugin_wrap"><div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:tipo_frete.png" class="media" alt="" /><hr />
+
+<p>
+<strong><em>Opções de frete para emissão da NFe</em></strong>
+</p>
+</div></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:19,&quot;range&quot;:&quot;0-&quot;} -->
+<p>
+ A opção <strong>Sem frete</strong> não necessita de nenhuma informação preenchida, então basta clicar em <span class="bs-wrap bs-wrap-button" data-btn-type="primary" data-btn-size="xs">CONTINUAR</span>.<br/>
+Nas demais opções é possível preencher informações de transportadora e os dados de volumes transportados.<br/>
+
+</p>
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:20,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_tip wrap_round plugin_wrap">
+<p>
+É possível cadastrar novas transportadoras clicando no botão <img src="/dokuwiki/lib/exe/fetch.php?w=25&amp;h=25&amp;tok=5507d3&amp;media=aplicativo:cadastrar1.png" class="media" alt="" width="25" height="25" />.<br/>
+Na tela que irá aparecer, clique em uma transportadora para alterar seu cadastro e adicionar veículos ou clique no botão <span class="bs-wrap bs-wrap-button" data-btn-type="success" data-btn-size="xs">NOVO</span> para cadastrar uma nova transportadora.
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:21,&quot;range&quot;:&quot;0-&quot;} --></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:17,&quot;range&quot;:&quot;0-&quot;} -->
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Etapa 3: Dados do Frete&quot;,&quot;hid&quot;:&quot;etapa_3dados_do_frete&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:15,&quot;range&quot;:&quot;4509-5426&quot;} -->
+<h3 class="sectionedit22" id="etapa_4informacoes_complementares_e_finalizacao">Etapa 4: Informações complementares e finalização</h3>
+<div class="level3">
+
+<p>
+Na última etapa da emissão da NFe entre com as informações adicionais e confira se os totais da nota estão corretos.
+</p>
+
+</div>
+
+<h4 id="informacoes_de_emissao">Informações de emissão</h4>
+<div class="level4">
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:23,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_centeralign plugin_wrap"><div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:conferir_infos.png" class="mediacenter" alt="" /><hr />
+
+<p>
+<strong><em>Informações da emissão</em></strong>
+</p>
+</div></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:24,&quot;range&quot;:&quot;0-&quot;} -->
+<p>
+<span class="wrap_alert wrap_round ">Não altere manualmente estes campos.</span><br/>
+
+Se as <strong>informações de emissão</strong> não estiverem corretas, utilize o botão <span class="bs-wrap bs-wrap-button" data-btn-type="link">Voltar</span><sup><a href="#fn__3" id="fnt__3" class="fn_top">3)</a></sup> para arrumar as informações incorretas nas etapas anteriores.<span class="wrap_round wrap_safety ">Não se preocupe, nenhuma das informações é perdida ao voltar para outra etapa.</span><br/>
+
+No campo <em><em class="u">Documento Fiscal Referenciado</em></em> está referenciado o número do(s) documento(s) selecionado(s) na <span class="curid"><a href="/dokuwiki/doku.php?id=aplicativo:notas_fiscais:emitir_nfe_de_nfce#etapa_2informacoes_do_produto" class="wikilink1" title="aplicativo:notas_fiscais:emitir_nfe_de_nfce">Etapa 2: Informações do Produto</a></span>. Caso queira referenciar mais documentos, volte para a Etapa 2.
+</p>
+
+</div>
+
+<h4 id="informacoes_complementares">Informações complementares</h4>
+<div class="level4">
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:nfe_info_comp.png" class="mediacenter" alt="" /></div>
+<p>
+No campo de <em><em class="u">Informações Complementares</em></em> você poderá complementar o texto com qualquer informação que achar necessário.<br/>
+
+<span class="wrap_important wrap_round "><strong>IMPORTANTE:</strong> Não apague o texto que já vem preenchido neste campo, apenas adicione conteúdo após a informação pré preenchida.</span>
+</p>
+
+</div>
+
+<h4 id="tipo_de_cobranca">Tipo de cobrança</h4>
+<div class="level4">
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/dokuwiki/lib/exe/fetch.php?media=aplicativo:notas_fiscais:tipo_cobranca_nfe.png" class="mediacenter" alt="" /></div>
+<p>
+Neste campo você pode deixar na opção <strong>Fatura</strong> ou <strong>Duplicata</strong>, para incluir as duplicatas nas informações da nota.<br/>
+
+Se a opção Duplicata for escolhida, irá aparecer os campos para preencher os detalhes da duplicata. Clique no botão <img src="/dokuwiki/lib/exe/fetch.php?w=30&amp;h=30&amp;tok=32a7af&amp;media=aplicativo:cadastrar1.png" class="media" alt="" width="30" height="30" /> para adicionar mais duplicatas.<br/>
+
+<span class="wrap_important ">As duplicatas adicionadas aqui não são importadas automaticamente para o gerenciador financeiro. Se ainda não foram lançadas as duplicatas relacionadas a esta nota, não esqueça de fazer o lançamento no gerenciador financeiro após emitir a nota.</span>
+</p>
+
+</div>
+
+<h4 id="totais_da_nota">Totais da Nota</h4>
+<div class="level4">
+
+<p>
+Nesta seção você encontra os valores calculados de impostos e pode informar valores de acréscimo e desconto, em seus respectivos campos. Analise se os valores de imposto e total da NFe estão corretos e volte para para as etapas anteriores para corrigir os erros, se houver algum erro.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Etapa 4: Informa\u00e7\u00f5es complementares e finaliza\u00e7\u00e3o&quot;,&quot;hid&quot;:&quot;etapa_4informacoes_complementares_e_finalizacao&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:22,&quot;range&quot;:&quot;5427-7856&quot;} -->
+<h3 class="sectionedit25" id="finalizar_emissao">Finalizar Emissão</h3>
+<div class="level3">
+
+<p>
+Clique no botão <span class="bs-wrap bs-wrap-button" data-btn-type="primary" data-btn-size="xs">EMITIR</span>, localizado no canto inferior direito da tela, para emitir a nota. Se houver algum erro durante a emissão, verifique se as informações foram preenchidas corretamente ou peça ajuda para o nosso suporte. Se a emissão concluir sem erros, você terá a opção de enviar a NFe por email e voltar para a tela inicial do Menu Nota Fiscal&gt;Emissão de NFe e pode achar a nota para fazer uma das ações a seguir quantas vezes desejar:<br/>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <img src="/dokuwiki/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=4ed140&amp;media=aplicativo:notas_fiscais:download_nfe.png" class="media" alt="" width="20" height="20" /> Download do XML</div>
+</li>
+<li class="level1"><div class="li"> <img src="/dokuwiki/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=50381d&amp;media=aplicativo:notas_fiscais:imprimir_nfe.png" class="media" alt="" width="20" height="20" /> Reimprimir DANFE</div>
+</li>
+<li class="level1"><div class="li"> <img src="/dokuwiki/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=af953b&amp;media=aplicativo:notas_fiscais:email_nfe.png" class="media" alt="" width="20" height="20" /> Enviar NF por email</div>
+</li>
+<li class="level1"><div class="li"> <img src="/dokuwiki/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=2b3c69&amp;media=aplicativo:notas_fiscais:cancelar_nfe.png" class="media" alt="" width="20" height="20" /> Cancelar NFe</div>
+</li>
+<li class="level1"><div class="li"> <img src="/dokuwiki/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=e61368&amp;media=aplicativo:notas_fiscais:carta_correcao.png" class="media" alt="" width="20" height="20" /> Carta de Correção</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Finalizar Emiss\u00e3o&quot;,&quot;hid&quot;:&quot;finalizar_emissao&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:25,&quot;range&quot;:&quot;7857-&quot;} --><div class="footnotes">
+<div class="fn"><sup><a href="#fnt__1" id="fn__1" class="fn_bot">1)</a></sup> 
+<div class="content">Venda à vista/Venda a prazo/Ambos</div></div>
+<div class="fn"><sup><a href="#fnt__2" id="fn__2" class="fn_bot">2)</a></sup> 
+<div class="content">Este campo não é obrigatório</div></div>
+<div class="fn"><sup><a href="#fnt__3" id="fn__3" class="fn_bot">3)</a></sup> 
+<div class="content">canto inferior esquerdo da tela</div></div>
+</div>

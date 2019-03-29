@@ -1,0 +1,6 @@
+====== Exemplo de Vídeos ======
+==== Youtube Video ====
+{{ youtube>CFVPW6oV67s?large&rel=0 |Conhecendo o chat online}}
+
+==== Local Video ====
+{{ desenvolvimento:chat_video.mp4?560x300 |}}
