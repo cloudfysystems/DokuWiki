@@ -11,10 +11,10 @@
  * Source: https://github.com/firebase/php-jwt 
  * Importar biblioteca sem o composer: https://stackoverflow.com/a/39477444 
  */
-require_once 'C:\Apache24\htdocs\dokuwiki\lib\php-jwt\src\BeforeValidException.php';
-require_once 'C:\Apache24\htdocs\dokuwiki\lib\php-jwt\src\ExpiredException.php';
-require_once 'C:\Apache24\htdocs\dokuwiki\lib\php-jwt\src\SignatureInvalidException.php';
-require_once 'C:\Apache24\htdocs\dokuwiki\lib\php-jwt\src\JWT.php';
+require_once(__DIR__.'/../../../lib/php-jwt/src/BeforeValidException.php');
+require_once(__DIR__.'/../../../lib/php-jwt/src/ExpiredException.php');
+require_once(__DIR__.'/../../../lib/php-jwt/src/SignatureInvalidException.php');
+require_once(__DIR__.'/../../../lib/php-jwt/src/JWT.php');
 use \Firebase\JWT\JWT;
 
 // must be run within Dokuwiki
