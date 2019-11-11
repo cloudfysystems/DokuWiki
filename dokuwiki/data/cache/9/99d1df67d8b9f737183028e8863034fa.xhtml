@@ -1,0 +1,535 @@
+
+<h1 class="sectionedit1" id="conhecimentos_basicos_sobre_o_dokuwiki">Conhecimentos Básicos sobre o DokuWiki</h1>
+<div class="level1">
+
+<p>
+Neste artigo será apresentado as informações básicas para utilização do DokuWiki, como alguns termos e sintaxe para escrever os artigos.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Conhecimentos B\u00e1sicos sobre o DokuWiki&quot;,&quot;hid&quot;:&quot;conhecimentos_basicos_sobre_o_dokuwiki&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-198&quot;} -->
+<h2 class="sectionedit2" id="paginas">Páginas</h2>
+<div class="level2">
+
+<p>
+Para criar uma página, basta navegar até o endereço desejado para ela, clicar no botão editar<a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=desenvolvimento:edit_button.png" class="media" title="desenvolvimento:edit_button.png"><img src="/lib/exe/fetch.php?media=desenvolvimento:edit_button.png" class="media" alt="" /></a>, localizado no canto direito da página, e incluir algum conteúdo na página. Do mesmo modo, para excluir uma página, basta apagar todo o conteúdo existente nela(inclusive os arquivos de mídia salvos na página).<br/>
+
+<span class="wrap_important ">É importante notar que a base de conhecimento da cloudfy utiliza um <a href="https://www.dokuwiki.org/plugin:publish" class="urlextern" title="https://www.dokuwiki.org/plugin:publish" rel="nofollow">plugin de aprovação</a> de edições de páginas, então toda alteração em uma página precisa ser aprovada. Apenas usuários com permissões de administrador ou de deletar a página podem aprovar a edição. Usuários com permissão de leitura irão ver apenas a última versão aprovada da página.</span>
+</p>
+<ul>
+<li class="level1"><div class="li">O DokuWiki utiliza o primeiro cabeçalho da página como o nome da página. Os plugins que buscam e listam páginas(como o índice da sidebar) utilizam o mesmo método.</div>
+</li>
+<li class="level1"><div class="li">Os cabeçalhos são utilizados para criar o índice(Table of Contents -<abbr title="Table of Contents">TOC</abbr>) da página.<br/>
+</div>
+</li>
+<li class="level1 node"><div class="li">Links úteis:</div>
+<ul>
+<li class="level2"><div class="li"><a href="https://www.dokuwiki.org/page" class="urlextern" title="https://www.dokuwiki.org/page" rel="nofollow">https://www.dokuwiki.org/page</a></div>
+</li>
+<li class="level2"><div class="li"><a href="https://www.dokuwiki.org/pagename" class="urlextern" title="https://www.dokuwiki.org/pagename" rel="nofollow">https://www.dokuwiki.org/pagename</a></div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;P\u00e1ginas&quot;,&quot;hid&quot;:&quot;paginas&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;199-1377&quot;} -->
+<h2 class="sectionedit3" id="namespace">Namespace</h2>
+<div class="level2">
+
+<p>
+Namespaces são como pastas onde estão guardados as páginas e/ou outros namespaces. Eles são criados automaticamente quando é criado uma página. Por exemplo, se navegarmos para a página “<em class="u"><em>namespace1:namespace2:pagina</em></em>” e criarmos ela, o DokuWiki vai criar automaticamente os namespaces “<em class="u">namespace1</em>” e “<em class="u">namespace2</em>”, se eles já não existirem. A palavra depois do último “<strong>:</strong>” é sempre o da página e os restantes são os dos namespaces<br/>
+
+Este artigo está localizado dentro do namespace <em class="u">desenvolvimento</em>. Os artigos para os clientes está no namespace <em class="u">base_de_conhecimento</em>.<br/>
+
+<span class="wrap_important ">Namespaces são importantes para evitar coflito de páginas com o nome igual e para definir as permissões de acesso dos grupos de usuário.</span>
+</p>
+<ul>
+<li class="level1 node"><div class="li">Links úteis:</div>
+<ul>
+<li class="level2"><div class="li"><a href="https://www.dokuwiki.org/namespaces" class="urlextern" title="https://www.dokuwiki.org/namespaces" rel="nofollow">https://www.dokuwiki.org/namespaces</a></div>
+</li>
+<li class="level2"><div class="li"><a href="https://www.dokuwiki.org/pagename" class="urlextern" title="https://www.dokuwiki.org/pagename" rel="nofollow">https://www.dokuwiki.org/pagename</a></div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Namespace&quot;,&quot;hid&quot;:&quot;namespace&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:3,&quot;range&quot;:&quot;1378-2277&quot;} -->
+<h2 class="sectionedit4" id="plugin_tagging">Plugin Tagging</h2>
+<div class="level2">
+
+<p>
+Este <a href="https://www.dokuwiki.org/plugin:tagging" class="urlextern" title="https://www.dokuwiki.org/plugin:tagging" rel="nofollow">plugin</a> é utilizado para colocar tags nas páginas que podem ser usados para procurar por uma página. Ao pesquisar por uma tag ele mostra todas as páginas que possuem esta tag. Tags que iniciarem com o caractere <strong>@</strong> ficarão escondidos dos usuários com permissão de leitura. Para adicionar ou remover as tags de um artigo basta clicar no botão <a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=desenvolvimento:edit_tag.png" class="media" title="desenvolvimento:edit_tag.png"><img src="/lib/exe/fetch.php?media=desenvolvimento:edit_tag.png" class="media" alt="" /></a>
+</p>
+
+<p>
+<span class="wrap_important ">As tags de um artigo é o que será utilizado no retaguarda para direcionar o usuário a um artigo da base de conhecimento.</span>
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Plugin Tagging&quot;,&quot;hid&quot;:&quot;plugin_tagging&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:4,&quot;range&quot;:&quot;2278-2869&quot;} -->
+<h2 class="sectionedit5" id="sintaxe_de_edicao">Sintaxe de edição</h2>
+<div class="level2">
+
+<p>
+O DokuWiki tem sua própria <a href="/doku.php?id=wiki:syntax" class="wikilink1" title="wiki:syntax">sintaxe para formatação</a> dos textos e possui plugins para suplementar esta sintaxe, como o <a href="https://www.dokuwiki.org/plugin:wrap" class="urlextern" title="https://www.dokuwiki.org/plugin:wrap" rel="nofollow">wrap</a> e o <a href="https://www.dokuwiki.org/plugin:bootswrapper" class="urlextern" title="https://www.dokuwiki.org/plugin:bootswrapper" rel="nofollow">bootswrapper</a> utilizados nesta base de conhecimento. Nesta seção será apresentado as sintaxes mais usadas.
+</p>
+
+<p>
+<span class="wrap_tip ">No editor da página, você usar a toolbar disponível para incluir algumas formações</span>
+</p>
+
+<p>
+<a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=desenvolvimento:toolbar_edit.png" class="media" title="desenvolvimento:toolbar_edit.png"><img src="/lib/exe/fetch.php?media=desenvolvimento:toolbar_edit.png" class="media" alt="" /></a><sup><a href="#fn__1" id="fnt__1" class="fn_top">1)</a></sup>
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Sintaxe de edi\u00e7\u00e3o&quot;,&quot;hid&quot;:&quot;sintaxe_de_edicao&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:5,&quot;range&quot;:&quot;2870-3396&quot;} -->
+<h3 class="sectionedit6" id="sintaxe_padrao_do_dokuwiki">Sintaxe padrão do Dokuwiki</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="formatacao_basica_de_texto">Formatação básica de texto</h4>
+<div class="level4">
+
+<p>
+O Dokuwiki suporta textos em <strong>negrito</strong>, <em>itálico</em>, <em class="u">sublinhado</em> e <code>mono espaçado</code>. Obviamente, você poderá <strong><em class="u"><em><code>combinar</code></em></em></strong> todos os formatos.
+</p>
+<pre class="code">O Dokuwiki suporta textos em **negrito**, //itálico//, __sublinhado__ e &#039;&#039;mono espaçado&#039;&#039;.
+Se necessário, você poderá **__//&#039;&#039;combinar&#039;&#039;//__** todos os formatos.</pre>
+
+<p>
+<strong>Parágrafos</strong> são criados a partir de linhas em branco. Se quiser <strong>forçar a quebra de linha</strong> sem um novo parágrafo, você poderá usar duas barras (\\) seguidas do fim da linha ou de um espaço em branco.
+</p>
+
+<p>
+Este é um texto com algumas quebras de linha<br/>
+Note que as
+duas barras (\\) são reconhecidas apenas no fim da linha<br/>
+
+ou seguidas por<br/>
+um espaço \\isto que acontece sem o espaço.
+</p>
+<pre class="code">Este é um texto com algumas quebras de linha\\ Note que as
+duas barras (\\) são reconhecidas apenas no fim da linha\\
+ou seguidas por\\ um espaço \\isto que acontece sem o espaço.</pre>
+
+<p>
+Você deve forçar as quebras de linha apenas quando necessário.
+</p>
+
+</div>
+
+<h4 id="links">Links</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="externos">Externos</h5>
+<div class="level5">
+
+<p>
+Links externos são reconhecidos automaticamente: <a href="http://www.google.com" class="urlextern" title="http://www.google.com" rel="nofollow">http://www.google.com</a> ou simplesmente <a href="http://www.google.com" class="urlextern" title="http://www.google.com" rel="nofollow">www.google.com</a> - Você também pode rotular os links: <a href="http://www.google.com" class="urlextern" title="http://www.google.com" rel="nofollow">Este link aponta para o Google</a>. Endereços de e-mail como este: <a href="mailto:&#x73;&#x75;&#x70;&#x6f;&#x72;&#x74;&#x65;&#x40;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x66;&#x79;&#x2e;&#x6e;&#x65;&#x74;&#x2e;&#x62;&#x72;" class="mail" title="&#x73;&#x75;&#x70;&#x6f;&#x72;&#x74;&#x65;&#x40;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x66;&#x79;&#x2e;&#x6e;&#x65;&#x74;&#x2e;&#x62;&#x72;">&#x73;&#x75;&#x70;&#x6f;&#x72;&#x74;&#x65;&#x40;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x66;&#x79;&#x2e;&#x6e;&#x65;&#x74;&#x2e;&#x62;&#x72;</a> também são reconhecidos automaticamente.
+</p>
+<pre class="code">Links externos são reconhecidos automaticamente: http://www.google.com ou simplesmente www.google.com - Você também pode rotular os links: [[http://www.google.com|Este link aponta para o Google]].
+Endereços de e-mail como este: &lt;suporte@cloudfy.net.br&gt; também são reconhecidos automaticamente.</pre>
+
+</div>
+
+<h5 id="internos">Internos</h5>
+<div class="level5">
+
+<p>
+Links internos são criados usando colchetes. Você pode apenas fornecer o  <a href="/doku.php?id=desenvolvimento:pagename" class="wikilink2" title="desenvolvimento:pagename" rel="nofollow">nome da página</a> ou usar uma descrição adicional <a href="/doku.php?id=desenvolvimento:pagename" class="wikilink2" title="desenvolvimento:pagename" rel="nofollow">Título da Página</a>. Os nomes das páginas wiki são convertidos para minúsculo automaticamente e caracteres especiais(espaço, acentos e pontuação) não são permitidos. Você pode usar namespaces acrescentando : (dois-pontos) ao nome da página. 
+</p>
+<pre class="code">Links internos são criados usando colchetes. Você pode apenas fornecer o [[wiki:nome_da_pagina]] ou usar uma descrição adicional [[wiki:nome_da_pagina|Título da Página]]. Os nomes das páginas wiki são convertidos
+para minúsculo automaticamente e caracteres especiais(espaço, acentos e pontuação) não são permitidos. </pre>
+
+<p>
+<span class="wrap_tip ">Links são absolutos se e somente se eles tiverem o prefixo “<strong>:</strong>” ou não tem nenhum prefixo, mas tem “<strong>:</strong>” intermediários(sufixos).</span>
+</p>
+
+<p>
+<span class="wrap_tip ">Links relativos ao namespace atual também podem começar tanto com “<strong>.</strong>” ou “<strong>.:</strong>” (“<strong>..</strong>” ou “<strong>..:</strong>” para o namespace pai).</span>
+</p>
+
+<p>
+É possível apontar um link para uma seção específica da página. Basta adicionar o nome da seção após um caractere de cerquilha (#) igual como é no <abbr title="HyperText Markup Language">HTML</abbr>. Este link aponta para <a href="#internos" title="desenvolvimento:dokuwiki_basico ↵" class="wikilink1">seção Internos</a>.
+</p>
+<pre class="code">Este link aponta para [[#internos|seção Internos]].</pre>
+
+<p>
+Notas:
+</p>
+<ul>
+<li class="level1"><div class="li"> Links para <a href="/doku.php?id=wiki:syntax" class="wikilink1" title="wiki:syntax">páginas existentes</a> são exibidos em estilo diferente dos  <a href="/doku.php?id=pt-br:wiki:nao_existentes" class="wikilink2" title="pt-br:wiki:nao_existentes" rel="nofollow">não existentes</a>.</div>
+</li>
+<li class="level1"><div class="li"> Seções são iniciadas por parágrafos. Uma linha qualquer de texto não serve de destino de um link interno.</div>
+</li>
+<li class="level1"><div class="li"> Quando os nomes das seções são alterados, os links que apontam pra elas devem ser alterados também. Portanto, não conte muito com os links de seção.</div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="notas_de_rodape">Notas de Rodapé</h4>
+<div class="level4">
+
+<p>
+Você pode adicionar notas de rodapé <sup><a href="#fn__2" id="fnt__2" class="fn_top">2)</a></sup> usando parênteses duplos.
+</p>
+<pre class="code">Você pode adicionar notas de rodapé ((Isto é uma nota de rodapé))
+usando parênteses duplos.</pre>
+
+</div>
+
+<h4 id="secoes">Seções</h4>
+<div class="level4">
+
+<p>
+Você pode usar até cinco diferentes níveis de títulos para estruturar o conteúdo. Com 3 ou mais níveis será automaticamente gerada uma Tabela de Conteúdos visível à direita do topo da página. A Tabela de Conteúdos  poderá ser desabilitada, incluindo o comando <code>~~NOTOC~~</code> no documento.
+</p>
+
+<p>
+O documento <a href="https://www.dokuwiki.org/seo" class="urlextern" title="https://www.dokuwiki.org/seo" rel="nofollow">https://www.dokuwiki.org/seo</a> recomenda que todo título de página seja definido com nível 1.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Sintaxe padr\u00e3o do Dokuwiki&quot;,&quot;hid&quot;:&quot;sintaxe_padrao_do_dokuwiki&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:6,&quot;range&quot;:&quot;3397-7511&quot;} -->
+<h1 class="sectionedit7" id="titulo_de_nivel_1">Título de nível 1</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;T\u00edtulo de n\u00edvel 1&quot;,&quot;hid&quot;:&quot;titulo_de_nivel_1&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:7,&quot;range&quot;:&quot;7512-7545&quot;} -->
+<h2 class="sectionedit8" id="titulo_de_nivel_2">Título de nível 2</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;T\u00edtulo de n\u00edvel 2&quot;,&quot;hid&quot;:&quot;titulo_de_nivel_2&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:8,&quot;range&quot;:&quot;7546-7577&quot;} -->
+<h3 class="sectionedit9" id="titulo_de_nivel_3">Título de nível 3</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="titulo_de_nivel_4">Título de nível 4</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="titulo_de_nivel_5">Título de nível 5</h5>
+<div class="level5">
+<pre class="code">====== Título de nível 1 ======
+===== Título de nível 2 =====
+==== Título de nível 3 ====
+=== Título de nível 4 ===
+== Título de nível 5 ==</pre>
+
+<p>
+Para incluir uma linha horizontal como a abaixo digite 4 ou mais traços(-):
+</p>
+<hr />
+
+</div>
+
+<h4 id="imagens_e_outros_arquivos">Imagens e Outros Arquivos</h4>
+<div class="level4">
+
+<p>
+Você pode incluir <a href="https://www.dokuwiki.org/start?id=pt-br:images" class="urlextern" title="https://www.dokuwiki.org/start?id=pt-br:images" rel="nofollow">imagens</a> internas e externas usando chaves. Opcionalmente, o tamanho das imagens pode ser especificado.
+</p>
+
+<p>
+Tamanho real:                      <a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=wiki:dokuwiki-128_2.png" class="media" title="wiki:dokuwiki-128_2.png"><img src="/lib/exe/fetch.php?media=wiki:dokuwiki-128_2.png" class="media" alt="" /></a>
+</p>
+
+<p>
+Tamanho personalizado:             <a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=wiki:dokuwiki-128_2.png" class="media" title="wiki:dokuwiki-128_2.png"><img src="/lib/exe/fetch.php?w=50&amp;tok=4dabe5&amp;media=wiki:dokuwiki-128_2.png" class="media" alt="" width="50" /></a>
+</p>
+
+<p>
+Redimensionar para uma largura ou largura específica<sup><a href="#fn__3" id="fnt__3" class="fn_top">3)</a></sup>: <a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=wiki:dokuwiki-128_2.png" class="media" title="wiki:dokuwiki-128_2.png"><img src="/lib/exe/fetch.php?w=200&amp;h=50&amp;tok=78c6ba&amp;media=wiki:dokuwiki-128_2.png" class="media" alt="" width="200" height="50" /></a>
+</p>
+
+<p>
+Imagem externa redimensionada:      <a href="/lib/exe/fetch.php?tok=b53343&amp;media=https%3A%2F%2Fphp.net%2Fimages%2Fphp.gif" class="media" title="https://php.net/images/php.gif"><img src="/lib/exe/fetch.php?w=200&amp;h=50&amp;tok=34a367&amp;media=https%3A%2F%2Fphp.net%2Fimages%2Fphp.gif" class="media" alt="" width="200" height="50" /></a>
+</p>
+<pre class="code">Tamanho Real:                               {{wiki:dokuwiki-128_2.png}}
+Redimensionada para uma largura específica: {{wiki:dokuwiki-128_2.png?50}}
+Redimensionada para uma altura específica:  {{wiki:dokuwiki-128_2.png?200x50}}
+Imagem externa redimensionada:              {{https://php.net/images/php.gif?200x50}}</pre>
+
+<p>
+Usando espaços em branco na direita e na esquerda, você poderá mudar o alinhamento:
+</p>
+
+<p>
+<a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=wiki:dokuwiki-128_2.png" class="media" title="wiki:dokuwiki-128_2.png"><img src="/lib/exe/fetch.php?media=wiki:dokuwiki-128_2.png" class="mediaright" alt="" /></a>
+</p>
+
+<p>
+<a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=wiki:dokuwiki-128_2.png" class="media" title="wiki:dokuwiki-128_2.png"><img src="/lib/exe/fetch.php?media=wiki:dokuwiki-128_2.png" class="medialeft" alt="" /></a>
+</p>
+
+<p>
+<a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=wiki:dokuwiki-128_2.png" class="media" title="wiki:dokuwiki-128_2.png"><img src="/lib/exe/fetch.php?media=wiki:dokuwiki-128_2.png" class="mediacenter" alt="" /></a>
+</p>
+<pre class="code">{{ wiki:dokuwiki-128_2.png}}
+{{wiki:dokuwiki-128_2.png }}
+{{ wiki:dokuwiki-128_2.png }}</pre>
+
+<p>
+Obviamente, você também pode trocar o título da imagem (exibido como <em>tooltip</em> por muitos navegadores quando se pára o mouse sobre a imagem ou a imagem não é encontrada).
+</p>
+
+<p>
+<a href="/lib/exe/detail.php?id=desenvolvimento%3Adokuwiki_basico&amp;media=wiki:dokuwiki-128_2.png" class="media" title="wiki:dokuwiki-128_2.png"><img src="/lib/exe/fetch.php?media=wiki:dokuwiki-128_2.png" class="mediacenter" title="Este é o título" alt="Este é o título" /></a>
+</p>
+<pre class="code">{{ wiki:dokuwiki-128_2.png |Este é o título}}</pre>
+
+<p>
+Se você especificar um nome de arquivo (externo ou interno) que não seja uma imagem (<code>gif, jpeg, png</code>), então  o texto “Este é o título” será exibido como um link.
+</p>
+
+</div>
+
+<h4 id="listas">Listas</h4>
+<div class="level4">
+
+<p>
+O Dokuwiki suportas listas ordenadas (numeradas) e não-ordenadas. Para criar um item de listas, endente seu texto com dois espaços e use um <code>*</code>(asterísco) para listas não-ordenadas e um <code>-</code>(traço) para listas ordenadas.
+</p>
+<ul>
+<li class="level1"><div class="li"> Esta é uma lista</div>
+</li>
+<li class="level1 node"><div class="li"> O segundo item</div>
+<ul>
+<li class="level2"><div class="li"> você pode ter diferentes níveis</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Outro item</div>
+</li>
+</ul>
+<ol>
+<li class="level1"><div class="li"> A mesma lista porém ordenada</div>
+</li>
+<li class="level1 node"><div class="li"> Outro Item</div>
+<ol>
+<li class="level2"><div class="li"> Simplesmente use endentação para criar níveis</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Último item</div>
+</li>
+</ol>
+<pre class="code">  * Esta é uma lista
+  * O segundo item
+    * você pode ter diferentes níveis
+  * Outro item
+
+  - A mesma lista porém ordenada
+  - Outro Item
+    - Simplesmente use endentação para criar níveis
+  - Último item</pre>
+
+<p>
+Veja também o <a href="https://www.dokuwiki.org/faq%3Alists" class="urlextern" title="https://www.dokuwiki.org/faq%3Alists" rel="nofollow">FAQ de listas de itens</a>.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;T\u00edtulo de n\u00edvel 3&quot;,&quot;hid&quot;:&quot;titulo_de_nivel_3&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:9,&quot;range&quot;:&quot;7578-10403&quot;} -->
+<h3 class="sectionedit10" id="plugin_wrap">Plugin Wrap</h3>
+<div class="level3">
+
+<p>
+Este plugin adiciona containers e spans com classes/elementos prontos. Para ver todas as classes disponíveis e como combina-las acesse a documentação do plugin <a href="https://www.dokuwiki.org/plugin:wrap" class="urlextern" title="https://www.dokuwiki.org/plugin:wrap" rel="nofollow">aqui</a>
+</p>
+
+</div>
+
+<h4 id="sintaxe_basica">Sintaxe Básica</h4>
+<div class="level4">
+
+<p>
+Um <strong>&lt;WRAP&gt;</strong> maiúsculo (ou alternativamente <strong>&lt;block&gt;</strong> ou <strong>&lt;div&gt;</strong> cria uma div e deve ser usado para containers grandes, encapsulando parágrafos, listas, tabelas, imagens, etc.
+</p>
+<pre class="code">&lt;WRAP classes #id width :language&gt;
+&quot;big&quot; content
+&lt;/WRAP&gt;
+
+**or**
+&lt;block classes #id width :language&gt;
+&quot;big&quot; content
+&lt;/block&gt;
+
+or
+&lt;div classes #id width :language&gt;
+&quot;big&quot; content
+&lt;/div&gt;</pre>
+
+<p>
+Um <strong>&lt;wrap&gt;</strong> minúsculo (ou um <strong>&lt;&lt;inline</strong> ou <strong>&lt;span&gt;</strong>) cria um span que deve ser usado para pequenos containers.
+</p>
+<pre class="code">&lt;wrap classes #id width :language&gt;&quot;small&quot; content&lt;/wrap&gt;
+
+or
+&lt;inline classes #id width :language&gt;&quot;small&quot; content&lt;/inline&gt;
+
+or
+&lt;span classes #id width :language&gt;&quot;small&quot; content&lt;/span&gt; </pre>
+
+<p>
+<span class="wrap_important "> Algumas classes não irão funcionar com spans: alinhamentos, multi colunas e width.</span>
+</p>
+
+</div>
+
+<h4 id="elementos_basicos">Elementos Básicos</h4>
+<div class="level4">
+
+<p>
+As colunas foram usadas utilizando a seguinte sintaxe:
+</p>
+<pre class="code">&lt;WRAP group&gt;
+&lt;WRAP third column&gt;third é uma kewyword de width que divide a uma linha em três colunas&lt;/WRAP&gt;
+&lt;WRAP third column&gt;third é uma kewyword de width que divide a uma linha em três colunas&lt;/WRAP&gt;
+&lt;WRAP third column&gt;third é uma kewyword de width que divide a uma linha em três colunas&lt;/WRAP&gt;
+&lt;WRAP group&gt;</pre>
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:11,&quot;range&quot;:&quot;0-&quot;} --><div class="group plugin_wrap"><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:13,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_third wrap_column plugin_wrap"><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:15,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_box plugin_wrap">
+<p>
+&lt;WRAP box&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:16,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:17,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_info plugin_wrap">
+<p>
+&lt;WRAP info&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:18,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:19,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_round wrap_alert plugin_wrap">
+<p>
+&lt;WRAP round alert&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:20,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:21,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_todo plugin_wrap">
+<p>
+&lt;WRAP todo&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:22,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:23,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_round wrap_caution plugin_wrap">
+<p>
+&lt;WRAP round caution&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:24,&quot;range&quot;:&quot;0-&quot;} --></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:14,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:25,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_third wrap_column plugin_wrap"><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:27,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_rightalign plugin_wrap">
+<p>
+&lt;WRAP rightalign&gt;Alinha texto a direita&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:28,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:29,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_tip plugin_wrap">
+<p>
+&lt;WRAP tip&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:30,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:31,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_round wrap_help plugin_wrap">
+<p>
+&lt;WRAP round help&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:32,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:33,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_danger plugin_wrap">
+<p>
+&lt;WRAP danger&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:34,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:35,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_round wrap_notice plugin_wrap">
+<p>
+&lt;WRAP round notice&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:36,&quot;range&quot;:&quot;0-&quot;} --></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:26,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:37,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_third wrap_column plugin_wrap"><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:39,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_centeralign plugin_wrap">
+<p>
+&lt;WRAP centeralign&gt;Alinha texto no centro&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:40,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:41,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_important plugin_wrap">
+<p>
+&lt;WRAP important&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:42,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:43,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_round wrap_download plugin_wrap">
+<p>
+&lt;WRAP round download&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:44,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:45,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_warning plugin_wrap">
+<p>
+&lt;WRAP warning&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:46,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:47,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_round wrap_safety plugin_wrap">
+<p>
+&lt;WRAP round safety&gt;&lt;/WRAP&gt;
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:48,&quot;range&quot;:&quot;0-&quot;} --></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:38,&quot;range&quot;:&quot;0-&quot;} --></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:12,&quot;range&quot;:&quot;0-&quot;} -->
+<p>
+Estas classes também podem ser usadas em spans: <span class="wrap_info ">&lt;wrap info&gt;&lt;/wrap&gt;</span>, <span class="wrap_round wrap_help ">&lt;wrap round help&gt;&lt;/wrap&gt;</span>, <span class="wrap_danger ">&lt;wrap danger&gt;&lt;/wrap&gt;</span>, <span class="wrap_round wrap_notice ">&lt;wrap round notice&gt;&lt;/wrap&gt;</span>, etc…
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Plugin Wrap&quot;,&quot;hid&quot;:&quot;plugin_wrap&quot;,&quot;codeblockOffset&quot;:1,&quot;secid&quot;:10,&quot;range&quot;:&quot;10404-13083&quot;} -->
+<h3 class="sectionedit49" id="plugin_bootstrap_wrapper">Plugin Bootstrap Wrapper</h3>
+<div class="level3">
+
+<p>
+Este plugin adiciona vários componentes do bootstrap. &lt;wrap warning&gt;Este plugin só funciona com temas/templates compatíveis com Bootstrap( a base de conhecimento da Cloudfy utiliza o template <a href="https://www.dokuwiki.org/template:bootstrap3" class="urlextern" title="https://www.dokuwiki.org/template:bootstrap3" rel="nofollow">bootsrap3</a> atualmente).
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/macro" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/macro" rel="nofollow">macro</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/accordion" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/accordion" rel="nofollow">accordion</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/affix" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/affix" rel="nofollow">affix</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/alert" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/alert" rel="nofollow">alert</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/badge" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/badge" rel="nofollow">badge</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/button" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/button" rel="nofollow">button</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/callout" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/callout" rel="nofollow">callout</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/carousel" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/carousel" rel="nofollow">carousel</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/collapse" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/collapse" rel="nofollow">collapse</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/grid" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/grid" rel="nofollow">grid</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/image" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/image" rel="nofollow">image</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/jumbotron" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/jumbotron" rel="nofollow">jumbotron</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/label" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/label" rel="nofollow">label</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/lead" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/lead" rel="nofollow">lead</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/list-group" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/list-group" rel="nofollow">list-group</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/modal" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/modal" rel="nofollow">modal</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/nav" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/nav" rel="nofollow">nav</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/page-header" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/page-header" rel="nofollow">page-header</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/panel" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/panel" rel="nofollow">panel</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/popover" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/popover" rel="nofollow">popover</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/progress-bar" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/progress-bar" rel="nofollow">progress-bar</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/text" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/text" rel="nofollow">text</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/thumbnail" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/thumbnail" rel="nofollow">thumbnail</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/tooltip" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/tooltip" rel="nofollow">tooltip</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/well" class="urlextern" title="http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/well" rel="nofollow">well</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Plugin Bootstrap Wrapper&quot;,&quot;hid&quot;:&quot;plugin_bootstrap_wrapper&quot;,&quot;codeblockOffset&quot;:1,&quot;secid&quot;:49,&quot;range&quot;:&quot;13084-&quot;} --><div class="footnotes">
+<div class="fn"><sup><a href="#fnt__1" id="fn__1" class="fn_bot">1)</a></sup> 
+<div class="content">toolbar de edição</div></div>
+<div class="fn"><sup><a href="#fnt__2" id="fn__2" class="fn_bot">2)</a></sup> 
+<div class="content">Isto é uma nota de rodapé</div></div>
+<div class="fn"><sup><a href="#fnt__3" id="fn__3" class="fn_bot">3)</a></sup> 
+<div class="content">Quando a proporção da largura e altura especificada não coincidir com a da imagem, ela será recortada para a nova proporção antes de ser redimensionada</div></div>
+</div>

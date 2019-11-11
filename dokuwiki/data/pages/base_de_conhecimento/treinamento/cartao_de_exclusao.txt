@@ -1,0 +1,24 @@
+====== Emitir cartão de autorização ======
+A emissão de um cartão de autorização para seu colaborador pode ser realizado através de um processo bem simples e a seguir iremos explicar o passo a passo.\\
+É importante se atentar que este tutorial considera que os colaboradores já foram devidamente cadastrados no sistema. Caso não tenha realizado ainda o cadastro você precisa inicialmente seguir os passos do  [[.:cadastro_usuario|Cadastro de usuário]].
+
+===== Iniciando a emissão =====
+Após se autenticar no sistema navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Opções>Usuários]].
+<thumbnail>{{ :base_de_conhecimento:treinamento:cartaoexclusao_01.png?nolink |}}</thumbnail>
+
+Na próxima tela será apresentado uma lista de todos os usuários previamente cadastrado no sistema, localize o usuário que deseja emitir o cartão de autorização.\\
+É possível utilizar os filtros de pesquisa para agilizar a localização do registro do usuário desejado.\\
+== Campos de pesquisa ==
+Nome do usuário, Login e CPF podem ser utilizados para filtragem dos usuários.
+<thumbnail>{{ :base_de_conhecimento:treinamento:cartaoexclusao_02.png?nolink |}}</thumbnail>
+
+Dentro do registro de usuário desejado, na seção de Dados para contato, clique no botão circular verde para gerar o Cartão de autorização.
+<thumbnail>{{ :base_de_conhecimento:treinamento:cartaoexclusao_03.png?nolink |}}</thumbnail>
+
+Após o clique, será aberta uma nova aba no navegador com o Cartão de autorização gerado, bastando imprimi-lo.\\
+Acesse as configurações de impressão através do comando CTRL + P.
+<thumbnail>{{ :base_de_conhecimento:treinamento:cartaoexclusao_04.png?nolink |}}</thumbnail>
+Confirme as configurações de impressão igual ao fornecido pela imagem acima, isso garantirá o dimensionamento correto do cartão.\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+
+

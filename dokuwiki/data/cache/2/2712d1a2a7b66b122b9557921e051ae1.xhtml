@@ -1,0 +1,201 @@
+
+<h1 class="sectionedit1" id="mime_configuration">MIME configuration</h1>
+<div class="level1">
+
+<p>
+Which file types you can upload via the <a href="https://www.dokuwiki.org/media manager" class="urlextern" title="https://www.dokuwiki.org/media manager" rel="nofollow">media manager popup</a> or the <a href="https://www.dokuwiki.org/fullscreen mediamanager" class="urlextern" title="https://www.dokuwiki.org/fullscreen mediamanager" rel="nofollow">fullscreen media manager</a> is configured through the <code><a href="https://github.com/splitbrain/dokuwiki/blob/master/conf/mime.conf" class="urlextern" title="https://github.com/splitbrain/dokuwiki/blob/master/conf/mime.conf" rel="nofollow">conf/mime.conf</a></code> file. It also configures the file extension ↔ mimetype association. 
+</p>
+
+<p>
+For security reasons it is not possible to configure <a href="https://www.dokuwiki.org/DokuWiki" class="urlextern" title="https://www.dokuwiki.org/DokuWiki" rel="nofollow">DokuWiki</a> to allow any file type.
+</p>
+
+<p>
+<img src="/lib/images/smileys/icon_exclaim.gif" class="icon" alt=":!:" /> <strong>Never enable <abbr title="HyperText Markup Language">HTML</abbr> upload for unprotected wikis</strong>, as this opens Cross Site Scripting vulnerabilities through JavaScript. Only enable this with trusted users. You need to disable the <a href="https://www.dokuwiki.org/config:iexssprotect" class="urlextern" title="https://www.dokuwiki.org/config:iexssprotect" rel="nofollow">iexssprotect</a> option additionally to adding the <abbr title="HyperText Markup Language">HTML</abbr> mime type in the config file.
+</p>
+
+<p>
+The icons are created with the <a href="https://github.com/splitbrain/file-icon-generator/blob/master/example-dokuwiki.php" class="urlextern" title="https://github.com/splitbrain/file-icon-generator/blob/master/example-dokuwiki.php" rel="nofollow">file icon generator</a>. Old additional icons in the old style are available at <a href="http://www.splitbrain.org/projects/file_icons" class="urlextern" title="http://www.splitbrain.org/projects/file_icons" rel="nofollow">http://www.splitbrain.org/projects/file_icons</a>
+</p>
+
+<p>
+You can find any file extension with its mime at <a href="http://filext.com/" class="urlextern" title="http://filext.com/" rel="nofollow">http://filext.com/</a>
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;MIME configuration&quot;,&quot;hid&quot;:&quot;mime_configuration&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-1164&quot;} -->
+<h2 class="sectionedit2" id="adding_additional_mime_types">Adding additional Mime Types</h2>
+<div class="level2">
+
+<p>
+Additional mimetypes should be added in <code>mime.local.conf</code> (you need to create this file). The file expects an extension (without the dot) and a mime type. Prefixing the mime type with an exclamation mark (!) will force the browser to present a download dialog, even if a browser plugin for the file in question exists.
+</p>
+
+<p>
+Example:
+</p>
+<dl class="code">
+<dt><a href="/doku.php?do=export_code&amp;id=desenvolvimento:wiki:upload_arquivo&amp;codeblock=0" title="Baixar o snippet" class="mediafile mf_conf">mime.local.conf</a></dt>
+<dd><pre class="code"># this would play in the browser (if supported):
+wav         audio/wav
+
+# this would be downloaded
+wav         !audio/wav</pre>
+</dd></dl>
+
+<p>
+File type icons can be added by placing an image file (PNG or GIF)<sup><a href="#fn__1" id="fnt__1" class="fn_top">1)</a></sup> named after the file extension into <code>lib/images/fileicons/</code>. Note: because the stylesheet used for assigning the fileicons gets <a href="/doku.php?id=desenvolvimento:wiki:caching" class="wikilink2" title="desenvolvimento:wiki:caching" rel="nofollow">cached</a> you need to force a rebuild by touching one of the config files.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Adding additional Mime Types&quot;,&quot;hid&quot;:&quot;adding_additional_mime_types&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;1165-2001&quot;} -->
+<h2 class="sectionedit3" id="default_mime_types">Default Mime Types</h2>
+<div class="level2">
+<div class="table sectionedit4"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0 leftalign"> Extension  </th><th class="col1 leftalign"> Mime type                                                                   </th><th class="col2 leftalign"> Icon                                                                      </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> jpg        </td><td class="col1 leftalign"> image/jpeg                                                                  </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=d97ecb&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fjpg.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> jpeg       </td><td class="col1 leftalign"> image/jpeg                                                                  </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=4e1548&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fjpeg.png" class="media" alt="" />  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> gif        </td><td class="col1 leftalign"> image/gif                                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=b9a5db&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fgif.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> png        </td><td class="col1 leftalign"> image/png                                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=9ce8dd&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fpng.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> swf        </td><td class="col1 leftalign"> application/x-shockwave-flash                                               </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=fe070e&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fswf.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> mp3        </td><td class="col1 leftalign"> audio/mpeg                                                                  </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=9ba405&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fmp3.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> ogg        </td><td class="col1 leftalign"> audio/ogg                                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=cbbcc4&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fogg.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> wav        </td><td class="col1 leftalign"> audio/wav                                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=bdadf9&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fwav.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> tgz        </td><td class="col1 leftalign"> !application/octet-stream                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=6f4c9f&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Ftgz.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> tar        </td><td class="col1 leftalign"> !application/x-gtar                                                         </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=a8bb9a&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Ftar.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> gz         </td><td class="col1 leftalign"> !application/octet-stream                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=bbee6f&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fgz.png" class="media" alt="" />    </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> bz2        </td><td class="col1 leftalign"> !application/octet-stream                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=61ae74&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fbz2.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"> zip        </td><td class="col1 leftalign"> !application/zip                                                            </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=c92026&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fzip.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> rar        </td><td class="col1 leftalign"> !application/rar                                                            </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=9b4513&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Frar.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> 7z         </td><td class="col1 leftalign"> !application/x-7z-compressed                                                </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=8dbd63&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2F7z.png" class="media" alt="" />    </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> pdf        </td><td class="col1 leftalign"> application/pdf                                                             </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=90f0fd&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fpdf.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0 leftalign"> ps         </td><td class="col1 leftalign"> !application/postscript                                                     </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=aa04ad&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fps.png" class="media" alt="" />    </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0 leftalign"> rpm        </td><td class="col1 leftalign"> !application/octet-stream                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=a1c9a5&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Frpm.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0 leftalign"> deb        </td><td class="col1 leftalign"> !application/octet-stream                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=816d41&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fdeb.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0 leftalign"> doc        </td><td class="col1 leftalign"> !application/msword                                                         </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=23793f&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fdoc.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0 leftalign"> xls        </td><td class="col1 leftalign"> !application/msexcel                                                        </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=57ba9b&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fxls.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0 leftalign"> ppt        </td><td class="col1 leftalign"> !application/mspowerpoint                                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=6a0c73&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fppt.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0 leftalign"> rtf        </td><td class="col1 leftalign"> !application/msword                                                         </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=3086bd&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Frtf.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0 leftalign"> docx       </td><td class="col1 leftalign"> !application/vnd.openxmlformats-officedocument.wordprocessingml.document    </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=0a8ece&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fdocx.png" class="media" alt="" />  </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0 leftalign"> xlsx       </td><td class="col1 leftalign"> !application/vnd.openxmlformats-officedocument.spreadsheetml.sheet          </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=b200b1&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fxlsx.png" class="media" alt="" />  </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0 leftalign"> pptx       </td><td class="col1 leftalign"> !application/vnd.openxmlformats-officedocument.presentationml.presentation  </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=baa4de&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fpptx.png" class="media" alt="" />  </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0 leftalign"> sxw        </td><td class="col1 leftalign"> !application/soffice                                                        </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=c8c885&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fsxw.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0 leftalign"> sxc        </td><td class="col1 leftalign"> !application/soffice                                                        </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=113272&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fsxc.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0 leftalign"> sxi        </td><td class="col1 leftalign"> !application/soffice                                                        </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=9ed93a&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fsxi.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0 leftalign"> sxd        </td><td class="col1 leftalign"> !application/soffice                                                        </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=88a8b9&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fsxd.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row31">
+		<td class="col0 leftalign"> odc        </td><td class="col1 leftalign"> !application/vnd.oasis.opendocument.chart                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=f56c48&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fodc.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0 leftalign"> odf        </td><td class="col1 leftalign"> !application/vnd.oasis.opendocument.formula                                 </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=344e72&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fodf.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0 leftalign"> odg        </td><td class="col1 leftalign"> !application/vnd.oasis.opendocument.graphics                                </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=a6f4b7&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fodg.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0 leftalign"> odi        </td><td class="col1 leftalign"> !application/vnd.oasis.opendocument.image                                   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=6e1304&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fodi.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row35">
+		<td class="col0 leftalign"> odp        </td><td class="col1 leftalign"> !application/vnd.oasis.opendocument.presentation                            </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=9028a7&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fodp.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row36">
+		<td class="col0 leftalign"> ods        </td><td class="col1 leftalign"> !application/vnd.oasis.opendocument.spreadsheet                             </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=ce6720&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fods.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0 leftalign"> odt        </td><td class="col1 leftalign"> !application/vnd.oasis.opendocument.text                                    </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=d08aa8&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fodt.png" class="media" alt="" />   </td>
+	</tr>
+</table></div>
+<!-- EDIT{&quot;target&quot;:&quot;table&quot;,&quot;name&quot;:&quot;&quot;,&quot;hid&quot;:&quot;table&quot;,&quot;secid&quot;:4,&quot;range&quot;:&quot;2034-8455&quot;} -->
+<p>
+The following text types are commented by default, because spammers are known to upload spam pages through unprotected Wikis using text type files.
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> html  </td><td class="col1 leftalign"> text/html   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=40f99c&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fhtml.png" class="media" alt="" />  </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> htm   </td><td class="col1 leftalign"> text/html   </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=40f99c&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fhtml.png" class="media" alt="" />  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> txt   </td><td class="col1 leftalign"> text/plain  </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=0644d2&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Ftxt.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> conf  </td><td class="col1 leftalign"> text/plain  </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=aed6c6&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fconf.png" class="media" alt="" />  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> xml   </td><td class="col1 leftalign"> text/xml    </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=abdcbe&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fxml.png" class="media" alt="" />   </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> csv   </td><td class="col1 leftalign"> text/csv    </td><td class="col2 leftalign"> <img src="/lib/exe/fetch.php?cache=nocache&amp;tok=c8b731&amp;media=http%3A%2F%2Fwww.dokuwiki.org%2Flib%2Fimages%2Ffileicons%2Fcsv.png" class="media" alt="" />   </td>
+	</tr>
+</table></div>
+<!-- EDIT{&quot;target&quot;:&quot;table&quot;,&quot;name&quot;:&quot;&quot;,&quot;hid&quot;:&quot;table1&quot;,&quot;secid&quot;:5,&quot;range&quot;:&quot;8606-9205&quot;} -->
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Default Mime Types&quot;,&quot;hid&quot;:&quot;default_mime_types&quot;,&quot;codeblockOffset&quot;:1,&quot;secid&quot;:3,&quot;range&quot;:&quot;2002-&quot;} --><div class="footnotes">
+<div class="fn"><sup><a href="#fnt__1" id="fn__1" class="fn_bot">1)</a></sup> 
+<div class="content">Icons must be 16&times;16.</div></div>
+</div>

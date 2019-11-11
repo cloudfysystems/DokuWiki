@@ -1,0 +1,26 @@
+====== Estornar pagamento ======
+O processo para estornar um pagamento é rápido e simples, a seguir iremos explicar o passo a passo que deve ser seguido.\\
+
+===== Realizando um estorno =====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Clientes>Estornar Pagamento]] uma pop-up será aberta e através dela que iremos gerar o estorno.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:estorno1.png?nolink |}}</thumbnail>
+Basicamente são necessários apenas informar três campos para realizar o estorno, sendo eles: \\
+\\
+**Cliente**, neste campo você pode entrar com o número do cliente ou o nome do mesmo. Caso desejar uma busca mais avançada pode clicar no ícone da lupa.\\
+**Comprovante de pagamento**, este campo só é desbloqueado quando o campo anterior - Cliente - é informado. Neste campo você pode entrar com o número do comprovante de pagamento. Caso desejar pode realizar uma busca avançada filtrando o comprovante por outros campos, como por exemplo:\\
+  * Data do pagamento
+  * Valor do pagamento
+  * Data de referência da conta\\
+  * \\
+**Motivo do estorno**, é necessário discriminar um motivo para realização do estorno.\\
+\\
+Após preencher estes campos basta clicar no botão <wrap danger round>ESTORNAR</wrap>.
+
+===== Histórico de estorno =====
+<thumbnail>{{ :base_de_conhecimento:treinamento:estorno3.png?nolink |}}</thumbnail>
+Alterando o tipo de relatório para **Histórico de estornos do cliente** você poderá consultar de maneira rápida os estornos já realizados para um cliente específico. \\
+Como já detalhado na seção acima, basta informar o código do cliente ou o nome dele para localizá-lo. É possível também clicar no ícone da lupa para uma busca mais avançada.\\
+Com o cliente selecionado basta clicar no botão <wrap danger round>PDF</wrap>.
+\\
+\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar! 

@@ -1,0 +1,77 @@
+
+<h1 class="sectionedit1" id="entrada_de_mercadoria">Entrada de mercadoria</h1>
+<div class="level1">
+
+<p>
+No sistema da Cloudfy é possível fazer a entrada de mercadoria diretamente através da NF-e emitida para o CNPJ da sua empresa. Também é possível realizar <a href="/doku.php?id=entrada_mercadoria_sem_nf" class="wikilink2" title="entrada_mercadoria_sem_nf" rel="nofollow">entrada de mercadoria sem nota fiscal</a>, porém iremos focar no processo de entrada com nota fiscal neste artigo.<br/>
+
+A entrada de mercadoria pode ser dividida em 3 passos: Manifesto da Nota, Importação dos produtos e Importação da cobrança. Só é possível realizar a importação de produtos das notas fiscais que foram manifestadas com os eventos <em class="u">Operação confirmada</em> ou <em class="u">Ciência da Emissão</em>.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Entrada de mercadoria&quot;,&quot;hid&quot;:&quot;entrada_de_mercadoria&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-637&quot;} -->
+<h2 class="sectionedit2" id="manifesto_da_nota_fiscal">Manifesto da Nota Fiscal</h2>
+<div class="level2">
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:3,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_important wrap_round plugin_wrap">
+<p>
+Para que a tela de Manifesto da nota funcione corretamente é necessário que o certificado digital da sua empresa esteja configurado corretamente no sistema!
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:4,&quot;range&quot;:&quot;0-&quot;} -->
+<p>
+Navegue para o Menu <a href="https://app.padariananuvem.com/site/#/H02SF0130A" class="urlextern" title="https://app.padariananuvem.com/site/#/H02SF0130A" rel="nofollow">Compras&gt;Entrada de mercadoria</a> e clique no botão <span class="wrap_notice wrap_round ">VERIFICAR NOTAS EMITIDAS PARA O MEU CNPJ</span> para abrir a tela de Manifesto de Notas.<br/>
+
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Manifesto da Nota Fiscal&quot;,&quot;hid&quot;:&quot;manifesto_da_nota_fiscal&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;638-1095&quot;} -->
+<h3 class="sectionedit5" id="pesquisar_notas_fiscais">Pesquisar Notas Fiscais</h3>
+<div class="level3">
+
+<p>
+Para importar as notas fiscais para o sistema da Cloudfy basta apertar no botão <span class="wrap_safety wrap_round ">VERIFICAR NOVAS NOTAS</span> e aguardar a comunicação do sistema com o serviço da SEFAZ. Ao finalizar o procedimento, será notificado quantas notas foram inseridas e atualizadas na lista do sistema, onde você poderá verificar os dados gerais das notas e realizar a <em class="u">Manifestação do Destinatário</em>.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:verificar_notas.png" class="media" alt="" /></div>
+<p>
+Se você não estiver encontrando uma nota na lista de notas fiscais recuperadas, verifique se os filtros de pesquisa (<em>Período</em>, <em>Tipo de Manifesto</em>, e <em>Situação</em>) não estão excluindo a nota da lista. Caso seja uma nota antiga e ela não foi recuperada ainda, clique no botão <span class="wrap_warning wrap_round ">BUSCAR NOTAS MAIS ANTIGAS</span> para incluir a nota no sistema.<br/>
+
+Na coluna <strong>Manifesto</strong> será informado o estado do Manifesto da nota fiscal:
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="wrap_box wrap_round ">Notas não manifestadas</span> - Não houve nenhum evento de Manifestação do Destinatário.</div>
+</li>
+<li class="level1"><div class="li"> <span class="wrap_notice wrap_round ">Operação confirmada</span> - Último evento registrado na Manifestação do Destinatário foi o de Operação confirmada.</div>
+</li>
+<li class="level1"><div class="li"> <span class="wrap_danger wrap_round ">Operação desconhecida</span> - Último evento registrado na Manifestação do Destinatário foi o de Operação desconhecida.</div>
+</li>
+<li class="level1"><div class="li"> <span class="wrap_warning wrap_round ">Operação não realizada</span> - Último evento registrado na Manifestação do Destinatário foi o de Operação não realizada.</div>
+</li>
+<li class="level1"><div class="li"> <span class="wrap_safety wrap_round ">Nota integrada(ciência)</span> - Último evento registrado na Manifestação do Destinatário foi o de Ciêncida da Emissão.</div>
+</li>
+</ul>
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:6,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_info wrap_round plugin_wrap">
+<p>
+A Cloudfy utiliza o serviço público da SEFAZ para se comunicar e importar as notas fiscais no sistema, portanto os dados das notas e a situação do manifesto corresponde ao estado da nota no momento da comunicação com o serviço. Se o estado da nota for alterado por um método exterior, o sistema irá receber a nota nesse estado.
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:7,&quot;range&quot;:&quot;0-&quot;} -->
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Pesquisar Notas Fiscais&quot;,&quot;hid&quot;:&quot;pesquisar_notas_fiscais&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:5,&quot;range&quot;:&quot;1096-3153&quot;} -->
+<h3 class="sectionedit8" id="manifestacao_do_destinatario">Manifestação do Destinatário</h3>
+<div class="level3">
+
+<p>
+Para que os produtos da nota fiscal possam ser integrados com o sistema, primeiro é necessário Manifestar a nota com o evento <em class="u">Operação confirmada</em> ou <em class="u">Ciência da Emissão</em>. Para realizar a manifestação da nota usando o sistema, ache a nota desejada e deixe o mouse em cima dela para aparecer as opções de Manifestação, como indicado a seguir:
+</p>
+<ul>
+<li class="level1"><div class="li"> <img src="/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=41b324&amp;media=base_de_conhecimento:download.png" class="media" alt="" width="20" height="20" />Download do XML da nota - Emite um evento de <em class="u">Ciência da Emissão</em> na SEFAZ e faz o download do XML da nota.</div>
+</li>
+<li class="level1"><div class="li"> <img src="/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=6ed033&amp;media=base_de_conhecimento:confirmar_op.png" class="media" alt="" width="20" height="20" />Confirmo esta operação - Emite um evento de <em class="u">Confirmação da Operação</em> na SEFAZ.</div>
+</li>
+<li class="level1"><div class="li"> <img src="/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=bc8fe3&amp;media=base_de_conhecimento:desconhecida_op.png" class="media" alt="" width="20" height="20" />Desconheço esta operação - Emite um evento de <em class="u">Desconhecimento da Operação</em> na SEFAZ.</div>
+</li>
+<li class="level1"><div class="li"> <img src="/lib/exe/fetch.php?w=20&amp;h=20&amp;tok=fd37b5&amp;media=base_de_conhecimento:cancelada_op.png" class="media" alt="" width="20" height="20" />Operação cancelada - Cancela o último evento de manifesto realizado na nota.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Manifesta\u00e7\u00e3o do Destinat\u00e1rio&quot;,&quot;hid&quot;:&quot;manifestacao_do_destinatario&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:8,&quot;range&quot;:&quot;3154-&quot;} -->

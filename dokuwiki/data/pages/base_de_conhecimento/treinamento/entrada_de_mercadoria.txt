@@ -1,0 +1,89 @@
+====== Entrada de mercadoria ======
+No sistema da Cloudfy é possível fazer a entrada de mercadoria diretamente através da NF-e emitida para o CNPJ da sua empresa. Também é possível realizar [[..:entrada_mercadoria_sem_nf|entrada de mercadoria sem nota fiscal]], porém iremos focar no processo de entrada com nota fiscal neste artigo.\\ 
+A entrada de mercadoria pode ser dividida em 3 passos: Manifesto da Nota, Importação dos produtos e Importação da cobrança. Só é possível realizar a importação de produtos das notas fiscais que foram manifestadas com os eventos __Operação confirmada__ ou __Ciência da Emissão__.
+===== Manifesto da Nota Fiscal =====
+<WRAP important round>
+Para que a tela de Manifesto da nota funcione corretamente é necessário que o certificado digital da sua empresa esteja configurado corretamente no sistema!
+</WRAP>
+Navegue para o Menu **Compras>Entrada de mercadoria** e clique no botão <wrap notice round>VERIFICAR NOTAS EMITIDAS PARA O MEU CNPJ</wrap> para abrir a tela de Manifesto de Notas.\\ 
+==== Pesquisar Notas Fiscais ====
+Para importar as notas fiscais para o sistema da Cloudfy basta apertar no botão <wrap safety round>VERIFICAR NOVAS NOTAS</wrap> e aguardar a comunicação do sistema com o serviço da SEFAZ. Ao finalizar o procedimento, será notificado quantas notas foram inseridas e atualizadas na lista do sistema, onde você poderá verificar os dados gerais das notas e realizar a __Manifestação do Destinatário__.\\ 
+<thumbnail>{{:base_de_conhecimento:treinamento:verificar_notas.png?nolink|}}</thumbnail>
+Se você não estiver encontrando uma nota na lista de notas fiscais recuperadas, verifique se os filtros de pesquisa (//Período//, //Tipo de Manifesto//, e //Situação//) não estão excluindo a nota da lista. Caso seja uma nota antiga e ela não foi recuperada ainda, clique no botão <wrap warning round>BUSCAR NOTAS MAIS ANTIGAS</wrap> para incluir a nota no sistema.\\ 
+Na coluna **Manifesto** será informado o estado do Manifesto da nota fiscal:
+  * <wrap box round>Notas não manifestadas</wrap> - Não houve nenhum evento de Manifestação do Destinatário.
+  * <wrap notice round>Operação confirmada</wrap> - Último evento registrado na Manifestação do Destinatário foi o de Operação confirmada.
+  * <wrap danger round>Operação desconhecida</wrap> - Último evento registrado na Manifestação do Destinatário foi o de Operação desconhecida.
+  * <wrap warning round>Operação não realizada</wrap> - Último evento registrado na Manifestação do Destinatário foi o de Operação não realizada.
+  * <wrap safety round>Nota integrada(ciência)</wrap> - Último evento registrado na Manifestação do Destinatário foi o de Ciêncida da Emissão.
+<WRAP info round>
+A Cloudfy utiliza o serviço público da SEFAZ para se comunicar e importar as notas fiscais no sistema, portanto a estabilidade do serviço depende também do servidor da SEFAZ.\\ 
+Os dados das notas e a situação do manifesto corresponde ao estado da nota no momento da comunicação com o serviço. Se o estado da nota for alterado por um método exterior, o sistema irá receber a nota nesse estado.
+</WRAP>
+==== Manifestação do Destinatário ====
+Para que os produtos da nota fiscal possam ser integrados com o sistema, primeiro é necessário Manifestar a nota com o evento __Operação confirmada__ ou __Ciência da Emissão__. Para realizar a manifestação da nota usando o sistema, ache a nota desejada e deixe o mouse em cima dela para aparecer as opções de Manifestação, como indicado a seguir:
+  * {{:base_de_conhecimento:treinamento:download.png?nolink&20x20|}}Download do XML da nota - Emite um evento de __Ciência da Emissão__ na SEFAZ e faz o download do XML da nota.
+  * {{:base_de_conhecimento:treinamento:confirmar_op.png?nolink&20x20|}}Confirmo esta operação - Emite um evento de __Confirmação da Operação__ na SEFAZ.
+  * {{:base_de_conhecimento:treinamento:desconhecida_op.png?nolink&20x20|}}Desconheço esta operação - Emite um evento de __Desconhecimento da Operação__ na SEFAZ.
+  * {{:base_de_conhecimento:treinamento:cancelada_op.png?nolink&20x20|}}Operação cancelada - Cancela o último evento de manifesto realizado na nota.
+<wrap important round>A nota só estará disponível para realizar entrada de mercadoria após ela ter sido manifestada com os eventos __Operação confirmada__ ou __Ciência da Emissão__.</wrap>
+
+===== Importar Nota Fiscal via XML =====
+Se você possuir o arquivo XML da nota fiscal no computador, também é possível importar a nota fiscal para a entrada de mercadoria através deste arquivo.\\ 
+Na tela de **Entrada de mercadoria**, clique no botão <wrap notice round>SELECIONAR ARQUIVO</wrap> e use o explorador de arquivos que se abriu para selecionar o arquivo desejado ou apenas arraste e solte o arquivo no local designado na página.\\ 
+<thumbnail>{{ :base_de_conhecimento:treinamento:xml_importar.png?nolink |}}</thumbnail>
+<wrap important round>Importar a nota fiscal desta maneira irá inclui-lá diretamente na Entrada de Mercadoria e **não** irá realizar nenhum evento de manifesto na SEFAZ.</wrap>
+
+===== Entrada de Mercadoria =====
+<wrap info round>Por padrão, a tela é aberta trazendo as notas fiscais do mês atual na tabela.</wrap>\\ 
+Na tela de Entrada de Mercadoria, utilize os campos de __Período__ e __Tipo de Documento__ para filtrar o resultado da pesquisa das notas fiscais que irão aparecer na tabela e clique em <wrap notice round>PESQUISAR</wrap>. Também é possível utilizar as colunas da tabela para filtrar e ordenar as notas mostradas na tabela para ficar mais fácil encontrar a nota desejada.\\ 
+Ao encontrar a nota desejada clique no botão {{:base_de_conhecimento:treinamento:visualizar_compras.png?nolink&20x20|}} para acessar as informações da nota e começar a importar os produtos.
+==== Importar produtos ====
+<thumbnail>{{ :base_de_conhecimento:treinamento:import_produto.png?nolink |}}</thumbnail>
+  * A coluna {{:base_de_conhecimento:treinamento:prod_situac.png?nolink&20x20|}} indica a situação do produto na compra:
+    * {{:base_de_conhecimento:treinamento:prod_novo.png?nolink&20x20|}} Primeira vez que o produto aparece em uma compra(Novo Produto).
+    * {{:base_de_conhecimento:treinamento:prod_conhecido.png?nolink&20x20|}} O produto já foi importado em outra compra(Produto Conhecido). Irá aparecer na importação em lote.
+    * {{:base_de_conhecimento:treinamento:prod_integrado.png?nolink&20x20|}} A importação do produto, nesta compra, já foi realizado.
+  * A coluna __Cód. produto__ indica o código do produto no fornecedor/compra.
+  * A coluna __Produto__ indica o nome do produto no fornecedor/comrpa.
+  * A coluna __Und. medida__ indica a unidade de medida no fornecedor/compra.
+  * A coluna __Vl. total__ indica o valor total comprado do produto.
+  * A coluna __Quantidade__ indica a quantidade total comprada do produto, em relação a unidade de medida no fornecedor.
+  * A coluna __Vl. unit__ indica o valor unitário do produto no fornecedor/compra.
+  * A coluna __Ações__ apresenta as ações possíveis a serem realizadas no produto.
+    * {{:base_de_conhecimento:treinamento:import_prod_novo.png?nolink&20x20|}} Inicia o processo para **Importar produto**. Somente para produtos novos ({{:base_de_conhecimento:treinamento:prod_novo.png?nolink&20x20|}})
+    * {{:base_de_conhecimento:treinamento:import_prod_conhecido.png?nolink&20x20|}} Inicia o processo para **Importar produto**. Somente para produtos conhecidos({{:base_de_conhecimento:treinamento:prod_conhecido.png?nolink&20x20|}})
+    * {{:base_de_conhecimento:treinamento:info_import.png?nolink&20x20|}} Visualizar as informações de importação. Somente para produtos já importados ({{:base_de_conhecimento:treinamento:prod_integrado.png?nolink&20x20|}})
+    * {{:base_de_conhecimento:treinamento:desfazer_import.png?nolink&20x20|}} Desfazer importação. Somente para produtos já importados ({{:base_de_conhecimento:treinamento:prod_integrado.png?nolink&20x20|}})
+  * Nos produtos que já foram importados {{:base_de_conhecimento:treinamento:prod_integrado.png?nolink&20x20|}} você verá em preto as informações do produto no fornecedor e em verde as informações de importação do produto no na empresa.
+Clique em {{:base_de_conhecimento:treinamento:import_prod_novo.png?nolink&20x20|}} ou {{:base_de_conhecimento:treinamento:import_prod_conhecido.png?nolink&20x20|}}, se o produto foi reconhecido e você deseja alterar algum parâmetro de importação, para começar o processo de importação.
+=== 1ª Etapa da Importação - Taxa de conversão ===
+<thumbnail>{{ :base_de_conhecimento:treinamento:1etapa_import_prod.png?nolink |}}</thumbnail>
+Na primeira etapa da importação você deve informar qual será o produto do sistema que irá ser integrado com o produto comprado e a taxa de conversão entre a unidade de medida do fornecedor/compra e a do produto no sistema. Se o produto ainda não existir no sistema, faça o [[.:cadastro_de_produto|Cadastro do produto]] e aperte na lupa para selecionar o novo produto.\\ 
+No exemplo da imagem acima estamos fazendo a integração do produto comprado __Bolo de limão__ com o produto __Bolo de limao KG__ no sistema. Como os dois são vendidos em KG, a taxa de conversão será **1,00**.\\ 
+Utilizando outro exemplo, digamos que foi comprado 3 __pacotes__ de um produto X no fornecedor que será integrado com o produto Y na sua empresa vendido em __unidades__. Se em __1 pacote__ vem __10 unidades__ do produto, na taxa de conversão você deve colocar **10,00**.\\ 
+<wrap important>A taxa de conversão é utilizada para calcular a quantidade que será adicionada no sistema. Informar o valor errado da taxa de conversão irá causar problemas no estoque e custo do produto</wrap>
+Clique em <wrap notice>CONTINUAR</wrap> para seguir para a 2ª Etapa.
+=== 2ª Etapa da Importação - Informações do produto ===
+Nesta etapa você pode conferir as informações do produto e da integração.\\ 
+Na seção __Cálculo do custo__ você pode verificar como o sistema calculou o custo unitário do produto, em relação a esta compra. Nos campos __Custo unit. cálc..__ e __Mark-up desejado__ você pode alterar o custo unitário e o mark-up desejado do produto. Clicando no botão ATUALIZAR PREÇO você irá alterar o preço de venda do produto para o preço sugerido.\\ 
+Na seção __Cód. de barras__ você pode alterar os preços de venda à vista e à prazo do produto e a quantidade que será inserida no estoque.\\ 
+Clique em <wrap notice round>CONTINUAR</wrap> para seguir para a 3ª e última Etapa da importação.
+=== 3ª Etapa da Importação - Informações tributárias ===
+Nesta etapa você pode alterar as configurações tributárias do produto.\\ 
+O sistema irá comparar as informações tributárias do produto no fornecedor e no seu cadastro e, caso haja uma diferença e você queira usar a informação do fornecedor, clique no botão <wrap safety round>ATUALIZAR</wrap>.\\ 
+Clique no botão <wrap notice round>FINALIZAR</wrap> para finalizar o processo de integração.
+<WRAP important round>Após clicar em **FINALIZAR**, o sistema irá fazer a entrada no estoque e todas as informações que foram trocadas nas etapas 2 e 3 serão atualizadas no cadastro do produto.</WRAP>
+==== Importar produtos em lote====
+<thumbnail>{{ :base_de_conhecimento:treinamento:import_prod_lote.png?nolink |}}</thumbnail>
+Se houver um ou mais produtos reconhecidos {{:base_de_conhecimento:treinamento:prod_conhecido.png?nolink&20x20|}} na compra, você pode clicar no botão <wrap safety round>IMPORTAR PRODUTOS EM LOTE</wrap> para importar todos os produtos reconhecidos rapidamente.\\ 
+  * Na coluna __Produto compra/Produto encontrado__ será indicado o nome do produto na compra(em preto) e com qual produto ele será integrado no sistema(em verde).
+  * Na coluna __Tx. conversão__ você deve informar a taxa de conversão entre a unidade de medida no fornecedor e do produto na sua empresa.
+    * digamos que foi comprado 3 __pacotes__ de um produto X no fornecedor que será integrado com o produto Y na sua empresa vendido em __unidades__. Se em __1 pacote__ vem __10 unidades__ do produto, na taxa de conversão você deve colocar **10,00**.\\ 
+    * <wrap important>A taxa de conversão é utilizada para calcular a quantidade que será adicionada no sistema. Informar o valor errado da taxa de conversão irá causar problemas no estoque e custo do produto</wrap>
+  * Na coluna __Qtd. comp./conv.__ será indicado a quantidade comprada no fornecedor(em preto) e a quantidade que será integrada no estoque(em verde).
+  * A coluna __Custo__ indica o custo unitário do produto nesta compra e o custo na última compra. Este campo é preenchido automaticamente após a taxa de conversão ser preenchida, mas pode ser alterado.
+  * A coluna __Mark-up__ indica o mark-up desejado do produto e o mark-up **atual** em relação a coluna __Preço__. Este campo é preenchido automaticamente após a taxa de conversão ser preenchida, mas pode ser alterado.
+  * A coluna __Preço__ indica o preço de venda do produto e o preço **sugerido** de venda em relação a coluna __Mark-up__.
+  * Na coluna __Ações__ você pode retirar o produto da lista de importação em lote e ou atualizar o campo __Preço__ com o valor sugerido.
+Após preencher todos os campos necessários, clique no botão <wrap notice round>IMPORTAR PRODUTOS EM LOTE</wrap> e confirme a operação para finalizar a importação!

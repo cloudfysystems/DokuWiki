@@ -1,0 +1,254 @@
+====== Conhecimentos Básicos sobre o DokuWiki ======
+Neste artigo será apresentado as informações básicas para utilização do DokuWiki, como alguns termos e sintaxe para escrever os artigos.
+
+===== Páginas =====
+Para criar uma página, basta navegar até o endereço desejado para ela, clicar no botão editar{{:desenvolvimento:edit_button.png}}, localizado no canto direito da página, e incluir algum conteúdo na página. Do mesmo modo, para excluir uma página, basta apagar todo o conteúdo existente nela(inclusive os arquivos de mídia salvos na página).\\ 
+<wrap important>É importante notar que a base de conhecimento da cloudfy utiliza um [[https://www.dokuwiki.org/plugin:publish|plugin de aprovação]] de edições de páginas, então toda alteração em uma página precisa ser aprovada. Apenas usuários com permissões de administrador ou de deletar a página podem aprovar a edição. Usuários com permissão de leitura irão ver apenas a última versão aprovada da página.</wrap> 
+
+  *O DokuWiki utiliza o primeiro cabeçalho da página como o nome da página. Os plugins que buscam e listam páginas(como o índice da sidebar) utilizam o mesmo método.
+  *Os cabeçalhos são utilizados para criar o índice(Table of Contents -TOC) da página.\\ 
+  *Links úteis:
+    *[[https://www.dokuwiki.org/page]]
+    *[[https://www.dokuwiki.org/pagename]]
+===== Namespace =====
+Namespaces são como pastas onde estão guardados as páginas e/ou outros namespaces. Eles são criados automaticamente quando é criado uma página. Por exemplo, se navegarmos para a página "__//namespace1:namespace2:pagina//__" e criarmos ela, o DokuWiki vai criar automaticamente os namespaces "__namespace1__" e "__namespace2__", se eles já não existirem. A palavra depois do último "**:**" é sempre o da página e os restantes são os dos namespaces\\ 
+Este artigo está localizado dentro do namespace __desenvolvimento__. Os artigos para os clientes está no namespace __base_de_conhecimento__.\\ 
+<wrap important>Namespaces são importantes para evitar coflito de páginas com o nome igual e para definir as permissões de acesso dos grupos de usuário.</wrap>
+  *Links úteis:
+    *[[https://www.dokuwiki.org/namespaces]]
+    *[[https://www.dokuwiki.org/pagename]]
+===== Plugin Tagging =====
+Este [[https://www.dokuwiki.org/plugin:tagging|plugin]] é utilizado para colocar tags nas páginas que podem ser usados para procurar por uma página. Ao pesquisar por uma tag ele mostra todas as páginas que possuem esta tag. Tags que iniciarem com o caractere **@** ficarão escondidos dos usuários com permissão de leitura. Para adicionar ou remover as tags de um artigo basta clicar no botão {{edit_tag.png}}
+
+<wrap important>As tags de um artigo é o que será utilizado no retaguarda para direcionar o usuário a um artigo da base de conhecimento.</wrap>
+===== Sintaxe de edição =====
+O DokuWiki tem sua própria [[wiki:syntax|sintaxe para formatação]] dos textos e possui plugins para suplementar esta sintaxe, como o [[https://www.dokuwiki.org/plugin:wrap|wrap]] e o [[https://www.dokuwiki.org/plugin:bootswrapper|bootswrapper]] utilizados nesta base de conhecimento. Nesta seção será apresentado as sintaxes mais usadas.
+
+<wrap tip>No editor da página, você usar a toolbar disponível para incluir algumas formações</wrap>
+
+{{toolbar_edit.png}}((toolbar de edição))
+==== Sintaxe padrão do Dokuwiki ====
+=== Formatação básica de texto ===
+
+O Dokuwiki suporta textos em **negrito**, //itálico//, __sublinhado__ e ''mono espaçado''. Obviamente, você poderá **__//''combinar''//__** todos os formatos.
+
+  O Dokuwiki suporta textos em **negrito**, //itálico//, __sublinhado__ e ''mono espaçado''.
+  Se necessário, você poderá **__//''combinar''//__** todos os formatos.
+
+**Parágrafos** são criados a partir de linhas em branco. Se quiser **forçar a quebra de linha** sem um novo parágrafo, você poderá usar duas barras (\\) seguidas do fim da linha ou de um espaço em branco.
+
+Este é um texto com algumas quebras de linha\\ Note que as
+duas barras (\\) são reconhecidas apenas no fim da linha\\
+ou seguidas por\\ um espaço \\isto que acontece sem o espaço.
+
+  Este é um texto com algumas quebras de linha\\ Note que as
+  duas barras (\\) são reconhecidas apenas no fim da linha\\
+  ou seguidas por\\ um espaço \\isto que acontece sem o espaço.
+
+Você deve forçar as quebras de linha apenas quando necessário.
+=== Links ===
+== Externos ==
+Links externos são reconhecidos automaticamente: http://www.google.com ou simplesmente www.google.com - Você também pode rotular os links: [[http://www.google.com|Este link aponta para o Google]]. Endereços de e-mail como este: <suporte@cloudfy.net.br> também são reconhecidos automaticamente.
+
+  Links externos são reconhecidos automaticamente: http://www.google.com ou simplesmente www.google.com - Você também pode rotular os links: [[http://www.google.com|Este link aponta para o Google]].
+  Endereços de e-mail como este: <suporte@cloudfy.net.br> também são reconhecidos automaticamente.
+== Internos ==
+Links internos são criados usando colchetes. Você pode apenas fornecer o  [[pagename|nome da página]] ou usar uma descrição adicional [[pagename|Título da Página]]. Os nomes das páginas wiki são convertidos para minúsculo automaticamente e caracteres especiais(espaço, acentos e pontuação) não são permitidos. Você pode usar namespaces acrescentando : (dois-pontos) ao nome da página. 
+
+  Links internos são criados usando colchetes. Você pode apenas fornecer o [[wiki:nome_da_pagina]] ou usar uma descrição adicional [[wiki:nome_da_pagina|Título da Página]]. Os nomes das páginas wiki são convertidos
+  para minúsculo automaticamente e caracteres especiais(espaço, acentos e pontuação) não são permitidos. 
+  
+<wrap tip>Links são absolutos se e somente se eles tiverem o prefixo "**:**" ou não tem nenhum prefixo, mas tem "**:**" intermediários(sufixos).</wrap>
+
+<wrap tip>Links relativos ao namespace atual também podem começar tanto com "**.**" ou "**.:**" ("**..**" ou "**..:**" para o namespace pai).</wrap>
+
+É possível apontar um link para uma seção específica da página. Basta adicionar o nome da seção após um caractere de cerquilha (#) igual como é no HTML. Este link aponta para [[#internos|seção Internos]].
+
+  Este link aponta para [[#internos|seção Internos]].
+
+Notas:
+
+  * Links para [[wiki:syntax|páginas existentes]] são exibidos em estilo diferente dos  [[pt-br:wiki:não existentes]].
+  * Seções são iniciadas por parágrafos. Uma linha qualquer de texto não serve de destino de um link interno.
+  * Quando os nomes das seções são alterados, os links que apontam pra elas devem ser alterados também. Portanto, não conte muito com os links de seção.
+
+=== Notas de Rodapé ===
+Você pode adicionar notas de rodapé ((Isto é uma nota de rodapé)) usando parênteses duplos.
+
+  Você pode adicionar notas de rodapé ((Isto é uma nota de rodapé))
+  usando parênteses duplos.
+=== Seções ===
+Você pode usar até cinco diferentes níveis de títulos para estruturar o conteúdo. Com 3 ou mais níveis será automaticamente gerada uma Tabela de Conteúdos visível à direita do topo da página. A Tabela de Conteúdos  poderá ser desabilitada, incluindo o comando ''<nowiki>~~NOTOC~~</nowiki>'' no documento.
+
+O documento https://www.dokuwiki.org/seo recomenda que todo título de página seja definido com nível 1.
+====== Título de nível 1 ======
+===== Título de nível 2 =====
+==== Título de nível 3 ====
+=== Título de nível 4 ===
+== Título de nível 5 ==
+
+  ====== Título de nível 1 ======
+  ===== Título de nível 2 =====
+  ==== Título de nível 3 ====
+  === Título de nível 4 ===
+  == Título de nível 5 ==
+
+Para incluir uma linha horizontal como a abaixo digite 4 ou mais traços(-):
+
+----
+=== Imagens e Outros Arquivos ===
+Você pode incluir [[https://www.dokuwiki.org/start?id=pt-br:images|imagens]] internas e externas usando chaves. Opcionalmente, o tamanho das imagens pode ser especificado.
+
+Tamanho real:                      {{wiki:dokuwiki-128_2.png}}
+
+Tamanho personalizado:             {{wiki:dokuwiki-128_2.png?50}}
+
+Redimensionar para uma largura ou largura específica((Quando a proporção da largura e altura especificada não coincidir com a da imagem, ela será recortada para a nova proporção antes de ser redimensionada)): {{wiki:dokuwiki-128_2.png?200x50}}
+
+Imagem externa redimensionada:      {{https://php.net/images/php.gif?200x50}}
+
+  Tamanho Real:                               {{wiki:dokuwiki-128_2.png}}
+  Redimensionada para uma largura específica: {{wiki:dokuwiki-128_2.png?50}}
+  Redimensionada para uma altura específica:  {{wiki:dokuwiki-128_2.png?200x50}}
+  Imagem externa redimensionada:              {{https://php.net/images/php.gif?200x50}}
+
+Usando espaços em branco na direita e na esquerda, você poderá mudar o alinhamento:
+
+{{ wiki:dokuwiki-128_2.png}}
+
+{{wiki:dokuwiki-128_2.png }}
+
+{{ wiki:dokuwiki-128_2.png }}
+
+  {{ wiki:dokuwiki-128_2.png}}
+  {{wiki:dokuwiki-128_2.png }}
+  {{ wiki:dokuwiki-128_2.png }}
+
+Obviamente, você também pode trocar o título da imagem (exibido como //tooltip// por muitos navegadores quando se pára o mouse sobre a imagem ou a imagem não é encontrada).
+
+{{ wiki:dokuwiki-128_2.png |Este é o título}}
+
+  {{ wiki:dokuwiki-128_2.png |Este é o título}}
+
+Se você especificar um nome de arquivo (externo ou interno) que não seja uma imagem (''gif, jpeg, png''), então  o texto "Este é o título" será exibido como um link.
+=== Listas ===
+O Dokuwiki suportas listas ordenadas (numeradas) e não-ordenadas. Para criar um item de listas, endente seu texto com dois espaços e use um ''*''(asterísco) para listas não-ordenadas e um ''-''(traço) para listas ordenadas.
+
+  * Esta é uma lista
+  * O segundo item
+    * você pode ter diferentes níveis
+  * Outro item
+
+  - A mesma lista porém ordenada
+  - Outro Item
+    - Simplesmente use endentação para criar níveis
+  - Último item
+
+<code>
+  * Esta é uma lista
+  * O segundo item
+    * você pode ter diferentes níveis
+  * Outro item
+
+  - A mesma lista porém ordenada
+  - Outro Item
+    - Simplesmente use endentação para criar níveis
+  - Último item
+</code>
+
+Veja também o [[https://www.dokuwiki.org/faq%3Alists|FAQ de listas de itens]].
+==== Plugin Wrap ====
+Este plugin adiciona containers e spans com classes/elementos prontos. Para ver todas as classes disponíveis e como combina-las acesse a documentação do plugin [[https://www.dokuwiki.org/plugin:wrap|aqui]]
+=== Sintaxe Básica ===
+Um **%%<WRAP>%%** maiúsculo (ou alternativamente **%%<block>%%** ou **%%<div>%%** cria uma div e deve ser usado para containers grandes, encapsulando parágrafos, listas, tabelas, imagens, etc.
+
+  <WRAP classes #id width :language>
+  "big" content
+  </WRAP>
+  
+  **or**
+  <block classes #id width :language>
+  "big" content
+  </block>
+  
+  or
+  <div classes #id width :language>
+  "big" content
+  </div>
+  
+Um **%%<wrap>%%** minúsculo (ou um **%%<<inline%%** ou **%%<span>%%**) cria um span que deve ser usado para pequenos containers.
+
+  <wrap classes #id width :language>"small" content</wrap>
+  
+  or
+  <inline classes #id width :language>"small" content</inline>
+  
+  or
+  <span classes #id width :language>"small" content</span> 
+  
+<wrap important> Algumas classes não irão funcionar com spans: alinhamentos, multi colunas e width.</wrap>
+=== Elementos Básicos ===
+As colunas foram usadas utilizando a seguinte sintaxe:
+
+  <WRAP group>
+  <WRAP third column>third é uma kewyword de width que divide a uma linha em três colunas</WRAP>
+  <WRAP third column>third é uma kewyword de width que divide a uma linha em três colunas</WRAP>
+  <WRAP third column>third é uma kewyword de width que divide a uma linha em três colunas</WRAP>
+  <WRAP group>
+  
+<WRAP group>
+
+<WRAP third column>
+<WRAP box>%%<WRAP box></WRAP>%%</WRAP>
+<WRAP info>%%<WRAP info></WRAP>%%</WRAP>
+<WRAP round alert>%%<WRAP round alert></WRAP>%%</WRAP>
+<WRAP todo>%%<WRAP todo></WRAP>%%</WRAP>
+<WRAP round caution>%%<WRAP round caution></WRAP>%%</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP rightalign>%%<WRAP rightalign>Alinha texto a direita</WRAP>%%</WRAP>
+<WRAP tip>%%<WRAP tip></WRAP>%%</WRAP>
+<WRAP round help>%%<WRAP round help></WRAP>%%</WRAP>
+<WRAP danger>%%<WRAP danger></WRAP>%%</WRAP>
+<WRAP round notice>%%<WRAP round notice></WRAP>%%</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP centeralign>%%<WRAP centeralign>Alinha texto no centro</WRAP>%%</WRAP>
+<WRAP important>%%<WRAP important></WRAP>%%</WRAP>
+<WRAP round download>%%<WRAP round download></WRAP>%%</WRAP>
+<WRAP warning>%%<WRAP warning></WRAP>%%</WRAP>
+<WRAP round safety>%%<WRAP round safety></WRAP>%%</WRAP>
+</WRAP>
+
+</WRAP>
+Estas classes também podem ser usadas em spans: <wrap info>%%<wrap info></wrap>%%</wrap>, <wrap round help>%%<wrap round help></wrap>%%</wrap>, <wrap danger>%%<wrap danger></wrap>%%</wrap>, <wrap round notice>%%<wrap round notice></wrap>%%</wrap>, etc...
+
+==== Plugin Bootstrap Wrapper ====
+Este plugin adiciona vários componentes do bootstrap. <wrap warning>Este plugin só funciona com temas/templates compatíveis com Bootstrap( a base de conhecimento da Cloudfy utiliza o template [[https://www.dokuwiki.org/template:bootstrap3|bootsrap3]] atualmente).
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/macro|macro]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/accordion|accordion]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/affix|affix]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/alert|alert]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/badge|badge]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/button|button]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/callout|callout]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/carousel|carousel]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/collapse|collapse]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/grid|grid]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/image|image]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/jumbotron|jumbotron]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/label|label]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/lead|lead]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/list-group|list-group]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/modal|modal]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/nav|nav]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/page-header|page-header]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/panel|panel]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/popover|popover]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/progress-bar|progress-bar]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/text|text]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/thumbnail|thumbnail]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/tooltip|tooltip]]
+  * [[http://www.lotar.altervista.org/wiki/wiki/plugin/bootswrapper/well|well]]

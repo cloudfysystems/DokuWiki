@@ -1,0 +1,5 @@
+====== Configurações de Papel de Impressão ======
+
+=== Argox OS-214 plus PPLA ===
+{{:desenvolvimento:impressoras:etiqueta_dula.jpg?nolink&400|}}  {{ :desenvolvimento:impressoras:etiqueta_joia.jpg?nolink&400|}}\\  
+{{:desenvolvimento:impressoras:dupla_exemp.jpg?direct&400|}}    {{ :desenvolvimento:impressoras:joia_exemp.jpg?direct&400|}}

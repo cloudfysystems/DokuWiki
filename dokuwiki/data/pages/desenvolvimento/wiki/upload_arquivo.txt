@@ -1,0 +1,79 @@
+====== MIME configuration ======
+
+Which file types you can upload via the [[https://www.dokuwiki.org/media manager|media manager popup]] or the [[https://www.dokuwiki.org/fullscreen mediamanager|fullscreen media manager]] is configured through the ''[[https://github.com/splitbrain/dokuwiki/blob/master/conf/mime.conf|conf/mime.conf]]'' file. It also configures the file extension <-> mimetype association. 
+
+For security reasons it is not possible to configure [[https://www.dokuwiki.org/DokuWiki|DokuWiki]] to allow any file type.
+
+:!: **Never enable HTML upload for unprotected wikis**, as this opens Cross Site Scripting vulnerabilities through JavaScript. Only enable this with trusted users. You need to disable the [[https://www.dokuwiki.org/config:iexssprotect|iexssprotect]] option additionally to adding the HTML mime type in the config file.
+
+The icons are created with the [[https://github.com/splitbrain/file-icon-generator/blob/master/example-dokuwiki.php|file icon generator]]. Old additional icons in the old style are available at http://www.splitbrain.org/projects/file_icons
+
+You can find any file extension with its mime at http://filext.com/
+
+===== Adding additional Mime Types =====
+
+Additional mimetypes should be added in ''mime.local.conf'' (you need to create this file). The file expects an extension (without the dot) and a mime type. Prefixing the mime type with an exclamation mark (!) will force the browser to present a download dialog, even if a browser plugin for the file in question exists.
+
+Example:
+
+<code - mime.local.conf>
+# this would play in the browser (if supported):
+wav         audio/wav
+
+# this would be downloaded
+wav         !audio/wav
+</code>
+
+File type icons can be added by placing an image file (PNG or GIF)((Icons must be 16x16.)) named after the file extension into ''lib/images/fileicons/''. Note: because the stylesheet used for assigning the fileicons gets [[caching|cached]] you need to force a rebuild by touching one of the config files.
+
+
+===== Default Mime Types =====
+
+^ Extension  ^ Mime type                                                                   ^ Icon                                                                      ^
+| jpg        | image/jpeg                                                                  | {{http://www.dokuwiki.org/lib/images/fileicons/jpg.png?nocache&nolink}}   |
+| jpeg       | image/jpeg                                                                  | {{http://www.dokuwiki.org/lib/images/fileicons/jpeg.png?nocache&nolink}}  |
+| gif        | image/gif                                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/gif.png?nocache&nolink}}   |
+| png        | image/png                                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/png.png?nocache&nolink}}   |
+| swf        | application/x-shockwave-flash                                               | {{http://www.dokuwiki.org/lib/images/fileicons/swf.png?nocache&nolink}}   |
+| mp3        | audio/mpeg                                                                  | {{http://www.dokuwiki.org/lib/images/fileicons/mp3.png?nocache&nolink}}   |
+| ogg        | audio/ogg                                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/ogg.png?nocache&nolink}}   |
+| wav        | audio/wav                                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/wav.png?nocache&nolink}}   |
+| tgz        | !application/octet-stream                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/tgz.png?nocache&nolink}}   |
+| tar        | !application/x-gtar                                                         | {{http://www.dokuwiki.org/lib/images/fileicons/tar.png?nocache&nolink}}   |
+| gz         | !application/octet-stream                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/gz.png?nocache&nolink}}    |
+| bz2        | !application/octet-stream                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/bz2.png?nocache&nolink}}   |
+| zip        | !application/zip                                                            | {{http://www.dokuwiki.org/lib/images/fileicons/zip.png?nocache&nolink}}   |
+| rar        | !application/rar                                                            | {{http://www.dokuwiki.org/lib/images/fileicons/rar.png?nocache&nolink}}   |
+| 7z         | !application/x-7z-compressed                                                | {{http://www.dokuwiki.org/lib/images/fileicons/7z.png?nocache&nolink}}    |
+| pdf        | application/pdf                                                             | {{http://www.dokuwiki.org/lib/images/fileicons/pdf.png?nocache&nolink}}   |
+| ps         | !application/postscript                                                     | {{http://www.dokuwiki.org/lib/images/fileicons/ps.png?nocache&nolink}}    |
+| rpm        | !application/octet-stream                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/rpm.png?nocache&nolink}}   |
+| deb        | !application/octet-stream                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/deb.png?nocache&nolink}}   |
+| doc        | !application/msword                                                         | {{http://www.dokuwiki.org/lib/images/fileicons/doc.png?nocache&nolink}}   |
+| xls        | !application/msexcel                                                        | {{http://www.dokuwiki.org/lib/images/fileicons/xls.png?nocache&nolink}}   |
+| ppt        | !application/mspowerpoint                                                   | {{http://www.dokuwiki.org/lib/images/fileicons/ppt.png?nocache&nolink}}   |
+| rtf        | !application/msword                                                         | {{http://www.dokuwiki.org/lib/images/fileicons/rtf.png?nocache&nolink}}   |
+| docx       | !application/vnd.openxmlformats-officedocument.wordprocessingml.document    | {{http://www.dokuwiki.org/lib/images/fileicons/docx.png?nocache&nolink}}  |
+| xlsx       | !application/vnd.openxmlformats-officedocument.spreadsheetml.sheet          | {{http://www.dokuwiki.org/lib/images/fileicons/xlsx.png?nocache&nolink}}  |
+| pptx       | !application/vnd.openxmlformats-officedocument.presentationml.presentation  | {{http://www.dokuwiki.org/lib/images/fileicons/pptx.png?nocache&nolink}}  |
+| sxw        | !application/soffice                                                        | {{http://www.dokuwiki.org/lib/images/fileicons/sxw.png?nocache&nolink}}   |
+| sxc        | !application/soffice                                                        | {{http://www.dokuwiki.org/lib/images/fileicons/sxc.png?nocache&nolink}}   |
+| sxi        | !application/soffice                                                        | {{http://www.dokuwiki.org/lib/images/fileicons/sxi.png?nocache&nolink}}   |
+| sxd        | !application/soffice                                                        | {{http://www.dokuwiki.org/lib/images/fileicons/sxd.png?nocache&nolink}}   |
+| odc        | !application/vnd.oasis.opendocument.chart                                   | {{http://www.dokuwiki.org/lib/images/fileicons/odc.png?nocache&nolink}}   |
+| odf        | !application/vnd.oasis.opendocument.formula                                 | {{http://www.dokuwiki.org/lib/images/fileicons/odf.png?nocache&nolink}}   |
+| odg        | !application/vnd.oasis.opendocument.graphics                                | {{http://www.dokuwiki.org/lib/images/fileicons/odg.png?nocache&nolink}}   |
+| odi        | !application/vnd.oasis.opendocument.image                                   | {{http://www.dokuwiki.org/lib/images/fileicons/odi.png?nocache&nolink}}   |
+| odp        | !application/vnd.oasis.opendocument.presentation                            | {{http://www.dokuwiki.org/lib/images/fileicons/odp.png?nocache&nolink}}   |
+| ods        | !application/vnd.oasis.opendocument.spreadsheet                             | {{http://www.dokuwiki.org/lib/images/fileicons/ods.png?nocache&nolink}}   |
+| odt        | !application/vnd.oasis.opendocument.text                                    | {{http://www.dokuwiki.org/lib/images/fileicons/odt.png?nocache&nolink}}   |
+
+The following text types are commented by default, because spammers are known to upload spam pages through unprotected Wikis using text type files.
+
+| html  | text/html   | {{http://www.dokuwiki.org/lib/images/fileicons/html.png?nocache&nolink}}  |
+| htm   | text/html   | {{http://www.dokuwiki.org/lib/images/fileicons/html.png?nocache&nolink}}  |
+| txt   | text/plain  | {{http://www.dokuwiki.org/lib/images/fileicons/txt.png?nocache&nolink}}   |
+| conf  | text/plain  | {{http://www.dokuwiki.org/lib/images/fileicons/conf.png?nocache&nolink}}  |
+| xml   | text/xml    | {{http://www.dokuwiki.org/lib/images/fileicons/xml.png?nocache&nolink}}   |
+| csv   | text/csv    | {{http://www.dokuwiki.org/lib/images/fileicons/csv.png?nocache&nolink}}   |
+

@@ -1,0 +1,86 @@
+====== Cadastrar produto ======
+O cadastro de produto aqui apresentado é a forma resumida de fazê-lo, fornecendo as informações básicas para o correto funcionamento dentro do sistema Cloudfy.\\
+O processo será apresentado em duas etapas: Dados cadastrais e Informações Tributárias.
+
+===== Tela de cadastro ====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0130A|Produtos>Produtos]] e clique no botão <wrap notice safety >NOVO</wrap> para abrir a tela de Cadastro de produtos.\\ 
+<thumbnail>{{ :base_de_conhecimento:treinamento:abas_nav_prod.png?nolink |Grupos de informações por abas}}</thumbnail>\\
+
+Será aberta a página para cadastro de produto, onde para simplificação do processo, foi agrupado e organizado as informações necessárias em abas.
+Abordaremos as duas primeiras abas que agrupam as informações mínimas necessárias para realizar o cadastro.
+
+<WRAP info round>
+Por padrão o cadastro de um novo produto inicia-se com o estado ativo, o que permite utilizá-lo em todo o ciclo de vida da aplicação Cloudfy.
+Caso deseje é possível inativar o cadastro, porém o produto não será utilizável em diversos processos. Vendas no PDV, Emissão de notas e outros processos não encontrarão este produto.
+</WRAP>
+
+==== Dados Cadastrais ====
+<thumbnail>{{ :base_de_conhecimento:treinamento:dadosCadastrais_detalhes.png?nolink |Seção de detalhes}}</thumbnail>\\
+Os campos solicitados na aba de Dados Cadastrais são:\\
+== Nome ==
+Responsável pela identificação nominal do produto, sendo utilizado posteriormente nas Emissão de notas fiscais, Comandas, Promoções e diversas telas do sistema.\\
+== Grupo de Produtos ==
+Responsável pela inclusão do produto em um Grupo de Produto específico previamente cadastrado.
+== Unidade de medida ==
+Campo necessário para discriminar a Unidade de medida utilizada pelo produto.\\
+As Unidades de medida são cadastradas previamente no sistema.
+== Frações de quantidade ==
+Campo responsável por informar se o produto poderá ser operacionalizado a partir de frações da Unidade de medida informada.
+== Tipo de produto ==
+  * Venda: Quando o produto cadastrado é destinado apenas para operações de vendas.
+  * Matéria prima: Quando o produto cadastrado é destinado apenas para operações de fabricação interna.
+  * Ambos: Quando o produto cadastrado é destinado para ambas operações descritas anteriormente.
+== Centro de estoque de compra ==
+Responsável por discriminar o [[..:centro_estoque_compra|centro de estoque de compra]] que o produto estará vinculado.
+== Centro de estoque de venda ==
+Responsável por discriminar o [[..:centro_estoque_venda|centro de estoque de venda]] que o produto estará vinculado.
+== Controlar estoque ==
+Todo produto cadastrado vem por padrão com o valor "SIM", assegurando que toda operacionalização do produto será considerado no estoque.\\
+Então, quando um produto é vendido automaticamente a sua quantidade é ajustada no estoque.\\
+Caso __não__ tenha interesse em realizar o controle de estoque você pode desabilitar esta função clicando no componente.
+== Observações ==
+O campo observações é destinado para anotações gerais que você julgar necessário.
+
+=== Preço ===
+Ainda na aba de Dados cadastrais temos a seção de Preço, destinada as informações econômicas do produto.
+<thumbnail>{{ :base_de_conhecimento:treinamento:dadoscadastrais_preço.png?nolink |Seção de preço}}</thumbnail>\\
+Os campos solicitados na seção de Preço são:
+
+== Markup desejado ==
+Campo para informar o markup desejado para o produto.\\
+Novos produtos recebem automaticamente markup de 100%, podendo-se ajustar conforme o desejado.\\ 
+== Markup atual ==
+Campo responsável por informar o markup atualmente praticado para produtos já existentes.\\
+Sua edição é desabilitado pois sua finalidade é informativa.\\
+== Custo médio ==
+Campo para informar o custo que aquisição do produto cadastrado.
+== Preço à vista ==
+Campo para informar o valor de venda à vista para o produto.
+== Preço a prazo ==
+Campo para informar o valor de venda a prazo para o produto.
+== Qtd. Estoque ==
+Campo para informar a quantidade em estoque do produto.
+Pode-se deixar em branco caso não queira informar.
+
+=== Código de Barras ===
+Por fim, ainda precisamos entrar com as informações referente ao código de barras e de referência do produto.\\
+Tais códigos serão utilizados para identificação numérica no sistema, agilizando o processo de localização deste produto.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:dadoscadastrais_codbarra.png?nolink |Seção de códigos}}</thumbnail>\\
+Os campos a serem preenchidos são:
+
+== Código ==
+O campo código é utilizado para cadastro do código de barra do produto cadastrado.\\
+O sistema oferece a facilidade de geração automática deste campo, bastando clicar no botão vermelho.\\
+== Referência ==
+O campo de código de referência é utilizado para cadastrar um código auxiliar, muitas vezes menor que o código de barras, utilizado para identificação rápida do produto.\\
+
+==== Informações Tributárias ====
+Nesta aba, entraremos apenas com a informação em dois campos.
+<thumbnail>{{ :base_de_conhecimento:treinamento:dadoscadastrais_tributaria.png?nolink |Seção de tributária}}</thumbnail>\\
+
+== NCM ==
+É necessário informar o NCM, Nomenclatura Comum do Mercosul, do produto cadastrado.
+== Origem da mercadoria ==
+Informar a origem da mercadoria.\\
+
+Após cadastrar essas informações basta clicar no botão salvar, no topo da página, e o produto estará cadastrado no sistema!
