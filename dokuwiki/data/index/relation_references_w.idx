@@ -30,3 +30,12 @@ base_de_conhecimento:treinamento:start
 base_de_conhecimento:sidebar
 base_de_conhecimento:online_chat
 base_de_conhecimento:canais_de_suporte
+desenvolvimento:pagename
+pt-br:wiki:nao_existentes
+entrada_mercadoria_sem_nf
+base_de_conhecimento:centro_estoque_compra
+base_de_conhecimento:centro_estoque_venda
+base_de_conhecimento:entrada_mercadoria_sem_nf
+base_de_conhecimento:treinamento:cadastro_de_produto
+base_de_conhecimento:treinamento:cadastro_usuario
+desenvolvimento:wiki:caching

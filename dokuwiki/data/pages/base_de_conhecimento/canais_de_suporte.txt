@@ -1,5 +1,5 @@
 ====== Canais de Suporte da Cloudfy ======
-Os clientes podem entrar em contato com a Cloudfy através do [[.:online_chat|]], do número <wrap em>(41) 9 9688-1688</wrap>((WhatsApp e ligações)) e do <wrap em>email: suporte@cloudfy.net.br</wrap>
+Os clientes podem entrar em contato com a Cloudfy através do [[.:online_chat|]], do número <wrap em>(41) 9 9688-1688</wrap>((WhatsApp e ligações)) e do <wrap em>email: <suporte@cloudfy.net.br></wrap>
 <WRAP round important>
 O Horário de Atendimento dos canais de suporte da Cloudfy são de <wrap em>Segunda a Sexta das 09:00 às 18:00</wrap>. Os atendimentos fora deste horário são exclusivamente para emergências.
 Você ainda poderá enviar mensagens para os canais de suporte, porém somente as mensagens classificadas como emergência serão retornadas pelos nossos agentes de plantão. Não se preocupe! As demais mensagens serão respondidas posteriormente durante o horário de atendimento.</WRAP>

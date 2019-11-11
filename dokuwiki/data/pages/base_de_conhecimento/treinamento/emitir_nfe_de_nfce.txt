@@ -1,7 +1,7 @@
 ====== Emitir NF-e utilizando NFC-e ======
-A emissão de uma NF-e utilizando uma NFC-e é bem simples e a seguir iremos explicar passo a passo todo o processo de emissão.Se você já está familiarizado com o processo de [[.:emissao_nfe|emissão de NF-e]] pule para a [[emitir_nfe_de_nfce#Etapa 2: Informações do Produto]], a etapa onde pode ser feita a seleção de cupons de venda.
-===== Iniciando uma nova emissão ====
-Navegue para o Menu [[http://localhost:8080/H02AP01/site/#/H02SF0109A|Nota Fiscal>Emissão de NFe]] e aperte no botão <wrap safety round>REALIZAR UMA NOVA EMISSÃO</wrap> para iniciar o assistente de emissão de NFe.\\ 
+A emissão de uma NF-e utilizando uma NFC-e é bem simples e a seguir iremos explicar passo a passo todo o processo de emissão. Se você já está familiarizado com o processo de [[.:emissao_nfe|emissão de NF-e]] pule para a [[emitir_nfe_de_nfce#Etapa 2: Informações do Produto]], a etapa onde pode ser feita a seleção de cupons de venda.
+===== Iniciando uma nova emissão =====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Nota Fiscal>Emissão de NFe]] e aperte no botão <wrap safety round>REALIZAR UMA NOVA EMISSÃO</wrap> para iniciar o assistente de emissão de NFe.\\ 
 <thumbnail>{{:base_de_conhecimento:treinamento:realizar_nova_emissao.png?nolink|}}</thumbnail>
 ==== Etapa 1: Dados do cliente ====
 Na primeira etapa do assistente você deve preencher as informações do cliente para o qual você deseja emitir a nota. Utilize o campo de pesquisa de cliente, exibido na imagem abaixo, para selecionar um cliente cadastrado.
