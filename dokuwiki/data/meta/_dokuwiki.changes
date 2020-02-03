@@ -1,20 +1,41 @@
-1568310901	138.204.27.253	E	base_de_conhecimento:treinamento:cadastrar_promocao	henrique.batochi	[Cadastrando uma nova promoção] 		2832
-1568310954	138.204.27.253	E	base_de_conhecimento:treinamento:cadastrar_promocao	henrique.batochi	[Cadastrando uma nova promoção] 		1
-1568310974	138.204.27.253	E	base_de_conhecimento:treinamento:cadastrar_promocao	henrique.batochi	[Cadastrando uma nova promoção] 		-3
-1568313255	138.204.27.253	E	base_de_conhecimento:treinamento:cadastrar_promocao	henrique.batochi	[Cadastrando uma nova promoção] 		2745
-1568388846	138.204.27.253	E	base_de_conhecimento:treinamento:cadastrar_promocao	henrique.batochi	[Cadastrar promoção] 		-2
-1568388981	138.204.27.253	E	base_de_conhecimento:treinamento:cadastrar_promocao	henrique.batochi	[Cadastrando uma nova promoção] 		-8
-1568733424	138.204.27.253	E	base_de_conhecimento:treinamento:cadastrar_promocao	henrique.batochi	[Cadastrando uma nova promoção] 		2
-1568733717	138.204.27.253	E	base_de_conhecimento:treinamento:cadastrar_promocao	henrique.batochi	[Cadastrando uma nova promoção] 		-6
-1570130601	177.220.177.38	C	desenvolvimento:impressoras:configuracoes_papel	nelson.pires	criada		52
-1570208281	177.220.177.38	E	desenvolvimento:impressoras:configuracoes_papel	nelson.pires			280
-1570208561	177.220.177.38	E	desenvolvimento:impressoras:configuracoes_papel	nelson.pires			9
-1570544711	177.220.177.38	C	base_de_conhecimento:treinamento:estornar_pagamento	henrique.batochi	criada		450
-1570554289	177.220.177.38	E	base_de_conhecimento:treinamento:estornar_pagamento	henrique.batochi	[Realizando um estorno] 		1586
-1570799148	138.204.24.169	E	base_de_conhecimento:treinamento:estornar_pagamento	henrique.batochi	[Estornar pagamento] 		3
-1570799181	138.204.24.169	E	base_de_conhecimento:treinamento:estornar_pagamento	henrique.batochi	[Estornar pagamento] 		-2
-1570802393	138.204.24.169	E	base_de_conhecimento:treinamento:estornar_pagamento	henrique.batochi	[Histórico de estorno] 		1
-1570802534	138.204.24.169	E	base_de_conhecimento:treinamento:estornar_pagamento	henrique.batochi	[Estornar pagamento] 		-1
-1570802543	138.204.24.169	E	base_de_conhecimento:treinamento:estornar_pagamento	henrique.batochi	[Estornar pagamento] 		1
-1572964579	177.220.177.26	C	desenvolvimento:wiki:upload_arquivo	nelson.pires	criada		9266
-1572964958	177.220.177.26	E	desenvolvimento:wiki:upload_arquivo	nelson.pires			-60
+1580126919	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			551
+1580127044	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			9
+1580127342	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			232
+1580127683	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			53
+1580128133	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			88
+1580128231	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			-16
+1580128365	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos	[Conciliando um movimento] 		24
+1580128565	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			33
+1580133643	177.220.177.19	E	base_de_conhecimento:treinamento:troca_de_senha	renata.farago			-160
+1580138970	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			22
+1580139240	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			194
+1580139732	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			41
+1580139760	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos	[Conciliando um movimento] 		-6
+1580139901	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			-17
+1580140959	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos	[Conciliando um movimento] 		1
+1580141208	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			193
+1580144419	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			0
+1580144449	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			-1
+1580144470	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			1
+1580144487	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			0
+1580150435	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos	[Conciliar fechamento de caixa] 		5
+1580150778	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			19
+1580233561	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			0
+1580233596	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			-16
+1580233768	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			6
+1580236250	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			111
+1580236278	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			1
+1580236602	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos	[Conciliando um movimento] 		2
+1580302743	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			-5
+1580307768	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			16
+1580307935	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			51
+1580308021	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			-19
+1580308105	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			1
+1580309366	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			-2
+1580312219	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			-3
+1580314395	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			177
+1580318166	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			94
+1580318193	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos	[Conciliar fechamento de caixa] 		-4
+1580318242	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos	[Conciliar fechamento de caixa] 		8
+1580323069	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos			593
+1580483653	177.220.177.19	E	base_de_conhecimento:treinamento:conciliamento_de_fechamento	johny.ramos	[Conciliando um movimento] 		108

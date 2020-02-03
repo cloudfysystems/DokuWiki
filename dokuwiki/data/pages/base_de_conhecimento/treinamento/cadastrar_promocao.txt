@@ -66,4 +66,4 @@ Por padrão o sistema vem configurado para **Promoção por grupo de produtos** 
 Caso deseje apenas que produtos específicos sejam elegíveis a promoção basta desativar o switch de configuração e utilizar o botão **SELECIONE OS PRODUTOS DA PROMOÇÃO**
 </WRAP>\\ 
 Após realizar todas as configurações, retorne ao topo da página e salve a promoção!\\
-Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar! 
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

@@ -2,7 +2,7 @@ a:6:{s:2:"id";s:51:"base_de_conhecimento:treinamento:cadastrar_promocao";s:6:"pr
 O cadastro de promoção no sistema é um processo simples e a seguir iremos explicar o passo a passo que deve ser seguido.\\
 É importante salientar que este tutorial considera que a base de produtos e grupo de produtos já estão devidamente cadastrados e configurados.
 
-";s:4:"text";s:6184:"===== Cadastrando uma nova promoção =====
+";s:4:"text";s:6183:"===== Cadastrando uma nova promoção =====
 Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Produtos>Promoções]] e aperte o botão <wrap safety round>NOVO</wrap> para ser direcionado a página de cadastro.\\
 <thumbnail>{{ :base_de_conhecimento:treinamento:promo01.png?nolink |}}</thumbnail>
 Na tela de cadastro o processo é dividido em várias seções para facilitar a organização do processo, fique tranquilo, seguiremos passo a passo todas as seções explicando cada detalhe para você!
@@ -66,4 +66,4 @@ Por padrão o sistema vem configurado para **Promoção por grupo de produtos** 
 Caso deseje apenas que produtos específicos sejam elegíveis a promoção basta desativar o switch de configuração e utilizar o botão **SELECIONE OS PRODUTOS DA PROMOÇÃO**
 </WRAP>\\ 
 Após realizar todas as configurações, retorne ao topo da página e salve a promoção!\\
-Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar! ";s:6:"suffix";s:0:"";s:4:"date";i:1568733717;s:6:"client";s:16:"henrique.batochi";}
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!";s:6:"suffix";s:0:"";s:4:"date";i:1573652200;s:6:"client";s:16:"henrique.batochi";}
