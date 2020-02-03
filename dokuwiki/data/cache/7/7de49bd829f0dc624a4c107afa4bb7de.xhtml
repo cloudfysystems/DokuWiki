@@ -1,0 +1,158 @@
+
+<h1 class="sectionedit1" id="inventario">Inventário</h1>
+<div class="level1">
+
+<p>
+O cadastro de inventário pode ser realizado para regularizar as quantidades dos produtos no estoque.<br/>
+
+Recomendamos realizar a conferência de quantidade física no estoque antes de iniciar o processo no sistema.<br/>
+
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Invent\u00e1rio&quot;,&quot;hid&quot;:&quot;inventario&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-243&quot;} -->
+<h2 class="sectionedit2" id="cadastrando_um_inventario">Cadastrando um inventário</h2>
+<div class="level2">
+
+<p>
+Navegue para o Menu <a href="https://app.padariananuvem.com/site/#/H02SF0109A" class="urlextern" title="https://app.padariananuvem.com/site/#/H02SF0109A" rel="nofollow">Estoque&gt;Inventário</a> e aperte o botão <span class="wrap_safety wrap_round ">NOVO</span> para ser direcionado a página de cadastro.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:invent.png" class="mediacenter" alt="" /></div>
+<p>
+<strong>Observação:</strong> nesta tela é apresentada a listagem de Inventários já realizados. Para sua comodidade é possível alterar a data da realização de um inventário já concluído clicando no primeiro ícone <img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:lapisinvent.png" class="media" alt="" />.<br/>
+
+Também é possível realizar a cópia de um inventário para uma nova data caso possua a mesma relação de produtos, economizando tempo e trabalho, clicando no segundo ícone <img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:copinvent.png" class="media" alt="" />.<br/>
+
+Para excluir um inventário já realizado basta clicar no terceiro ícone <img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:excluirinvent.png" class="media" alt="" />, uma tela surgirá confirmando a operação. Cuidado ao confirmar a exclusão o processo não poderá ser desfeito.<br/>
+
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Cadastrando um invent\u00e1rio&quot;,&quot;hid&quot;:&quot;cadastrando_um_inventario&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;244-1325&quot;} -->
+<h3 class="sectionedit3" id="cadastrando_um_novo_inventario">Cadastrando um novo inventário</h3>
+<div class="level3">
+
+<p>
+A primeira seção da tela de novo inventário solicitará os dados iniciais de identificação do inventário.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:novoinvent.png" class="mediacenter" alt="" /></div>
+<p>
+Iremos abordá-los individualmente, não se preocupe!<br/>
+
+<strong>Data</strong> - neste campo você fornecerá a data de realização do inventário. Para sua comodidade o sistema preenche com a data atual.<br/>
+
+<strong>Descrição</strong> - neste campo você fornecerá uma descrição para facilitar a identificação do inventário posteriormente.<br/>
+
+<strong>Solicitante</strong> - neste campo você fornecerá a informação de qual colaborador esta realizando a solicitação de inventário. O sistema preenche este campo automaticamente com a informação do colaborador autenticado no sistema.<br/>
+
+<strong>Centro de estoque</strong> - neste campo é necessário informar qual centro de estoque será utilizado para realizar o inventário.<br/>
+
+<strong>Observações</strong> - este campo é livre para preenchimento de informações, anotações ou avisos que julgar necessário.<br/>
+
+<br/>
+
+Para os clientes que possuírem um <strong>Coletor de dados</strong> para agilizar o processo de inventário é possível importar o arquivo CSV do equipamento para o sistema, bastando arrastar o arquivo para dentro da área informada.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:coletorinvent.png" class="mediacenter" alt="" /></div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:4,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_tip plugin_wrap">
+<p>
+<strong>DICA</strong><br/>
+
+Caso esteja utilizando o Coletor de dados para realizar o inventário de um grupo particular recomendamos filtrar primeiramente o grupo de produtos no sistema e posteriormente realizar a importação do arquivo CSV do Coletor de dados.<br/>
+
+Como o Coletor de dados apenas contabiliza as quantidades dos produtos inventariados pode acontecer de algum produto na sua base ficar sem receber a quantidade atualizada.<br/>
+<strong>Exemplo:</strong><br/>
+
+O inventário esta sendo realizado apenas no subgrupo de <strong>bebidas</strong> e o produto Coca-Cola acabou, quando importar o arquivo CSV do coletor para o sistema a quantidade da Coca-Cola não será atualizada no sistema, pois não existe este produto no arquivo CSV. Filtrando inicialmente o inventário pelo grupo de <strong>bebidas</strong> o sistema carregará todos os seus produtos cadastro no sistema, dentro desse grupo de produtos, com a quantidade zerada. Ao importar o arquivo CSV do coletor para o sistema será atualizado apenas as quantidades lidas pelo coletor e assim os produtos que possam ter acabado terão suas quantidades atualizadas também.
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:5,&quot;range&quot;:&quot;0-&quot;} --><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:6,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_important plugin_wrap">
+<p>
+Quando utilizar um Coletor de dados e for informar uma quantidade fracionada <strong>informe a quantidade com ponto (.)</strong> e não com vírgula (,).<br/>
+<strong>Exemplo:</strong><br/>
+A quantidade apurada foi de 4,5 unidades (quatro unidades e meia), informe no coletor 4.5 como a quantidade apurada.<br/>
+
+Isto evita erros na validação das informações que serão utilizadas.
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:7,&quot;range&quot;:&quot;0-&quot;} -->
+</div>
+
+<h4 id="filtros">Filtros</h4>
+<div class="level4">
+
+<p>
+Após configurado as informações iniciais do Inventário passaremos para a etapa de localização dos produtos que serão inventariados.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:filtrosinvent.gif" class="mediacenter" alt="" /></div>
+<p>
+<br/>
+
+Inicialmente podemos filtrar os produtos por grupo de produtos.<br/>
+
+Como demonstrado acima podemos filtrar mais de um grupo de produtos ao mesmo tempo, podendo organizar o inventário de uma forma categorizada sem a necessidade de lidar com todo o estoque de produtos em apenas um único inventário. Após selecionar os grupos de produtos que irão fazer parte do inventário basta clicar no botão <span class="wrap_safety wrap_round ">FILTRAR POR GRUPO DE PRODUTO</span>.<br/>
+
+Ainda existe a possibilidade de filtrar os produtos por centro de custo, contudo essa opção não permite filtrar pelos grupos de produtos. Para realizar o inventário através do centro de custo basta clicar no botão <span class="wrap_danger wrap_round ">CARREGAR PRODUTOS DO CENTRO DE CUSTO</span>.<br/>
+
+<br/>
+
+Ainda é possível filtrar um produto de forma individual através da seção:<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:filtroprodinvent.png" class="mediacenter" alt="" /></div>
+<p>
+Você pode localizar o produto desejado através do código de barras ou pelo nome do produto.<br/>
+
+Para uma pesquisa avançada basta clicar no ícone da lupa, será apresentada uma tela de pesquisa avançada com diversos filtros, sendo eles:<br/>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Produto</strong> - filtro para pesquisar o produto através do seu nome.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Cód de Barras</strong> - filtro para pesquisar o produto através do seu código de barras.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ref.</strong> - filtro para pesquisar o produto pelo seu código de referência.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grupo</strong> - filtro para pesquisar o produto através do grupo de produtos a que ele pertence.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Saldo atual</strong> - filtro para pesquisar o produto através do saldo atual no estoque.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Und Medida</strong> - filtro para pesquisar o produto através da unidade de medida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Característica</strong> - filtro para pesquisar o produto através da sua característica.</div>
+</li>
+</ul>
+
+<p>
+<br/>
+
+Após realizar a filtragem dos produtos que serão inventariados começaremos a fornecer as quantidades aferidas ao sistema.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:treinamento:inventfiltrprod.png" class="mediacenter" alt="" /></div>
+<p>
+Na coluna <strong>saldo apurado</strong> você entrará com as informações de quantidades atualizadas do estoque.<br/>
+
+Ainda é possível acompanhar algumas informações sobre os produtos, como:<br/>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Estoque pré-inventario</strong> - a quantidade calculada no estoque pelo sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Divergência (qtde)</strong> - a divergência entre a quantidade calculada pelo sistema e a informada pelo colaborador no âmbito quantitativo.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Divergência (R$)</strong> - a divergência entre a quantidade calculada pelo sistema e a informada pelo colaborador no âmbito monetário.</div>
+</li>
+</ul>
+
+<p>
+<br/>
+
+Após informar todas as quantidades inventariadas dos produtos retorne ao topo da página e salve o inventário.<br/>
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a <strong>Cloudfy</strong> e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Cadastrando um novo invent\u00e1rio&quot;,&quot;hid&quot;:&quot;cadastrando_um_novo_inventario&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:3,&quot;range&quot;:&quot;1326-&quot;} -->

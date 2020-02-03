@@ -1,0 +1,13 @@
+====== Troca de Senha ======
+
+Este tutorial tem como objetivo explicar como se realiza a mudança de sua senha na plataforma.
+
+===== Como mudar a minha senha de usuário? =====
+
+Para realizar a edição de senha, o colaborador deve estar na página [[https://app.padariananuvem.com/site/#/|Inicial]] do sistema e selecionar ao lado direito, no ícone quadrado com uma seta no meio a opção de Trocar senha.\\
+
+<thumbnail>{{ :base_de_conhecimento:trocarSenha.png?nolink |}}</thumbnail>
+
+Quando se é selecionada esta opção, uma janela será aberta e três campos com os nomes Senha antiga, Nova senha e Confirmar senha devem ser preenchidos.//
+<thumbnail>{{ :base_de_conhecimento:janelaTrocarSenha.png?nolink&300 |}}</thumbnail>
+Após estes passos, uma nova senha irá substituir a anterior. 

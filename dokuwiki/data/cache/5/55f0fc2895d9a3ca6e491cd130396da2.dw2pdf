@@ -1,0 +1,132 @@
+<a name="base_de_conhecimentotreinamentocadastro_usuario__"></a>
+<h1><bookmark content="Cadastro de Usuário" level="0" /><a name="base_de_conhecimentotreinamentocadastro_usuario__cadastro_de_usuario">Cadastro de Usuário</a></h1>
+<div class="level1">
+
+<p>
+Todo usuário cadastrado deve possuir um perfil associado para ter acesso as funções do sistema, desta forma, este processo se dá em duas etapas: o Cadastro de perfil e o Cadastro de usuário.
+</p>
+
+</div>
+
+<h2><bookmark content="Cadastro de perfil" level="1" /><a name="base_de_conhecimentotreinamentocadastro_usuario__cadastro_de_perfil">Cadastro de perfil</a></h2>
+<div class="level2">
+
+<p>
+Para cadastrar, editar ou excluir um perfil, clique no segundo ícone do lado esquerdo do menu superior e, em seguida, clique em <a href="https://app.padariananuvem.com/site/#/H00SF0402A" class="urlextern" title="https://app.padariananuvem.com/site/#/H00SF0402A" rel="nofollow">Perfis</a> <br/>
+
+<a href="/lib/exe/detail.php?id=base_de_conhecimento%3Atreinamento%3Acadastro_usuario&amp;media=base_de_conhecimento:treinamento:menu-superior-botao.png" class="media" title="base_de_conhecimento:treinamento:menu-superior-botao.png"><img src="/lib/exe/fetch.php?w=700&amp;tok=6b7337&amp;media=base_de_conhecimento:treinamento:menu-superior-botao.png" class="media" title="Menu superior" alt="Menu superior" width="700" /></a><br/>
+<br/>
+
+</p>
+
+<p>
+Nesta tela, são listados os perfis previamente cadastrados. <br/>
+
+</p>
+
+<p>
+Para cadastrar um novo perfil, clique no botão <span class="wrap_safety ">NOVO</span>. Em seguida, adicione uma descrição para o perfil que deseja criar.  <br/>
+
+</p>
+
+<p>
+A seguir, informe para cada uma das transações disponíveis no sistema, qual o nível de acesso desejado. <br/>
+
+Você poderá bloquear, liberar somente a leitura, liberar somente edição e leitura (neste caso não será possível incluir e nem excluir registros) ou liberar o acesso completo (pesquisa, leitura, inclusões, exclusões e alterações de registros).<br/>
+<br/>
+
+<a href="/lib/exe/detail.php?id=base_de_conhecimento%3Atreinamento%3Acadastro_usuario&amp;media=base_de_conhecimento:treinamento:transacoes.png" class="media" title="base_de_conhecimento:treinamento:transacoes.png"><img src="/lib/exe/fetch.php?w=1000&amp;tok=f60eff&amp;media=base_de_conhecimento:treinamento:transacoes.png" class="media" alt="" width="1000" /></a>
+</p>
+
+<p>
+Você pode associar este perfil a usuários previamente cadastrados no sistema, clicando na aba Usuários do perfil <br/>
+
+ <a href="/lib/exe/detail.php?id=base_de_conhecimento%3Atreinamento%3Acadastro_usuario&amp;media=base_de_conhecimento:treinamento:tabs-perfil.png" class="media" title="base_de_conhecimento:treinamento:tabs-perfil.png"><img src="/lib/exe/fetch.php?w=300&amp;tok=452041&amp;media=base_de_conhecimento:treinamento:tabs-perfil.png" class="media" alt="" width="300" /></a>
+</p>
+
+<p>
+Informe os usuários que utilizarão este perfil de acesso clicando na lupa <br/>
+
+<img src="/lib/exe/fetch.php?w=1000&amp;tok=198628&amp;media=base_de_conhecimento:treinamento:add-usuarios-perfil.png" class="media" alt="" width="1000" /><br/>
+
+Será aberto uma janela pop-up com a lista de usuários cadastrados no sistema.<br/>
+
+Clique sob um usuário para selecioná-lo e fechar a pop-up. Com a pop-up fechada, o código e nome do usuário selecionado aparecerá no campo Usuário. <br/>
+
+Por fim, clique no ícone <span class="wrap_round wrap_safety ">+</span> para confirmar a adição de perfil ao cadastro usuário. <br/>
+<br/>
+
+</p>
+
+<p>
+Após realizar todo esse processo, clique no ícone salvar registro, localizado no canto superior direito. <img src="/lib/exe/fetch.php?w=120&amp;tok=cfb7f4&amp;media=base_de_conhecimento:treinamento:salvar.png" class="media" alt="" width="120" />
+</p>
+
+</div>
+
+<h2><bookmark content="Cadastro de usuário" level="1" /><a name="base_de_conhecimentotreinamentocadastro_usuario__cadastro_de_usuario1">Cadastro de usuário</a></h2>
+<div class="level2">
+
+<p>
+Para realizar o cadastro de um usuário, clique no segundo ícone do lado esquerdo do menu superior e, em seguida, clique em <a href="https://app.padariananuvem.com/site/#/H00SF0401A" class="urlextern" title="https://app.padariananuvem.com/site/#/H00SF0401A" rel="nofollow">Usuários</a> <br/>
+
+</p>
+
+<p>
+<a href="/lib/exe/detail.php?id=base_de_conhecimento%3Atreinamento%3Acadastro_usuario&amp;media=base_de_conhecimento:treinamento:menu-superior-usuario.png" class="media" title="base_de_conhecimento:treinamento:menu-superior-usuario.png"><img src="/lib/exe/fetch.php?w=700&amp;tok=0859dd&amp;media=base_de_conhecimento:treinamento:menu-superior-usuario.png" class="media" alt="" width="700" /></a>
+</p>
+
+<p>
+Nesta tela, são exibidos os usuários já cadastrados. Nela é possível criar um novo usuário, editar um existente ou mesmo excluí-lo. <br/>
+
+</p>
+
+<p>
+Para cadastrar um novo usuário, clique no botão <span class="wrap_safety ">NOVO</span>. Será aberta a página para cadastro de usuário que é organizada em três abas: Dados cadastrais, Permissões de acesso e Configurações para atendente. <br/>
+
+<img src="/lib/exe/fetch.php?w=1000&amp;tok=b3cb94&amp;media=base_de_conhecimento:treinamento:cadastro-usuario.png" class="media" alt="" width="1000" />
+</p>
+
+<p>
+Preencha as informações do usuário, tais quais Nome, CPF, E-mail e Login.
+</p>
+
+<p>
+Em seguida, clique na aba Permissões de acesso, onde você poderá associar perfis de acesso ao usuário.
+</p>
+
+<p>
+Dê ao usuários perfis de acesso clicando na lupa. <br/>
+
+<a href="/lib/exe/detail.php?id=base_de_conhecimento%3Atreinamento%3Acadastro_usuario&amp;media=base_de_conhecimento:treinamento:add-perfis.png" class="media" title="base_de_conhecimento:treinamento:add-perfis.png"><img src="/lib/exe/fetch.php?w=1000&amp;tok=cd2046&amp;media=base_de_conhecimento:treinamento:add-perfis.png" class="media" alt="" width="1000" /></a> <br/>
+
+</p>
+
+<p>
+Será aberto uma janela pop-up com a lista de perfis cadastrados no sistema.<br/>
+
+Clique sob um perfil para selecioná-lo e fechar a pop-up. Com a pop-up fechada, o código e a descrição do perfil selecionado aparecerá no campo Perfil de acesso. <br/>
+
+Por fim, clique no ícone <span class="wrap_round wrap_safety ">+</span> para confirmar a adição de perfil ao cadastro usuário. <br/>
+
+Note que é possível adicionar mais de um perfil para o mesmo usuário. <br/>
+
+</p>
+
+<p>
+Por fim, caso o usuário vá realizar operações no Terminal, tal qual abertura e fechamento de comandas, clique na aba Configurações para atendente e preencha as informações. <br/>
+
+<img src="/lib/exe/fetch.php?w=1000&amp;tok=e862e1&amp;media=base_de_conhecimento:treinamento:config-atendente.png" class="media" alt="" width="1000" /> <br/>
+
+</p>
+
+<p>
+Note que o Número do atendente será preenchido após salvar o registro e a senha deve ser numérica. <br/>
+
+</p>
+
+<p>
+Após realizar todo esse processo, clique no ícone salvar registro, localizado no canto superior direito. <img src="/lib/exe/fetch.php?w=120&amp;tok=cfb7f4&amp;media=base_de_conhecimento:treinamento:salvar.png" class="media" alt="" width="120" />
+</p>
+
+</div>

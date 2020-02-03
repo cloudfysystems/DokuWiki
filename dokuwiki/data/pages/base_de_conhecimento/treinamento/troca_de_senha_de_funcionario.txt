@@ -1,0 +1,18 @@
+====== Troca de Senha de Funcionário ======
+
+Este passo a passo ensina como mudar a senha de um funcionário de sua empresa.
+
+===== Como mudar a senha de um funcionário? =====
+
+Para trocar a senha de um funcionário, acesse a página inicial da ferramenta, clique no botão que fica ao lado do nome da sua empresa e selecione a opção Usuários. Em seguida, encontre a pessoa que deseja editar a senha pesquisando pelo **Nome do usuário, Login ou CPF**.\\
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:mudandoSenha.png?nolink |}}</thumbnail>
+
+Após estes passos, clique sobre o nome do funcionário no qual para ser direcionado para a tela do perfil do usuário.\\
+Lá você irá encontrar um botão na cor amarela escrito **REINICIAR SENHA**. Clique nele, para o próximo passo. \\
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:reiniciarSenha.png?nolink |}}</thumbnail>
+
+Insira uma //Nova senha// e repita ela no campo //Confirmar senha//, para evitar que e mesma seja escrita incorretamente. Por fim, clique em **OK** para salvar.\\
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:novaSenha.png?nolink |}}</thumbnail>

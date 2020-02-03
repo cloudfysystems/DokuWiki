@@ -1,0 +1,28 @@
+====== Baixar XML da nota ======
+O processo para baixar os XML's das notas fiscais no sistema é simples e iremos explicar o passo a passo a seguir.\\
+
+==== Exportar Notas fiscais ====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Nota Fiscal>Exportar Notas fiscais]] e uma nova tela se abrirá.\\
+Nesta tela iremos configurar os parâmetros necessários para realizar a exportação dos XML's das notas fiscais.\\
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:expnfe.png?nolink |}}</thumbnail>
+\\
+Os campos **Data inicial** e **Data final** são utilizado para configurar o período que será realizado a exportação dos XML's.\\
+Por padrão o período preenchido entre os campos contempla o mês anterior.\\
+=== Itens para Exportar ===
+Nesta seção é possível selecionar as informações que serão exportadas, sendo elas:\\
+  * NFC-e/CFe-SAT
+  * NFe - Nota fiscal eletrônica
+  * Cancelamentos
+  * Inutilizações
+  * CC-e (Carta de correção)
+  * Notas de entrada
+
+Você pode configurar a exportação das informações conforme a sua necessidade, bastando selecionar as opções anteriormente apresentadas.\\
+Após selecionadas as opções é apresentado as seguintes possibilidades:\\
+  * **Exportar XMLS** - gera um arquivo compactado com os XML's emitidos no período informado. Este arquivo é costumeiramente encaminhado ao contador.\\
+  * **Notas Emitidas** - gera um relatório com a relação de notas emitidas.\\
+  * **Exportar Produtos** - gera um arquivo Excel contendo as configurações tributárias de todos os produtos cadastrados na sua base de dados.
+  * **Inutilizações** - gera um relatório com as numerações inutilizadas das notas fiscais.\\
+\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar!

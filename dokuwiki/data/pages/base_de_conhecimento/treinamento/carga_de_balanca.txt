@@ -1,0 +1,14 @@
+====== Carga de balança ======
+A carga de balança é um processo simples e a seguir iremos explicar o passo a passo que deve ser seguido.\\
+
+===== Criando o arquivo exportável =====
+Para efetuar uma carga de itens e informações na balança Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0102H|Produtos>Balança>Exportar produtos para balança]], escolher o modelo da balança e aperte o botão <wrap round caution>EXPORTAR</wrap>, será feito um download de um arquivo comprimido (geralmente vai direto para pasta downloads mas não é padrão), de preferência, criar uma pasta para os arquivos da balança e descomprimir os arquivos nesta pasta.
+
+===== Balança Toledo =====
+
+==== Software MGV5 ====
+No software MGV5 é necessário fazer a exportação de um campo por vez (tara, informações nutricionais, informações extras e itens) no ícone: <thumbnail>{{ :base_de_conhecimento:treinamento:mgv5-1.png?nolink |}}</thumbnail>Após isso é só dar a carga da balança clicando no ícone: <thumbnail>{{ :base_de_conhecimento:treinamento:mgv5-2.png?nolink |}}</thumbnail> Apertar INICIAR e aguardar o fim do processo, após dar a carga, testar para ver se os produtos foram alterados/adicionados corretamente.
+
+==== Software MGV6 ====
+No software MGV6 é possível fazer a exportação de todos os campos (tara, informações nutricionais, informações extras e itens) de uma só vez, clicando no ícone: <thumbnail>{{ :base_de_conhecimento:treinamento:200011.png?nolink |}}</thumbnail> Selecionando todos os campos necessários e clicando em importar.\\
+Após isso é só fazer a carga clicando no ícone: <thumbnail>{{ :base_de_conhecimento:treinamento:mgv6_2.png?nolink |}}</thumbnail> Clicar em ENVIAR, aguardar o fim do processo, após dar a carga, testar para ver se os produtos foram alterados/adicionados corretamente.

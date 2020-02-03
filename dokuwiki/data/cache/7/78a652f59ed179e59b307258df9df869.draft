@@ -1,0 +1,79 @@
+a:6:{s:2:"id";s:58:"base_de_conhecimento:treinamento:cadastrar_rede_adquirente";s:6:"prefix";s:0:"";s:4:"text";s:6942:"====== Cadastrar Rede Adquirente ======
+O cadastro de uma nova rede adquirente é um processo simples e a seguir iremos explicar o passo a passo que deve ser seguido.\\
+<wrap important>É importante salientar que para a conclusão deste tutorial você tenha em mãos as taxas financeiras negociadas.</wrap>\\
+
+===== Cadastrando uma nova Rede Adquirente =====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Configurações>Redes Adquirentes]] e aperte o botão <wrap safety round>NOVO</wrap> para ser direcionado a página de cadastro.\\
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:dadosredeadq.png?nolink |}}</thumbnail>
+
+O cadastro da Rede adquirente está dividido em seções de informações e iremos abordar individualmente elas.\\
+\\
+=== Configurações da rede adquirente ===
+Nesta seção iremos fornecer dados básicos para o cadastro da Rede Adquirente, utilizados para identificação, processamento financeiro do sistema e configuração de cobrança!\\
+Apesar de simples é importante se atentar para cada opção e suas características.\\
+\\
+**Nome da rede adquirente**, neste campo é preenchido com o nome da rede adquirente contratada, você pode preencher de uma forma a facilitar a sua identificação.\\
+**Rede adquirente**, neste campo você selecionará a rede adquirente contratada. Para uma pesquisa simplificada você pode iniciar a digitação do nome que o sistema da Cloudfy irá sugerir as redes previamente cadastradas. Para uma pesquisa avançada você pode clicar no ícone da lupa e localizar a rede entre todas as disponíveis.\\
+<wrap important>Caso tenha contratado alguma Rede adquirente que não conste no sistema da Cloudfy, por gentileza entre em contato conosco!</wrap>\\
+**Conta financeira onde esta rede adquirente deposita o dinheiro**, neste campo você fornece a conta onde a rede adquirente realizará os depósitos do dinheiro processado pela operações de venda.\\
+Estas informações serão novamente avaliadas no processo de Conciliamento bancário para confirmar a realização dos depósitos.\\
+\\
+**Forma de recebimento**, neste campo escolha a opção corresponde a negociada com a Rede adquirente para recebimento.\\
+{{:base_de_conhecimento:treinamento:formarecredadq.gif?nolink|}}
+\\
+Vamos explica-las individualmente a seguir:\\
+  * **Descontado no recebimento da transação**, as taxas são aplicadas ao processar a operação. Nesta opção o cliente recebe da rede adquirente o valor da venda já descontado as taxas negociadas.\\
+  * **Cobrado na mensalidade com a rede adquirente**, o valor é cobrado sobre uma mensalidade com a Rede adquirente.\\
+  * **Outros**, utilizado para Vouchers.\\
+**Situação**, você pode deixar o cadastro da Rede Adquirente ativou ou inativo, conforme sua necessidade.\\
+{{:base_de_conhecimento:treinamento:promo03.gif?nolink|}}
+\\
+**Rede adquirente restrita a filial**, neste campo você pode delimitar a operação da Rede adquirente a uma filial específica caso possua.\\
+=== Produtos e taxas ===
+Nesta seção iremos configurar as bandeiras e as taxas negociadas com a Rede adquirente, bem como os prazo de recebimento e antecipação.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:redadqprodtx.png?nolink |}}</thumbnail>
+\\
+A tabela apresentará todas as bandeiras presentes no sistema da Cloudfy, o processo é simples contudo é **necessário atenção**.\\
+Para um cadastro simplificado da bandeira você pode ativar na tabela a bandeira e informar nas devidas colunas os valores negociados.\\
+**Observação:** a ativação das bandeiras é necessária apenas nas vendas realizadas por POS.\\
+Caso deseje um cadastro avançado da bandeira clique no ícone da lupa vermelha no final da linha para abrir a seguinte tela:\\
+\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:redadqbandavanc.png?nolink |}}</thumbnail>
+Nesta tela é possível configurar parâmetros mais detalhados da operação de cada bandeira.\\
+=== Tarifas ===
+Nesta seção iremos configurar todas as tarifas negociadas com as bandeiras.\\
+**Taxa por transação**, é o valor percentual negociado que a bandeira cobrará ao ser realizado uma venda.\\
+**Tarifa por transação**, é o valor fixo negociado que a bandeira cobrará ao ser realizado uma transação.\\
+**Tarifa para depósito**, é o valor fixo cobrado pela bandeira para realizar o repasse de recursos para sua conta.\\
+**Taxa de antecipação**, é o valor percentual negociado que a bandeira cobrará ao ser antecipado alguma recebimento.\\
+**Taxa por transação - parcelado**, é o valor percentual negociado com a bandeira para processar vendas a prazo.\\
+**Conta para depósito**, se for mantido em branco os recursos financeiros serão disponibilizado na conta informada no processo anterior. Caso tenha alguma especificidade com a bandeira e seja necessário alterar a conta financeira para recebimento você pode selecionar aqui para onde irá os recursos financeiros oriundos desta bandeira em específico. 
+=== Prazo para recebimento ===
+Nesta seção iremos configurar os prazos para recebimento das transações processadas pela bandeira.\\
+As periodicidades são:\\
+  * **Diária**, para recebimentos diários.
+  * **Semanal**, para recebimento semanais.
+  * **Quinzenal**, para recebimento a cada 15 dias.
+  * **Mensal**, para recebimento a cada 30 dias.
+
+Quando selecionado qualquer outra opção diferente da **diária** um campo extra irá surgir na tela solicitando a **data do corte**, que nada mais é que o dia da semana utilizado para contabilizar o período informado.
+**Prazo de recebimento**, a quantidade de dias negociados com a bandeira para realizar o pagamento.\\
+\\
+**Tipo de prazo**\\
+{{:base_de_conhecimento:treinamento:prazorecredadqdias.gif?nolink|}}
+\\
+O tipo de prazo negociado com a bandeira pode ser contado como dias corridos ou dias úteis.\\
+Confirme a forma negociada de contabilizar o prazo para não gerar inconsistências financeiras no sistema.\\
+\\
+**Dia não útil para recebimento**\\
+{{:base_de_conhecimento:treinamento:recredadqantpos.gif?nolink|}}
+\\
+Neste campo selecione a opção negociada com a bandeira caso a data do pagamento ocorra fora de  um dia útil.\\
+Existe duas opções que explicaremos a seguir:\\
+  * **Postecipa pagamento para o próximo dia útil**, os pagamentos são realizados no próximo dia útil após a data de pagamento.\\
+  * **Antecipapagamento para o próximo dia útil**, os pagamentos são realizados no dia útil anterior a data de pagamento.\\
+\\
+Após realizar as configurações necessárias clique em <wrap round notice>CONFIMAR</wrap>, retorne ao topo da página e salve a Rede adquirente.\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar! \\";s:6:"suffix";s:0:"";s:4:"date";i:1573644314;s:6:"client";s:13:"gabriel.mello";}

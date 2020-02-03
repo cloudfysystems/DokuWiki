@@ -1,0 +1,68 @@
+====== Conciliar fechamento de caixa ======
+A conciliação de fechamento de caixa é bem simples e a seguir iremos explicar passo a passo todo o processo de conciliação.
+
+O conciliador de fechamento serve para você lançar de forma correta e prática todos os valores vendidos na frente de caixa do seu estabelecimento no caixa geral da empresa. Isso é importante para o melhor gerenciamento e controle do setor financeiro do estabelecimento.
+
+===== Acessando a tela do conciliador de fechamento de caixa =====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0108B|Vendas > Conciliador de fechamento]]. Feito isso será exibido a seguinte tela:
+<thumbnail>{{base_de_conhecimento:treinamento:tela_conciliador_de_fechamento_de_caixa.png?nolink|}}</thumbnail>
+
+É possível filtrar os movimentos de acordo com o caixa, situação da conciliação e também data de abertura. <wrap tip>O sistema sempre abrirá com o filtro selecionado para a semana atual.</wrap>\\
+
+Nesta tela são listados os movimentos de caixa realizados, sendo possivel visualizar as seguintes informações:
+
+  * Data de abertura;
+  * Caixa;
+  * Movimento;
+  * Hora de abertura;
+  * Hora de fechamento;
+  * Nome do operador;
+  * Situação;
+  * Diferença de fechamento;
+  * Diferença de conciliação;
+  * Diferença total.
+
+
+===== Conciliando um movimento =====
+Para conciliar um movimento devemos clicar no ícone {{:base_de_conhecimento:treinamento:lupa_vermelha.png?nolink&30x30|}} localizado no lado direito do movimento de caixa selecionado. Então a seguinte tela será aberta:
+<thumbnail>{{base_de_conhecimento:treinamento:tela_conciliamento_movimento_escolhido.png?nolink|}}</thumbnail>
+
+Nessa tela serão exbidos as seguintes colunas:
+  * Forma de Pagamento: é a forma de pagamento escolhida pelo operador de caixa no momento do atendimento;
+  * Calculado: é o que o sistema calculou de acordo com as informações dadas pelo atendente durante cada venda.
+  * Informado: são os valores informados pelo operador no momento do fechamento;
+  * Dif. fechamento: é a diferença entre os valores calculado e o informado;
+  * Conciliação: é onde deverá ser informado os valores já corrigidos por outro colaborador. Normalmente é feito pelo setor financeiro em outro momento.
+  * Dif. Total: É a diferença entre o calculado pelo sistema e que foi informado na coluna Conciliação.
+
+Nessa tela de conciliação deve-se preencher os valores recebidos do respectivo movimento de caixa na coluna Conciliação.
+
+Caso todos os valores estejam corretos você pode clicar em <button type="primary" size="xs">CONCILIAR</button>. 
+
+<wrap tip>Não deve ser deixados campos em branco, caso não tenha valor deve ser preenchido com zero.</wrap>\\
+
+==== Conciliando cartões ====
+Para fazer a conciliação de cartões, você deve clicar em <wrap safety round>CONCILIADOR DE CARTÕES</wrap>, onde vão aparecer as bandeiras que tiveram vendas naquele movimento. Assim, será possível realizar o ajuste de valores de acordo com cada bandeira.
+
+<wrap tip>O cadastro de novas redes adquirentes e suas respectivas bandeiras deve ser feito em [[https://app.padariananuvem.com/site/#/H02SF0101K|Configurações > Redes adquirentes]]. Caso tenha alguma dúvida pode consultar nosso tutorial em :[[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastrar_rede_adquirente|Cadastrar Rede Adquirente]].</wrap>\\
+
+
+<thumbnail>{{base_de_conhecimento:treinamento:tela_conciliador_de_cartoes.png?nolink|}}</thumbnail>
+
+Nessa tela é possível ajustar:
+
+  * Forma de pagamento;
+  * Rede adquirente;
+  * Produto/Bandeira;
+  * Data da venda;
+  * Valor POS;
+  * Valor TEF;
+  * Quantidade de transações.
+
+Clicando no ícone {{:base_de_conhecimento:cadastrar1.png?nolink&30x30|}} é possível adicionar novas bandeiras de cartões e seus respectivos valores desde que pré-configurados em [[https://app.padariananuvem.com/site/#/H02SF0101K|Configurações > Redes adquirentes]].
+
+Caso todos os valores estejam corretos você pode clicar em <wrap safety round>CONFIRMAR</wrap>
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+
+

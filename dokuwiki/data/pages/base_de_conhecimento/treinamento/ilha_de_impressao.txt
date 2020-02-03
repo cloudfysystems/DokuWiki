@@ -1,0 +1,48 @@
+====== Ilha de Impressão ======
+Ilhas de impressão são utilizadas para a impressão das ordens de produção de pedidos e/ou comandas.\\ 
+Após a criação das ilhas de impressão, é necessário dizer para qual grupo de produtos a ilha irá funcionar e em qual será a impressora dessa ilha.
+
+===== Cadastro de ilhas de impressão =====
+Para cadastrar uma ilha de impressão navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0101M|Configurações>Ilhas de impressão]], clicar no botão <button type="success" size="sm">NOVO</button>, preencher os campos conforme necessário e clicar em salvar {{:base_de_conhecimento:treinamento:salvar.png?100|}}.
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:cadastro_ilha.png?nolink |}}</thumbnail>
+**Campos para cadastro:**\\
+  * __Descrição da ilha__: Nome de identificação da ilha
+  * __Situações de impressão__: Em quais situações a ordem de produção será impressa
+    * Somente comandas: Só irá imprimir a ordem de produção de produtos lançado em comanda.
+    * Somente pedidos: Só irá imprimir a ordem de produção de pedidos/encomendas.
+    * Comandas e pedidos: Irá imprimir a ordem de produção para os dois casos.
+  * __Situação__: Indica se a ilha de impressão estará ativa ou não.
+  * __Habilita impressão de fechamento de conta do cliente__: Indica se será permitido imprimir o fechamento de conta do cliente nesta ilha.
+    * <wrap important round>Este campo só é utilizado para a versão **Cloudfy Blue** do PDV</wrap>
+  * __Restrito a uma praça/departamento__: Se for selecionado uma praça neste campo, a ilha de impressão só irá funcionar nos terminais que utilizam a praça selecionada.
+
+===== Associar ilha de impressão com grupo de produto =====
+Após cadastrar suas ilhas de impressão, você precisa associá-las aos grupos de produto que deseja que as ilhas imprimam a ordem de produção.\\ 
+No Menu [[https://app.padariananuvem.com/site/#/H02SF0102A|Produtos>Grupo de Produtos]] selecione um grupo de produtos e, na seção Ilhas de impressão, você pode selecionar uma ou mais ilhas para o grupo.
+<WRAP group>
+<WRAP right centeralign round>
+<thumbnail>{{:base_de_conhecimento:treinamento:grupoprod_ilha.png?nolink|}}</thumbnail></WRAP>
+No exemplo da imagem ao lado, as ilhas __COZINHA__ e __PADARIA__ foram associadas ao grupo __ALIMENTOS__. Sendo assim, quando a ordem de produção de um pedido ou comanda for realizada, os produtos do Grupo __ALIMENTOS__ e de seus subgrupos (//ADICIONAIS//, //BURGERS//, //INSUMOS// e //SOBREMESA//) serão impressos nas impressoras das ilhas __COZINHA__ e __PADARIA__.\\ 
+<WRAP important round>Ao associar uma ilha a um grupo superior, essa ilha irá imprimir a ordem de produção de todos os produtos do grupo superior e de seus subgrupos (como explicado acima).\\ 
+Se uma outra ilha de impressão for associado a um subgrupo, a ordem de produção do produto desse subgrupo irá ser impresso tanto nas ilhas do grupo superior quanto na ilha associada ao subgrupo.</WRAP>
+</WRAP>
+
+===== Associar ilha de impressão a uma impressora =====
+Após criar as ilhas de impressão e associar quais produtos terão sua ordem de produção impressos nelas (através dos grupos de produto), o último passo é associar as ilhas criadas com as impressoras que irão imprimir as ordens de produção.\\ 
+Para realizar a associação da ilha de impressão com uma impressora siga os passos indicados na seção equivalente a versão do PDV ([[#Cloud Commerce - PDV|]] ou [[#Cloudfy Blue]]) utilizada na sua empresa.\\ 
+<wrap important round>A associação das ilhas de impressão com as impressoras só é possível no PDV principal, o PDV que está sendo utilizado como **servidor**.</wrap>
+<WRAP group>
+<WRAP half column>
+=== Cloud Commerce - PDV ===
+<thumbnail>{{ :base_de_conhecimento:treinamento:pdv_ilhas.png?nolink |}}</thumbnail>
+Com o PDV aberto, acesse as configurações((Atalho: F8)) e vá para o Menu **Ilhas**. Neste Menu, todas as ilhas cadastradas e //ativas// irão aparecer na lista. Para cada ilha, é necessário selecionar a impressora que será associada a ela e depois clicar em **Salvar**.\\ 
+<WRAP important round>Para uma impressora aparecer na lista de impressoras disponíveis para associar a uma ilha, a impressora deve estar acessível para o computador do PDV principal (Impressoras de rede, compartilhadas ou conectado via USB ao computador).</WRAP>
+</WRAP>
+<WRAP half column>
+=== Cloudfy Blue ===
+<thumbnail>{{ :base_de_conhecimento:treinamento:cfyblue_ilhas.png?nolink |}}</thumbnail>
+Com o PDV aberto, acesse as configurações((Atalho: F8)) e vá para o Menu **Ilhas de impressão**. Neste Menu, todas as ilhas cadastradas e //ativas// irão aparecer na lista. Clique em uma ilha para abrir a lista de impressoras disponíveis, selecionar uma impressora e clicar em okay para associar a impressora a ilha.\\ 
+<WRAP important round>Para uma impressora aparecer na lista de impressoras disponíveis para associar a uma ilha, a impressora deve estar acessível para o computador do PDV principal (Impressoras de rede, compartilhadas ou conectado via USB ao computador).</WRAP>
+</WRAP>
+</WRAP>

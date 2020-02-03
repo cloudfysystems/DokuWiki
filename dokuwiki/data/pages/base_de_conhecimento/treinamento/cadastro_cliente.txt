@@ -1,0 +1,20 @@
+====== Cadastro de Clientes ======
+Para cadastrar, editar ou excluir um cliente, navegue para o Menu > [[https://app.padariananuvem.com/site/#/H02SF0103A|Manutenção de Clientes]] 
+
+Nesta tela, são listados os clientes já cadastrados previamente.\\
+{{:base_de_conhecimento:treinamento:lista-clientes.png?1200|}} \\ \\
+O **Cadastro** de novos clientes pode ser realizado clicando no botão <wrap safety>NOVO</wrap>. \\
+Em seguida, será aberta a página para cadastro de cliente que é organizada em três abas: Dados cadastrais, Configurações financeiras e Programa fidelidade.\\ \\
+{{:base_de_conhecimento:treinamento:novo-cliente.png?1200|}}\\
+
+Na aba de Dados cadastrais, encontram-se as informações básicas do cliente, tal qual nome, endereço, contato, configurações tributárias e etc. \\ \\
+<wrap round info> Note que, no campo Tipo cliente/fornecedor, as opções vêm do cadastro em Menu > Configurações > [[http://localhost:8080/H02AP01/site/#/H02SF0101X|Tipo de cliente/fornecedor]]</wrap>
+
+Já na aba de **Configurações financeiras**, é realizado a parametrização de informações de vendas a prazo para o cliente. \\
+E na aba de **Programa fidelidade**, pode-se informar se o cliente terá acesso aos programas de fidelidade.\\
+
+Depois de preencher todas as informações necessárias, clique no ícone para salvar {{:base_de_conhecimento:treinamento:salvar.png?100|}}\\ 
+Em seguida, clique no botão de voltar {{:base_de_conhecimento:treinamento:voltar.png?25|}} para ser redirecionado novamente para a listagem de clientes cadastrados.\\ \\
+Para **Editar** um registro, basta clicar sobre o registro, e em seguida, após as realizar as alterações desejadas, clicar no ícone de salvar. \\
+E para **Excluir** um registro, basta clicar sobre o ícone de lixeira na listagem de clientes e, em seguida, confirmar a exclusão na janela pop-up que será exibida. \\
+
