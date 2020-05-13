@@ -1,0 +1,91 @@
+======Cadastrar funcionario como cliente======
+
+O cadastro de funcionários como clientes é bem simples e a seguir iremos explicar passo a passo todo o processo.\\
+<wrap info round>Nesse tutorial abordaremos somente as informações relevantes para o cadastro de um funcionário como cliente. Caso deseje mais detalhes, você pode acessar nosso tutorial [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastro_cliente|Cadastro de clientes]].</wrap>\\
+<wrap info round>Esse tutorial não aborda o cadastro do funcionário para **atender** ou **utilizar o sistema**, mas caso necessite, você pode acessar nosso passo a passo em [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastro_usuario|Cadastro de usuário]].</wrap>\\
+Para cadastrar, editar ou excluir um funcionário cadastrado como cliente, navegue para o [[https://app.padariananuvem.com/site/#/H02SF0103A|Menu >Manutenção de Clientes]].
+
+Nessa tela, são listados os clientes já cadastrados previamente.\\
+<thumbnail>{{base_de_conhecimento:treinamento:lista_cliente.png?nolink|}}</thumbnail>
+ \\ \\
+O **Cadastro** de novos funcionários como clientes pode ser realizado clicando no botão <wrap safety>NOVO</wrap>. \\
+Em seguida, será aberta a página para cadastro de cliente que é organizada em três abas: **Dados cadastrais**, **Configurações financeiras** e Programa fidelidade.\\ \\
+<wrap info round>Algumas informações são opicionais e ficam a critério de empresa se devem ser preenchidas ou não.</wrap>\\
+
+<thumbnail>{{base_de_conhecimento:treinamento:novo-cliente.png?nolink|}}</thumbnail>
+
+==== Dados cadastrais ====
+Na aba de **Dados cadastrais**, pode-se preencher as seguintes informações listadas abaixo: \\ \\
+
+=== Informações do cliente ===
+  * **Nome completo:** Nome completo do funcionário.
+  * **Nome resumido:** Nome resumido do funcionário para fins de localização.
+  * **Data de nascimento:** Data de nascimento do funcionário.
+  * **CPF/CNPJ:** CPF/CNPJ do funcionário.
+  * **Tp. Pessoa:** Seleciona se é pessoa jurídica ou pessoa física.
+  * **Categoria de pessoa:** Seleciona se o funcionário é apenas um Cliente ou um Cliente e fornecedor.
+  * **RG:** RG do funcionário.
+  * **Tipo cliente/fornecedor:** Deve ser selecionado a opção **Funcionário**.\\ <wrap round info>Caso não apareça essa opção, ela deve ser cadastrada em [[https://app.padariananuvem.com/site/#/H02SF0101X|Menu > Configurações > Tipo de cliente/fornecedor]].</wrap>\\ <wrap round info>Essa opção serve para facilitar a identificação desse cliente como funcionários em relatórios.</wrap>\\
+  * **Situação:** Seleciona se o funcionário está ativo ou inativo.
+
+<wrap round info>Quando digitado um **CNPJ** automaticamente aparece o botão  {{:base_de_conhecimento:treinamento:consultar_cnpj.png?nolink&100|}}. Clicando nesse botao o sistema preencherá automaticamente os dados cadastrais usando como referência os dados da receita.</wrap>\\
+
+<wrap important round>**Sempre confirme as informações preenchidas automaticamente pois elas podem estar desatualizadas.**</wrap>\\
+
+
+=== Dados para contato: ===
+  * **Telefone:** Telefone do funcionário.
+  * **Celular:** Celular do funcionário.
+  * **E-mail:** E-mail do funcionário.
+  * **Observações:** Observações referentes ao funcionários.
+
+=== Endereço do cliente ===
+  * **CEP:** CEP do endereço do funcionário.
+  * **Endereço:** Endereço do funcionário.
+  * **Número:** Número do local do endereço do funcionário.
+  * **Complemento:** Complemento do endereço do funcionário.
+  * **Cidade:** Cidade do funcionário.
+  * **Bairro:** Bairro do funcionário.
+  * **Estado:** Estado do funcionário.
+
+==== Configurações financeiras ====
+Já na aba de **Configurações financeiras**, é realizado a parametrização de informações de vendas a prazo para o funcionário. Essas informações são separadas em três grupos sendo eles: **Configurações para venda a prazo**, Pedido de venda - Prazo para recebimento e **Integração de contas a receber - Financeiro**.\\
+
+=== Configurações para venda a prazo ===
+  * **Situação de venda a prazo:** Define se o funcionário é autorizado ou não a comprar a prazo.
+  * **Dia de vencimento:** Define uma data para o vencimento das compras do funcionário (apenas informativo).
+  * **Limite de saldo:** Define um limite de saldo para o funcionário.
+  * **Senha para comprar a prazo:** Define uma senha que será solicitada quando o funcionário quiser comprar a prazo no PDV.
+
+<WRAP important round>**Negativar o funcionário não o impede de realizar compras a prazo. Para isso o funcionário deve atingir o limite de saldo definido ou ter a situação de venda a prazo inativada**</WRAP>\\
+ 
+
+=== Integração contas a receber - Financeiro ===
+  * **Categoria:** Define em qual categoria financeira o recebimento de vendas a prazo do funcionário será lançado. \\ <wrap round info>O cadastro de categorias financeiras pode ser feito em [[https://app.padariananuvem.com/site/#/H02SF0201D|Financeiro > Configurações > Plano de contas financeiro > Fluxo de caixa]] caso deseje criar uma categoria financeira diferente para os recebimentos de vendas a prazo dos funcionários.</wrap>\\ <wrap info round>Caso não selecionado nenhuma opção, os lançamentos serão lançados automaticamente na categoria financeira **Vendas a prazo** junto com a dos outros clientes.</wrap>\\
+
+<wrap round info>O recebimento de vendas a prazo pode ser feito diretamente no PDV apertando a tecla **F3** do teclado ou na retaguarda em [[https://app.padariananuvem.com/site/#/H02SF0103E|Clientes > Pagamento de contas]].</wrap>\\
+
+===== Salvar informações =====
+
+Depois de preencher todas as informações necessárias, clique no ícone para salvar {{:base_de_conhecimento:treinamento:salvar.png?nolink100|}}\\ 
+Em seguida, clique no botão de voltar {{:base_de_conhecimento:treinamento:voltar.png?nolink25|}} para ser redirecionado novamente para a listagem de clientes cadastrados.\\ \\
+
+===== Editar informações =====
+Para **Editar** um registro, basta clicar sobre o registro, e em seguida, após realizar as alterações desejadas, clicar no ícone de salvar {{:base_de_conhecimento:treinamento:salvar.png?nolink100|}}. \\
+
+===== Excluir cadastro =====
+Para **Excluir** um cadastro, basta clicar sobre o registro e em seguida no ícone excluir {{:base_de_conhecimento:treinamento:icone_excluir_cadastro.png?nolink100|}}.\\
+
+Outra forma de excluir um registro é clicar no ícone da lixeira localizado ao lado direito do registro desejado conforme destacado na imagem abaixo.
+<thumbnail>{{base_de_conhecimento:treinamento:lista-clientes.png?nolink|}}</thumbnail>\\
+
+<WRAP IMPORTANT ROUND>**O sistema não deixará excluir funcionários que já possuem algum lançamento no sistema, caso precise você poderá inativá-lo na aba [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastrar_funcionario_como_cliente#informacoes_do_cliente|Dados Cadastrais > Informações do cliente]] .**</WRAP>\\ \\
+
+
+=== Excluir funcionários em lote ===
+Para exluir funcionários em lote basta clicar na caixa de seleção localizado a esquerda de cada registro e depois no ícone da lixeira, conforme mostrado abaixo:\\
+<thumbnail>{{:base_de_conhecimento:treinamento:excluir_clientes_lote.gif?nolink|}}</thumbnail>
+===== Desconto para funcionários =====
+Caso a política do seu estabelecimento forneça descontos para os funcionários, é possível parametrizar uma promoção fixa para eles. Isso pode ser feito em [[https://app.padariananuvem.com/site/#/H02SF0102R|Produtos > Promoções]]. Você pode olhar nosso tutorial [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastrar_promocao|Cadastro de Promoções]] caso tenha alguma dificuldade.
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

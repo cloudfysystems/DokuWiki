@@ -1,0 +1,34 @@
+======Reimprimir NFCe pela retaguarda======
+
+A reimpressão de NFCe é bem simples e a seguir iremos explicar passo a passo todo o processo. \\
+
+A reimpressao tanto de NFCe como de NFe pode ser feita em [[https://app.cloudfy.net.br/site/#/H02SF0109A|Nota fiscal > Emissão de NFE]]. \\ Na tela aberta você irá selecionar a data em que foi emitida a NFCe tanto no campo **Data inicial** como no campo **Data final**. Também deverá no campo chamado **Tipo/Modelo da nota fiscal** alterar a opção de **NFe** para **NFCe**. \\ Por último deverá clicar no botão {{:base_de_conhecimento:treinamento:botao_pesquisar.png?nolink80|}}. \\
+<wrap round info>Como exemplo foi utilizado a data 05/03/2020 como pode ser observado abaixo:</wrap>
+<thumbnail>{{:base_de_conhecimento:treinamento:reimpressao_nfce.gif?nolink|}}</thumbnail> \\
+
+Logo abaixo deverá ser exibido uma lista das NFCe emitidas no período selecionado com as seguintes informações separadas por coluna: \\
+  * **Data da emissão:** a data em que a nota foi emitida.
+  * **Cliente:** Qual o cliente essa nota foi emitida caso selecionado no momento da venda.
+  * **CNPJ/CPF:** O CNPJ ou CPF informado no momento da venda.
+  * **Valor total da NFe:** O valor total da nota fiscal.
+  * **Série/número da nota:** Indica qual o número de série e qual o número da nota fiscal emitida.
+  * **Nr. do pedido:** Caso a NFCe tenha sido originada de um pedido de venda, será indicado o número dele nessa coluna.
+  * **Natureza op.:** Indica qual é a natureza da operação.
+  * **Valor total dos produtos:** Valor total dos produtos desconsiderando descontos e acréscimos.
+  * **Situação:** Situação atual da NFCe (**Emitida** ou **Cancelada**).
+
+No campo pesquisar é possível localizar a NFCe por qualquer uma das informações listadas acima, basta digitar a informação que automaticamente será listada abaixo a NFCe desde que emitida no período pesquisado anteriormente.\\
+Depois de localizado a NFCe basta passar o mouse em cima da NFCe desejada e clicar no ícone {{:base_de_conhecimento:treinamento:icone_impressora.png?nolink30|}} que será aberto o arquivo da NFCe para ser impresso.\\
+<wrap rounf info>No exemplo abaixo foi aberto o arquivo usando o visualizador de arquivos do **Google Chrome**, caso você utilize outro visualizador o processo pode ser diferente.</wrap>\\
+<wrap rounf info>A nota e valor e impressora mostrados abaixo são apenas para exemplificar</wrap>\\
+<thumbnail>{{:base_de_conhecimento:treinamento:reimprimir_nfce.gif?nolink|}}</thumbnail>
+<WRAP round important>**Deverá ter uma impressora configurada no computador que está sendo utilizado para realizar a impressão.**</WRAP>
+
+
+===Exibir chave da nota fiscal===
+
+A coluna **Chave da NFe** vem ocultada por padrão, caso você precise que seja exibido deve por o mouse em cima do botão {{:base_de_conhecimento:treinamento:botao_coluna.png?nolink100|}} e clicar em cima da opção **Chave da NFe** conforme mostrado abaixo.
+<thumbnail>{{:base_de_conhecimento:treinamento:exibir_coluna_chave_nfce.gif?nolink|}}</thumbnail> \\
+<WRAP round info>É possível personalizar a exibição das notas fiscais exibidas adicionando ou ocultando colunas para melhor visualização. \\ Basta selecionar ou deselecionar a coluna desejada no botão {{:base_de_conhecimento:treinamento:botao_coluna.png?nolink100|}}.</WRAP>
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar!

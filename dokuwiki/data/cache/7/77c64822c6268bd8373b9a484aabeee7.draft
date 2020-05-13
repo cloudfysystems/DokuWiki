@@ -1,0 +1,69 @@
+a:6:{s:2:"id";s:51:"base_de_conhecimento:treinamento:emitir_nfe_de_nfce";s:6:"prefix";s:0:"";s:4:"text";s:9016:"====== Emitir NF-e utilizando NFC-e ======
+A emissão de uma NF-e utilizando uma NFC-e é bem simples e a seguir iremos explicar passo a passo todo o processo de emissão. Se você já está familiarizado com o processo de [[.:emissao_nfe|emissão de NF-e]] pule para a [[emitir_nfe_de_nfce#Etapa 2: Informações do Produto]], a etapa onde pode ser feita a seleção de cupons de venda.
+===== Iniciando uma nova emissão =====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Nota Fiscal>Emissão de NFe]] e aperte no botão <wrap safety round>REALIZAR UMA NOVA EMISSÃO</wrap> para iniciar o assistente de emissão de NFe.\\ 
+<thumbnail>{{:base_de_conhecimento:treinamento:realizar_nova_emissao.png?nolink|}}</thumbnail>
+==== Etapa 1: Dados do cliente ====
+Na primeira etapa do assistente você deve preencher as informações do cliente para o qual você deseja emitir a nota. Utilize o campo de pesquisa de cliente, exibido na imagem abaixo, para selecionar um cliente cadastrado.
+<thumbnail>{{ :base_de_conhecimento:treinamento:pesquisar_cliente.png?nolink |}}</thumbnail>
+Ao selecionar o cliente, as informações restantes serão preenchidas automaticamente de acordo com o que foi cadastrado. Clique em continuar no final da tela para prosseguir para a próxima etapa.\\ 
+<wrap tip>Caso o cliente não esteja cadastrado, você pode clicar no ícone {{:base_de_conhecimento:cadastrar1.png?nolink&30x30|}} e fazer o cadastro de um novo usuário sem sair da tela de emissão de nota.</wrap>\\ 
+<wrap important>Verifique se todos os campos <wrap em>obrigatórios*</wrap> estão preenchidos.</wrap>\\ 
+<wrap important>Verifique se o cliente é contribuinte e em caso positivo, preencha corretamente a inscrição estadual.</wrap>
+
+==== Etapa 2: Informações do Produto ====
+A segunda etapa é onde você seleciona os produtos e informações tributarias que farão parte da NF-e.<wrap info round>É nesta etapa que é possível selecionar o cupom de venda que deseja transformar em NF-e.</wrap>\\ 
+Clique no botão <button type="success" size="sm">SELECIONAR CUPONS</button>, indicado na imagem abaixo, para abrir a tela de seleção de cupons.
+<thumbnail>{{ :base_de_conhecimento:treinamento:selecao_cupons.png?nolink |}}</thumbnail>
+<panel type="success">
+=== Selecionar Cupons ===
+<thumbnail>{{ :base_de_conhecimento:treinamento:filtro_cupom.png?nolink |}}</thumbnail>
+Por padrão, os filtros de pesquisa de cupom estarão preenchidos da seguinte maneira:\\ 
+<WRAP quarter column><thumbnail>**Data inicial:**\\ Primeiro dia do mês atual</thumbnail></WRAP>
+<WRAP quarter column><thumbnail>**Data final:**\\ Data atual</thumbnail></WRAP>
+<WRAP quarter column><thumbnail>**Tipo de venda:**((Venda à vista/Venda a prazo/Ambos))\\ Ambos</thumbnail></WRAP>
+<WRAP quarter column><thumbnail>**Pesquisa de cliente:**((Este campo não é obrigatório))\\ Cliente selecionado na primeira etapa</thumbnail></WRAP>
+Altere os filtros conforme o necessário para achar o cupom que deseja.\\ 
+<wrap info round>Se o cupom foi emitido sem cliente, deixe o campo cliente em branco e utilize os demais campos para filtrar a sua pesquisa.</wrap>\\ 
+Após selecionar um ou mais cupons desejados, clique no botão <button type="primary" size="xs">SELECIONAR</button> que irá aparecer ao lado do botão <button type="success" size="xs">PESQUISAR</button> para importar todos os itens dos cupons selecionados para a NF-e.\\ 
+<wrap tip round>Caso você tenha clientes que compram a prazo por exemplo, você pode selecionar todos os cupons a prazo do mês e gerar uma NF-e completa facilmente</wrap>
+</panel>
+Após a inclusão dos itens você pode editar as informações de cada item conforme o necessário. Clique no botão <button type="primary" size="xs">CONTINUAR</button> no canto inferior direito da página para prosseguir para a próxima etapa.
+<thumbnail>{{ :base_de_conhecimento:treinamento:itens_nfe.png?nolink |}}</thumbnail>
+<WRAP alert round>Se algum dos itens estiver com <wrap em>erro</wrap> na coluna **Validação**, deixe o mouse em cima do item para que as opções de ações {{:base_de_conhecimento:treinamento:drop_down.png?nolink&x50|}} apareçam. Clique na seta azul para abrir a tela de **informações tributárias** e arrume as informações necessárias.\\ 
+Você também pode selecionar mais de um produto, ir no botão **Ações** e clicar em **Alterar tributação** para alterar todos os produtos selecionados de uma vez.\\ 
+**Sempre verifique com o seu contador as informações tributárias corretas dos seus produtos.**</WRAP>
+==== Etapa 3: Dados do Frete ====
+Nesta etapa precisamos saber as informações sobre o frete e transportadora caso necessário.\\ 
+<WRAP group>
+<WRAP left centeralign round><thumbnail>{{:base_de_conhecimento:treinamento:tipo_frete.png?nolink&|}}
+----
+**//Opções de frete para emissão da NFe//**</thumbnail></WRAP> A opção **Sem frete** não necessita de nenhuma informação preenchida, então basta clicar em <btn type="primary" size="xs">CONTINUAR</btn>.\\ Nas demais opções é possível preencher informações de transportadora e os dados de volumes transportados.\\
+<WRAP tip round>É possível cadastrar novas transportadoras clicando no botão {{:base_de_conhecimento:cadastrar1.png?nolink&25x25|}}.\\ Na tela que irá aparecer, clique em uma transportadora para alterar seu cadastro e adicionar veículos ou clique no botão <btn type="success" size="xs">NOVO</btn> para cadastrar uma nova transportadora.</WRAP></WRAP>
+==== Etapa 4: Informações complementares e finalização ====
+Na última etapa da emissão da NFe entre com as informações adicionais e confira se os totais da nota estão corretos.
+=== Informações de emissão ===
+<WRAP centeralign><thumbnail>{{ :base_de_conhecimento:treinamento:conferir_infos.png?nolink |}}
+----
+**//Informações da emissão//**</thumbnail></WRAP>
+<wrap alert round>Não altere manualmente estes campos.</wrap>\\ 
+Se as **informações de emissão** não estiverem corretas, utilize o botão <btn type="link">Voltar</btn>((canto inferior esquerdo da tela)) para arrumar as informações incorretas nas etapas anteriores.<wrap round safety>Não se preocupe, nenhuma das informações é perdida ao voltar para outra etapa.</wrap>\\ 
+No campo //__Documento Fiscal Referenciado__// está referenciado o número do(s) documento(s) selecionado(s) na [[emitir_nfe_de_nfce#Etapa 2: Informações do Produto]]. Caso queira referenciar mais documentos, volte para a Etapa 2.
+=== Informações complementares ===
+<thumbnail>{{ :base_de_conhecimento:treinamento:nfe_info_comp.png?nolink |}}</thumbnail>
+No campo de //__Informações Complementares__// você poderá complementar o texto com qualquer informação que achar necessário.\\ 
+<wrap important round>**IMPORTANTE:** Não apague o texto que já vem preenchido neste campo, apenas adicione conteúdo após a informação pré preenchida.</wrap>
+=== Tipo de cobrança ===
+<thumbnail>{{ :base_de_conhecimento:treinamento:tipo_cobranca_nfe.png?nolink |}}</thumbnail>
+Neste campo você pode deixar na opção **Fatura** ou **Duplicata**, para incluir as duplicatas nas informações da nota.\\ 
+Se a opção Duplicata for escolhida, irá aparecer os campos para preencher os detalhes da duplicata. Clique no botão {{:base_de_conhecimento:cadastrar1.png?nolink&30x30|}} para adicionar mais duplicatas.\\ 
+<wrap important>As duplicatas adicionadas aqui não são importadas automaticamente para o gerenciador financeiro. Se ainda não foram lançadas as duplicatas relacionadas a esta nota, não esqueça de fazer o lançamento no gerenciador financeiro após emitir a nota.</wrap>
+=== Totais da Nota ===
+Nesta seção você encontra os valores calculados de impostos e pode informar valores de acréscimo e desconto, em seus respectivos campos. Analise se os valores de imposto e total da NFe estão corretos e volte para para as etapas anteriores para corrigir os erros, se houver algum erro.
+==== Finalizar Emissão ====
+Clique no botão <button type="primary" size="xs">EMITIR</button>, localizado no canto inferior direito da tela, para emitir a nota. Se houver algum erro durante a emissão, verifique se as informações foram preenchidas corretamente ou peça ajuda para o nosso suporte. Se a emissão concluir sem erros, você terá a opção de enviar a NFe por email e voltar para a tela inicial do Menu Nota Fiscal>Emissão de NFe e pode achar a nota para fazer uma das ações a seguir quantas vezes desejar:\\ 
+  * {{:base_de_conhecimento:treinamento:download_nfe.png?nolink&20x20|}} Download do XML
+  * {{:base_de_conhecimento:treinamento:imprimir_nfe.png?nolink&20x20|}} Reimprimir DANFE
+  * {{:base_de_conhecimento:treinamento:email_nfe.png?nolink&20x20|}} Enviar NF por email
+  * {{:base_de_conhecimento:treinamento:cancelar_nfe.png?nolink&20x20|}} Cancelar NFe
+  * {{:base_de_conhecimento:treinamento:carta_correcao.png?nolink&20x20|}} Carta de Correção";s:6:"suffix";s:0:"";s:4:"date";i:1566387229;s:6:"client";s:13:"gabriel.mello";}

@@ -1,0 +1,106 @@
+======Conciliar e desconciliar conta bancária======
+
+=====Importar extrato bancário=====
+
+O processo para conciliar sua conta bancária com o sistema é bem simples e iremos explicar o passo a passo a seguir.\\
+
+O primeiro passo é navegar até a tela [[https://app.cloudfy.net.br/site/#/H02SF0201F|Financeiro > Extrato bancário]]. Então a seguinte tela deverá ser exibida:\\
+<thumbnail>{{base_de_conhecimento:treinamento:tela_extrato_bancario.png?nolink|}}</thumbnail>\\
+
+Uma vez nessa tela você deve selecionar a conta bancária a ser conciliada, depois clicar em {{:base_de_conhecimento:treinamento:botao_extrato_bancario.png?nolink&100|}}, depois no botão {{:base_de_conhecimento:treinamento:botao_importar_extrato.png?nolink&100|}} e por último no botão {{:base_de_conhecimento:treinamento:botao_selecione_o_arquivo.png?nolink&100|}}. Logo em seguida será aberto uma janela de diálogo do sistema operacional pedindo para que seja selecionado o extrato do banco salvo no seu dispositivo.\\
+
+<wrap info round>O extrato do banco deve estar no formato **OFX** ou **Money 2000** para ser importado corretamente.</wrap>\\
+
+<thumbnail>{{:base_de_conhecimento:treinamento:selec_banc_extat.gif?nolink|}}</thumbnail>\\
+
+Caso a importação tenha sido concluída com sucesso, já será possível visualizar os lançamentos correspondentes do extrato logo abaixo conforme mostrado na imagem a seguir:\\
+
+<thumbnail>{{:base_de_conhecimento:treinamento:tela_extrato_bancario_conc.png?nolink|}}</thumbnail>\\
+
+=====Conciliar conta bancária=====
+
+Depois de importado o extrato bancário do seu banco, devemos acessar a página do conciliador bancário em [[https://app.cloudfy.net.br/site/#/H02SF0201K|Financeiro > Conciliador Bancário]]. Então a seguinte tela deverá ser exibida:\\
+
+<thumbnail>{{base_de_conhecimento:treinamento:tela_conciliador_banc.png?nolink|}}</thumbnail>\\
+
+<wrap info round>O sistema sempre trará como padrão todos os lançamentos **Não conciliados**, porém é possível usar o filtro de data localizado na parte superior da tela para filtrar por um período específico.</wrap>\\
+
+<WRAP INFO ROUND>Note que ao lado **Direito** estarão todos os lançamentos importados do seu banco e no lado **Esquerdo** todos os laçamentos cadastrados no seu sistema.</WRAP>\\
+
+Caso você já possua o lançamento no sistema e ele contenha as mesmas informações do extrato bancário, o sistema automaticamente mostrará eles lado a lado, então basta clicar no botão {{:base_de_conhecimento:treinamento:botao_conciliar.png?nolink&75|}}. Porém em alguns casos pode haver alguma divergência na informação ou ausência da transação no sistema. Nesses casos pode ser feito os seguintes procedimentos:\\
+
+
+<WRAP INFO ROUND>Sempre que um lançamento for conciliado com o extrato bancário, será considerado como **Realizado** e passará a ser considerado no calculo do saldo do seu sistema.</WRAP>\\
+
+====Criar um lançamento no sistema====
+
+Caso o lançamento ainda não exista no sistema, ele poderá ser criado no momento do conciliamento. Basta preencher ao lado direito da tela as informações da aba {{:base_de_conhecimento:treinamento:aba_novo_receb.png?nolink&100|}} e depois clicar no botão {{:base_de_conhecimento:treinamento:botao_conciliar.png?nolink&75|}} que automaticamente será criado um lançamento no sistema financeiro da empresa com as mesmas informações do lançamento do banco localizado no lado esquerdo da tela:
+
+<thumbnail>{{base_de_conhecimento:treinamento:conciliando_novo_lanc.gif?nolink|}}</thumbnail>\\
+
+  * **Descrição:** é uma breve descrição para identificar o lançamento no sistema.\\ <wrap info round>Quando selecionado a aba {{:base_de_conhecimento:treinamento:aba_novo_receb.png?nolink&100|}} o campo **Descrição** vem preenchido com a mesma descrição do extrato bancário importado mas é possível alterá-lo conforme desejar.</wrap>\\
+  * **Categoria:** indica a qual categoria financeira será cadastrado o lançamento para uma melhor organização e visualização de relatórios.\\ <wrap info round>As categorias financeiras podem ser cadastradas ou modificadas em [[https://app.cloudfy.net.br/site/#/H02SF0201D|Financeiro > Configurações > Plano de contas financeiro > Fluxo de caixa]].</wrap>\\
+  * **Cliente:** Esse campo indica a qual **Cliente** ou **Fornecedor** pertence esse lançamento.\\ <wrap info round>Caso o lançamento não pertença a nenhum **Cliente** ou **Fornecedor** pode ser deixado em branco.</wrap>\\
+
+<wrap info round>Caso necessário inserir ou modificar mais alguma informação nesse lançamento, isso poderá ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201E|Financeiro > Gerenciador financeiro]].</wrap>\\
+
+====Criar uma transferência entre contas====
+
+Caso a transferência ainda não exista no sistema, ela poderá ser criada no momento do conciliamento. Basta clicar na aba {{:base_de_conhecimento:treinamento:aba_nova_transf.png?nolink&100|}} localizado ao lado direito da tela, selecionar a conta de origem dessa transferência e depois no botão {{:base_de_conhecimento:treinamento:botao_conciliar.png?nolink&75|}}. Feito isso automaticamente será gerado no sistema uma transferência entre contas com base nas informações do movimento do extrato bancário localizado no lado direito da tela.
+
+<thumbnail>{{base_de_conhecimento:treinamento:conciliando_novo_transf.gif?nolink|}}</thumbnail>\\
+
+  * **Descrição:** é uma breve descrição para identificar a transação no sistema.\\ <wrap info round>Quando selecionado a aba {{:base_de_conhecimento:treinamento:aba_nova_transf.png?nolink&100|}} o campo **Descrição do recebimento** vem preenchido com a mesma descrição do extrato bancário importado mas é possível alterá-lo conforme desejar.</wrap>\\
+  * **Conta de origem:** Esse campo indica qual a conta de origem dessa transação, seja ela um crédito ou um débito.\\ <wrap info round>A conta de origem deve estar cadastrada no seu sistema para realizar uma transação entre suas contas. Contas bancárias podem ser criadas ou modificadas em [[https://app.cloudfy.net.br/site/#/H02SF0201A|Financeiro > Configurações > Contas bancárias]].</wrap>\\
+
+<wrap info round>Caso necessário inserir ou modificar mais alguma informação nesse lançamento, isso poderá ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201E|Financeiro > Gerenciador financeiro]].</wrap>\\
+
+====Conciliar um lançamento já existente no sistema====
+
+Caso o lançamento já exista no sistema, você deve clicar em {{:base_de_conhecimento:treinamento:aba_localizar.png?nolink&100|}}, então será aberta uma nova janela onde deverá ser selecionado o lançamento existente a ser conciliado. Depois de selecionado basta clicar no botão {{:base_de_conhecimento:treinamento:botao_conciliar.png?nolink&75|}}.\\
+
+<thumbnail>{{base_de_conhecimento:treinamento:conciliando_lanc_exist.gif?nolink|}}</thumbnail>\\
+
+Note que na nova janela aberta ao clicar em {{:base_de_conhecimento:treinamento:aba_localizar.png?nolink&100|}} existe alguns filtros a serem utilizados para localizar o lançamento no sistema, são eles:
+  * **Contas bancárias:** Este filtro define os lançamentos de quais contas serão exibidas na tela e traz como padrão a conta que estiver sendo conciliada no momento.\\ <wrap info round>Caso a transação do extrato bancário seja conciliada com um lançamento do sistema que esteja em outra conta bancária, o sistema automaticamente irá alterar a conta do lançamento para a conta que está sendo conciliada.</wrap>\\
+  * **Tipo:** Define se serão exibidos **Contas a pagar** ou **Contas a receber** do sistema.\\ <wrap info round>O sistema traz como padrão **Contas a pagar** caso a transação se trate de **Débito** e **Contas a receber** caso a transação se trate de um **Crédito** mas é possível alterar se necessário.</wrap>\\
+  * **Exibir:** Define qual o status dos lançamentos que serão exibidos na tela sendo as opções {{:base_de_conhecimento:treinamento:filtro_todos.png?nolink&60|}}, {{:base_de_conhecimento:treinamento:filtro_em_aberto.png?nolink&75|}}, {{:base_de_conhecimento:treinamento:filtro_a_vencer.png?nolink&75|}}, {{:base_de_conhecimento:treinamento:filtro_vencidos.png?nolink&75|}} e {{:base_de_conhecimento:treinamento:filtro_pagos_recebidos.png?nolink&115|}}.\\ <wrap info round>O sistema traz como padrão a opção {{:base_de_conhecimento:treinamento:filtro_todos.png?nolink&60|}}.</wrap>\\
+  * **Período:** Define quais os lançamentos serão exibidos na tela com base na sua data de pagamento ou recebimento, caso já tenham sido definidos desta forma, ou com base na sua data de vencimento caso ainda estejam pendentes.
+  * **Colunas:** Define quais colunas de informação serão exibidas no lançamento, sendo elas: **Data**, **Descrição**, **Nr.docto**, **Filial**, **Cliente/fornecedor**, **Categoria**, **Conta bancária**, **Valor, Situação**.\\ <wrap info round>O sistema  **NÃO** traz selecionadas como padrão as colunas: **Filial** e **Categoria**.</wrap>\\
+
+<wrap info round>Caso o valor do lançamento selecionado no sistema financeiro da sua empresa seja diferente da transação no extrato bancário a ser conciliado, será exibido uma caixa de seleção adicional chamada **Aplicar pendência como acréscimo ou desconto** com o valor da divergência localizada na parte inferior da tela. Caso selecionada essa opção, o sistema adicionará um **Acréscimo** ou um **Desconto** ao lançamento, com objetivo de igualar os valores do sistema ao do extrato bancário.</wrap>\\
+
+<thumbnail>{{base_de_conhecimento:treinamento:adic_pend_acres_desc.gif?nolink|}}</thumbnail>\\
+
+<WRAP INFO ROUND>Podem ser selecionados mais de um lançamento do sistema caso sejam referentes a uma mesma transação bancária. Caso exista divergência entre os valores selecionados e o valor da transação bancária, deverá ser selecionada a caixa se seleção **Aplicar pendência como acréscimo ou desconto**. Então será feito um acréscimo ou desconto no último lançamento selecionado feito no sistema.</WRAP>\\
+
+<WRAP IMPORTANT ROUND>Somente será habilitado o botão {{:base_de_conhecimento:treinamento:botao_conciliar.png?nolink&75|}} depois de selecionada a caixa de diálogo **Aplicar pendência como acréscimo ou desconto** caso haja divergência nos valores.</WRAP>\\
+
+<wrap info round>Caso necessário inserir ou modificar mais alguma informação nesse lançamento, isso poderá ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201E|Financeiro > Gerenciador financeiro]].</wrap>\\
+
+====Agrupar transações do extrato bancário====
+
+É possível agrupar os lançamentos do extrato bancário também se necessário. Para isso você deve clicar na caixa de seleção localizada ao lado direito da tela **Agrupar lançamento** em um dos lançamentos que você deseja agrupar. Quando isso for feito o sistema irá gerar um lançamento temporário no topo da tela com o lançamento selecionado e a data dele onde é possível alterar clicando em cima se necessário. Então basta selecionar a caixa de seleção **Agrupar lançamento** nos demais lançamentos desejados que eles automaticamente serão adicionados ao lançamento temporário no topo da tela. Quando adicionados todos basta configurar ao lado direito da tela como deseja fazer a conciliação desse lançamento no sistema, sendo possível [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:conciliar_conta_bancaria#criar_um_lancamento_no_sistema|Criar um lançamento no sistema]], [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:conciliar_conta_bancaria#criar_uma_transferencia_entre_contas|Criar uma transferência entre contas]] ou [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:conciliar_conta_bancaria#conciliar_um_lancamento_ja_existente_no_sistema|Conciliar um lançamento já existente no sistema]].\\
+
+<thumbnail>{{base_de_conhecimento:treinamento:conciliando_agrup.gif?nolink|}}</thumbnail>\\
+
+=====Desconciliar conta bancária=====
+
+Caso deseje desfazer um conciliamento no sistema, primeiro devemos navegar até a tela [[https://app.cloudfy.net.br/site/#/H02SF0201K|Financeiro > Conciliador bancário]] e então passar o mouse em cima do botão {{:base_de_conhecimento:treinamento:botao_exibir.png?nolink&75|}} localizado no topo da tela e então clicar em {{:base_de_conhecimento:treinamento:botao_conciliados.png?nolink&100|}}. Devemos nos atentar também se a conta bancária e o período selecionado correspondem a conciliação a ser desfeita. Quando feito isso deverá ser exibido todos os lançamentos conciliados, então basta clicar no {{:base_de_conhecimento:treinamento:botao_desfazer.png?nolink&75|}} e ele será desconciliado.\\
+
+<thumbnail>{{base_de_conhecimento:treinamento:desconciliando_conta_banc.gif?nolink|}}</thumbnail>\\
+
+=====Conferir conciliamento=====
+
+Depois de todas as transações terem sido conciliadas, o saldo da conta corrente da sua empresa deve ser igual a exibida no sistema. Isso pode ser conferido em [[https://app.cloudfy.net.br/site/#/H02SF0201I|Financeiro > Dashboard]], onde serão exibidos os saldos de todas as contas cadastradas no sistema. Nessa tela existe alguns filtros que devemos nos atentar antes realizar essa conferência:
+
+<thumbnail>{{base_de_conhecimento:treinamento:dash_finan_conc.png?nolink|}}</thumbnail>\\
+
+  * **Data de referência:** Esse filtro define o saldo de qual data será exibido.
+  * **Previsto/Realizado:** Quando selecionado o filtro **Previsto**, o sistema irá incluir no cálculo também os lançamentos **Não recebidos** ou **Não pagos**. Essa opção é ideal se você deseja ter uma previsão de como ficará sua conta bancária no futuro. Quando selecionado a opção **Realizado**, o sistema irá considerar apenas os lançamentos **Recebidos** ou **Pagos**. Essa opção é ideal para você conferir o saldo atual da sua conta sem projeções.
+
+<wrap info round>Será exibido uma mensagem em vermelho junto ao saldo da conta caso existam lançamentos não conciliados ou o extrato bancário importado esteja desatualizado.</wrap>\\
+
+<WRAP IMPORTANT ROUND>Para conferir se o saldo da sua conta está igual ao saldo do sistema **SEMPRE** deverá ser utilizado a opção **REALIZADO**, pois assim irá ser considerado apenas as operações já feitas do seu sistema.</WRAP>\\ \\ \\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar!

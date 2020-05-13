@@ -1,0 +1,75 @@
+====== Configuração de observações, adicionais e acompanhamentos ======
+Para configura observações, adicionais e acompanhamentos é simples, a seguir abordaremos o passo a passo para configurar observações, adicionais e acompanhamentos.
+
+===== Observações =====
+As Observações podem ser de ponto de carne, remoção de cebola ou algum outro ingrediente por exemplo. \\
+Para configurar as Observações deve-se seguir para o menu [[https://app.cloudfy.net.br/site/#/H02SF0102V|Produtos>Observações]]
+<thumbnail>{{:base_de_conhecimento:treinamento:adicionais0.png?nolink|}}</thumbnail>
+==== Criando uma nova Observação ====
+Clicar no botão <wrap safety round>NOVO</wrap> para criar um novo grupo de observações
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais00.png?nolink |}}</thumbnail>
+Informar o nome da observação
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais04.png?nolink |}}</thumbnail>
+Descrever as observações
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais06.png?nolink |}}</thumbnail>
+
+E salvar.
+
+Após configurar as o grupo de observações devemos seguir para o produto no qual estas observações serão configuradas, para isto devemos ir no menu [[https://app.padariananuvem.com/site/#/H02SF0102H|Produtos>Produtos]]
+<thumbnail>{{:base_de_conhecimento:treinamento:adicionaisprodutosprodutos.png?nolink|}}</thumbnail>
+Escolher o produto e clicar na aba **OBS./ADICIONAIS**
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais08.png?nolink |}}</thumbnail>
+Agora devemos preencher o campo de observações clicando no ícone da lupa e procurando o grupo de observações criado
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais07.png?nolink |}}</thumbnail>
+Caso queira, é possível que seja obrigatório a confirmação sobre observações em **todas as vendas** deste produto, basta clicar no botão de **obrigatoriedade**.
+<thumbnail>{{ :base_de_conhecimento:treinamento:obrigatorio.gif?nolink |}}</thumbnail>
+
+===== Adicionais =====
+
+Primeiramente devemos lembrar que os adicionais são **cobrados!**
+
+Para configurar os adicionais deve-se seguir para o menu [[https://app.padariananuvem.com/site/#/H02SF0102X|Produtos>Adicionais/Acomp]]
+<thumbnail>{{:base_de_conhecimento:treinamento:adicionais.png?nolink|}}</thumbnail>
+==== Criando um novo adicional ====
+Deve clicar em <wrap safety round>NOVO</wrap>
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais00.png?nolink |}}</thumbnail>
+Devemos escolher entre adicionais e acompanhamentos no filtro, no momento escolheremos **Adicionais**.
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicio.gif?nolink |}}</thumbnail>
+Devemos dar nome a esta configuração de adicionais. \\
+Descendo a tela escolheremos quais produtos farão parte deste grupo.
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais01.png?nolink |}}</thumbnail>
+Para configurar um produto com adicionais devemos navegar para o menu [[https://app.padariananuvem.com/site/#/H02SF0102H|Produtos>Produtos]]
+<thumbnail>{{:base_de_conhecimento:treinamento:adicionaisprodutosprodutos.png?nolink|}}</thumbnail>
+Selecionar o produto que queremos configurar, ao selecionar o produto clique na aba **OBS./ADICIONAIS**
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais08.png?nolink |}}</thumbnail>
+Desça a página até a opção de **Adicionais**.
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais02.png?nolink |}}</thumbnail>
+Nesta opção você irá escolher o **grupo de adicionais** criado, **quantidade mínima** e **quantidade máxima**. \\
+Caso queira, é possível que seja obrigatório a confirmação sobre adicionais em **todas as vendas** deste produto, basta clicar no botão de **obrigatoriedade**.
+<thumbnail>{{ :base_de_conhecimento:treinamento:obrigatorio.gif?nolink |}}</thumbnail>
+
+===== Acompanhamentos =====
+
+Primeiramente devemos lembrar que os acompanhamentos não são cobrados!
+
+Para configurar os acompanhamentos deve-se seguir para o menu [[https://app.padariananuvem.com/site/#/H02SF0102X|Produtos>Adicionais/Acomp]]
+<thumbnail>{{:base_de_conhecimento:treinamento:adicionais.png?nolink|}}</thumbnail>
+==== Criando um novo acompanhamento ====
+Deve clicar em <wrap safety round>NOVO</wrap> 
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais00.png?nolink |}}</thumbnail>
+Devemos escolher entre adicionais e acompanhamentos no filtro, no momento escolheremos **Acompanhamentos**.
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicio.gif?nolink |}}</thumbnail>
+Devemos dar nome a esta configuração de acompanhamentos.
+Descendo a tela escolheremos  quais produtos farão parte deste grupo.
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais01.png?nolink |}}</thumbnail>
+Para configurar um produto com acompanhamentos devemos navegar para o menu [[https://app.padariananuvem.com/site/#/H02SF0102H|Produtos>Produtos]]
+<thumbnail>{{:base_de_conhecimento:treinamento:adicionaisprodutosprodutos.png?nolink|}}</thumbnail>
+Selecionar o produto que queremos configurar, ao selecionar o produto clique na aba **OBS./ADICIONAIS**
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais08.png?nolink |}}</thumbnail>
+Desça a página até a opção de **Acompanhamentos**.
+<thumbnail>{{ :base_de_conhecimento:treinamento:adicionais03.png?nolink |}}</thumbnail>
+Nesta opção você irá escolher o **grupo de acompanhamentos** criado, **quantidade mínima** e **quantidade máxima**.\\
+Caso queira, é possível que seja obrigatório a confirmação sobre acompanhamentos em **todas as venda deste produto**, basta clicar no botão de **obrigatoriedade**.
+<thumbnail>{{ :base_de_conhecimento:treinamento:obrigatorio.gif?nolink |}}</thumbnail>
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar

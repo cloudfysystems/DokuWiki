@@ -1,0 +1,25 @@
+a:6:{s:2:"id";s:56:"base_de_conhecimento:treinamento:troca_de_senha_de_caixa";s:6:"prefix";s:0:"";s:4:"text";s:1905:"====== Troca de senha de atendente de caixa ======
+
+Este tutorial tem como objetivo explicar como se realiza a mudança de senha de um atendente de caixa.
+
+{{:base_de_conhecimento:treinamento:atendente_de_caixa.png?400| Tela de atendente de caixa}}
+
+===== Como mudar a senha de um atendente de caixa? =====
+
+Para mudar a senha, acesse o site app.cloudfy.net.br, após o acesso clique no segundo ícone do lado esquerdo do menu superior e, em seguida, clique em [[https://app.padariananuvem.com/site/#/H00SF0401A|Usuários]]. \\
+<wrap info round>Caso não tenha acesso a este menu, entre em contato com o administrador para obter permissão.</wrap>\\
+
+{{:base_de_conhecimento:treinamento:menu-superior-usuario.png?700| Menu superior Usuário}}
+
+Encontre o seu funcionário pesquisando pelo **Nome do usuário**, **Login**, **CPF** ou **Situação**. Caso ele ainda não esteja cadastrado, você pode criar um novo usuário seguindo o tutorial de [[base_de_conhecimento:treinamento:cadastro_usuario|]]. \\
+
+{{:base_de_conhecimento:treinamento:usuario_colaborador.png?700| Exemplo de usuário com nome colaborador}}
+
+Após encontrar o seu atendente de caixa cadastrado na base, será aberta a página para edição de usuário que é organizada em três abas: Dados cadastrais, Permissões de acesso e Configurações para atendente. Selecione a aba {{:base_de_conhecimento:treinamento:configuracoes_para_atendente_botao.png?|}}, como pode ser visto na imagem a seguir:\\
+
+{{:base_de_conhecimento:treinamento:config-atendente.png?nolink&1000| Tela de Configurações para Atendente}} 
+
+Mude a senha para atendimento inserindo uma nova senha de quatro dígitos, lembrando que ela deve ser numérica. 
+Após realizar todo esse processo, clique no ícone salvar registro, localizado no canto superior direito. {{:base_de_conhecimento:treinamento:salvar.png?nolink&120| Botão Salvar}} 
+
+";s:6:"suffix";s:0:"";s:4:"date";i:1586285665;s:6:"client";s:13:"renata.farago";}

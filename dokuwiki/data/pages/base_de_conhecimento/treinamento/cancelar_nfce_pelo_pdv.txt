@@ -1,0 +1,27 @@
+======Cancelar NFC-e pelo PDV======
+
+O procedimento para cancelar uma NFC-e pelo PDV é bem simples e a seguir iremos explicar passo a passo todo o processo.
+
+Para realizar esse procedimento, o seu PDV deve estar aberto e na tela inicial. Uma vez que foi cumprido esses requisitos iniciais, você deve então clicar no ícone {{:base_de_conhecimento:treinamento:menu_pdv.png?nolink&35|}} e depois em {{:base_de_conhecimento:treinamento:cancel_reimpres_f12.png?nolink&170|}} conforme mostra imagem abaixo.\\
+
+<wrap info round>Assegure-se de que a tela **Mesa/Comanda** não esteja aberta para realizar esse procedimento.</wrap>\\
+
+<thumbnail>{{base_de_conhecimento:treinamento:cancelando_venda_pdv.gif?nolink|}}</thumbnail>\\
+
+<WRAP INFO ROUND>Também é possível acessar a tela de cancelamento de venda apertando a tecla **F12** do seu teclado na tela inicial.</WRAP>\\
+
+Na tela de **Cancel./Reimpress.(F12)**, existe as seguintes opções:
+  * {{:base_de_conhecimento:treinamento:lupa_canc_venda_pdv.png?nolink&35|}} Será aberto uma nova tela onde será possível selecionar qual venda será reimpressa ou excluída.\\ <wrap info round>Se necessário, é possível pesquisar as vendas no campo **Pesquisar** pelo **Número do cupom**, **Valor do cupom**, **Cliente**, **Número do pedido**.</wrap>\\
+  * {{:base_de_conhecimento:treinamento:reimprimir_cupom.png?nolink&100|}} Serve para realizar a impressão da NFC-e da venda que está sendo exibida no campo **Nr. do cupom**.
+  * {{:base_de_conhecimento:treinamento:refazer_venda.png?nolink&100|}} Serve para cancelar a venda que está sendo exibida no campo **Nr. do cupom** e após o cancelamento, puxar todos os produtos da venda cancelada automaticamente para a tela inicial.
+  * {{:base_de_conhecimento:treinamento:cancelar_cupom.png?nolink&100|}} Serve para cancelar a venda que está sendo exibida no campo **Nr. do cupom**.\\
+
+<WRAP INFO ROUND>O sistema traz como padrão sempre a **Última venda realizada**.</WRAP>\\
+
+<thumbnail>{{base_de_conhecimento:treinamento:cancelando_venda_pdv_2.gif?nolink|}}</thumbnail>\\
+
+<WRAP IMPORTANT ROUND>Caso já tenha passado mais **30 minutos** desde a emissão da **NFC-e**, não será possível cancelá-la segundo **Ajuste SINIEF 07/18**. Nesse caso apenas a venda será cancelada</WRAP>\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+
+

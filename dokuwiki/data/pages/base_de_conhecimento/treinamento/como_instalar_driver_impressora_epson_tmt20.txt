@@ -1,0 +1,54 @@
+====== Instalação Driver da Impressora Epson TM-T20======
+
+O primeiro passo para instalar o driver da impressora Epson TM-T20 é fazer o download dele clicando [[https://download.epson-biz.com/modules/pos/index.php?page=single_soft&cid=6225&pcat=3&pid=37|Aqui]]. Para realizar o download basta clicar em **Accept** e depois em **Download**.\\
+{{:base_de_conhecimento:treinamento:pagina_download_tmt20.png?nolink|}} \\
+ 
+<wrap info round>É importante que seja essa versão do driver pois ela possibilita a customização das margens de impressão quando utilizado com o **CloudCommerce PDV**</wrap>\\ \\
+O nome do arquivo baixado é o **APD_511R1_T20_EWM.zip**, trata-se de um arquivo compactado no formato **ZIP** e dentro dele estarão 4 arquivos:
+  * <wrap important round>**APD_511R1_T20.exe:** Esse é o instalador do driver da impressora e que deve ser executado com privilégios de **Administrador** para o funcionamento da impressora.</wrap>
+  * **APD5_Install_en_revG.pdf:** Esse arquivo é um manual de instalação do Advanced Printer Driver Ver.5 para impressora Epson TM-T20.
+  * **APD5_MAN_T20_EN_E.exe:** Esse arquivo é um instalador de manuais e demonstrativos referentes a impressora Epson TM-T20.
+  * **APD5_README_EN.TXT:** Esse arquivo traz algumas informações referentes ao conteúdo do download e possíveis erros de instalação.\\
+Quando executado o arquivo **APD_511R1_T20.exe** serão necessários alguns passos para prosseguir com a instalação:\\
+ 
+Essa tela traz algumas recomendações referente as versões utilizadas e compartilhamento de impressora por outras máquinas. Também recomenda que seja fechado todas as outras aplicações para prosseguir com a instalação do driver. Devemos clicar em **Next**.\\
+{{:base_de_conhecimento:treinamento:driver_tmt20_check_installation.png?nolink|}}\\ \\
+ 
+Essa tela traz a licença de uso do driver, devemos clicar em **Agree** e depois em **Install**. Feito isso será iniciado o processo de instalação do driver e assim que terminar será exibido a seguinte tela:\\
+{{:base_de_conhecimento:treinamento:driver_tmt20_license_agreement.png?nolink|}}\\ \\
+ 
+Essa tela informa que o driver está instalado e informa que agora a impressora deve ser registrada. Para isso devemos clicar em **Next**.\\
+{{:base_de_conhecimento:treinamento:driver_tmt20_printer_registration.png?nolink|}}\\ \\
+
+ 
+<WRAP IMPORTANT ROUND>Nesse momento devemos garantir que a impressora esteja ligada.</WRAP>\\
+Nessa tela devemos selecionar o tipo de comunicação da impressora sendo elas:
+  * **COM:** Comunicação serial (Pouco utilizada)
+  * **Parallel:** Comunicação Paralela (Pouco utilizada)
+  * <wrap important round>**USB:** Comunicação USB, quando selecionamos ela, devemos logo após clicar em **Save Settings**. Caso o registro tenha sido salvo com sucesso, irá aparecer uma tela perguntando se queremos enviar uma impressão de teste para impressora, devemos clicar em **Sim**.</wrap>\\
+  * <wrap important round>**Ethernet:** Caso a impressora seja de rede, essa deve ser a opção selecionada, assim que selecionada devemos preencher o **endereço IP** dela e depois clicar em **Save Settings**. Caso necessário podemos clicar em **Set to Printer** para redefinir o **endereço IP** da impressora. Depois de configurada devemos clicar em **Save Settings**. Caso o registro tenha sido salvo com sucesso, irá aparecer uma tela perguntando se queremos enviar uma impressão de teste para impressora, devemos clicar em **Sim**.</wrap>\\
+  * **LinkedPort:** Pouco utilizada.\\
+
+<WRAP IMPORTANT ROUND>É obrigatório que seja realizado com sucesso o teste de impressão nessa etapa para que consigamos continuar com o procedimento de instalação.</WRAP>\\
+{{:base_de_conhecimento:treinamento:driver_tmt20_register_change_delete.png?nolink|}}\\
+
+<wrap info round>Caso necessário registrar mais impressoras, podemos clicar em **New Printer** e repetir o processo.</wrap>\\
+<wrap info round>A qualquer momento podemos enviar mais testes de impressão clicando em **Test Print**.</wrap>\\
+
+Se tiver sido impresso o teste de impressão, podemos clicar em **Next** e depois em **Close** na próxima janela que será exibida para finalizar a instalação.\\
+<WRAP IMPORTANT ROUND>Normalmente é preciso regular as margens de impressão para o cupom fiscal ser impresso corretamente nessa impressora.</WRAP>\\
+
+=====Cloudfy Blue=====
+No **Cloudfy Blue** isso pode ser feito nas configurações da impressora dentro da aplicação apertando o atalho **F8 > Impressoras > Cadastro da impressora Epson TM-T20 > Informações de Margem**.\\
+{{:base_de_conhecimento:treinamento:cloudfy_blue_configuracao_impressora.png?nolink|}}\\
+ 
+ 
+=====CloudCommerce PDV=====
+O **CloudCommerce PDV** não possui configurações de margem da impressora, por esse motivo devemos configurá-la usando o **Software Epson TM-T20 Utility** em **Painel de controle > Dispositivos e impressoras > Clicar com o botão direito do mouse na impressora EPSON TM-T20 Receipt > Preferências de impressão > aba Definições avançadas > Definições avançadas**. Então a seguinte tela será exibida:\\
+{{:base_de_conhecimento:treinamento:driver_tmt20_apd5_utility.png?nolink|}}\\
+Aqui devemos clicar em **Papel defin. utiliz > Escrever um nome para a configuração de papel > Definir as medidas e depois clicar em Registrar**.\\
+
+Depois devemos acessar as **Preferências de impressão** da impressora pelo Windows em **Painel de controle > Dispositivos e impressoras > Clicar com o botão direito do mouse na impressora EPSON TM-T20 Receipt > Preferências de impressão > Avançado**. Então será exibido a seguinte tela:\\
+{{:base_de_conhecimento:treinamento:opcoes_avancadas_tmt20.png?nolink|}}\\
+ 
+Então no campo **Tamanho do Papel** deverá ser selecionado a configuração de papel registrada no **APD5 Utility**. Depois basta clicar em **OK** e realizar um teste de impressão no **CloudCommerce PDV**.

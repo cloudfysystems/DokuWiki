@@ -1,0 +1,28 @@
+======Atualizar DLLs SiTef======
+
+=====Cloudfy Blue=====
+Primeiro devemos fazer o download das DLLs no endereço clicando [[https://www.softwareexpress.com.br/distri/aplicativos/vrs6/clisitefwin32.zip|Aqui]], então será baixado um arquivo chamado **clisitefwin32.zip**.\\
+No arquivo **clisitefwin32.zip** virão dois arquivos:\\ 
+  * **SiTef - Interface Simplificada com a aplicação(VRS-231).pdf:** contém a especificação técnica das bibliotecas CliSiTefl e CliSiTef.
+  * <wrap important round>**clisitef-x.x.xxx.x.rx-Producao-Win32.zip:** x indica a versão das DLLs baixadas.</wrap>\\
+As DLLs virão compactadas no formato **ZIP** dentro do arquivo **clisitef-x.x.xxx.x.rx-Producao-Win32.zip** e deverão ser extraídas e salvas na pasta **<wrap important round>C:\Users\Usuario\AppData\Local\Programs\Cloudfyblue\Dll</wrap>**\\ \\
+<wrap info round>Usuario é o usuário do sistema operacional em que está instalado a aplicação Cloudfy Blue.</wrap>\\ \\
+
+O sistema operacional irá perguntar se desejamos substituir os arquivos antigos pelos novos. Deveremos clicar em **Substituir os arquivos no destino**.\\
+{{:base_de_conhecimento:treinamento:substituir_arquivos_no_destino.png?nolink|}}\\
+Depois será necessário fechar a aplicação **Cloudfy Blue** e abrir novamente.\\
+<WRAP IMPORTANT ROUND>Convém realizar uma venda teste utilizando **TEF** para confirmar se está tudo funcionando normalmente.</WRAP>\\
+
+=====CloudCommerce PDV=====
+
+Primeiro devemos fazer o download das DLLs no endereço clicando [[https://www.softwareexpress.com.br/distri/aplicativos/vrs6/clisitefwin32.zip|Aqui]], então será baixado um arquivo chamado **clisitefwin32.zip**.\\
+No arquivo **clisitefwin32.zip** virão dois arquivos:\\ 
+  * **SiTef - Interface Simplificada com a aplicação(VRS-231).pdf:** contém a especificação técnica das bibliotecas CliSiTefl e CliSiTef.
+  * <wrap important round>**clisitef-x.x.xxx.x.rx-Producao-Win32.zip:** x indica a versão das DLLs baixadas.</wrap>\\
+As DLLs virão compactadas no formato **ZIP** dentro do arquivo **clisitef-x.x.xxx.x.rx-Producao-Win32.zip** e deverão ser extraídas e salvas na pasta **<wrap important round>C:\Users\Usuario\Cloudfy\J01AP01\CloudCommerce\JRE\bin</wrap>**\\ \\
+<wrap info round>Usuario é o usuário do sistema operacional em que está instalado a aplicação CloudCommerce PDV.</wrap>\\ \\
+
+O sistema operacional irá perguntar se desejamos substituir os arquivos antigos pelos novos. Deveremos clicar em **Substituir os arquivos no destino**.\\
+{{:base_de_conhecimento:treinamento:substituir_arquivos_no_destino.png?nolink|}}\\
+Depois será necessário fechar a aplicação **CloudCommerce PDV** e abrir novamente.\\
+<WRAP IMPORTANT ROUND>Convém realizar uma venda teste utilizando **TEF** para confirmar se está tudo funcionando normalmente.</WRAP>\\
