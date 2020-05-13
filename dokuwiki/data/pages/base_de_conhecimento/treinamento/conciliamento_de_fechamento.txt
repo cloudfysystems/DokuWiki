@@ -3,65 +3,88 @@ A conciliação de fechamento de caixa é bem simples e a seguir iremos explicar
 
 O conciliador de fechamento serve para você lançar de forma correta e prática todos os valores vendidos na frente de caixa do seu estabelecimento no caixa geral da empresa. Isso é importante para o melhor gerenciamento e controle do setor financeiro do estabelecimento.
 
+<wrap tip>Qual a diferença entre fechamento e conciliamento?</wrap>\\
+  * **Fechamento:** é a operação realizada pelo colaborador no PDV, os valores informados ainda estão sujeitos a uma verificação em [[https://app.padariananuvem.com/site/#/H02SF0108B|Vendas > Conciliador de fechamento]] na retaguarda.
+  * **Conciliamento:** é a operação realizada pelo colaborador depois do fechamento. Ela serve para conferir se os valores informados no fechamento estão corretos e fazer automaticamente os lançamentos em [[https://app.padariananuvem.com/site/#/H02SF0201E|Financeiro > Gerenciador Financeiro]].
 ===== Acessando a tela do conciliador de fechamento de caixa =====
 Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0108B|Vendas > Conciliador de fechamento]]. Feito isso será exibido a seguinte tela:
 <thumbnail>{{base_de_conhecimento:treinamento:tela_conciliador_de_fechamento_de_caixa.png?nolink|}}</thumbnail>
 
-É possível filtrar os movimentos de acordo com o caixa, situação da conciliação e também data de abertura. <wrap tip>O sistema sempre abrirá com o filtro selecionado para a semana atual.</wrap>\\
+É possível filtrar os movimentos de acordo com o caixa, situação da conciliação e também data de abertura.
+
+<wrap tip>O sistema sempre abrirá com o filtro selecionado para a **semana** atual.</wrap>\\
 
 Nesta tela são listados os movimentos de caixa realizados, sendo possivel visualizar as seguintes informações:
 
-  * Data de abertura;
-  * Caixa;
-  * Movimento;
-  * Hora de abertura;
-  * Hora de fechamento;
-  * Nome do operador;
-  * Situação;
-  * Diferença de fechamento;
-  * Diferença de conciliação;
-  * Diferença total.
+  * **Data**: é a data que foi aberto o movimento de caixa.
+  * **Caixa**: é o nome do caixa configurável em [[https://app.padariananuvem.com/site/#/H02SF0101A|Configuraçoes > Caixa]].
+  * **Movto.**: é a ordem sequêncial de movimentos no dia no mesmo caixa. 
+  * **Abertura**: é o horário de abertura do movimento.
+  * **Fechamento**: é o horário de fechamento do movimento.
+  * **Operador**: é o nome do colaborador que fechou o movimento.
+  * **Situação**: é a situação atual do movimento.
+  * **Diferença de fechamento**: é a diferença entre o que foi calculado pelo sistema e o que foi informado no momento do fechamento.
+  * **Diferença de conciliação**: é a diferença entre o que foi informado no momento do conciliamento e o que foi informado no momento do fechamento.
+  * **Diferença total**: é a diferença entre o que foi informado no momento do conciliamento e o que foi calculado pelo sistema.
 
 
 ===== Conciliando um movimento =====
 Para conciliar um movimento devemos clicar no ícone {{:base_de_conhecimento:treinamento:lupa_vermelha.png?nolink&30x30|}} localizado no lado direito do movimento de caixa selecionado. Então a seguinte tela será aberta:
-<thumbnail>{{base_de_conhecimento:treinamento:tela_conciliamento_movimento_escolhido.png?nolink|}}</thumbnail>
+<thumbnail>{{base_de_conhecimento:tela_conciliamento_movimento_escolhido.png?nolink|}}</thumbnail>
 
 Nessa tela serão exbidos as seguintes colunas:
-  * Forma de Pagamento: é a forma de pagamento escolhida pelo operador de caixa no momento do atendimento;
-  * Calculado: é o que o sistema calculou de acordo com as informações dadas pelo atendente durante cada venda.
-  * Informado: são os valores informados pelo operador no momento do fechamento;
-  * Dif. fechamento: é a diferença entre os valores calculado e o informado;
-  * Conciliação: é onde deverá ser informado os valores já corrigidos por outro colaborador. Normalmente é feito pelo setor financeiro em outro momento.
-  * Dif. Total: É a diferença entre o calculado pelo sistema e que foi informado na coluna Conciliação.
+  * **Forma de Pagamento:** é a forma de pagamento escolhida pelo colaborador no momento do atendimento;
+  * **Calculado:** é o que o sistema calculou de acordo com as informações dadas pelo colaborador durante cada venda.
+  * **Informado:** são os valores informados pelo colaborador no momento do fechamento;
+  * **Dif. fechamento:** é a diferença entre os valores calculado e o informado;
+  * **Conciliação:** é onde deverá ser informado os valores já corrigidos por outro colaborador. Normalmente é feito pelo setor financeiro em outro momento.
+  * **Dif. Total:** É a diferença entre o calculado pelo sistema e que foi informado na coluna **Conciliação**.
+
+Ainda nessa tela serão exibidas as seguintes linhas de informação:
+  * **Abertura do caixa:** Esse campo indica o qual valor que foi iniciado o movimento de caixa.
+  * **Dinheiro:** Esse campo indica o valor em dinheiro quando foi fechado o movimento de caixa.
+  * **Cartão de débito:** Esse campo indica o valor em cartões de débito quando foi fechado o movimento de caixa.
+  * **Cartão de crédito:** Esse campo indica o valor em cartões de crédito quando foi fechado o movimento de caixa.
+  * **Cheque:** Esse campo indica o valor no tipo de pagamentos definido como **Cheque** em [[https://app.cloudfy.net.br/site/#/H02SF0101B|Configurações > Formas de pagamento]].
+  * **Outros:** Esse campo indica o valor no tipo de pagamentos definido como **Outros** em [[https://app.cloudfy.net.br/site/#/H02SF0101B|Configurações > Formas de pagamento]].\\ <wrap info round>Normalmente esse **Tipo de forma de pagamento** é utilizado para **Vales alimentação e refeição**.</wrap>\\
+  * **Sangrias:** Esse campo indica qual o valor total de sangrias realizadas ao longo do movimento de caixa.\\ <wrap info round>Sangrias são valores retirados do caixa ao longo do movimento e é **descontado** do saldo total do movimento de caixa.</wrap>\\
+  * **Suprimentos:**Esse campo indica qual o valor total de suprimentos realizados ao longo do movimento de caixa.\\ <wrap info round>Suprimentos são valores acrescentados no caixa ao longo do movimento e é **somado** ao saldo total do movimento de caixa.</wrap>\\
+  * **Vendas a prazo:** Esse campo indica qual o valor de vendas a prazo ao longo do movimento de caixa e não permite alteração nos campos.\\ <wrap info round>Se necessário estornar uma venda a prazo ou um produto dessa venda, isso pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0108A|Vendas > Estorno de cupom]].</wrap>\\
 
 Nessa tela de conciliação deve-se preencher os valores recebidos do respectivo movimento de caixa na coluna Conciliação.
 
-Caso todos os valores estejam corretos você pode clicar em <button type="primary" size="xs">CONCILIAR</button>. 
+<wrap tip>Na forma de pagamento **Dinheiro**, na coluna **Calculado**, há um ícone {{:base_de_conhecimento:treinamento:lupa_cinza.png?nolink&30x30|}} ao lado do valor, onde é possivel visualizar um extrato da movimentação de dinheiro do movimento.</wrap>\\
 
-<wrap tip>Não deve ser deixados campos em branco, caso não tenha valor deve ser preenchido com zero.</wrap>\\
+<wrap tip>Não devem ser deixados campos em branco, caso não tenha valor deve ser preenchido com zero.</wrap>\\
 
 ==== Conciliando cartões ====
 Para fazer a conciliação de cartões, você deve clicar em <wrap safety round>CONCILIADOR DE CARTÕES</wrap>, onde vão aparecer as bandeiras que tiveram vendas naquele movimento. Assim, será possível realizar o ajuste de valores de acordo com cada bandeira.
 
-<wrap tip>O cadastro de novas redes adquirentes e suas respectivas bandeiras deve ser feito em [[https://app.padariananuvem.com/site/#/H02SF0101K|Configurações > Redes adquirentes]]. Caso tenha alguma dúvida pode consultar nosso tutorial em :[[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastrar_rede_adquirente|Cadastrar Rede Adquirente]].</wrap>\\
+<wrap tip>O cadastro de novas redes adquirentes e suas respectivas bandeiras deve ser feito em [[https://app.padariananuvem.com/site/#/H02SF0101K|Configurações > Redes adquirentes]].</wrap>\\
+<wrap tip>Caso tenha alguma dúvida pode consultar nosso tutorial em [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastrar_rede_adquirente|Cadastrar Rede Adquirente]].</wrap>\\
 
 
 <thumbnail>{{base_de_conhecimento:treinamento:tela_conciliador_de_cartoes.png?nolink|}}</thumbnail>
 
 Nessa tela é possível ajustar:
 
-  * Forma de pagamento;
-  * Rede adquirente;
-  * Produto/Bandeira;
-  * Data da venda;
-  * Valor POS;
-  * Valor TEF;
-  * Quantidade de transações.
+  * **Forma de pagamento**
+  * **Rede adquirente**
+  * **Produto/Bandeira**
+  * **Data da venda**
+  * **Valor POS**
+  * **Valor TEF**
+  * **Quantidade de transações**
 
 Clicando no ícone {{:base_de_conhecimento:cadastrar1.png?nolink&30x30|}} é possível adicionar novas bandeiras de cartões e seus respectivos valores desde que pré-configurados em [[https://app.padariananuvem.com/site/#/H02SF0101K|Configurações > Redes adquirentes]].
 
 Caso todos os valores estejam corretos você pode clicar em <wrap safety round>CONFIRMAR</wrap>
+
+<wrap tip>Ao realizar a conciliação de cartões, o valor das formas de pagamento **Cartão de crédito**, **Cartão de débito** e **Outros** é preenchido automaticamente de acordo com o informado na conciliação de cartões.</wrap>\\
+
+Caso todos os valores estejam corretos você pode clicar em <button type="primary" size="xs">CONCILIAR</button>.
+
+<WRAP alert round> **O processo de conciliação de fechamento não poderá ser desfeito. Certifique-se de que a mesma esteja correta antes de finalizar o processo.**</WRAP>\\ 
 
 Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
 

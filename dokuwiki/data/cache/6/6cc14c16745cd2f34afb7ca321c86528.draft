@@ -1,13 +1,54 @@
-a:6:{s:2:"id";s:47:"base_de_conhecimento:treinamento:troca_de_senha";s:6:"prefix";s:0:"";s:4:"text";s:802:"====== Troca de Senha ======
+a:6:{s:2:"id";s:47:"base_de_conhecimento:treinamento:troca_de_senha";s:6:"prefix";s:0:"";s:4:"text";s:4149:"====== Troca de Senha ======
 
-Este tutorial tem como objetivo explicar como se realiza a mudança de senha na plataforma.
+Este tutorial tem como objetivo ensinar como se troca a própria senha de acesso ao [[[[https://app.cloudfy.net.br/site/#/|retaguarda ]]]], a senha de um outro colaborador e a senha de atendente de caixa, caso queira saber como se cadastra um usuário acesse [[base_de_conhecimento:treinamento:cadastro_usuario|]]. 
 
-===== Como mudar a minha senha de usuário? =====
+==== Como trocar a minha senha de acesso ao retaguarda? ====
 
-Para realizar a edição de senha, o colaborador deve estar na página [[https://app.padariananuvem.com/site/#/|Inicial]] do sistema e selecionar ao lado direito, no ícone quadrado com uma seta no meio a opção de Trocar senha.\\
+Para trocar a própria senha de acesso, o colaborador deve clicar sob o ícone quadrado com uma seta no meio no canto superior direito da tela, em seguida, selecionar a opção **Trocar senha**. Como pode ser visto na imagem abaixo: \\
 
-<thumbnail>{{ :base_de_conhecimento:trocarSenha.png?nolink |}}</thumbnail>
+{{ :base_de_conhecimento:trocasenha.png?nolink | Troca de Senha}}\\
 
-Quando se é selecionada esta opção, uma janela será aberta e três campos com os nomes Senha antiga, Nova senha e Confirmar senha devem ser preenchidos.//
-<thumbnail>{{ :base_de_conhecimento:janelaTrocarSenha.png?nolink&300 |}}</thumbnail>
-Após estes passos, uma nova senha irá substituir a anterior. ";s:6:"suffix";s:0:"";s:4:"date";i:1580133643;s:6:"client";s:13:"renata.farago";}
+Quando selecionada esta opção, uma janela será aberta e os três campos **Senha antiga**, **Nova senha** e **Confirmar senha** devem ser preenchidos. Por fim, clique em **OK** para salvar.\\
+<wrap info round>A senha para acesso ao retaguarda deve conter seis ou mais dígitos.</wrap>\\
+
+<thumbnail>{{:base_de_conhecimento:treinamento:gif_mudando_minha_senha.gif?nolink|}}</thumbnail>
+
+Após estes passos, uma nova senha irá substituir a anterior.\\
+
+==== Como trocar a senha de outra pessoa para acessar o retaguarda? ====
+
+Para mudar a senha de outra pessoa para acesso ao retaguarda, clique sobre o ícone ao lado esquerdo do menu superior, em seguida, clique em [[base_de_conhecimento:treinamento:cadastro_usuario|]]. \\
+
+{{ :base_de_conhecimento:treinamento:menu-superior-usuario.png?nolink | Menu superior Usuário}}\\
+
+A tela aberta apresenta uma lista de usuários do sistema, encontre o seu colaborador pesquisando pelo **Nome do usuário**, **Login**, **CPF** ou **Situação**. E em seguida, clique sobre seu nome.\\
+
+{{ :base_de_conhecimento:treinamento:usuario_colaborador.png?nolink&900 | Exemplo de usuário com nome colaborador}}\\
+
+A próxima fase é a de edição de usuário que é organizada em três abas: **Dados cadastrais**, **Permissões de acesso** e **Configurações para atendente**. Selecione a opção de **Dados cadastrais** e encontre o botão {{:base_de_conhecimento:treinamento:reiniciar_senha_botao.png?&120|}}.\\
+Uma nova janela será aberta para que os campos de **nova senha** e **confirmar senha** possam ser preenchidos.
+Por fim, clique no botão **OK** para salvar.\\
+<wrap info round>A senha para acesso ao retaguarda deve conter seis ou mais dígitos.</wrap>\\
+
+{{ :base_de_conhecimento:treinamento:trocando_a_senha_de_alguem_no_retaguarda.gif?nolink |}}\\
+
+==== Como trocar a senha para atendimento de caixa? ====
+
+{{ :base_de_conhecimento:treinamento:atendente_de_caixa.png?300 | Tela de atendente de caixa}}
+
+Para efetuar a troca de senha de atendimento ao caixa, clique sobre o ícone ao lado esquerdo do menu superior, em seguida, clique em [[base_de_conhecimento:treinamento:cadastro_usuario|]].\\
+
+{{ :base_de_conhecimento:treinamento:menu-superior-usuario.png?nolink | Menu superior Usuário}}\\
+
+Encontre o seu colaborador pesquisando pelo seu **Nome do usuário**, **Login**, **CPF** ou **Situação**.\\
+
+{{ :base_de_conhecimento:treinamento:usuario_colaborador.png?nolink&900 | Exemplo de usuário com nome colaborador}}\\
+
+Após encontrar o seu atendente de caixa cadastrado na base, clique sobre seu nome para que a página para edição de usuário seja aberta.
+Esta página é organizada em três abas: **Dados cadastrais**, **Permissões de acesso** e **Configurações para atendente**. Selecione a aba {{:base_de_conhecimento:treinamento:configuracoes_para_atendente_botao.png?200|}}.\\
+Mude a senha para atendimento inserindo uma nova senha de quatro dígitos, lembrando que ela deve ser numérica.\\
+
+<thumbnail>{{:base_de_conhecimento:treinamento:mudanda_senha_do_atendente_de_caixa.gif?nolink|}}</thumbnail>\\
+
+Após realizar todo esse processo, clique no ícone salvar registro, localizado no canto superior direito. {{:base_de_conhecimento:treinamento:salvar.png?nolink&120| Botão Salvar}} \\
+Caso ainda tenha problemas para efetuar a troca de senha, entre em contato com o suporte para mais informações.\\";s:6:"suffix";s:0:"";s:4:"date";i:1586449947;s:6:"client";s:13:"renata.farago";}

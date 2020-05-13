@@ -1,5 +1,5 @@
 ====== Entrada de mercadoria ======
-No sistema da Cloudfy é possível fazer a entrada de mercadoria diretamente através da NF-e emitida para o CNPJ da sua empresa. Também é possível realizar [[..:entrada_mercadoria_sem_nf|entrada de mercadoria sem nota fiscal]], porém iremos focar no processo de entrada com nota fiscal neste artigo.\\ 
+No sistema da Cloudfy é possível fazer a entrada de mercadoria diretamente através da NF-e emitida para o CNPJ da sua empresa. Também é possível realizar [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:entrada_de_mercadoria_sem_nfe|entrada de mercadoria sem nota fiscal]].\\ 
 A entrada de mercadoria pode ser dividida em 3 passos: Manifesto da Nota, Importação dos produtos e Importação da cobrança. Só é possível realizar a importação de produtos das notas fiscais que foram manifestadas com os eventos __Operação confirmada__ ou __Ciência da Emissão__.
 ===== Manifesto da Nota Fiscal =====
 <WRAP important round>

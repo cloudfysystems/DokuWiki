@@ -3,7 +3,7 @@ O processo de lançamento de perdas serve para dar baixa em produtos inutilizado
 É um processo simples e abordaremos o passo a passo a seguir:\\
 
 ==== Cadastrar lançamento de perdas ====
-Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Estoque>Movimentar estoque>Lançar perdas]] e uma nova tela se abrirá.\\
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0106M/21|Estoque>Movimentar estoque>Lançar perdas]] e uma nova tela se abrirá.\\
 Nesta tela é apresentado todos lançamentos de perdas já realizados no período. Para comodidade do cliente o período é preenchido automaticamente com a **data inicial** no primeiro dia do mês corrente e a **data final** no dia anterior ao atual.
 
 <thumbnail>{{ :base_de_conhecimento:treinamento:percasgerais.png?nolink |}}</thumbnail>

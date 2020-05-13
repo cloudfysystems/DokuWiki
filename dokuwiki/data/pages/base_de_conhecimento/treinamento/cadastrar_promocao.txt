@@ -56,7 +56,8 @@ Nesta seção iremos cadastrar os produtos que farão parte desta promoção!\\
 Por padrão o sistema vem configurado para **Promoção por grupo de produtos** que lhe permite fornecer os grupos de produtos, e com isso todos os produtos pertencentes a este grupo de produtos, farão parte da promoção!\\
 **Tipo de desconto**, neste campo escolheremos uma das duas formas de aplicação do desconto:\\
   * **Percentual**, será aplicado um valor de desconto percentual baseado no valor da compra.\\
-  * **Valor**, será aplicado um valor fixo no valor total da compra.\\
+  * **Valor**, será descontado um valor fixo do valor total da compra.\\
+  * **Preço Fixo**, Será definido um valor fixo para a compra.\\
 **Desconto**, neste campo será informado o valor que será aplicado de desconto baseado no **tipo de desconto** selecionado.
 <thumbnail>{{ :base_de_conhecimento:treinamento:promo09.gif?nolink |}}</thumbnail>
 <WRAP info round>

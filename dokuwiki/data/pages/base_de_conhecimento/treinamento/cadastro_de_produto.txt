@@ -1,4 +1,4 @@
-====== Cadastrar produto ======
+====== Cadastro de Produtos ======
 O cadastro de produto aqui apresentado é a forma resumida de fazê-lo, fornecendo as informações básicas para o correto funcionamento dentro do sistema Cloudfy.\\
 O processo será apresentado em duas etapas: Dados cadastrais e Informações Tributárias.
 
