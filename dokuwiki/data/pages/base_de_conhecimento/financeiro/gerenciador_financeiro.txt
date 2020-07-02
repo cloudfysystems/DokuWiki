@@ -1,0 +1,187 @@
+======Gerenciador Financeiro======
+
+Esse guia tem como objetivo lhe auxiliar a utilizar o **Gerenciador financeiro** para gerenciar os lançamentos financeiros da sua empresa.\\ \\
+O **Gerenciador financeiro** tem como objetivo lhe auxiliar a gerenciar todos os lançamentos feitos no seu sistema, seja os lançamentos gerados automaticamente pela operação da empresa ou os gerados manualmente pelos colaboradores.\\ \\
+O primeiro passo é navegar pelo menu até a tela do **Gerenciador financeiro** em [[https://app.cloudfy.net.br/site/#/H02SF0201E|Financeiro > Gerenciador financeiro]] como mostrado abaixo.\\
+<thumbnail>{{:base_de_conhecimento:treinamento:abrir_tela_gerenciador_financeiro.gif?nolink|}}</thumbnail> \\
+<wrap round info>Nessa tela o sistema trará por padrão todas as **Contas a pagar**, ou seja, **Despesas** no período da **semana atual** usando como referência a **data de vencimento** caso ainda não tenha sido pago ou a **data de pagamento** caso já tenha sido pago.</wrap>\\
+Ainda nessa tela existe alguns filtros que devemos nos atentar para localizar o lançamento desejado, são eles:
+  * {{:base_de_conhecimento:treinamento:bt_contas_bancarias.png?nolink&150|}}: Caso desejemos ver os lançamentos de apenas uma ou algumas contas bancárias, podemos selecioná-las nesse filtro e clicar no botão {{:base_de_conhecimento:treinamento:bt_aplicar.png?nolink&75|}}.\\ <wrap info round>Esse campo vem por padrão com todas as contas do sistema selecionadas.</wrap>\\
+  * {{:base_de_conhecimento:treinamento:botao_exibir.png?nolink&75|}}: Esse filtro exibe os lançamentos por status, sendo eles:\\ <wrap info round>Esse campo vem por padrão com a opção {{:base_de_conhecimento:treinamento:bt_todos.png?nolink&75|}} selecionada.</wrap>\\
+    * {{:base_de_conhecimento:treinamento:bt_todos.png?nolink&75|}}: Exibe todos os lançamentos <wrap em>**EXCETO**</wrap> os {{:base_de_conhecimento:treinamento:bt_excluidos.png?nolink&75|}}.
+    * {{:base_de_conhecimento:treinamento:bt_emaberto.png?nolink&75|}}: Exibe todos os lançamentos que ainda se encontram em aberto, ou seja, os {{:base_de_conhecimento:treinamento:bt_avencer.png?nolink&75|}} e os {{:base_de_conhecimento:treinamento:bt_vencidos.png?nolink&75|}}.
+    * {{:base_de_conhecimento:treinamento:bt_avencer.png?nolink&75|}}: Exibe todos os lançamentos que ainda irão vencer.
+    * {{:base_de_conhecimento:treinamento:bt_vencidos.png?nolink&75|}}: Exibe todos os lançamentos que já venceram.
+    * {{:base_de_conhecimento:treinamento:bt_pagoserecebidos.png?nolink&100|}}: Exibe todos os lançamentos que já se encontram **Pagos** no caso de **Contas a pagar** e **Recebidos** no caso de **Contas a receber**.
+    * {{:base_de_conhecimento:treinamento:bt_excluidos.png?nolink&75|}}: Exibe todos os lançamentos excluídos.
+  * {{:base_de_conhecimento:treinamento:bt_filtrarpordatade.png?nolink&150|}}: Esse filtro decidi qual a data do lançamento será considerada para ser exibida nos resultados com base no filtro de data, sendo eles:\\ <wrap info round>Esse filtro vem por padrão com a opção {{:base_de_conhecimento:treinamento:bt_data_vencto_pagto.png?nolink&150|}} selecionada</wrap>\\
+    * {{:base_de_conhecimento:treinamento:bt_data_vencto_pagto.png?nolink&150|}}: Essa opção considera a data de **Vencimento** caso o lançamento ainda esteja **Em aberto** ou a data de **Pagamento** caso o lançamento já esteja como **Pago**.
+    * {{:base_de_conhecimento:treinamento:bt_data_vencimento.png?nolink&150|}}: Essa opção considera a data de **Vencimento** do lançamento.
+    * {{:base_de_conhecimento:treinamento:bt_data_pagamento.png?nolink&150|}}: Essa opção considera a data de **Pagamento** do lançamento e só exibe os lançamentos que estejam como **Pagos** ou **Recebidos**.
+    * {{:base_de_conhecimento:treinamento:bt_data_documento.png?nolink&150|}}: Essa opção considera a data do documento, ou seja, a data de referência a operação executada.
+    * {{:base_de_conhecimento:treinamento:bt_data_lancamento.png?nolink&150|}}: Essa opção considera a data que foi registrado o lançamento no sistema, seja automaticamente pelo próprio sistema ou manualmente por um colaborador.
+  * **Filtro de período:** Logo ao lado do fitro {{:base_de_conhecimento:treinamento:bt_filtrarpordatade.png?nolink&150|}} existe o filtro do período onde é possível selecionar as seguintes opções:\\ <wrap info round>Esse filtro vem por padrão com a opção **Esta semana** selecionado.</wrap>\\
+    * **Hoje:** Essa opção exibe todos os lançamentos do dia atual.
+    * **Esta semana:** Essa opção exibe todos os lançamentos da semana atual.
+    * **Este mês:** Essa opção exibe todos os lançamentos do mês atual.
+    * **últimos 30 dias:** Essa opção exibe todos os lançamentos dos últimos 30 dias.
+    * **Escolha o perído...:** Essa opção permite escolher um período e clicando nela será aberta uma janela perguntando a **Data inicial** e a **Data final** do período. Depois devemos clicar em {{:base_de_conhecimento:treinamento:bt_ok.png?nolink&50|}}.
+    * {{:base_de_conhecimento:treinamento:bt_icone_calendario.png?nolink|}}: Ainda existe a possibilidade de escolher por **mês** clicando no botão ao lado do fitro de período e clicando no mês desejado.
+  * {{:base_de_conhecimento:treinamento:bt_contas_pagar.png?nolink&125|}}: Como padrão o sistema traz as {{:base_de_conhecimento:treinamento:contas_pagar.png?nolink&125|}}, porém isso pode ser alterado posicionando o mouse em cima do botão e clicando na opção desejada, sendo elas:
+    * {{:base_de_conhecimento:treinamento:contas_receber.png?nolink&125|}}: Exibe todos os lançamentos que são **Receitas**
+    * {{:base_de_conhecimento:treinamento:contas_pagar.png?nolink&125|}}: Exibe todos os lançamentos que são **Despesas**.
+    * {{:base_de_conhecimento:treinamento:transferencias.png?nolink&125|}}: Exibe todos os lançamentos que são **Transferências** entre as contas da empresa.
+    * {{:base_de_conhecimento:treinamento:extrato.png?nolink&75|}}: Exibe **Todos** os lançamentos em formato de extrato.\\ \\
+
+Caso necessário, pode ser usado o campo **Pesquisar** para filtrar em tempo real os lançamentos exibidos na tela ou ainda, os campos logo abaixo de cada descrição das colunas de informação.\\
+Se necessário, também é possível selecionar qual parte da informação digitada no campo **Pesquisar** você quer que seja filtrada, sendo as opções:\\
+{{:base_de_conhecimento:treinamento:selec_opc_filtro.gif?nolink|}}\\
+  * **Qualquer parte:** Essa opção faz com que seja buscada a informação pesquisada em qualquer parte dela.\\ <wrap info round>Essa opção vem selecionada como padrão.</wrap>\\
+  * **Início:** Essa opção faz com que seja buscada a informação pesquisada apenas se o início for igual.
+  * **Igual:** Essa opção faz com que seja buscada a informação pesquisada apenas se ela for exatamento igual.
+
+<WRAP round info>É possível personalizar a exibição dos lançamentos exibidos adicionando ou ocultando colunas para melhor visualização. \\ Basta selecionar ou deselecionar a coluna desejada no botão {{:base_de_conhecimento:treinamento:botao_coluna.png?nolink100|}}.</WRAP>
+
+Ainda é possível agrupar os lançamentos exibidos clicando em cima do botão **Agrupar** e selecionando a informação que deve ser usada como parâmetro para agrupar os lançamentos.\\ <wrap info round>O sistema traz como padrão a opção **Sem grupo**</wrap>\\ {{:base_de_conhecimento:treinamento:agrupar_ger_fin.gif?nolink|}} 
+
+=====Contas a pagar=====
+Contas a pagar são as despesas da sua empresa e podem ser criadas automaticamente no processo de [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:entrada_de_mercadoria|Entrada de mercadoraia]] por exemplo, ou ainda manualmente.\\
+====Criar contas a pagar====
+Para criar um contas a pagar pelo **Genrenciador financeiro**, devemos clicar em {{:base_de_conhecimento:treinamento:bt_novo_pagamento.png?nolink&125|}}. Então será aberta uma nova janela para o preenchimento das informações necessárias como mostrado abaixo:\\
+<thumbnail>{{:base_de_conhecimento:treinamento:novo_pagamento.gif?nolink|}}</thumbnail> \\
+Nessa tela serão solicitadas algumas informações sendo algumas obrigatórias e outras não.\\ <wrap info round>As informações obrigatórias terão um <wrap em>*</wrap> ao lado da descrição.</wrap>\\
+As informações são separadas em 3 grupos, sendo:
+===Conta a pagar===
+  * **Descrição do pagamento:** Descrição do pagamento para identificação.
+  * **Valor:** Valor do pagamento
+  * **Vencimento:** Data de vencimento do pagamento.
+  * **Fornecedor:** Fornecedor ao qual se refere o pagamento.\\ <wrap info round>O gerenciamento dos fornecedores pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0103B|Fornecedores > Man. fornecedores]].</wrap>
+  * **Nr. documento:** Número do documento referente ao pagamento.
+  * **Dt. documento:** Data de referência do pagamento.
+  * **Categoria:** Categoria financeira do pagamento.\\ <wrap info round>O gerenciamento das categorias financeiras pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201D|Financeiro > Configurações > Plano de contas financeiro > Fluxo de caixa]].</wrap>
+  * **Conta:** Conta usada para pagamento.\\ <wrap info round>O gerenciamento das contas do sistema pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201A|Financeiro > Configurações > Contas bancárias]].</wrap>
+  * **Tipo de documento:** Tipo de documento refenrente ao pagamento.\\ <wrap info round>O gerenciamento de tipo de documento pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201L|Financeiro > Configurações > Tipo de documento]].</wrap>
+  * **Centro de custo:** Centro de custo administrativo usado nesse pagamento.\\ <wrap info round> O gerenciamento dos centros de custo pode ser feito em [[https://app.cloudfy.net.br/site/#/H00SF0405A|<Configurações > Centro de custo]].</wrap>
+===Dados do recebimento da conta===
+  * {{:base_de_conhecimento:treinamento:pagar_conta.gif?nolink|}}: Define a conta como paga.
+  * **Dt. pagamento:** Data que foi realizado o pagamento da conta.
+  * **(-)Descontos:** Desconto aplicado ao pagamento.
+  * **(+)Acréscimos:** Acréscimo aplicado ao pagamento.
+  * **(+)Juros de mora:** Juros aplicados a conta por atraso no pagamento.
+  * **(=)Valor pago/pagar:** Valor pago.
+  * **Observações:** Observações referente ao pagamento.
+===Conta corrente===
+  * {{:base_de_conhecimento:treinamento:repetir_lancamentos.gif?nolink|}}: Indica que esse lançamento vai se repetir periodicamente, então realiza mais lançamentos com base na periodicidade escolhida a partir da data definida no campo **Vencimento**.
+  * **Como repetir?:** Define qual a periodicidade que o lançamento irá se repetir, sendo as opções\\ <wrap info round>O sistema traz como padrão a opção **Mensalmente**.</wrap>\\
+    * **Diariamente:** A cada um dia.
+    * **Semanalmente:** A cada uma semana.
+    * **Bisemanalmente:** A cada duas semanas.
+    * **Quinzenalmente:** A cada quinze dias.
+    * **Mensalmente:** A cada um mês.
+    * **Bimestralmente:** A cada dois meses.
+    * **Trimestralmente:** A cada três meses.
+    * **Semestralmente:** A cada seis meses.
+    * **Anualmente:** A cada um ano
+  * **Ocorrências(vezes):** Indica quantas vezes esse lançamento irá se repetir.\\ <wrap info round>O sistema traz como padrão 12.</wrap>\\
+
+Depois de tudo preenchido basta clicar no botão {{:base_de_conhecimento:treinamento:bt_salvar.png?nolink&60|}}.\\
+
+====Ações com o conta a pagar====
+Posicionando o mouse em cima do lançamento no **Gerenciador financeiro** deverão aparecer alguns ícones dependendo da situação atual do lançamento, sendo eles:
+  * {{:base_de_conhecimento:treinamento:icone_editar.png?nolink&25|}}: Edita o lançamento com base nos parâmetros informados.
+  * {{:base_de_conhecimento:treinamento:icone_copiar_lancamento.png?nolink&25|}}: Replica o lançamento com base nos parâmetros informados.
+  * {{:base_de_conhecimento:treinamento:icone_historico.png?nolink&25|}}: Exibe o histórico de visualização e edição do lançamento.
+  * {{:base_de_conhecimento:treinamento:icone_definir_pago.png?nolink&25|}}: Define o lançamento como pago.
+  * {{:base_de_conhecimento:treinamento:icone_definir_nao_pago.png?nolink&25|}}: Define o lançamento como <wrap em>**NÃO**</wrap> pago.
+  * {{:base_de_conhecimento:treinamento:icone_excluir.png?nolink&25|}}: Exclui o lançamento.
+
+<WRAP INFO ROUND>Contas a pagar conciliadas serão exibidos o ícone {{:base_de_conhecimento:treinamento:contas_pagar_conciliado.png?nolink&50|}} na coluna **Situação**.</WRAP>\\
+<WRAP IMPORTANT ROUND>Não é possível **Editar** lançamentos que já foram conciliados, caso precise é necessário desconciliar o lançamento em [[https://app.cloudfy.net.br/site/#/H02SF0201K|Financeiro > Conciliador bancário]]. Caso tenha alguma dúvida pode consultar nosso passo a passo em [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:conciliar_conta_bancaria#desconciliar_conta_bancaria|Desconciliar conta bancária]].</WRAP>\\
+<WRAP IMPORTANT ROUND>Não é possível **Excluir** contas a pagar que estejam definidas como **Pago**, caso precise é necessário antes defini-la como **Não pago**.</WRAP>\\
+
+=====Contas a receber=====
+Contas a receber são as receitas da sua empresa e podem ser criadas automaticamente no processo de [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:conciliamento_de_fechamento|Conciliar fechamento de caixa]] por exemplo, ou ainda manualmente.\\
+====Criar contas a receber====
+Para criar um contas a receber pelo genrenciador financeiro, devemos clicar em {{:base_de_conhecimento:treinamento:bt_novo_recebimento.png?nolink&125|}}. Então será aberta uma nova janela para o preenchimento das informações necessárias como mostrado abaixo:\\
+<thumbnail>{{:base_de_conhecimento:treinamento:novo_recebimento.gif?nolink|}}</thumbnail> \\
+Nessa tela serão solicitadas algumas informações sendo algumas obrigatórias e outras não.\\ <wrap info round>As informações obrigatórias terão um <wrap em>*</wrap> ao lado da descrição.</wrap>\\
+As informações são separadas em 3 grupos, sendo:
+===Conta a receber===
+  * **Descrição do recebimento:** Descrição do recebimento para identificação.
+  * **Valor:** Valor do recebimento.
+  * **Vencimento:** Data de vencimento do recebimento.
+  * **Cliente:** Cliente ao qual se refere o recebimmento.\\ <wrap info round>O gerenciamento dos clientes pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0103A|Clientes > Manutenção de clientes]].</wrap>
+  * **Nr. documento:** Número do documento referente ao recebimento.
+  * **Dt. documento:** Data de referência do recebimento.
+  * **Categoria:** Categoria financeira do recebimento.\\ <wrap info round>O gerenciamento das categorias financeiras pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201D|Financeiro > Configurações > Plano de contas financeiro > Fluxo de caixa]].</wrap>
+  * **Conta:** Conta usada para recebimento.\\ <wrap info round>O gerenciamento das contas do sistema pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201A|Financeiro > Configurações > Contas bancárias]].</wrap>
+  * **Tipo de documento:** Tipo de documento refenrente ao recebimento.\\ <wrap info round>O gerenciamento de tipo de documento pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201L|Financeiro > Configurações > Tipo de documento]].</wrap>
+  * **Centro de custo:** Centro de custo administrativo usado nesse pagamento.\\ <wrap info round> O gerenciamento dos centros de custo pode ser feito em [[https://app.cloudfy.net.br/site/#/H00SF0405A|<Configurações > Centro de custo]].</wrap>
+===Dados do pagamento da conta===
+  * {{:base_de_conhecimento:treinamento:receber_conta.gif?nolink|}}: Define a conta como recebida.
+  * **Dt. recebimento:** Data que foi realizado o recebimento da conta.
+  * **(-)Descontos:** Desconto aplicado ao recebimento.
+  * **(+)Acréscimos:** Acréscimo aplicado ao recebimento.
+  * **(+)Juros de mora:** Juros aplicados a conta por atraso no recebimento.
+  * **(=)Valor pago/pagar:** Valor recebido.
+  * **Observações:** Observações referente ao recebimento.
+===Conta corrente===
+  * {{:base_de_conhecimento:treinamento:repetir_lancamentos.gif?nolink|}}: Indica que esse lançamento vai se repetir periodicamente, então realiza mais lançamentos com base na periodicidade escolhida a partir da data definida no campo **Vencimento**.
+  * **Como repetir?:** Define qual a periodicidade que o lançamento irá se repetir, sendo as opções\\ <wrap info round>O sistema traz como padrão a opção **Mensalmente**.</wrap>\\
+    * **Diariamente:** A cada um dia.
+    * **Semanalmente:** A cada uma semana.
+    * **Bisemanalmente:** A cada duas semanas.
+    * **Quinzenalmente:** A cada quinze dias.
+    * **Mensalmente:** A cada um mês.
+    * **Bimestralmente:** A cada dois meses.
+    * **Trimestralmente:** A cada três meses.
+    * **Semestralmente:** A cada seis meses.
+    * **Anualmente:** A cada um ano
+  * **Ocorrências(vezes):** Indica quantas vezes esse lançamento irá se repetir.\\ <wrap info round>O sistema traz como padrão 12.</wrap>\\
+
+Depois de tudo preenchido basta clicar no botão {{:base_de_conhecimento:treinamento:bt_salvar.png?nolink&60|}}.\\
+
+====Ações com o conta a receber====
+Posicionando o mouse em cima do lançamento no **Gerenciador financeiro** deverão aparecer alguns ícones dependendo da situação atual do lançamento, sendo eles:
+  * {{:base_de_conhecimento:treinamento:icone_editar.png?nolink&25|}}: Edita o lançamento com base nos parâmetros informados.
+  * {{:base_de_conhecimento:treinamento:icone_copiar_lancamento.png?nolink&25|}}: Replica o lançamento com base nos parâmetros informados.
+  * {{:base_de_conhecimento:treinamento:icone_historico.png?nolink&25|}}: Exibe o histórico de visualização e edição do lançamento.
+  * {{:base_de_conhecimento:treinamento:icone_definir_pago.png?nolink&25|}}: Define o lançamento como pago.
+  * {{:base_de_conhecimento:treinamento:icone_definir_nao_pago.png?nolink&25|}}: Define o lançamento como <wrap em>**NÃO**</wrap> pago.
+  * {{:base_de_conhecimento:treinamento:icone_boleto.png?nolink&25|}}: Gera um boleto do lançamento para recebimento.\\ <wrap info round>O gerenciamento de boletos pode ser feito em [[https://app.cloudfy.net.br/site/#/H02SF0201P|Financeiro > Boletos > Gerenciador de boletos]].</wrap>
+  * {{:base_de_conhecimento:treinamento:icone_excluir.png?nolink&25|}}: Exclui o lançamento.
+
+<WRAP INFO ROUND>Contas a receber conciliadas serão exibidos o ícone {{:base_de_conhecimento:treinamento:contas_receber_conciliado.png?nolink&75|}} na coluna **Situação**.</WRAP>\\
+<WRAP IMPORTANT ROUND>Não é possível **Editar** lançamentos que já foram conciliados, caso precise é necessário desconciliar o lançamento em [[https://app.cloudfy.net.br/site/#/H02SF0201K|Financeiro > Conciliador bancário]]. Caso tenha alguma dúvida pode consultar nosso passo a passo em [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:conciliar_conta_bancaria#desconciliar_conta_bancaria|Desconciliar conta bancária]].</WRAP>\\
+<WRAP IMPORTANT ROUND>Não é possível **Excluir** contas a receber que estejam definidas como **Recebido**, caso precise é necessário antes defini-la como **Não recebido**.</WRAP>\\
+
+=====Nova transferência=====
+Transferências são movimentações entre as contas da empresa e <wrap em>**NÃO**</wrap> são consideradas **Despesas** ou **Receitas**.
+====Criar nova transferência====
+Para criar uma nova transferência pelo genrenciador financeiro, devemos clicar em {{:base_de_conhecimento:treinamento:bt_nova_transferencia.png?nolink&125|}}. Então será aberta uma nova janela para o preenchimento das informações necessárias como mostrado abaixo:\\
+<thumbnail>{{:base_de_conhecimento:treinamento:nova_transferencia.gif?nolink|}}</thumbnail> \\
+Nessa tela serão solicitadas algumas informações sendo algumas obrigatórias e outras não.\\ <wrap info round>As informações obrigatórias terão um <wrap em>*</wrap> ao lado da descrição.</wrap>\\
+  * **Descrição do pagamento:** Descrição da transferência para identificação.
+  * **Valor:** Valor da transferência.
+  * **Data da transferência:** Data que ocorreu a transferência.
+  * **Conta de origem:** Conta de origem na qual está sendo retirado o valor.
+  * **Conta de destino:** Conta de destino na qual está sendo depositado o valor.
+Depois de tudo preenchido basta clicar no botão {{:base_de_conhecimento:treinamento:bt_salvar.png?nolink&60|}}.\\
+
+====Ações com a transferência====
+Posicionando o mouse em cima do lançamento no **Gerenciador financeiro** deverão aparecer alguns ícones dependendo da situação atual do lançamento, sendo eles:
+  * {{:base_de_conhecimento:treinamento:icone_definir_pago.png?nolink&25|}}: Define o lançamento como pago.
+  * {{:base_de_conhecimento:treinamento:icone_definir_nao_pago.png?nolink&25|}}: Define o lançamento como <wrap em>**NÃO**</wrap> pago.
+  * {{:base_de_conhecimento:treinamento:icone_excluir.png?nolink&25|}}: Exclui o lançamento.
+
+<WRAP INFO ROUND>Transferências conciliadas serão exibidas na coluna **Situação** com o ícone {{:base_de_conhecimento:treinamento:contas_receber_conciliado.png?nolink&75|}} caso seja a **Conta de Destino** da transferência ou {{:base_de_conhecimento:treinamento:contas_pagar_conciliado.png?nolink&50|}} caso seja a **Conta de Origem** da transferência.</WRAP>\\
+<WRAP IMPORTANT ROUND>Não é possível **Editar** lançamentos que já foram conciliados, caso precise é necessário desconciliar o lançamento em [[https://app.cloudfy.net.br/site/#/H02SF0201K|Financeiro > Conciliador bancário]]. Caso tenha alguma dúvida pode consultar nosso passo a passo em [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:conciliar_conta_bancaria#desconciliar_conta_bancaria|Desconciliar conta bancária]].</WRAP>\\
+<WRAP IMPORTANT ROUND>Não é possível **Excluir** transferências que estejam definidas como **Recebido** ou **Pago**, caso precise é necessário antes defini-lo como **Não recebido** ou **Não pago**.</WRAP>\\
+<WRAP IMPORTANT ROUND>As alterações feitas em uma transferência se aplicarão na **Conta de origem** e na **Conta de destino**.</WRAP>\\
+
+=====Ações em lote=====
+Também é possível executar algumas ações em lote. Para isso basta selecionar os lançamentos desejados clicando na caixa de seleção {{:base_de_conhecimento:treinamento:caixa_selecao.png?nolink&20|}}, posicionar o mouse em cima de {{:base_de_conhecimento:treinamento:acoes.png?nolink&75|}} e depois selecionar a ação desejada.\\
+<thumbnail>{{:base_de_conhecimento:treinamento:acoes_lote.gif?nolink|}}</thumbnail> \\
+
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar!

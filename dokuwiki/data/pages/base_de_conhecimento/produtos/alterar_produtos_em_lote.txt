@@ -1,0 +1,22 @@
+======Alterar produtos em lote======
+A alteração de produtos em lote é um processo bem simples e a seguir iremos explicar passo a passo todo o processo.\\
+
+=====Acessar a tela de alteração de produtos em lote=====
+O primeiro passo é acessar a tela para alteração de produtos em lote, isso pode ser feito navegando pelo menu em **Produtos > Alterar produtos em lote** conforme mostrado abaixo.\\ <thumbnail>{{:base_de_conhecimento:produtos:tela_alterar_produto_lote.gif?nolink|}}</thumbnail>\\
+
+=====Escolher produtos=====
+Nessa tela serão exibidos todos os produtos cadastrados no seu sistema separados por páginas onde cada página exibe **10(Dez)** produtos. Uma vez nessa tela devemos selecionar os produtos que queremos alterar, isso deve ser feito clicando no ícone {{:base_de_conhecimento:treinamento:caixa_selecao.png?nolink|}} ao lado esquerdo de cada produto e depois clicar no ícone que aparecerá em cima. Caso necessário, pode ser usado o campo **Pesquisar** para filtrar em tempo real os produtos exibidos na tela ou ainda, os campos logo abaixo de cada descrição das colunas de informação. Se necessário, também é possível selecionar qual parte da informação digitada no campo **Pesquisar** você quer que seja filtrada, sendo as opções:\\
+{{:base_de_conhecimento:treinamento:selec_opc_filtro.gif?nolink|}}\\
+  * **Qualquer parte:** Essa opção faz com que seja buscada a informação pesquisada em qualquer parte dela.\\ <wrap info round>Essa opção vem selecionada como padrão.</wrap>\\
+  * **Início:** Essa opção faz com que seja buscada a informação pesquisada apenas se o início for igual.
+  * **Igual:** Essa opção faz com que seja buscada a informação pesquisada apenas se ela for exatamento igual. 
+<thumbnail>{{:base_de_conhecimento:produtos:selecionando_itens_alteracao_lote.gif?nolink|}}</thumbnail>\\
+
+=====Definir alterações=====
+Na próxima tela devemos selecionar quais informações dos produtos selecionados anteriormente queremos alterar clicando no botão {{:base_de_conhecimento:treinamento:flag.gif?nolink|}} que logo ao lado direito irá ser exibido as opções para redefenir. Então depois de selecionado todos os parâmetros desejados devemos clicar no botão {{:base_de_conhecimento:treinamento:bt_avancar.png?nolink&75|}} conforme exibido abaixo:\\ <thumbnail>{{:base_de_conhecimento:produtos:parametrizando_alteracoes.gif?nolink|}}</thumbnail>\\
+
+=====Confirmar alterações=====
+A próxima tela é a tela de confirmação, nela será exibida todos os produtos selecionados para ser alterado e suas respectivas configurações onde ao lado esquerdo constará as configurações antigas e ao lado direito as configurações novas. Se todas as configurações estiverem corretas pode clicar em {{:base_de_conhecimento:treinamento:bt_avancar.png?nolink&75|}} que logo em seguida a tela será fechada e deverá ser exibida na parte superior da tela a mensagem {{:base_de_conhecimento:treinamento:produtos_alterados_com_sucesso.png?nolink&300|}}\\ <WRAP IMPORTANT ROUND>**Atenção!**
+Ao confirmar esta operação, os produtos selecionados serão alterados. Esta operação <wrap em>NÃO</wrap> pode ser desfeita.</WRAP>\\ <thumbnail>{{:base_de_conhecimento:produtos:tela_confirmacao_produto_lote.png?nolink|}}</thumbnail>\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

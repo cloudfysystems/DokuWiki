@@ -1,0 +1,107 @@
+====== Cadastrar Clientes ======
+O cadastro de clientes é bem simples e a seguir iremos explicar passo a passo todo o processo.\\
+Para cadastrar, editar ou excluir um cliente, navegue para o [[https://app.padariananuvem.com/site/#/H02SF0103A|Menu >Manutenção de Clientes]].
+
+Nessa tela, são listados os clientes já cadastrados previamente.\\
+<thumbnail>{{base_de_conhecimento:treinamento:lista_cliente.png?nolink|}}</thumbnail>
+ \\ \\
+O **Cadastro** de novos clientes pode ser realizado clicando no botão <wrap safety>NOVO</wrap>. \\
+Em seguida, será aberta a página para cadastro de cliente que é organizada em três abas: **Dados cadastrais**, **Configurações financeiras** e **Programa fidelidade.**\\ \\
+<thumbnail>{{base_de_conhecimento:treinamento:novo-cliente.png?nolink|}}</thumbnail>
+
+==== Dados cadastrais ====
+Na aba de **Dados cadastrais**, deve-se preencher as seguintes informações listadas abaixo: \\ \\
+
+=== Informações do cliente ===
+  * **Nome completo:** Nome completo do cliente.
+  * **Nome resumido:** Nome resumido do cliente para fins de localização.
+  * **Data de nascimento:** Data de nascimento do cliente.
+  * **CPF/CNPJ:** CPF/CNPJ do cliente.
+  * **Tp. Pessoa:** Seleciona se é pessoa jurídica ou pessoa física.
+  * **Categoria de pessoa:** Seleciona se o cliente é apenas um Cliente ou um Cliente e fornecedor.
+  * **RG:** RG do cliente.
+  * **Tipo cliente/fornecedor:** <wrap round info>Categoriza os clientes/fornecedores cadastrados com base nas opções cadastradas em [[https://app.padariananuvem.com/site/#/H02SF0101X|Menu > Configurações > Tipo de cliente/fornecedor]].</wrap>\\
+  * **Código de Terceiro:** Código para integração com outras aplicações.
+  * **Situação:** Seleciona se o cliente está ativo ou inativo.
+
+<wrap round info>Quando digitado um **CNPJ** automaticamente aparece o botão  {{:base_de_conhecimento:treinamento:consultar_cnpj.png?nolink&100|}}. Clicando nesse botao o sistema preencherá automaticamente os dados cadastrais usando como referência os dados da receita.</wrap>\\
+
+<wrap important round>**Sempre confirme as informações preenchidas automaticamente pois elas podem estar desatualizadas.**</wrap>\\
+
+
+=== Dados para contato: ===
+  * **Telefone:** Telefone do cliente.
+  * **Celular:** Celular do cliente.
+  * **E-mail:** E-mail do cliente.
+  * **Observações:** Observações referentes ao cliente.
+
+=== Configurações tributárias: ===
+  * **Indicador de contribuinte estadual:** Indica a situação do cliente quanto a contribuição ICMS.
+  * **Perc. Para redução de MVA (%):** Define o percentual de redução da Margem de Valor Aplicado (MVA) aplicado ao cliente na emissão de NFE.
+  * **Tipo de operação padrão de emissão:** Define o tipo de operação padrão em que é emitido nota fiscal ao cliente.
+
+=== Endereço do cliente ===
+  * **CEP:** CEP do endereço do cliente.
+  * **Endereço:** Endereço do cliente.
+  * **Número:** Número do local do endereço do cliente.
+  * **Complemento:** Complemento do endereço do cliente.
+  * **Cidade:** Cidade do cliente.
+  * **Bairro:** Bairro do cliente.
+  * **Estado:** Estado do cliente.
+
+==== Configurações financeiras ====
+Já na aba de **Configurações financeiras**, é realizado a parametrização de informações de vendas a prazo para o cliente. Essas informações são separadas em três grupos sendo eles: **Configurações para venda a prazo**, **Pedido de venda - Prazo para recebimento** e **Integração de contas a receber - Financeiro**.\\
+
+=== Configurações para venda a prazo ===
+  * **Situação de venda a prazo:** Define se o cliente é autorizado ou não a comprar a prazo.
+  * **Dia de vencimento:** Define uma data para o vencimento das compras do cliente (apenas informativo).
+  * **Limite de saldo:** Define um limite de saldo para o cliente.
+  * **Senha para comprar a prazo:** Define uma senha que será solicitada quando o cliente quiser comprar a prazo no PDV.
+  * **Cliente negativado:** Define se o cliente está negativado ou não.\\ <wrap round info>Quando selecionado que está negativado, será aberto uma janela adicional onde poderá ser informado o motivo da negativação.</wrap>\\
+
+<WRAP important round>**Negativar o cliente não o impede de realizar compras a prazo. Para isso o cliente deve atingir o limite de saldo definido ou ter a situação de venda a prazo inativada**</WRAP>\\
+
+=== Pedido de venda - Prazo para recebimento ===
+  * **Periodicidade de corte:** Define o período de corte padrão para o recebimento do pedido de venda feito ao cliente. \\ <wrap round info> Quando selecionado as opções **Semanal**, **Quinzenal** ou **Mensal**, será exibido um campo ao lado chamado **Data do corte** onde deverá ser informado qual a data que será feito o corte e começará a contar o prazo para recebimento.</wrap>\\
+  * **Prazo para recebimento (dias):** Define qual o prazo padrão para o recebimento de pedidos de venda a partir da data de corte.
+  * **Tipo de prazo:** Define se o prazo padrão para recebimento levará em consideração **Dias corridos** ou apenas **Dias úteis**.
+  * **Dia não útil para recebimento:** Define se caso o a data de recebimento caia em um dia não útil, o sistema irá **Postecipar o recebimento para o próximo dia útil** ou **Antecipar o recebimento para o dia útil anterior**.
+  * **Preço para faturamento:** Define se o preço dos produtos considerado para o cliente nos **Pedidos de venda** será o **Preço à vista** ou o **Preço a prazo**.\\ <wrap round info>Os preços á vista e a prazo são definidos no cadastro de produto em [[https://app.padariananuvem.com/site/#/H02SF0102B|Produtos > Produtos]].</wrap>\\  
+
+=== Integração contas a receber - Financeiro ===
+  * **Categoria:** Define em qual categoria financeira o recebimento de vendas a prazo do cliente será lançado. \\ <wrap round info>O cadastro de categorias financeiras pode ser feito em [[https://app.padariananuvem.com/site/#/H02SF0201D|Financeiro > Configurações > Plano de contas financeiro > Fluxo de caixa]].</wrap>\\ <wrap info round>Caso não selecionado nenhuma opção, os lançamentos serão lançados automaticamente na categoria financeira **Vendas a prazo**.</wrap>\\
+  * **Tipo de documento:** Define qual o tipo de documento que será lançado no **Gerenciador financeiro** no momento do recebimento de vendas a prazo do cliente. \\ <wrap round info> O cadastro de tipos de documentos pode ser feitos em [[https://app.padariananuvem.com/site/#/H02SF0201L|Financeiro > Configurações > Tipo de documento]].</wrap>\\ <wrap info round>Caso não selecionado nenhuma opção, os lançamentos serão lançados com o campo **Documento** em branco.</wrap>\\
+  * **Conta:** Define em qual conta será lançado o recebimento de vendas a prazo do cliente. \\ <wrap round info> O cadastro de contas pode ser feito em  [[https://app.padariananuvem.com/site/#/H02SF0201A|Financeiro > Configurações > Contas bancárias]].</wrap>\\ <wrap info round>Caso não selecionado nenhuma opção, os lançamentos serão lançados automaticamente na conta padrão do sistema.</wrap>\\
+
+<wrap round info>O recebimento de vendas a prazo pode ser feito diretamente no PDV apertando a tecla **F3** do teclado ou na retaguarda em [[https://app.padariananuvem.com/site/#/H02SF0103E|Clientes > Pagamento de contas]].</wrap>\\
+
+==== Programa fidelidade ====
+Na aba de **Programa fidelidade**, é possível informar se o cliente participa do programa fidelidade e visualizar sua pontuação.\\
+<wrap round info> Para cadastrar um programa fidelidade na sua empresa você deve enviar um e-mail para **suporte@cloudfy.net.br** com as regras do programa pretendido para que seja configurado e cadastrado.</wrap>\\
+
+
+
+===== Salvar informações =====
+
+Depois de preencher todas as informações necessárias, clique no ícone para salvar {{:base_de_conhecimento:treinamento:salvar.png?nolink100|}}\\ 
+Em seguida, clique no botão de voltar {{:base_de_conhecimento:treinamento:voltar.png?nolink25|}} para ser redirecionado novamente para a listagem de clientes cadastrados.\\ \\
+
+===== Editar informações =====
+Para **Editar** um registro, basta clicar sobre o registro, e em seguida, após as realizar as alterações desejadas, clicar no ícone de salvar {{:base_de_conhecimento:treinamento:salvar.png?nolink100|}}. \\
+
+===== Excluir cadastro =====
+Para **Excluir** um cadastro, basta clicar sobre o registro e em seguida no ícone excluir {{:base_de_conhecimento:treinamento:icone_excluir_cadastro.png?nolink100|}}.\\
+
+Outra forma de excluir um registro é clicar no ícone da lixeira localizado ao lado direito do registro desejado conforme destacado na imagem abaixo.
+<thumbnail>{{base_de_conhecimento:treinamento:lista-clientes.png?nolink|}}</thumbnail>\\
+
+<wrap important round>**O sistema não deixará excluir clientes que já possuem algum lançamento no sistema, caso precise você poderá inativá-lo na aba [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastro_cliente#dados_cadastrais|Dados Cadastrais > Informações do cliente]] .**</wrap>\\ \\
+
+
+=== Excluir clientes em lote ===
+Para exluir clientes em lote basta clicar na caixa de seleção localizado a esquerda de cada registro e depois no ícone da lixeira, conforme mostrado abaixo:\\
+<thumbnail>{{:base_de_conhecimento:treinamento:excluir_clientes_lote.gif?nolink|}}</thumbnail>
+===== Desconto para clientes =====
+Caso a política do seu estabelecimento forneça descontos para os clientes cadastrados é possível parametrizar uma promoção fixa para determinados clientes cadastrados. Isso pode ser feito em [[https://app.padariananuvem.com/site/#/H02SF0102R|Produtos > Promoções]]. Você pode olhar nosso tutorial [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:cadastrar_promocao|Cadastro de Promoções]] caso tenha alguma dificuldade.
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

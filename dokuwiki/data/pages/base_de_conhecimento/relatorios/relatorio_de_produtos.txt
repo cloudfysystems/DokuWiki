@@ -1,0 +1,24 @@
+====== Relatório de Produtos ======
+No site da cloudfy, é possível extrair diversos tipos de relatórios, dentre eles estão alguns modelos de relatório de produtos.
+
+=== Como extrair todos os produtos da minha empresa? ===
+Caso queira extrair um relatório que contenha todos os produtos da sua empresa, acesse o menu [[https://app.cloudfy.net.br/site/#/H02SF0102B | Produtos → Produtos]], clique sobre o botão {{:base_de_conhecimento:relatorios:colunas.png?nolink&90x30}}, selecione as colunas que deseja que apareçam em seu relatório e por fim, clique sobre o botão {{:base_de_conhecimento:relatorios:exportar.png?nolink&90x30}}.\\
+É possível **Extrair** o relatório em três formatos: **PDF**, **Excel** e **CSV**.\\
+Além disso, pode-se selecionar os campos que ficarão visíveis no relatório e organizar a ordem em que as colunas ficarão dispostas.\\
+
+==== Relatório de vendas por produto: ====
+
+
+{{:base_de_conhecimento:relatorios:opcoes_para_emissao_prod.png?nolink}}\\
+
+Se quiser saber quanto esta vendendo e qual a lucratividade que esta obtendo por produto, acesse o menu [[https://app.cloudfy.net.br/site/#/H02SF0104E | Relatórios Gerais → Painel de relatórios]], selecione o **Relatório de vendas por produto**.
+Role o scroll de seu mouse para baixo e retire um relatório inserindo o período dos dados que deseja coletar, qual o **Grupo de produtos**, a **Filial** e o **Centro Administrativo**. 
+Clique sobre o botão Visualizar, para que a pesquisa seja realizada. 
+
+Em seguida, selecione o botão com formato de **chave de boca**, e escolha entre **Excel** ou **PDF**. Deste modo, será possível extrair um relatório de venda por lucratividade. 
+
+==== Consulte o histórico de alterações de preços de produtos: ====
+
+Para efetuar uma consulta da mudança de preços de seus produtos, acesse o menu [[https://app.cloudfy.net.br/site/#/H02SF0102Y|Produtos→Consultar alterações de preço]]
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

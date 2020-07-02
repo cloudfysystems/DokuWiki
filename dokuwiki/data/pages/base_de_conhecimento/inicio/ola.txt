@@ -1,0 +1,61 @@
+====== Cadastrar Usuários ======
+Todo usuário cadastrado deve possuir um perfil associado para ter acesso as funções do sistema, desta forma, este processo se dá em duas etapas: o Cadastro de perfil e o Cadastro de usuário.
+
+===== Cadastro de perfil =====
+Para cadastrar, editar ou excluir um perfil, clique no segundo ícone do lado esquerdo do menu superior e, em seguida, clique em [[https://app.padariananuvem.com/site/#/H00SF0402A|Perfis]] \\
+{{:base_de_conhecimento:treinamento:menu-superior-botao.png ? 700|Menu superior}}\\ \\
+
+Nesta tela, são listados os perfis previamente cadastrados. \\
+
+Para cadastrar um novo perfil, clique no botão <wrap safety>NOVO</wrap>. Em seguida, adicione uma descrição para o perfil que deseja criar.  \\
+
+A seguir, informe para cada uma das transações disponíveis no sistema, qual o nível de acesso desejado. \\
+Você poderá bloquear, liberar somente a leitura, liberar somente edição e leitura (neste caso não será possível incluir e nem excluir registros) ou liberar o acesso completo (pesquisa, leitura, inclusões, exclusões e alterações de registros).\\ \\
+{{:base_de_conhecimento:treinamento:transacoes.png ? 1000}}
+
+Você pode associar este perfil a usuários previamente cadastrados no sistema, clicando na aba Usuários do perfil \\
+ {{:base_de_conhecimento:treinamento:tabs-perfil.png?300|}}
+
+Informe os usuários que utilizarão este perfil de acesso clicando na lupa \\
+{{:base_de_conhecimento:treinamento:add-usuarios-perfil.png?nolink&1000|}}\\
+Será aberto uma janela pop-up com a lista de usuários cadastrados no sistema.\\
+Clique sob um usuário para selecioná-lo e fechar a pop-up. Com a pop-up fechada, o código e nome do usuário selecionado aparecerá no campo Usuário. \\
+Por fim, clique no ícone <wrap round safety>+</wrap> para confirmar a adição de perfil ao cadastro usuário. \\ \\
+
+Após realizar todo esse processo, clique no ícone salvar registro, localizado no canto superior direito. {{:base_de_conhecimento:treinamento:salvar.png?nolink&120|}} 
+
+===== Cadastro de usuário =====
+
+Para realizar o cadastro de um usuário, clique no segundo ícone do lado esquerdo do menu superior e, em seguida, clique em [[https://app.padariananuvem.com/site/#/H00SF0401A|Usuários]] \\
+
+{{:base_de_conhecimento:treinamento:menu-superior-usuario.png?700|}}
+
+Nesta tela, são exibidos os usuários já cadastrados. Nela é possível criar um novo usuário, editar um existente ou mesmo excluí-lo. \\
+
+Para cadastrar um novo usuário, clique no botão <wrap safety>NOVO</wrap>. Será aberta a página para cadastro de usuário que é organizada em três abas: Dados cadastrais, Permissões de acesso e Configurações para atendente. \\
+{{:base_de_conhecimento:treinamento:cadastro-usuario.png?nolink&1000|}}
+
+Preencha as informações do usuário, tais quais Nome, CPF, E-mail e Login.
+
+Em seguida, clique na aba Permissões de acesso, onde você poderá associar perfis de acesso ao usuário.
+
+Dê ao usuários perfis de acesso clicando na lupa. \\
+{{:base_de_conhecimento:treinamento:add-perfis.png?1000|}} \\
+
+Será aberto uma janela pop-up com a lista de perfis cadastrados no sistema.\\
+Clique sob um perfil para selecioná-lo e fechar a pop-up. Com a pop-up fechada, o código e a descrição do perfil selecionado aparecerá no campo Perfil de acesso. \\
+Por fim, clique no ícone <wrap round safety>+</wrap> para confirmar a adição de perfil ao cadastro usuário. \\ 
+Note que é possível adicionar mais de um perfil para o mesmo usuário. \\
+
+Por fim, caso o usuário vá realizar operações no Terminal, tal qual abertura e fechamento de comandas, clique na aba Configurações para atendente e preencha as informações. \\ 
+{{:base_de_conhecimento:treinamento:config-atendente.png?nolink&1000|}} \\ 
+
+Note que o Número do atendente será preenchido após salvar o registro e a senha deve ser numérica. \\
+
+Após realizar todo esse processo, clique no ícone salvar registro, localizado no canto superior direito. {{:base_de_conhecimento:treinamento:salvar.png?nolink&120|}} 
+
+=====Vídeo=====
+Também possuímos um vídeo explicando passo a passo todo o processo para cadastrar um usuário que pode ser visto logo abaixo:\\
+{{:base_de_conhecimento:treinamento:video_cadastrar_usuario.mp4?nolink&1000x562}}\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

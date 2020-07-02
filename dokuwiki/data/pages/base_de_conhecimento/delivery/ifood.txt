@@ -1,0 +1,17 @@
+====== IFood Delivery ======
+
+Integrando o **Ifood** com a **Cloudfy Systems**, você pode receber os pedidos do iFood diretamente no modo Delivery da Cloudfy e controlar todos os seus pedidos em um único sistema.
+Para habilitar a integração com o iFood, siga os passos a seguir:
+
+  - Nos produtos do iFood existe um campo **Código do PDV**. Você deve colocar o código de referência do produto na Cloudfy neste campo.\\
+  - Ligar para o iFood, informar que o seu sistema de vendas tem integração com o iFood e pedir o **Token de integração**, o **Usuário** e **Senha** para integração.
+  - Quando possuir o Token, Usuário e Senha de integração do IFood, encaminhe um e-mail para suporte@cloudfy.net.br e solicite a configuração da integração.
+	
+====Utilizando a integração com o iFood====
+Quando o modo Delivery estiver integrado, todo pedido feito pelo iFood será sincronizado com a Cloudfy e todas as etapas de criação do pedido serão feitas automaticamente.\\
+Os preços e produtos disponíveis serão controlados no Menu Gerencial do próprio iFood. Caso os produtos tenham diferentes preços no iFood e na Cloudfy, não é preciso duplicar o cadastro dos produtos. Os pedidos gerados pelo iFood utilizarão os preços e nomes do iFood e, por meio do código de referência do produto, é feita a baixa no estoque na Cloudfy.\\
+Na finalização da venda do pedido pago pelo sistema do iFood, a forma de pagamento é omitida, sendo atribuída automaticamente, a forma de pagamento **Pagamento online**.\\
+
+<wrap left important>As integrações com iFood, WooCommerce e Google Maps só estão disponível na versão Cloudfy Blue.</wrap>\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!\\

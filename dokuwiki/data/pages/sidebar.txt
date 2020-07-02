@@ -1,3 +1,3 @@
 <text size="x-large">**Índice**</text>
-{{indexmenu>:base_de_conhecimento#1|js#bw.png notoc}}
+{{indexmenu>:base_de_conhecimento#1|js#bw.png notoc skipns=/^base_de_conhecimento:treinamento$/}}
 ~~NOCACHE~~

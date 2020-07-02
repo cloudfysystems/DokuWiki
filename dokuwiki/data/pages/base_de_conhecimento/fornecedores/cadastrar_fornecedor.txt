@@ -1,0 +1,84 @@
+======Cadastrar fornecedores======
+O cadastro de fornecedores é bem simples e a seguir iremos explicar passo a passo todo o processo.\\
+Para cadastrar, editar ou excluir um fornecedor, navegue para o [[https://app.cloudfy.net.br/site/#/H02SF0103B|Fornecedores > Man. fornecedores]].
+
+Nessa tela, são listados os fornecedores já cadastrados previamente.\\
+<thumbnail>{{base_de_conhecimento:fornecedores:tela_manutencao_fornecedores.png?nolink|}}</thumbnail>
+ \\ \\
+O **Cadastro** de novos fornecedores pode ser realizado clicando no botão <wrap safety>NOVO</wrap>. \\
+Em seguida, será aberta a página para cadastro de fornecedor que é organizada em duas abas: [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:fornecedores:cadastrar_fornecedor#dados_cadastrais|Dados cadastrais]] e [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:fornecedores:cadastrar_fornecedor#configuracoes_financeiras|Configurações financeiras]].\\ \\
+<wrap info round>Depois de feito alguma entrada de mercadoria do fornecedor na tela [[https://app.cloudfy.net.br/site/#/H02SF0130A|Entrada de mercadoria]], é possível consultar o histórico das compras na aba **Histórico de compras** e os prudutos comprados com ele na aba **Produtos**.</wrap>\\
+<wrap info round>Caso tenha alguma dúvida sobre o processo de entrada de mercadoria você pode estar consultando nossos tutoriais em [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:compras:entrada_de_mercadoria|Entrada de mercadoria]] e [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:compras:entrada_de_mercadoria_sem_nota|Entrada de mercadoria sem NFe]].</wrap>\\
+<thumbnail>{{base_de_conhecimento:fornecedores:tela_novo_fornecedor.png?nolink|}}</thumbnail>
+
+==== Dados cadastrais ====
+Na aba de **Dados cadastrais**, deve-se preencher as seguintes informações listadas abaixo: \\ \\
+
+=== Informações do fornecedor ===
+  * **Nome completo:** Nome completo do fornecedor.
+  * **Nome resumido:** Nome resumido do fornecedor para fins de localização.
+  * **Situação:** Seleciona se o cliente está ativo ou inativo.
+  * **CPF/CNPJ:** CPF/CNPJ do fornecedor.
+  * **Tp. Pessoa:** Seleciona se é pessoa jurídica ou pessoa física.
+  * **Tipo cliente/fornecedor:** <wrap round info>Categoriza os clientes/fornecedores cadastrados com base nas opções cadastradas em [[https://app.padariananuvem.com/site/#/H02SF0101X|Menu > Configurações > Tipo de cliente/fornecedor]].</wrap>\\
+  * **Categoria de pessoa:** Seleciona se o fornecedor é apenas um Fornecedor ou um Cliente e fornecedor.
+  * **Inc. estadual:** Inscrição estadual do fornecedor caso possua.\\ <WRAP IMPORTANT ROUND>Caso o fornecedor não possua **Inscrição estadual** o campo <wrap em>DEVE</wrap> ser deixado em **BRANCO**.</WRAP>
+  * **Indicador de contribuinte estadual:** Indica se o fornecedor é **Não Contribuinte**, **Contribuinte ICMS** ou **Contribuinte isento de inscrição no cadastro de contribuintes**.
+
+<wrap round info>Quando digitado um **CNPJ** automaticamente aparece o botão  {{:base_de_conhecimento:treinamento:consultar_cnpj.png?nolink&100|}}. Clicando nesse botao o sistema preencherá automaticamente os dados cadastrais usando como referência os dados da receita.</wrap>\\
+
+<wrap important round>**Sempre confirme as informações preenchidas automaticamente pois elas podem estar desatualizadas.**</wrap>\\
+
+
+=== Dados para contato: ===
+  * **Telefone:** Telefone do fornecedor.
+  * **Celular:** Celular do fornecedor.
+  * **E-mail:** E-mail do fornecedor.
+  * **Observações:** Observações referentes ao fornecedor.
+
+=== Endereço do fornecedor ===
+  * **CEP:** CEP do endereço do fornecedor.
+  * **Endereço:** Endereço do fornecedor.
+  * **Número:** Número do local do endereço do fornecedor.
+  * **Complemento:** Complemento do endereço do fornecedor.
+  * **Cidade:** Cidade do fornecedor.
+  * **Bairro:** Bairro do fornecedor.
+  * **Estado:** Estado do fornecedor.
+
+===Representantes do fornecedor===
+  * **Nome do representante:** Nome do representante do fornecedor.
+  * **E-mail:** E-mail do representante do fornecedor.
+  * **Tel. comercial:** Telefone comercial do representante do fornecedor.
+  * **Tel. celular:** Telefone celular do representate do fornecedor.
+<WRAP IMPORTANT ROUND>Depois de preenchidos todas as informações do representante devemos clicar no ícone {{base_de_conhecimento:treinamento:bt_mais_green.png?nolink&25|}}.</WRAP>
+
+==== Configurações financeiras ====
+
+=== Integração contas a pagar - Financeiro ===
+Nos campos abaixo é preenchido informações referentes a como deve ser lançado no financeiro da empresa as despesas referente as compras com o fornecedor.\\
+
+  * **Categoria:** Define em qual categoria financeira o pagamento do fornecedor será lançado no momento da entrada de mercadoria.\\ <wrap round info>O cadastro de categorias financeiras pode ser feito em [[https://app.padariananuvem.com/site/#/H02SF0201D|Financeiro > Configurações > Plano de contas financeiro > Fluxo de caixa]].</wrap>\\ <wrap info round>Caso não selecionado nenhuma opção, os lançamentos serão lançados automaticamente na categoria financeira **Fornecedores**.</wrap>\\
+  * **Tipo de documento:** Define qual o tipo de documento que será lançado no **Gerenciador financeiro** no momento da entrada de mercadoria. \\ <wrap round info> O cadastro de tipos de documentos pode ser feitos em [[https://app.padariananuvem.com/site/#/H02SF0201L|Financeiro > Configurações > Tipo de documento]].</wrap>\\ <wrap info round>Caso não selecionado nenhuma opção, os lançamentos serão lançados com o campo **Documento** em branco.</wrap>\\
+  * **Conta:** Define em qual conta será lançada o pagamento do fornecedor no momento da entrada de mercadoria. \\ <wrap round info> O cadastro de contas pode ser feito em  [[https://app.padariananuvem.com/site/#/H02SF0201A|Financeiro > Configurações > Contas bancárias]].</wrap>\\ <wrap info round>Caso não selecionado nenhuma opção, os lançamentos serão lançados automaticamente na conta padrão do sistema.</wrap>\\
+
+===== Salvar informações =====
+Depois de preencher todas as informações necessárias, clique no ícone para salvar {{:base_de_conhecimento:treinamento:salvar.png?nolink100|}}\\ 
+Em seguida, clique no botão de voltar {{:base_de_conhecimento:treinamento:voltar.png?nolink25|}} para ser redirecionado novamente para a listagem de fornecedores cadastrados.\\ \\
+
+===== Editar informações =====
+Para **Editar** um registro, basta clicar sobre o registro, e em seguida, após realizar as alterações desejadas, clicar no ícone de salvar {{:base_de_conhecimento:treinamento:salvar.png?nolink100|}}. \\
+
+===== Excluir cadastro =====
+Para **Excluir** um cadastro, basta clicar sobre o registro e em seguida no ícone excluir {{:base_de_conhecimento:treinamento:icone_excluir_cadastro.png?nolink100|}}.\\
+
+Outra forma de excluir um registro é clicar no ícone da lixeira localizado ao lado direito do registro desejado conforme destacado na imagem abaixo.
+<thumbnail>{{base_de_conhecimento:fornecedores:excluir_fornecedor.png?nolink|}}</thumbnail>\\
+
+<WRAP IMPORTANT ROUND>**O sistema não deixará excluir forncedores que já possuem algum lançamento no sistema, caso precise você poderá inativá-lo na aba [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:fornecedores:cadastrar_fornecedor#dados_cadastrais|Dados Cadastrais]] .**</WRAP>\\ \\
+
+
+=== Excluir fornecedores em lote ===
+Para exluir fornecedores em lote basta clicar na caixa de seleção localizada a esquerda de cada registro e depois no ícone da lixeira, conforme mostrado abaixo:\\
+<thumbnail>{{:base_de_conhecimento:fornecedores:excluir_fornecedores_lote.gif?nolink|}}</thumbnail>
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

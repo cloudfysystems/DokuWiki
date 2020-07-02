@@ -1,0 +1,48 @@
+======Estornar Cupom======
+
+O procedimento para estornar um **Cupom** é bem simples e a seguir iremos explicar passo a passo todo o processo.\\
+<wrap info round>**Cupom** é toda venda realizada na frente de caixa **(PDV)**</wrap>\\
+<WRAP IMPORTANT ROUND>**IMPORTANTE:** Esta funcionalidade somente permite estornar cupons/itens de movimentos fechados (caixa fechado), cupons de movimento em aberto deverão ser estornados no PDV. Esta funcionalidade não gera estorno e nem integrações fiscais.</WRAP>
+<WRAP round alert>Esta funcionalidade **NÃO** cancela a NFC-e do cupom, pois o prazo máximo para cancelamento de NFCe na SEFAZ é de **30 minutos** após a emissão</WRAP>
+
+O primeiro passo para estornar um cupom fiscal é acessar a tela de estorno de cupom em [[https://app.cloudfy.net.br/site/#/H02SF0108A|Vendas > Estorno de cupom]]. Feito isso será aberta uma tela onde será possível pesquisar por um cupom utilizando as seguintes informações:
+  * **Número do cupom:** Pode ser inserido o número do cupom desejado.
+  * **Data inicial:** Pode ser inserida a data inicial do período em que foi emitido o cupom.
+  * **Data final:** Pode ser inserida a data final do período em que foi emitido o cupom.
+  * **Cliente:** Pode ser inserido o nome do cliente para o qual foi emitido o cupom.\\
+<wrap info round>Pelo menos uma das informações acima deve ser preenchida para que possa ser realizada a consulta</wrap>\\ \\
+Depois basta clicar no botão {{:base_de_conhecimento:treinamento:consultar_cupom.png?nolink&75|}} que serão exibidos todos os cupons com base nas informações digitadas.\\
+<thumbnail>{{:base_de_conhecimento:treinamento:acess_estorno_cupom.gif?nolink|}}</thumbnail> \\
+
+Caso necessário, pode ser usado o campo **Pesquisar** para filtrar em tempo real os cupom exibidos na tela ou ainda, os campos logo abaixo de cada descrição das colunas de informação. As informações que são possíveis filtrar são:
+  * **Data do movimento:** Corresponde a data em que foi emitido o cupom.
+  * **Número do cupom:** Corresponde ao número do cupom.
+  * **Total do cupom:** Corresponde ao valor total do cupom.
+  * **Nome do cliente:** Corresponde ao nome do cliente para o qual foi emitido o cupom.
+  * **Caixa:** Corresponde ao caixa utilizado para emitir o cupom.\\
+
+Se necessário, também possível selecionar qual parte da informação digitada no campo **Pesquisar** você quer que seja filtrada, sendo as opções:\\
+{{:base_de_conhecimento:treinamento:selec_opc_filtro.gif?nolink|}}\\
+  * **Qualquer parte:** Essa opção faz com que seja buscada a informação pesquisada em qualquer parte dela.\\ <wrap info round>Essa opção vem selecionada como padrão.</wrap>\\
+  * **Início:** Essa opção faz com que seja buscada a informação pesquisada apenas se o início for igual.
+  * **Igual:** Essa opção faz com que seja buscada a informação pesquisada apenas se ela for exatamento igual.
+
+<WRAP INFO ROUND>Ainda é possível rolar até o final da página e clicar no botão {{:base_de_conhecimento:treinamento:voltar_cupom.png?nolink&75|}} caso nenhum dos cupons corresponda ao procurado e você queira consultar novamente.</WRAP>\\
+
+Uma vez localizado o cupom, você deve clicar no ícone {{:base_de_conhecimento:treinamento:lupa_vermelha.png?nolink&25|}} localizado ao lado direito do cupom e então será aberta uma nova tela com todas as informações do cupom. Então será possível [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:estornar_cupom#estornar_um_ou_mais_itens_do_cupom|Estornar um ou mais itens do cupom]] ou [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:estornar_cupom#estornar_o_cupom_inteiro|Estornar o cupom inteiro]].
+
+=====Estornar um ou mais itens do cupom=====
+Caso queira apenas estornar um ou mais itens do cupom fiscal, basta clicar no ícone {{:base_de_conhecimento:treinamento:excluirinvent.png?nolink&25|}} ao lado direito do item a ser excluído e depois em **OK**.\\
+<WRAP IMPORTANT ROUND>**Este processo não poderá ser desfeito.**</WRAP>\\
+<thumbnail>{{:base_de_conhecimento:treinamento:canc_produto_cupom.gif?nolink|}}</thumbnail> \\
+<WRAP INFO ROUND>Ainda é possível rolar até o final da página e clicar no botão {{:base_de_conhecimento:treinamento:voltar_cupom.png?nolink&75|}} para retornar a tela anterior.</WRAP>\\
+
+=====Estornar o cupom inteiro=====
+Caso queira estornar o cupom inteiro, basta clicar em {{:base_de_conhecimento:treinamento:estornar_cupom.png?nolink&125|}} e depois em **OK**.\\
+<WRAP IMPORTANT ROUND>**Este processo não poderá ser desfeito.**</WRAP>\\
+<thumbnail>{{:base_de_conhecimento:treinamento:canc_cupom_inteiro.gif?nolink|}}</thumbnail> \\
+<WRAP INFO ROUND>Depois basta rolar até o final da página e clicar no botão {{:base_de_conhecimento:treinamento:voltar_cupom.png?nolink&75|}} para retornar a tela anterior.</WRAP>\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+
+

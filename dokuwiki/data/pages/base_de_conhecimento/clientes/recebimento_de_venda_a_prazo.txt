@@ -1,0 +1,77 @@
+====== Recebimento de Venda a Prazo ======
+
+A venda a prazo é uma configuração feita para os [[https://app.cloudfy.net.br/site/#/H02SF0103A | clientes]] cadastrados no seu banco de clientes, para que pagamentos possam ser recebidos com uma data posterior ao do dia da compra. \\
+
+Caso tenha interesse, é possível aprender a habilitar a opção de **venda a prazo** no nosso tutorial de [[base_de_conhecimento:treinamento:cadastro_cliente| cadastro de clientes.]]\\
+
+====== Como receber uma venda a prazo pelo retaguarda? ======
+
+Para receber um pagamento de venda a prazo acessando o retaguarda, vá até o menu [[https://app.cloudfy.net.br/site/#/H02SF0103E | Clientes → Pagamento de contas ]].\\
+=== Pagamento de venda a prazo ===
+
+{{:base_de_conhecimento:treinamento:venda_a_prazo_ret.png?nolink&800}}\\
+== Compras até a data ==
+Verifica todos os pagamentos pendentes até a data inserida.\\
+== Atualizar preço ==
+O atualizar preço efetuando a cobrança de acordo com as mudanças dos preços dos produtos que foram vendidos.\\
+Por exemplo, se algum produto do seu banco de produtos sofreu algum aumento no preço, o mesmo ajuste será aplicado a cobrança atual.\\
+== Cliente == 
+Pesquise pelo cliente que deseja efetuar um recebimento de pagamento.\\
+
+Por fim, clique em consultar para coletar os dados.\\
+
+=== Informações da conta e Resumo financeiro ===
+
+{{:base_de_conhecimento:treinamento:venda_a_prazo_ret2.png?nolink&800}}\\
+== Total de débitos == 
+Este valor informa o quanto o cliente possuí de valores pendentes com a empresa, ou seja, quanto ficou pendente de pagamento.\\
+== Saldo anterior (Créditos) ==
+Quanto o cliente possui de valores positivos, ou seja, o quanto de crédito para uso na empresa.\\
+== Saldo atual ==
+O saldo atual informa o valor do debito menos o valor do crédito.\\
+== Extrato ==
+No botão extrato, é possível verificar de forma analítica e sintética quais foram os gastos efetuados pelo cliente.\\
+
+Em seguida, aperte o botão {{:base_de_conhecimento:treinamento:pagar.png?nolink|pagar}}.\\
+
+=== Realizar pagamento de venda a prazo ===
+== Selecione o local para o recebimento ==
+Duas opções irão aparecer, a de **Pagar conta pelo financeiro** e **Pagar conta pelo PDV**.
+
+Se a forma escolhida for a de **Pagar conta pelo PDV**, então selecione o caixa que sera feito o pagamento e a forma de pagamento. Mas se **Pagar conta pelo financeiro** for escolhido, selecione se o título esta pago ou não e a conta bancária que o pagamento foi feito. \\
+
+Por fim, clique em {{:base_de_conhecimento:treinamento:efetuar_pagamento.png?nolink|}}.\\
+
+====== Como receber uma venda a prazo pelo PDV? ======
+
+Para efetuar um recebimento pelo PDV aperte a tecla **F3**.Após isto, três campos são apresentados:\\
+
+{{:base_de_conhecimento:treinamento:recebimento_venda_a_prazo_pdv.png?600|}}
+== Compras até a data ==
+Verifica todos os pagamentos pendentes até a data inserida.\\
+== Atualizar preço ==
+O atualizar preço efetua a cobrança de acordo com as mudanças dos preços dos produtos que foram vendidos.\\
+Por exemplo, se algum produto do seu banco de produtos sofreu algum aumento no preço, o mesmo ajuste será aplicado a cobrança atual.\\
+== Cliente == 
+Pesquise pelo nome do cliente que deseja efetuar um recebimento de pagamento.\\
+
+Por fim, clique em pesquisar para coletar os dados.\\
+
+Na próxima tela são apresentados o valor devedor, créditos e total.
+== (-)Valor devedor == 
+Este valor informa o quanto o cliente possuí de valores pendentes com a empresa, ou seja, quanto ficou pendente de pagamento.\\
+== (+)Créditos ==
+Quanto o cliente possui de valores positivos, ou seja, o quanto de crédito para uso na empresa.\\
+== (=)Total ==
+O saldo atual informa o valor do debito menos o valor do crédito.\\
+
+== Ver Cupons ==
+Clicando em **ver cupons** é possível visualizar todas as compras efetuadas pelo ponto de venda.
+== Visualizar extrato ==
+No botão extrato, é possível ver de forma resumida as compras efetuadas pelo cliente e seus gastos.\\
+== Comprovantes == 
+Este menu mostra os comprovantes de pagamento anteriores do cliente.\\
+
+Em seguida, aperte o botão **Pagar Conta**.
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!\\

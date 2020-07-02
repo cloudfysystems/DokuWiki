@@ -1,0 +1,68 @@
+====== Inventário ======
+O cadastro de inventário pode ser realizado para regularizar as quantidades dos produtos no estoque.\\
+Recomendamos realizar a conferência de quantidade física no estoque antes de iniciar o processo no sistema.\\
+
+===== Cadastrando um inventário =====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Estoque>Inventário]] e aperte o botão <wrap safety round>NOVO</wrap> para ser direcionado a página de cadastro.\\
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:invent.png?nolink |}}</thumbnail>
+
+**Observação:** nesta tela é apresentada a listagem de Inventários já realizados. Para sua comodidade é possível alterar a data da realização de um inventário já concluído clicando no primeiro ícone {{:base_de_conhecimento:treinamento:lapisinvent.png?nolink}}.\\
+Também é possível realizar a cópia de um inventário para uma nova data caso possua a mesma relação de produtos, economizando tempo e trabalho, clicando no segundo ícone {{:base_de_conhecimento:treinamento:copinvent.png?nolink}}.\\
+Para excluir um inventário já realizado basta clicar no terceiro ícone {{:base_de_conhecimento:treinamento:excluirinvent.png?nolink}}, uma tela surgirá confirmando a operação. Cuidado ao confirmar a exclusão o processo não poderá ser desfeito.\\
+
+==== Cadastrando um novo inventário ====
+A primeira seção da tela de novo inventário solicitará os dados iniciais de identificação do inventário.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:novoinvent.png?nolink |}}</thumbnail>
+Iremos abordá-los individualmente, não se preocupe!\\
+**Data** - neste campo você fornecerá a data de realização do inventário. Para sua comodidade o sistema preenche com a data atual.\\
+**Descrição** - neste campo você fornecerá uma descrição para facilitar a identificação do inventário posteriormente.\\
+**Solicitante** - neste campo você fornecerá a informação de qual colaborador esta realizando a solicitação de inventário. O sistema preenche este campo automaticamente com a informação do colaborador autenticado no sistema.\\
+**Centro de estoque** - neste campo é necessário informar qual centro de estoque será utilizado para realizar o inventário.\\
+**Observações** - este campo é livre para preenchimento de informações, anotações ou avisos que julgar necessário.\\
+\\
+Para os clientes que possuírem um **Coletor de dados** para agilizar o processo de inventário é possível importar o arquivo CSV do equipamento para o sistema, bastando arrastar o arquivo para dentro da área informada.\\ 
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:coletorinvent.png?nolink |}}</thumbnail>
+
+<WRAP tip>
+**DICA**\\
+Caso esteja utilizando o Coletor de dados para realizar o inventário de um grupo particular recomendamos filtrar primeiramente o grupo de produtos no sistema e posteriormente realizar a importação do arquivo CSV do Coletor de dados.\\
+Como o Coletor de dados apenas contabiliza as quantidades dos produtos inventariados pode acontecer de algum produto na sua base ficar sem receber a quantidade atualizada.\\ **Exemplo:**\\
+O inventário esta sendo realizado apenas no subgrupo de **bebidas** e o produto Coca-Cola acabou, quando importar o arquivo CSV do coletor para o sistema a quantidade da Coca-Cola não será atualizada no sistema, pois não existe este produto no arquivo CSV. Filtrando inicialmente o inventário pelo grupo de **bebidas** o sistema carregará todos os seus produtos cadastro no sistema, dentro desse grupo de produtos, com a quantidade zerada. Ao importar o arquivo CSV do coletor para o sistema será atualizado apenas as quantidades lidas pelo coletor e assim os produtos que possam ter acabado terão suas quantidades atualizadas também.
+</WRAP> 
+
+<WRAP important>Quando utilizar um Coletor de dados e for informar uma quantidade fracionada **informe a quantidade com ponto (.)** e não com vírgula (,).\\ **Exemplo:**\\ A quantidade apurada foi de 4,5 unidades (quatro unidades e meia), informe no coletor 4.5 como a quantidade apurada.\\
+Isto evita erros na validação das informações que serão utilizadas.
+</WRAP> 
+
+=== Filtros ===
+Após configurado as informações iniciais do Inventário passaremos para a etapa de localização dos produtos que serão inventariados.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:filtrosinvent.gif?nolink |}}</thumbnail>
+\\
+Inicialmente podemos filtrar os produtos por grupo de produtos.\\
+Como demonstrado acima podemos filtrar mais de um grupo de produtos ao mesmo tempo, podendo organizar o inventário de uma forma categorizada sem a necessidade de lidar com todo o estoque de produtos em apenas um único inventário. Após selecionar os grupos de produtos que irão fazer parte do inventário basta clicar no botão <wrap safety round>FILTRAR POR GRUPO DE PRODUTO</wrap>.\\
+Ainda existe a possibilidade de filtrar os produtos por centro de custo, contudo essa opção não permite filtrar pelos grupos de produtos. Para realizar o inventário através do centro de custo basta clicar no botão <wrap danger round>CARREGAR PRODUTOS DO CENTRO DE CUSTO</wrap>.\\
+\\
+Ainda é possível filtrar um produto de forma individual através da seção:\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:filtroprodinvent.png?nolink |}}</thumbnail>
+Você pode localizar o produto desejado através do código de barras ou pelo nome do produto.\\
+Para uma pesquisa avançada basta clicar no ícone da lupa, será apresentada uma tela de pesquisa avançada com diversos filtros, sendo eles:\\
+  * **Produto** - filtro para pesquisar o produto através do seu nome.
+  * **Cód de Barras** - filtro para pesquisar o produto através do seu código de barras.
+  * **Ref.** - filtro para pesquisar o produto pelo seu código de referência.
+  * **Grupo** - filtro para pesquisar o produto através do grupo de produtos a que ele pertence.
+  * **Saldo atual** - filtro para pesquisar o produto através do saldo atual no estoque.
+  * **Und Medida** - filtro para pesquisar o produto através da unidade de medida.
+  * **Característica** - filtro para pesquisar o produto através da sua característica.
+\\
+Após realizar a filtragem dos produtos que serão inventariados começaremos a fornecer as quantidades aferidas ao sistema.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:inventfiltrprod.png?nolink |}}</thumbnail>
+Na coluna **saldo apurado** você entrará com as informações de quantidades atualizadas do estoque.\\
+Ainda é possível acompanhar algumas informações sobre os produtos, como:\\
+  * **Estoque pré-inventario** - a quantidade calculada no estoque pelo sistema.
+  * **Divergência (qtde)** - a divergência entre a quantidade calculada pelo sistema e a informada pelo colaborador no âmbito quantitativo.
+  * **Divergência (R$)** - a divergência entre a quantidade calculada pelo sistema e a informada pelo colaborador no âmbito monetário.
+\\
+Após informar todas as quantidades inventariadas dos produtos retorne ao topo da página e salve o inventário.\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar!

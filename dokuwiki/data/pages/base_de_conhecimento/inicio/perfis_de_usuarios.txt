@@ -1,0 +1,50 @@
+====== Perfis de Usuários ======
+
+Por padrão o sistema Cloudfy vem com o perfil de Administrador cadastrado para todos os colaboradores, este exclusivamente é o único perfil que não é editável, mas como cada empresa possuí seu próprio processo de trabalho, o cadastro de perfil para outras modalidades fica a critério de nosso clientes e não da equipe Cloudfy. Sendo assim, este tutorial irá explicar como editar perfis de acesso.\\
+
+Caso tenha interesse em cadastrar um perfil, acesse o nosso tutorial de [[base_de_conhecimento:treinamento:cadastro_usuario|]], que além do cadastro de usuário, também aborda o cadastro de perfil.\\
+
+A manutenção de perfis de acesso é bem simples e a seguir iremos explicar passo a passo todo o processo.\\
+
+==== Como editar um perfil de acesso? ====
+
+Para **editar**, **cadastrar** ou **excluir** um perfil, clique no segundo ícone do lado esquerdo do menu superior e, em seguida, clique em [[https://app.padariananuvem.com/site/#/H00SF0402A|Perfis]]\\
+
+{{:base_de_conhecimento:treinamento:menu-superior-botao.png ? 700|Menu superior}}\\
+
+Nesta tela, são exibidos previamente os perfis já existentes.\\
+
+Para editar um perfil, selecione um dos perfis já existentes na sua lista de perfis. Como mostra o exemplo abaixo:\\
+
+{{:base_de_conhecimento:treinamento:selecionando_um_perfil.gif?nolink|}}\\
+
+A seguir, informe para cada uma das transações disponíveis no sistema, qual o nível de acesso desejado.\\
+
+Dentre os níveis de transações estão: 
+  * Liberar acesso completo - **Permite efetuar pesquisa, leitura, inclusões, exclusões e alterações de registros.**
+  * Liberar edição e leitura - **Neste caso não será possível incluir e nem excluir registros.**
+  * Liberar somente inserção - **Efetua apenas a inserção de informações.**
+  * Liberar somente leitura - **Será possível apenas visualizar os registro.**
+  * Bloqueado - **O perfil não terá nenhum tipo de acesso no caso de bloqueio.**
+
+{{:base_de_conhecimento:treinamento:transacoes.png ? 1000}}\\
+
+==== Como ver quais usuários pertencem ao perfil? ====
+
+Você pode associar este perfil a usuários previamente cadastrados no sistema, clicando na aba Usuários do perfil \\
+<wrap info round>Esta etapa é ignorada por muitos clientes, porém é importante que o usuário tenha um perfil atrelado ao seu usuário.</wrap>\\
+
+{{:base_de_conhecimento:treinamento:tabs-perfil.png?300|}}\\
+
+Informe os usuários que utilizarão este perfil de acesso clicando na lupa \\
+{{:base_de_conhecimento:treinamento:add-usuarios-perfil.png?nolink&1000|}}\\
+
+Será aberto uma janela pop-up com a lista de usuários cadastrados no sistema.\\
+Clique sob um usuário para o selecionar e fechar a janela. Com a janela fechada, o código e nome do usuário selecionado irá aparecer no campo Usuário. \\
+Por fim, clique no ícone <wrap round safety>+</wrap> para confirmar a adição de perfil ao cadastro usuário. \\ \\
+
+{{:base_de_conhecimento:treinamento:adicionando_colaborador_ao_perfil.gif?nolink|}}
+
+Após realizar todo esse processo, clique no ícone salvar registro, localizado no canto superior direito. {{:base_de_conhecimento:treinamento:salvar.png?nolink&120|}}\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!\\

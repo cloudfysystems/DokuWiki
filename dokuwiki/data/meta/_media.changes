@@ -1,35 +1,20 @@
-1588249402	177.16.121.163	C	base_de_conhecimento:treinamento:acoes.png	johny.ramos	criada		563
-1588249402	177.16.121.163	C	base_de_conhecimento:treinamento:caixa_selecao.png	johny.ramos	criada		189
-1588252103	177.16.121.163	C	base_de_conhecimento:treinamento:agrupar_ger_fin.gif	johny.ramos	criada		19398
-1588530147	177.156.190.179	C	base_de_conhecimento:treinamento:selecionando_um_perfil.gif	renata.farago	criada		673240
-1588535378	177.156.190.179	E	base_de_conhecimento:treinamento:selecionando_um_perfil.gif	renata.farago			-257255
-1588537956	177.156.190.179	C	base_de_conhecimento:treinamento:novo.png	renata.farago	criada		730
-1588538395	177.156.190.179	C	base_de_conhecimento:treinamento:cadastro_grupo_produtos_1.png	renata.farago	criada		13436
-1588540013	177.156.190.179	C	base_de_conhecimento:treinamento:ilhas_de_impressao.png	renata.farago	criada		13555
-1588606965	191.250.107.91	C	base_de_conhecimento:treinamento:restringir_sim_nao.gif	renata.farago	criada		17219
-1588607271	191.250.107.91	E	base_de_conhecimento:treinamento:restringir_sim_nao.gif	renata.farago			-1726
-1588607787	191.250.107.91	C	base_de_conhecimento:treinamento:config_trib_grupo.png	renata.farago	criada		14957
-1588696764	191.250.107.91	C	base_de_conhecimento:treinamento:produtos_do_grupo_de_produtos.png	renata.farago	criada		16518
-1588711099	191.250.107.91	C	base_de_conhecimento:treinamento:venda_a_prazo_ret.png	renata.farago	criada		16794
-1588711419	191.250.107.91	C	base_de_conhecimento:treinamento:adicionando_colaborador_ao_perfil.gif	renata.farago	criada		123060
-1588712033	191.250.107.91	C	base_de_conhecimento:treinamento:pag_venda_a_prazo_reta.gif	renata.farago	criada		205419
-1588712437	191.250.107.91	C	base_de_conhecimento:treinamento:venda_a_prazo_ret2.png	renata.farago	criada		24223
-1588713632	191.250.107.91	C	base_de_conhecimento:treinamento:efetuar_pagamento.png	renata.farago	criada		1564
-1588713632	191.250.107.91	C	base_de_conhecimento:treinamento:pagar.png	renata.farago	criada		928
-1588713632	191.250.107.91	C	base_de_conhecimento:treinamento:dados_pagamento_prazo_1.png	renata.farago	criada		10943
-1588713632	191.250.107.91	C	base_de_conhecimento:treinamento:dados_pagamento_prazo_2.png	renata.farago	criada		11887
-1589376540	189.58.131.121	C	base_de_conhecimento:treinamento:recebimento_venda_a_prazo_pdv.png	renata.farago	criada		13460
-1589387193	189.58.131.121	C	base_de_conhecimento:realizar_uma_devolucao.png	renata.farago	criada		1923
-1589387695	189.58.131.121	C	base_de_conhecimento:pesquise_seu_fornecedor.png	renata.farago	criada		4122
-1589389499	189.58.131.121	C	base_de_conhecimento:inf._compl._devo.png	renata.farago	criada		15681
-1589390910	189.58.131.121	C	base_de_conhecimento:treinamento:cloudfy_-_delivery_1_.pdf	renata.farago	criada		1035108
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image3.png	renata.farago	criada		1097
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image1.png	renata.farago	criada		22768
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image2.png	renata.farago	criada		151049
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image6.png	renata.farago	criada		1143
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image5.png	renata.farago	criada		101991
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image4.png	renata.farago	criada		240609
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image7.png	renata.farago	criada		812
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image8.png	renata.farago	criada		60503
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image9.png	renata.farago	criada		31557
-1589391356	189.58.131.121	C	base_de_conhecimento:treinamento:image10.png	renata.farago	criada		213172
+1590430945	187.59.70.247	C	base_de_conhecimento:produtos:tela_alterar_produto_lote.gif	johny.ramos	criada		910635
+1590432193	187.59.70.247	C	base_de_conhecimento:produtos:selecionando_itens_alteracao_lote.gif	johny.ramos	criada		224901
+1590437413	187.59.70.247	C	base_de_conhecimento:produtos:parametrizando_alteracoes.gif	johny.ramos	criada		311430
+1590510643	177.40.109.223	C	base_de_conhecimento:relatorios:opcoes_para_emissao_prod.png	renata.farago	criada		19989
+1590516477	187.59.70.247	C	base_de_conhecimento:produtos:tela_confirmacao_produto_lote.png	johny.ramos	criada		23757
+1590521661	187.59.70.247	C	base_de_conhecimento:treinamento:flag.gif	johny.ramos	criada		4505
+1590524619	187.59.70.247	C	base_de_conhecimento:treinamento:bt_avancar.png	johny.ramos	criada		740
+1590524797	187.59.70.247	C	base_de_conhecimento:treinamento:produtos_alterados_com_sucesso.png	johny.ramos	criada		1034
+1590603672	177.16.39.73	C	base_de_conhecimento:fornecedores:tela_manutencao_fornecedores.png	johny.ramos	criada		25656
+1590682603	177.16.39.73	C	base_de_conhecimento:fornecedores:tela_novo_fornecedor.png	johny.ramos	criada		27714
+1590683945	177.16.39.73	C	base_de_conhecimento:fornecedores:excluir_fornecedor.png	johny.ramos	criada		13977
+1590757367	177.16.39.73	C	base_de_conhecimento:fornecedores:excluir_fornecedores_lote.gif	johny.ramos	criada		814270
+1590757564	177.16.39.73	C	base_de_conhecimento:treinamento:bt_mais_green.png	johny.ramos	criada		1268
+1590763768	177.43.128.178	C	base_de_conhecimento:treinamento:instalacao_cloudfyblue_msg_fechar.png	johny.ramos	criada		3308
+1590772446	177.96.12.215	C	base_de_conhecimento:treinamento:alterando_hash.gif	johny.ramos	criada		45360
+1590774291	177.96.12.215	E	base_de_conhecimento:treinamento:alterando_hash.gif	johny.ramos			44041
+1590774550	177.96.12.215	E	base_de_conhecimento:treinamento:alterando_hash.gif	johny.ramos			-41618
+1590774889	177.96.12.215	C	base_de_conhecimento:treinamento:atualizando_aplicacao_aguarde.png	johny.ramos	criada		2880
+1592509956	177.96.180.219	C	base_de_conhecimento:treinamento:video_cadastrar_usuario.mp4	johny.ramos	criada		55310915
+1593530576	177.16.173.142	C	base_de_conhecimento:treinamento:logo_cloudfy_blue.png	johny.ramos	criada		4118

@@ -1,0 +1,47 @@
+======Cancelar NFe======
+
+O procedimento para cancelar uma NFe é bem simples e a seguir iremos explicar passo a passo todo o processo.
+
+O primeiro passo é acessar a tela **Emissão de NFe** em [[https://app.cloudfy.net.br/site/#/H02SF0109A|Nota fiscal > Emissão de NFe]]. Então a seguinte tela será exibida:\\
+
+<thumbnail>{{:base_de_conhecimento:treinamento:tela_emissao_nfe.png?nolink|}}</thumbnail> \\
+
+Uma vez nessa tela, você deve se atentar ao período exibido na tela e se ele contempla a data de emissão da NFe, caso contrário, basta escolher uma data no campo **Data inicial** e uma data no campo **Data final** que contemple a data de emissão da nota desejada, feito isso pode clicar em {{:base_de_conhecimento:treinamento:botao_pesquisar.png?nolink80|}}.\\
+<wrap info round>Deve ser verificado também se no campo **Tipo/Modelo da nota fiscal** está selecionada a opção **NF-e** e se no campo **Tipo de emissão** está selecionado a opção **Emitidas**.</wrap>\\
+<wrap info round>O sistema sempre traz selecionado como padrão o período desde o **primeiro dia do mês atual** até o **dia atual**.</wrap>\\
+
+<thumbnail>{{:base_de_conhecimento:treinamento:selecionar_data_nfe.gif?nolink|}}</thumbnail> \\
+
+Feito isso deverá ser exibido logo abaixo todas as notas emitidas no período selecionado, então basta passar o mouse em cima da nota desejada, clicar no ícone {{:base_de_conhecimento:treinamento:icone_cancelar_nfe.png?nolink30|}} e depois em **OK** para realizar o **Cancelamento da NFe**.\\
+
+<WRAP IMPORTANT ROUND>**AVISO: A operação não poderá ser desfeita.**</WRAP>\\
+
+<thumbnail>{{:base_de_conhecimento:treinamento:cancelando_nfe.gif?nolink|}}</thumbnail> \\
+
+<WRAP ALERT ROUND>O prazo para cancelamento de NFe pelo sistema é de **24 horas** contando a partir do momento da autorização dela pelo SEFAZ</WRAP>\\
+
+É possível realizar outras operações passando o mouse em cima de uma nota fiscal, são elas:
+  * {{:base_de_conhecimento:treinamento:download_xml_nota.png?nolink30|}} Faz o download do arquivo **XML** da nota fiscal.
+  * {{:base_de_conhecimento:treinamento:reimprimir_danfe.png?nolink30|}} Gera o arquivo **PDF** da nota fiscal para impressão.
+  * {{:base_de_conhecimento:treinamento:enviar_nf_email.png?nolink30|}} Envia por e-mail o arquivo **PDF** e o arquivo **XML** da nota fiscal.
+  * {{:base_de_conhecimento:treinamento:icone_cancelar_nfe.png?nolink30|}} **Cancela** a nota fiscal.
+  * {{:base_de_conhecimento:treinamento:icone_carta_correcao.png?nolink30|}} Registra uma **Carta de correção (CC-e)** referente a nota fiscal.\\ <wrap important round>**Condição de uso:** a Carta de Correção é disciplinada pelo parágrafo 1o-A do art. 7o do Convenio S/N, de 15 de dezembro de 1970 e pode ser utilizada para regularização de erro ocorrido na emissão de documento fiscal, desde que o erro nao esteja relacionado com: I - as variaveis que determinam o valor do imposto tais como: base de calculo, aliquota, diferença de preço, quantidade, valor da operação ou da prestação; II - a correção de dados cadastrais que implique mudança do remetente ou do destinatário; III - a data de emissão ou de saída.</wrap>\\
+
+=====Pesquisar notas=====
+
+Caso necessário é possível pesquisar pelas notas no campo **Pesquisar** utilizando as seguintes informações:
+  * **Data da emissão:** a data em que a nota foi emitida.
+  * **Cliente:** O cliente para o qual a nota foi emitida.
+  * **CNPJ/CPF:** O CNPJ ou CPF do cliente.
+  * **Valor total da NFe:** O valor total da nota fiscal.
+  * **Série/número da nota:** Indica qual o número de série e qual o número da nota fiscal emitida.
+  * **Nr. do pedido:** Caso a NFe tenha sido originada de um pedido de venda, será indicado o número do pedido.
+  * **Natureza op.:** Indica qual é a natureza da operação.
+  * **Valor total dos produtos:** Valor total dos produtos desconsiderando descontos e acréscimos.
+  * **Chave da NFE:** Númeração utilizada para identificar a nota no site da receita.
+  * **Situação:** Situação atual da NFCe (**Emitida** ou **Cancelada**).
+
+<wrap info round>As notas serão filtradas conforme é inserida a informação no campo **Pesquisar** ou no campo logo abaixo do nome de cada coluna.</wrap>\\
+<wrap info round>Se necessário descobrir a **Chave da NFE**, você pode clicar em [[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:treinamento:reimprimir_nfce#exibir_chave_da_nota_fiscal|Exibir chave da nota fiscal]].</wrap>\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

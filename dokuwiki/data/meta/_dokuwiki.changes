@@ -1,37 +1,20 @@
-1588535084	177.156.190.179	E	base_de_conhecimento:treinamento:perfis_de_usuarios	renata.farago			-2
-1588535141	177.156.190.179	E	base_de_conhecimento:treinamento:perfis_de_usuarios	renata.farago			5
-1588535204	177.156.190.179	E	base_de_conhecimento:treinamento:perfis_de_usuarios	renata.farago			1
-1588535408	177.156.190.179	E	base_de_conhecimento:treinamento:perfis_de_usuarios	renata.farago			-5
-1588538968	177.156.190.179	C	base_de_conhecimento:treinamento:configurar_grupo_de_produtos	renata.farago	criada		1466
-1588540021	177.156.190.179	E	base_de_conhecimento:treinamento:configurar_grupo_de_produtos	renata.farago			293
-1588541080	177.156.190.179	E	base_de_conhecimento:treinamento:configurar_grupo_de_produtos	renata.farago			517
-1588541105	177.156.190.179	E	base_de_conhecimento:treinamento:configurar_grupo_de_produtos	renata.farago			-39
-1588594391	191.177.201.139	E	base_de_conhecimento:treinamento:entrada_de_mercadoria	gabriel.mello			1752
-1588697753	191.250.107.91	E	base_de_conhecimento:treinamento:configurar_grupo_de_produtos	renata.farago			2036
-1588705102	191.250.107.91	E	base_de_conhecimento:treinamento:perfis_de_usuarios	renata.farago			168
-1588709632	191.250.107.91	E	base_de_conhecimento:treinamento:perfis_de_usuarios	renata.farago			311
-1588709862	191.250.107.91	C	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago	criada		47
-1588710905	191.250.107.91	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			644
-1588711473	191.250.107.91	E	base_de_conhecimento:treinamento:perfis_de_usuarios	renata.farago			85
-1588714661	191.250.107.91	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			1555
-1589217116	177.157.61.117	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			7
-1589305491	189.58.131.121	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			552
-1589306077	189.58.131.121	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			569
-1589375068	189.58.131.121	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			610
-1589376483	189.58.131.121	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			306
-1589383802	191.177.201.139	E	base_de_conhecimento:treinamento:entrada_de_mercadoria	gabriel.mello			-1857
-1589383853	191.177.201.139	C	base_de_conhecimento:treinamento:entrada_de_mercadoria_sem_nfe	gabriel.mello	criada		1861
-1589384011	191.177.201.139	E	base_de_conhecimento:treinamento:entrada_de_mercadoria	gabriel.mello			111
-1589384084	191.177.201.139	E	base_de_conhecimento:treinamento:entrada_de_mercadoria_sem_nfe	gabriel.mello			7484
-1589384127	189.58.131.121	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			78
-1589384917	189.58.131.121	E	base_de_conhecimento:treinamento:cadastro_de_produto	renata.farago			3
-1589385080	189.58.131.121	E	base_de_conhecimento:treinamento:perfis_de_usuarios	renata.farago			0
-1589385547	189.58.131.121	E	base_de_conhecimento:treinamento:configurar_grupo_de_produtos	renata.farago			506
-1589385579	189.58.131.121	E	base_de_conhecimento:treinamento:configurar_grupo_de_produtos	renata.farago			0
-1589385911	189.58.131.121	E	base_de_conhecimento:treinamento:como_receber_uma_venda_a_prazo	renata.farago			-2
-1589386184	189.58.131.121	E	base_de_conhecimento:treinamento:como_instalar_driver_impressora_epson_tmt20	renata.farago			-2
-1589387711	189.58.131.121	C	base_de_conhecimento:nota_de_devolucao	renata.farago	criada		1239
-1589387877	189.58.131.121	E	base_de_conhecimento:nota_de_devolucao	renata.farago			25
-1589390188	189.58.131.121	E	base_de_conhecimento:nota_de_devolucao	renata.farago			6362
-1589390933	189.58.131.121	C	base_de_conhecimento:treinamento:delivery	renata.farago	criada		149
-1589391469	189.58.131.121	E	base_de_conhecimento:treinamento:delivery	renata.farago			72760
+1592511366	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			10
+1592511396	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			-2
+1592511652	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			-8
+1592511888	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			9
+1592511904	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			0
+1592511938	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			0
+1592511955	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			0
+1592511983	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			0
+1592512152	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			23
+1592512202	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			-23
+1592512264	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			11
+1592512320	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			-11
+1593461307	179.179.15.75	C	base_de_conhecimento:operacao:pdv	johny.ramos	criada		39
+1593527897	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			200
+1593528047	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			296
+1593528419	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			603
+1593529071	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			1067
+1593529108	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			25
+1593529221	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			4
+1593530641	177.16.173.142	E	base_de_conhecimento:operacao:pdv	johny.ramos			87

@@ -1,0 +1,26 @@
+======Relatório de vendas por cliente======
+
+Para emitirmos um relatório de vendas por cliente, primeiro de devemos acessar a tela de **Relatório de vendas por cliente** navegando pelo menu em **Relatórios geais > Vendas > Vendas por cliente** conforme mostrado abaixo.\\
+<thumbnail>{{:base_de_conhecimento:relatorios:caminho_relatorio_vedas_cliente.gif?nolink|}}</thumbnail>\\
+
+Nessa tela existe vários filtros que devem ser utilizados para emitir o relatório desejado, abaixo iremos explicar cada um deles.\\
+  * **Data inicial e Data final:** Define o período que o relatório irá considerar para exibir as informações.\\ <wrap info round>Como padrão trás o período o começo do mês até a data atual selecionado.</wrap>
+  * **Tipo de relatório:** Define qual o tipo de relatório, sendo eles:\\ <wrap info round>Como padrão o sistema trás o relatório de tipo **Sintético** selecionado</wrap>
+    * **Sintético:** Exibe apenas os valores totais das vendas, sem discriminar os produtos e demais detalhes.
+    * **Analítico:** Exibe os produtos de cada venda e demais detalhes, se trata de um relatório mais detalhado.
+  * **Tipo de venda:** Seleciona se serão exibidas apenas as vendas **À vista**, **A prazo**, ou **Todas** as vendas.\\ <wrap info round>Como padrão o sistema trás a opção **Todas** selecionada</wrap>
+  * **Cliente:** Esse campo seleciona os clientes que devem aparecer no relatório.\\ <wrap info round>É possível escolher mais de um cliente.</wrap>\\ <wrap info round>Caso queira que todos os clientes sejam exibidos basta deixar o campo em branco.</wrap>\\ <wrap info round>A manutenção de clientes pode ser feita em [[https://app.cloudfy.net.br/site/#/H02SF0103A|Clientes > Manutenção de clientes]].</wrap>
+  * **Tipo de cliente:** Esse campo seleciona os tipos de clientes que devem aparecer no relatório e são configuráveis no cadastro do cliente em [[https://app.cloudfy.net.br/site/#/H02SF0103A|Clientes > Manutenção de clientes]].\\ <wrap info round>É possível escolher mais de um tipo de fornecedor.</wrap>\\ <wrap info round>Caso queira que todos os tipos de clientes sejam exibidos basta deixar o campo em branco.</wrap>\\ <wrap info round>A manutenção de tipos de clientes pode ser feita em [[https://app.cloudfy.net.br/site/#/H02SF0101X|Configurações > Tipo de cliente/fornecedor]].</wrap>
+  * {{:base_de_conhecimento:treinamento:consolidar_filiais.gif?nolink|}}: Essa opção agrupa as informações de todas as filiais da empresa, com isso elas <wrap em>NÃO</wrap> são exibidas separadamente no relatório.
+  * **Filiais** Define as vendas de quais filiais devem ser consideradas para gerar o relatório.\\ <wrap info round>Caso queira que as vendas de todas as filiais sejam consideradas basta deixar o campo em branco.</wrap>\\ <wrap info round>É possível escolher mais de uma filial.</wrap>
+  * **Centro administrativo** Define as vendas de quais centros administrativos devem ser consideradas para gerar o relatório.\\ <wrap info round>Caso queira que as vendas de todos os centros administrativos sejam consideradas basta deixar o campo em branco.</wrap>\\ <wrap info round>A manutenção de **Centros administrativos** pode ser feita em [[https://app.cloudfy.net.br/site/#/H00SF0405A|Configurações > Centro de custo]].</wrap>\\
+  * **Grupo de produtos:** Define as vendas de quais grupos de produtos devem ser consideradas para gerar o relatório.\\ <wrap info round>Caso queira que as vendas de todos os grupos de produtos sejam consideradas basta deixar o campo em branco.</wrap>\\ <wrap info round>A manutenção de **Grupo de produtos** pode ser feita em [[https://app.cloudfy.net.br/site/#/H02SF0102A|Produtos > Grupo de produtos]].</wrap>\\ <wrap info round>É possível escolher mais de um grupo de produto.</wrap>\\
+  *  **Ordenação:** Esse campo permite ordenar as informações do relatório pelas informações disponíveis.
+
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:treinamento:opcoes_relatorio.png?nolink|}}
+Depois de selecionados os filtros desejados basta clicar na opção de relatório desejado na parte inferior da tela, sendo possível os formatos **Excel**, **CSV** e **PDF**.</WRAP>\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+
+ 

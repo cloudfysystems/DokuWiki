@@ -1,0 +1,43 @@
+====== CloudCommerce ======
+
+Com o Modo Delivery você pode criar e gerenciar pedidos para entrega ou retirada na loja. Para habilitar o modo Delivery, entre em contato com o suporte da Cloudfy e um agente irá realizar a instalação e configuração do sistema para que você possa começar a utilizar este serviço.
+
+===== Criando um novo pedido =====
+
+No terminal de atendimento, clique no ícone {{:base_de_conhecimento:treinamento:image6.png?nolink&30|}} para acessar a área de pedidos e depois clique no botão **Novo Pedido** (atalho tecla F9).
+
+== 1ª Etapa: Informações Gerais ==
+{{:base_de_conhecimento:treinamento:image2.png?nolink&600|}}\\
+Nesta etapa, é necessário preencher os dados do cliente e o seu endereço.\\
+No campo de pesquisa, você pode selecionar um cliente já cadastrado e os campos serão preenchidos automaticamente. Caso seja um novo cliente, ele será cadastrado automaticamente com as informações fornecidas ao finalizar a criação do pedido.\\
+Também é necessário preencher os dados do pedido:\\
+  - **Tipo de pedido**: Escolher entre os tipos ‘Entrega’, ‘Encomenda’ e ‘Retirada no balcão’. A opção escolhida influencia os campos necessários para cadastrar o pedido.
+  - **Data de entrega**: Campo disponível apenas para os tipos de pedido ‘Encomenda’ e ‘Retirada no balcão’. Informe a data prevista de entrega.\\
+  - **Taxa de entrega**: Campo disponível apenas para os tipos de pedido ‘Entrega’ e ‘Encomenda’. Digite o valor da taxa de entrega que será cobrado.\\
+  - **Observações**: Se necessário, informe qualquer informação geral sobre o pedido (Ex: Entregar apenas após as 14 horas; Embalar para presente; etc…).
+
+== 2ª Etapa: Inclusão de produtos ==
+{{:base_de_conhecimento:treinamento:image10.png?nolink&600}}\\
+Na segunda e última etapa é possível incluir os produtos do pedido e adicionar observações para cada produto. Para adicionar observação ao produto ou incluir desconto/acréscimo basta clicar no produto e escolher a opção 2 ou 5.\\
+Para finalizar o pedido, clique no botão **Finalizar** (atalho tecla F12) e selecione a forma de pagamento prevista.\\
+
+===== Gerenciando um Pedido =====
+
+Na lista de pedidos em aberto, clique no ícone {{:base_de_conhecimento:treinamento:image3.png?nolink&30|}} ao lado do pedido e selecione uma das opções:\\
+{{:base_de_conhecimento:treinamento:image5.png?nolink&600}}\\
+  - **Alterar pedido**: Esta opção só está disponível se o status do pedido estiver **Em preparo**. Clicando nesta opção, você pode voltar para a quinta etapa da criação do pedido e alterar os produtos conforme necessário.
+  - **Imprimir ordem prod. (Impressora Local)**: Imprime as ordens de produção dos produtos do pedido na impressora local. ((As observações dos produtos irão sair apenas nas ordens de produção.))
+  - **Imprimir ordem prod. (Ilhas)**: Imprime as ordens de produção dos produtos do pedido nas ilhas de impressão.
+  - **Imprimir ticket de entrega**: Imprime o ticket de entrega, ele contém o nome dos produtos, quantidades, preços e endereço de entrega. É importante ressaltar que este não é um documento fiscal. ((As observações dos produtos não irão aparecer no ticket de entrega.))
+  - **Alterar Status**: É possível alterar o status do pedido para os status **Em preparo**, **Saiu para entrega**, **Entregue** e **Cancelada**. <wrap info round>Se houver entregadores cadastrados no sistema, após a mudança de status do pedido para **Saiu para entrega** ou para **Entregue**, a opção de seleção de entregador possível selecionar o entregador.</wrap>
+  - **Emitir NFCe**: Emite e imprime o cupom fiscal do pedido para entregar ao cliente. ((Esta ação não finaliza o pedido e não contabiliza venda no sistema, apenas emite e imprime o cupom fiscal.))
+  - **Cancelar NFCe**: Esta opção só está disponível se o cupom fiscal do pedido já foi emitido e irá cancelar o cupom emitido. ((Na SEFAZ o prazo máximo para cancelamento de NFCe é de no máximo 30 minutos.))
+
+===== Finalizando um Pedido =====
+{{:base_de_conhecimento:treinamento:image4.png?nolink&600}}\\
+Para finalizar um pedido entre no aplicativo CloudCommerce PDV. Aperte a tecla F5 do seu teclado, para abrir o menu de **Opções**, e selecione a opção **1 - Delviery/Encomendas**, ache o pedido que deseja finalizar e clique no ícone {{:base_de_conhecimento:treinamento:image3.png?nolink&30}}. Selecione a opção **Finalizar pedido**.\\
+Ao selecionar a opção **Finalizar pedido**, o pedido irá mudar para o status **Finalizado** e os produtos do pedido serão importados para a venda. Siga os passos para finalizar uma venda normalmente.\\
+
+<wrap info round>É possível cadastrar um produto “Taxa de Entrega” e utilizá-lo como um serviço. Desta maneira, você pode configurar as informações tributárias para a taxa de entrega como desejar.</wrap>\\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!\\

@@ -1,0 +1,66 @@
+======Operação Cloudfy Blue PDV======
+
+A operação da nossa frente de caixa (PDV) é bem simples e a seguir apresentar todas as funcionalidades e atalhos.\\
+<thumbnail>{{:base_de_conhecimento:treinamento:logo_cloudfy_blue?nolink|}}</thumbnail> \\
+=====Módulos=====
+**Clientes(F1)**\\
+  * Escolher clientes para venda;
+**Comandas/Mesas(F2)**\\
+  * Visualizar comandas/Mesas;
+  * Transferir itens;
+  * Estornar;
+  * Imprimir conta;
+  * Bloquear comadas;
+  * Abrir/Fechar mesas;
+  * Adiantamento de conta;
+**Recebimento de conta(F3)**\\
+  * Visualizar extrato de clientes;
+  * Imprimir comprovantes de pagamento;
+  * Receber vendas a prazo;
+**Calculadora(F4)**\\
+  * Realizar/Imprimir cálculos;
+**Opções(F5)**\\
+  * Reiniciar numeração de pedidos;
+  * Abertura de gaveta;
+  * Ressincronizar dados da retaguarda;
+  * Manutenção de catracas;
+  * Cupons pendentes;
+  * Monitor de impressão;
+  * Log de mesas/comandas;
+**Delivery/Encomendas(F6)**\\
+  * Finalizar pedidos;
+  * Reimprimir pedidos;
+  * Alterar status;
+  * Adiantamento;
+  * Ver histórico;
+**Retornar itens para comanda(F7)**\\ \\
+**Configurações(F8)**\\
+  * Impressoras;
+  * Microterminais;
+  * Ilhas de impressão;
+  * Balança;
+  * Catracas;
+  * Configurações gerais;
+**Sangrias/Suprimentos(F9)**\\
+  * Sangrais;
+  * Suprimentos;
+  * Pagamento de fornecdores;
+**Fechamento de caixa(F10)**\\
+  * Relatório analítico de movimento;
+  * Reimpressão dos fechamentos anteriores do dia;
+  * Fechamento de caixa;
+**Baixa parcial de mesas/comandas(F11)**\\ \\
+**Cancel./Reimpress.(F12)**\\
+  * Reimprimir venda;
+  * Cancelar venda;
+  * Refazer venda;
+=====Funcionalidades=====
+**Troca de mercadoria**\\
+É possível realizar troca de mercadorias na tela de pagamento de venda clicando no ícone MARTELINHO e depois em Troca.\\
+**Descontos/Acréscimos**\\
+  * **Desconto/Acréscimo nos produtos:** Na tela de vendas clicar sobre os produtos e depois em Descontos/Acréscimos.
+  * **Desconto/Acréscimo:**Na tela de pagamento clicar no ícone MARTELINHO ou usar o atalho (/).
+**Excluir produtos**\\
+  * **Excluir apenas um produto:** Na tela de vendas clicar sobre o produto e depois em **Excluir item**.
+  * **Excluir a venda inteira:** Na tela de vendas clicar no ícone LIXEIRA e depois e Excluir o(s) item(s) da comanda ou ainda usar o atalho (2).
+

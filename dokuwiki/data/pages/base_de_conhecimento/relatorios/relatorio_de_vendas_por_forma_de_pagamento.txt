@@ -1,0 +1,29 @@
+======Relatório de vendas por forma de pagamento======
+
+O caminho para gerar um **Relatório de vendas por forma de pagamento** é bem simples e iremos explicar o passo a passo a seguir.\\
+
+O primeiro passo é acessar a tela de emissão de **Relatórios de vendas** navegando pelo menu até **Relatórios gerais > Vendas > Relatório de vendas** conforme mostrado abaixo.\\
+<thumbnail>{{:base_de_conhecimento:treinamento:tela_relatorio_vendas.gif?nolink|}}</thumbnail>\\
+
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:treinamento:tipo_relatorio_venda.gif?nolink|}}
+Nessa tela devemos selecionar no campo **Tipo de relatório** as opções:
+  * **Forma de pagamento - por dia:** Irá gerar um relatório de vendas por forma de pagamento separado por dia dentro do período selecionado.
+  * **Forma de pagamento - por período:** Irá gerar um relatório de vendas por forma pagamento exibindo o total vendido no período selecionado.
+</WRAP>\\
+
+Nessa tela ainda é possível definir outros filtros, sendo eles:\\
+  * **Data inicial e Data final:** Define o período que o relatório irá considerar para exibir as informações.
+  * {{:base_de_conhecimento:treinamento:consolidar_filiais.gif?nolink|}}: Essa opção agrupa as informações de todas as filiais da empresa, com isso elas <wrap em>NÃO</wrap> são exibidas separadamente no relatório.
+  * **Caixa:** Define as vendas de quais caixas devem ser consideradas para gerar o relatório.\\ <wrap info round>Caso queira que as vendas de todos os caixas sejam consideradas basta deixar o campo em branco.</wrap>\\
+  * **Filiais** Define as vendas de quais filiais devem ser consideradas para gerar o relatório.\\ <wrap info round>Caso queira que as vendas de todas as filiais sejam consideradas basta deixar o campo em branco.</wrap>\\ <wrap info round>É possível escolher mais de uma filial.</wrap>\\
+  * **Centro administrativo** Define as vendas de quais centros administrativos devem ser consideradas para gerar o relatório.\\ <wrap info round>Caso queira que as vendas de todos os centros administrativos sejam consideradas basta deixar o campo em branco.</wrap>\\ <wrap info round>A manutenção de **Centros administrativos** pode ser feita em [[https://app.cloudfy.net.br/site/#/H00SF0405A|Configurações > Centro de custo]].</wrap>\\
+  * **Grupo de produtos:** Define as vendas de quais grupos de produtos devem ser consideradas para gerar o relatório.\\ <wrap info round>Caso queira que as vendas de todos os grupos de produtos sejam consideradas basta deixar o campo em branco.</wrap>\\ <wrap info round>A manutenção de **Grupo de produtos** pode ser feita em [[https://app.cloudfy.net.br/site/#/H02SF0102A|Produtos > Grupo de produtos]].</wrap>\\ <wrap info round>É possível escolher mais de um grupo de produto.</wrap>\\
+  * **Ordenação:** Esse campo permite ordenar as informações do relatório pelas informações disponíveis.
+
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:treinamento:opcoes_relatorio.png?nolink|}}
+Depois de selecionados os filtros desejados basta clicar na opção de relatório desejado na parte inferior da tela, sendo possível os formatos **Excel**, **CSV** e **PDF**.</WRAP>\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+
+ 
