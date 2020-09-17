@@ -1,16 +1,39 @@
 ====== Carga de Balança ======
 A carga de balança é um processo simples e a seguir iremos explicar o passo a passo que deve ser seguido.\\
 
-===== Arquivo exportável =====
-Para efetuar uma carga de itens e informações na balança, navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0102H|Produtos>Balança>Exportar produtos para balança]], escolha o modelo da balança e aperte o botão <wrap round caution>EXPORTAR</wrap>. Será feito um download de um arquivo comprimido (geralmente, vai diretamente para pasta downloads, mas não é padrão).
-Ao terminar o download do arquivo, é necessário fazer a descompressão do arquivo. (Para descomprimir é necessário ter um programa como WinRar ou 7Zip)
-Observação: De preferência, criar uma pasta fixa para os arquivos da balança e descomprimir os arquivos nesta pasta.
-
+===== Exportar arquivo =====
+Para efetuar uma carga de itens e informações na balança, navegue para o Menu **[[https://app.padariananuvem.com/site/#/H02SF0102H|Produtos > Balança > Exportar produtos para balança]]**, escolha o modelo da balança e aperte o botão **<wrap round caution>EXPORTAR</wrap>**. Será feito o download de um arquivo compactado que deverá ser descompactado e importado para o sistema gerenciador da balança para que depois seja dado carga nelas.\\
+<thumbnail>{{:base_de_conhecimento:compras:baixar_arquivo_balanca.gif}}</thumbnail>\\
+<WRAP INFO ROUND>
+  * Recomendamos criar uma pasta padrão na área de trabalho do sistema operacional chamada **BALANÇA** onde possa ser salvo e descompactado o arquivo baixado.
+  * Dependendo da versão do sistema operacional utilizado, será necessário baixar e instalar um programa para descompactar o arquivo baixado. Alguns deles são o **[[https://www.win-rar.com/start.html?&L=0|Winrar]]** ou **[[https://www.7-zip.org/download.html|7-Zip]]**.
+  * Se o sistema perguntar se deseja substituir os arquivos antigos, pode clicar em **Substituir**
+</WRAP>\\
+Depois de feito esse processo podemos abrir o sistema que gerencia as balanças para importar os arquivos e dar carga nas balanças.\\
 
 ===== Balança Toledo =====
 
 ==== Software MGV5 ====
-No software MGV5, é necessário fazer a exportação de um campo por vez (tara, informações nutricionais, informações extras e itens) no ícone: <thumbnail>{{ :base_de_conhecimento:treinamento:mgv5-1.png?nolink |}}</thumbnail>Após isso é só dar a carga da balança clicando no ícone: <thumbnail>{{ :base_de_conhecimento:treinamento:mgv5-2.png?nolink |}}</thumbnail> Apertar INICIAR e aguardar o fim do processo, após dar a carga, testar para ver se os produtos foram alterados/adicionados corretamente.
+===Importar arquivos===
+Com o MGV5 aberto devemos clicar em **Manipulação de arquivo** {{:base_de_conhecimento:treinamento:import_mgv5.png?nolink&25}}.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:mgv5-1.png?nolink }}</thumbnail>\\
+Na tela **Importação**, selecione **Arquivo de Itens** e clique em **Importar**. Feito isso será aberta outra tela para seleção da pasta onde foi descompactado os arquivos baixados. Selecione o arquivo desejado e clique em **Abrir**.\\ <thumbnail>{{ :base_de_conhecimento:treinamento:tela_import_mgv5.png?nolink&300 }}</thumbnail>\\
+===Dar carga na balança===
+Depois de importar os produtos é necessário dar a carga para atualizar as informações nas balanças, para isso devemos clicar em **Comunicação** {{:base_de_conhecimento:treinamento:comunicacao_mgv5.png?nolink&25}}.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:tela_sel_comunic.png?nolink&900 }}</thumbnail>\\
+Na tela de transmissão escolha as opções desejadas para a comunicação e clique em **Enviar**\\
+
+Após dar a carga, testar para ver se os produtos foram alterados/adicionados corretamente.\\
+<wrap info round>Caso tara, informações nutricionais, informações extras não tenham sido alteradas o sistema da balança mostrará uma mensagem de erro, porém isto é normal pois os arquivos com estas informações estão vazias.</wrap>\\
+
+
+
+
+
+
+
+
+Após isso é só dar a carga da balança clicando no ícone: <thumbnail>{{ :base_de_conhecimento:treinamento:mgv5-2.png?nolink |}}</thumbnail> Apertar INICIAR e aguardar o fim do processo, após dar a carga, testar para ver se os produtos foram alterados/adicionados corretamente.
 Observação: Caso tara, informações nutricionais, informações extras não tenham sido alteradas o sistema da balança mostrará uma mensagem de erro, porém isto é normal pois os arquivos com estas informações estão vazias.
 
 ==== Software MGV6 ====

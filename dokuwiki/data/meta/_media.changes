@@ -1,20 +1,32 @@
-1590430945	187.59.70.247	C	base_de_conhecimento:produtos:tela_alterar_produto_lote.gif	johny.ramos	criada		910635
-1590432193	187.59.70.247	C	base_de_conhecimento:produtos:selecionando_itens_alteracao_lote.gif	johny.ramos	criada		224901
-1590437413	187.59.70.247	C	base_de_conhecimento:produtos:parametrizando_alteracoes.gif	johny.ramos	criada		311430
-1590510643	177.40.109.223	C	base_de_conhecimento:relatorios:opcoes_para_emissao_prod.png	renata.farago	criada		19989
-1590516477	187.59.70.247	C	base_de_conhecimento:produtos:tela_confirmacao_produto_lote.png	johny.ramos	criada		23757
-1590521661	187.59.70.247	C	base_de_conhecimento:treinamento:flag.gif	johny.ramos	criada		4505
-1590524619	187.59.70.247	C	base_de_conhecimento:treinamento:bt_avancar.png	johny.ramos	criada		740
-1590524797	187.59.70.247	C	base_de_conhecimento:treinamento:produtos_alterados_com_sucesso.png	johny.ramos	criada		1034
-1590603672	177.16.39.73	C	base_de_conhecimento:fornecedores:tela_manutencao_fornecedores.png	johny.ramos	criada		25656
-1590682603	177.16.39.73	C	base_de_conhecimento:fornecedores:tela_novo_fornecedor.png	johny.ramos	criada		27714
-1590683945	177.16.39.73	C	base_de_conhecimento:fornecedores:excluir_fornecedor.png	johny.ramos	criada		13977
-1590757367	177.16.39.73	C	base_de_conhecimento:fornecedores:excluir_fornecedores_lote.gif	johny.ramos	criada		814270
-1590757564	177.16.39.73	C	base_de_conhecimento:treinamento:bt_mais_green.png	johny.ramos	criada		1268
-1590763768	177.43.128.178	C	base_de_conhecimento:treinamento:instalacao_cloudfyblue_msg_fechar.png	johny.ramos	criada		3308
-1590772446	177.96.12.215	C	base_de_conhecimento:treinamento:alterando_hash.gif	johny.ramos	criada		45360
-1590774291	177.96.12.215	E	base_de_conhecimento:treinamento:alterando_hash.gif	johny.ramos			44041
-1590774550	177.96.12.215	E	base_de_conhecimento:treinamento:alterando_hash.gif	johny.ramos			-41618
-1590774889	177.96.12.215	C	base_de_conhecimento:treinamento:atualizando_aplicacao_aguarde.png	johny.ramos	criada		2880
-1592509956	177.96.180.219	C	base_de_conhecimento:treinamento:video_cadastrar_usuario.mp4	johny.ramos	criada		55310915
-1593530576	177.16.173.142	C	base_de_conhecimento:treinamento:logo_cloudfy_blue.png	johny.ramos	criada		4118
+1599142657	177.204.211.183	C	base_de_conhecimento:relatorios:rel_vend_periodo_caixa.gif	johny.ramos	criada		23179
+1599143604	177.204.211.183	C	base_de_conhecimento:relatorios:rel_vend_grupo_sint.gif	johny.ramos	criada		20603
+1599224222	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_grupo_anali.gif	johny.ramos	criada		25213
+1599224744	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_prod_kg.gif	johny.ramos	criada		27179
+1599229627	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_grup_kg.gif	johny.ramos	criada		26421
+1599230236	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_pag_dia.gif	johny.ramos	criada		28555
+1599231191	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_pag_per.gif	johny.ramos	criada		30507
+1600199403	189.114.188.1	C	base_de_conhecimento:compras:tele_imp_fin.png	johny.ramos	criada		20823
+1600269821	189.114.188.1	C	base_de_conhecimento:compras:bt_import_fin.png	johny.ramos	criada		826
+1600270508	189.114.188.1	C	base_de_conhecimento:compras:bt_lupa_entr_mer.png	johny.ramos	criada		296
+1600270508	189.114.188.1	C	base_de_conhecimento:compras:bt_edit_entr_mer.png	johny.ramos	criada		296
+1600271363	189.114.188.1	C	base_de_conhecimento:compras:alterando_lanc_entrad_merc.gif	johny.ramos	criada		345455
+1600274644	189.114.188.1	C	base_de_conhecimento:treinamento:promo02.png.png	gabriela.henriques	criada		35787
+1600275702	189.114.188.1	E	base_de_conhecimento:treinamento:promo02.png	gabriela.henriques			4068
+1600275854	189.114.188.1	C	base_de_conhecimento:treinamento:promo03.1.png	gabriela.henriques	criada		3307
+1600275903	189.114.188.1	C	base_de_conhecimento:treinamento:promo04.1.gif	gabriela.henriques	criada		121729
+1600276665	189.114.188.1	C	base_de_conhecimento:treinamento:promo05.1.png	gabriela.henriques	criada		3307
+1600349191	189.114.188.1	C	base_de_conhecimento:compras:alterando_lac_det_entrad_merc.gif	johny.ramos	criada		1216410
+1600350665	189.114.188.1	C	base_de_conhecimento:compras:add_lac_entr.png	johny.ramos	criada		209
+1600352502	189.114.188.1	C	base_de_conhecimento:compras:add_lanc_entr_merc.gif	johny.ramos	criada		70759
+1600367093	186.212.32.125	C	base_de_conhecimento:fornecedores:mapasintegra.png	renata.farago	criada		139610
+1600370118	186.212.32.125	C	base_de_conhecimento:compras:baixar_arquivo_balanca.gif	johny.ramos	criada		1676316
+1600370900	186.212.32.125	C	base_de_conhecimento:treinamento:categorias.gif	gabriela.henriques	criada		898884
+1600371045	186.212.32.125	C	base_de_conhecimento:treinamento:categorias02.gif	gabriela.henriques	criada		38643
+1600371381	186.212.32.125	E	base_de_conhecimento:treinamento:categorias02.gif	gabriela.henriques			7216
+1600371593	186.212.32.125	C	base_de_conhecimento:fornecedores:como_consultar_um_ie.gif	renata.farago	criada		127044
+1600371626	186.212.32.125	C	base_de_conhecimento:treinamento:mgv5-1.png.png	johny.ramos	criada		25424
+1600371709	186.212.32.125	E	base_de_conhecimento:treinamento:mgv5-1.png	johny.ramos			-83407
+1600372008	186.212.32.125	C	base_de_conhecimento:treinamento:import_mgv5.png	johny.ramos	criada		1545
+1600372725	186.212.32.125	C	base_de_conhecimento:treinamento:tela_import_mgv5.png	johny.ramos	criada		45240
+1600375020	186.212.32.125	C	base_de_conhecimento:treinamento:comunicacao_mgv5.png	johny.ramos	criada		1052
+1600375454	186.212.32.125	C	base_de_conhecimento:treinamento:tela_sel_comunic.png	johny.ramos	criada		35177

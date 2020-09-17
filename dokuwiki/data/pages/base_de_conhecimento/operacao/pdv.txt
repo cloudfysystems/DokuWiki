@@ -1,11 +1,11 @@
-======Operação Cloudfy Blue PDV======
+======Operação Cloudfy Blue - PDV======
 
 A operação da nossa frente de caixa (PDV) é bem simples e a seguir apresentar todas as funcionalidades e atalhos.\\
-<thumbnail>{{:base_de_conhecimento:treinamento:logo_cloudfy_blue?nolink|}}</thumbnail> \\
+<thumbnail>{{:base_de_conhecimento:treinamento:logo_cloudfy_blue.png?nolink&400|}}</thumbnail> \\
 =====Módulos=====
-**Clientes(F1)**\\
+{{:base_de_conhecimento:operacao:cliente.png?nolink&40|}} **Clientes(F1)**\\
   * Escolher clientes para venda;
-**Comandas/Mesas(F2)**\\
+{{:base_de_conhecimento:operacao:comandas_mesas.png?nolink&35|}} **Comandas/Mesas(F2)**\\
   * Visualizar comandas/Mesas;
   * Transferir itens;
   * Estornar;
@@ -13,13 +13,13 @@ A operação da nossa frente de caixa (PDV) é bem simples e a seguir apresentar
   * Bloquear comadas;
   * Abrir/Fechar mesas;
   * Adiantamento de conta;
-**Recebimento de conta(F3)**\\
+{{:base_de_conhecimento:operacao:recebimento_conta.png?nolink&35|}} **Recebimento de conta(F3)**\\
   * Visualizar extrato de clientes;
   * Imprimir comprovantes de pagamento;
   * Receber vendas a prazo;
-**Calculadora(F4)**\\
+{{:base_de_conhecimento:operacao:calculadora.png?nolink&35|}} **Calculadora(F4)**\\
   * Realizar/Imprimir cálculos;
-**Opções(F5)**\\
+{{:base_de_conhecimento:operacao:opcoes.png?nolink&35|}} **Opções(F5)**\\
   * Reiniciar numeração de pedidos;
   * Abertura de gaveta;
   * Ressincronizar dados da retaguarda;
@@ -27,40 +27,44 @@ A operação da nossa frente de caixa (PDV) é bem simples e a seguir apresentar
   * Cupons pendentes;
   * Monitor de impressão;
   * Log de mesas/comandas;
-**Delivery/Encomendas(F6)**\\
+{{:base_de_conhecimento:operacao:pedidos.png?nolink&35|}} **Delivery/Encomendas(F6)**\\
   * Finalizar pedidos;
   * Reimprimir pedidos;
   * Alterar status;
   * Adiantamento;
   * Ver histórico;
-**Retornar itens para comanda(F7)**\\ \\
-**Configurações(F8)**\\
+{{:base_de_conhecimento:operacao:retornar_itens_comandas.png?nolink&35|}} **Retornar itens para comanda(F7)**\\ \\
+{{:base_de_conhecimento:operacao:configuracoes.png?nolink&35|}} **Configurações(F8)**\\
   * Impressoras;
   * Microterminais;
   * Ilhas de impressão;
   * Balança;
   * Catracas;
   * Configurações gerais;
-**Sangrias/Suprimentos(F9)**\\
+{{:base_de_conhecimento:operacao:sangrias_suprimentos.png?nolink&35|}} **Sangrias/Suprimentos(F9)**\\
   * Sangrais;
   * Suprimentos;
   * Pagamento de fornecdores;
-**Fechamento de caixa(F10)**\\
+{{:base_de_conhecimento:operacao:fechamento.png?nolink&35|}} **Fechamento de caixa(F10)**\\
   * Relatório analítico de movimento;
   * Reimpressão dos fechamentos anteriores do dia;
   * Fechamento de caixa;
-**Baixa parcial de mesas/comandas(F11)**\\ \\
-**Cancel./Reimpress.(F12)**\\
+{{:base_de_conhecimento:operacao:baixa_parcial.png?nolink&35|}} **Baixa parcial de mesas/comandas(F11)**\\ \\
+{{:base_de_conhecimento:operacao:cancel_reimpr.png?nolink&35|}} **Cancel./Reimpress.(F12)**\\
   * Reimprimir venda;
   * Cancelar venda;
   * Refazer venda;
 =====Funcionalidades=====
-**Troca de mercadoria**\\
-É possível realizar troca de mercadorias na tela de pagamento de venda clicando no ícone MARTELINHO e depois em Troca.\\
-**Descontos/Acréscimos**\\
+{{:base_de_conhecimento:operacao:troca.png?nolink&35|}}  **Troca de mercadoria**\\
+É possível realizar troca de mercadorias na tela de pagamento de venda clicando no ícone {{:base_de_conhecimento:operacao:opcoes_tela_pagamento.png?nolink&35|}} e depois em Troca.\\
+{{:base_de_conhecimento:operacao:desconto_acrescimo.png?nolink&35|}} **Descontos/Acréscimos**\\
   * **Desconto/Acréscimo nos produtos:** Na tela de vendas clicar sobre os produtos e depois em Descontos/Acréscimos.
-  * **Desconto/Acréscimo:**Na tela de pagamento clicar no ícone MARTELINHO ou usar o atalho (/).
-**Excluir produtos**\\
+  * **Desconto/Acréscimo:**Na tela de pagamento clicar no ícone {{:base_de_conhecimento:operacao:desconto_acrescimo_venda.png?nolink&35|}} ou usar o atalho (/).
+{{:base_de_conhecimento:operacao:cancel_reimpr.png?nolink&35|}} **Excluir produtos**\\
   * **Excluir apenas um produto:** Na tela de vendas clicar sobre o produto e depois em **Excluir item**.
-  * **Excluir a venda inteira:** Na tela de vendas clicar no ícone LIXEIRA e depois e Excluir o(s) item(s) da comanda ou ainda usar o atalho (2).
+  * **Excluir a venda inteira:** Na tela de vendas clicar no ícone {{:base_de_conhecimento:operacao:excluir.png?nolink&40|}} e depois e Excluir o(s) item(s) da comanda ou ainda usar o atalho (2).\\ \\
+
+Caso tenha alguma dificuldade para a utilização do PDV, você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+
+
 

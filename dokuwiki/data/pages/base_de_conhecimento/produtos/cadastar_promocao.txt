@@ -22,7 +22,7 @@ Nesta seção iremos fornecer as informações iniciais da promoção.\\
 {{:base_de_conhecimento:treinamento:promo03.gif?nolink|}} O switch de situação é utilizado para **ativar** ou **inativar** a promoção.
 
 <WRAP info round>
-{{ :base_de_conhecimento:treinamento:promo04.gif?nolink |}}
+{{ :base_de_conhecimento:treinamento:promo04.1.gif?nolink |}}
 \\
 A opção **Pack-Múltiplos** habilita na tela campos extras para configuração!\\
 Esses campos extras são necessários para o correto funcionamento da promoção na configuração de **Pack-Múltiplo**, mas fique tranquilo que são informações básicas.\\
@@ -33,7 +33,8 @@ Esses campos extras são necessários para o correto funcionamento da promoção
 
 **Início da promoção**, este campo é para preenchimento da data inicial da vigência da promoção.\\
 **Final da promoção**, este campo é para preenchimento da data final da vigência da promoção, caso não seja fornecido a promoção não terá um prazo de finalização.\\
-{{:base_de_conhecimento:treinamento:promo05.gif?nolink|}} O switch de aplicação da promoção delimita a existência dela a apenas uma filial ou a todas filiais do cliente Cloudfy.\\
+**Promoção restrita a filial**, este campo é para selecionar a filial que a promoção deverá ser aplicada, ou pode ser deixado em branco para aplicar a todas as filiais do cliente Cloudfy.\\
+{{:base_de_conhecimento:treinamento:promo05.1.png?nolink|}} \\
 
 === Dias da semana ===
 Nesta seção iremos fornecer as informações de vigência diária da promoção.\\

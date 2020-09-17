@@ -35,6 +35,7 @@ O inventário esta sendo realizado apenas no subgrupo de **bebidas** e o produto
 <WRAP important>Quando utilizar um Coletor de dados e for informar uma quantidade fracionada **informe a quantidade com ponto (.)** e não com vírgula (,).\\ **Exemplo:**\\ A quantidade apurada foi de 4,5 unidades (quatro unidades e meia), informe no coletor 4.5 como a quantidade apurada.\\
 Isto evita erros na validação das informações que serão utilizadas.
 </WRAP> 
+<WRAP IMPORTANT>O código do produto e a quantidade devem estar separados por **ponto e vírgula(;)**</WRAP>
 
 === Filtros ===
 Após configurado as informações iniciais do Inventário passaremos para a etapa de localização dos produtos que serão inventariados.\\

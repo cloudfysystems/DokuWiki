@@ -1,20 +1,117 @@
-1592511366	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			10
-1592511396	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			-2
-1592511652	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			-8
-1592511888	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			9
-1592511904	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			0
-1592511938	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			0
-1592511955	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			0
-1592511983	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			0
-1592512152	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			23
-1592512202	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			-23
-1592512264	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			11
-1592512320	177.96.180.219	E	base_de_conhecimento:inicio:ola	johny.ramos			-11
-1593461307	179.179.15.75	C	base_de_conhecimento:operacao:pdv	johny.ramos	criada		39
-1593527897	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			200
-1593528047	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			296
-1593528419	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			603
-1593529071	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			1067
-1593529108	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			25
-1593529221	179.179.15.75	E	base_de_conhecimento:operacao:pdv	johny.ramos			4
-1593530641	177.16.173.142	E	base_de_conhecimento:operacao:pdv	johny.ramos			87
+1600190609	187.59.18.237	E	base_de_conhecimento:relatorios:relatorio_de_cmv	renata.farago			318
+1600197620	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			35
+1600198322	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			330
+1600199488	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			57
+1600199545	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			24
+1600199783	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			74
+1600199809	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			0
+1600199851	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			3
+1600199902	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			1
+1600199948	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			0
+1600269865	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			62
+1600269878	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			0
+1600269939	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			42
+1600270683	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			258
+1600270863	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			100
+1600270958	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			182
+1600270981	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			12
+1600270999	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			-3
+1600271762	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			2
+1600275953	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			103
+1600275962	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			-3
+1600276005	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			24
+1600276034	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			-24
+1600276075	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			23
+1600277436	189.114.188.1	E	base_de_conhecimento:produtos:cadastar_promocao	gabriela.henriques			76
+1600349237	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			33
+1600349704	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			66
+1600349862	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			8
+1600350809	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			66
+1600350923	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			98
+1600352288	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			117
+1600352535	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			91
+1600352887	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			283
+1600352957	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			0
+1600352970	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			0
+1600353024	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			2
+1600353091	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			-2
+1600353120	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			22
+1600353148	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			0
+1600353558	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			40
+1600353605	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			20
+1600353795	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			3
+1600353873	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			0
+1600354087	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria	johny.ramos			198
+1600354174	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria_sem_nota	johny.ramos			173
+1600354215	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria_sem_nota	johny.ramos			4
+1600354340	189.114.188.1	E	base_de_conhecimento:compras:entrada_de_mercadoria_sem_nota	johny.ramos	[Importação financeira] 		192
+1600365305	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			8
+1600365355	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			4
+1600365420	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			91
+1600365528	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-71
+1600365560	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			28
+1600365569	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-1
+1600365663	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			160
+1600365765	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			24
+1600365965	189.114.188.1	E	base_de_conhecimento:relatorios:relatorio_de_cmv	renata.farago			-4
+1600366114	189.114.188.1	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos	[Arquivo exportável] 		4
+1600366140	189.114.188.1	C	base_de_conhecimento:financeiro:categoria_financeira	renata.farago	criada		384
+1600366630	186.212.32.125	C	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago	criada		505
+1600366681	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			0
+1600367138	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			218
+1600368449	186.212.32.125	E	base_de_conhecimento:compras:entrada_de_mercadoria_sem_nota	nelson.pires	[Importação financeira] 		1980
+1600369439	186.212.32.125	D	base_de_conhecimento:delivery:instalacao_do_ifood	nelson.pires	removida		-33
+1600370221	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			85
+1600370383	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			99
+1600370470	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			135
+1600370819	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-3
+1600370880	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			49
+1600371156	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			214
+1600371266	186.212.32.125	E	base_de_conhecimento:financeiro:categoria_financeira	gabriela.henriques			774
+1600371273	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			11
+1600371353	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			52
+1600371604	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			284
+1600371746	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			84
+1600371788	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-3
+1600371804	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			2
+1600371882	186.212.32.125	E	base_de_conhecimento:financeiro:categoria_financeira	gabriela.henriques			-10
+1600371899	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			0
+1600371925	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			82
+1600371979	186.212.32.125	E	base_de_conhecimento:financeiro:categoria_financeira	gabriela.henriques			4
+1600371981	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			6
+1600372069	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			58
+1600372083	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-1
+1600372153	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			192
+1600372204	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			0
+1600372275	186.212.32.125	E	base_de_conhecimento:financeiro:categoria_financeira	gabriela.henriques			48
+1600372302	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			2
+1600372356	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	renata.farago			44
+1600372380	186.212.32.125	E	base_de_conhecimento:financeiro:categoria_financeira	gabriela.henriques			-4
+1600372766	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			66
+1600372916	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			24
+1600372938	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-1
+1600372998	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			1
+1600373046	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			4
+1600373058	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			0
+1600373075	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			0
+1600373133	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-231
+1600373335	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			1
+1600373349	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			2
+1600373418	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			52
+1600373769	186.212.32.125	E	base_de_conhecimento:nota_fiscal:emitir_nf-e_utilizando_nfc-e	renata.farago	[Etapa 1: Dados do cliente] 		141
+1600373894	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-27
+1600373923	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			1
+1600373961	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			27
+1600374404	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos	[Software MGV5] 		159
+1600374768	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos	[Software MGV5] 		136
+1600374928	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			338
+1600375146	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos	[Software MGV5] 		48
+1600375524	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos	[Software MGV5] 		70
+1600375560	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			1
+1600375583	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			4
+1600375605	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos	[Software MGV5] 		0
+1600375625	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos	[Software MGV5] 		1
+1600375671	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos			-1
+1600375705	186.212.32.125	E	base_de_conhecimento:produtos:carga_de_balanca	johny.ramos	[Software MGV5] 		1
+1600375805	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	nelson.pires			-1
+1600375813	186.212.32.125	E	base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor	nelson.pires			1

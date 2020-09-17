@@ -87,3 +87,17 @@ Se houver um ou mais produtos reconhecidos {{:base_de_conhecimento:treinamento:p
   * A coluna __Preço__ indica o preço de venda do produto e o preço **sugerido** de venda em relação a coluna __Mark-up__.
   * Na coluna __Ações__ você pode retirar o produto da lista de importação em lote e ou atualizar o campo __Preço__ com o valor sugerido.
 Após preencher todos os campos necessários, clique no botão <wrap notice round>IMPORTAR PRODUTOS EM LOTE</wrap> e confirme a operação para finalizar a importação!
+
+=====Importação financeira=====
+A importação financeira serve para importarmos para o financeiro da empresa a cobrança referente a compra que está sendo integrada. Antes de importarmos o financeiro devemos verificar se as informações **Conta bancária**, **Vencimento**, **Nr. do documento**, **Vl. da parcela** e se o valor já está **pago** ou **não**.\\ <thumbnail>{{:base_de_conhecimento:compras:tele_imp_fin.png?nolink}}</thumbnail>\\ Se todas as informações tiverem corretas você pode clicar no botão {{:base_de_conhecimento:compras:bt_import_fin.png?nolink&175}}.
+<WRAP IMPORTANT ROUND>Só será possível importar as cobranças para o financeiro se o valor **Total declarado na compra** for igual ao valor **Total de pagamentos salvos**, caso não esteja igual será necessário editar as cobranças conforme mostrado nos passos abaixo.</WRAP>\\
+====Editar informações de cobrança====
+Caso precise ser editado ou excluídos as cobranças dessa compra você pode fazer clicando nos seguintes botões localizados no lado direito da cobrança:\\
+<WRAP info round>{{:base_de_conhecimento:treinamento:excluirinvent.png?nolink&25}}: Exclui a cobrança</WRAP>\\
+<WRAP INFO ROUND>{{:base_de_conhecimento:compras:bt_edit_entr_mer.png?nolink&25}}: Possibilita editar os campos da cobrança conforme mostrado abaixo.\\
+<thumbnail>{{:base_de_conhecimento:compras:alterando_lanc_entrad_merc.gif?nolink}}</thumbnail></WRAP>\\
+<WRAP INFO ROUND>{{:base_de_conhecimento:compras:bt_lupa_entr_mer.png?nolink&25}}: Abre uma tela adicional onde é possível editar mais detalhes da cobrança, como **Descontos** e **Acréscimos** por exemplo.\\
+<thumbnail>{{:base_de_conhecimento:compras:alterando_lac_det_entrad_merc.gif?nolink}}</thumbnail></WRAP>\\
+<WRAP INFO ROUND>{{:base_de_conhecimento:compras:add_lac_entr.png?nolink&25}}: Quando o valor **Total declarado na compra** for diferente do valor **Total de pagamentos salvos** irá aparecer um ícone para adicionar novos lançamentos até o dois valores serem iguais conforme mostrado abaixo.\\
+<thumbnail>{{:base_de_conhecimento:compras:add_lanc_entr_merc.gif?nolink}}</thumbnail></WRAP>\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

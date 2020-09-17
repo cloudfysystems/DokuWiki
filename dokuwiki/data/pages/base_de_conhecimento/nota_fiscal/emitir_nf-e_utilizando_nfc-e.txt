@@ -1,5 +1,5 @@
 ====== Emitir NF-e utilizando NFC-e ======
-A emissão de uma NF-e utilizando uma NFC-e é bem simples e a seguir iremos explicar passo a passo todo o processo de emissão. Se você já está familiarizado com o processo de [[.:emissao_nfe|emissão de NF-e]] pule para a [[emitir_nfe_de_nfce#Etapa 2: Informações do Produto]], a etapa onde pode ser feita a seleção de cupons de venda.
+A emissão de uma NF-e utilizando uma NFC-e é bem simples e a seguir iremos explicar passo a passo todo o processo de emissão. Se você já está familiarizado com o processo de emissão de NF-e pule para a [[#Etapa 2: Informações do Produto]], a etapa onde pode ser feita a seleção de cupons de venda.
 ===== Iniciando uma nova emissão =====
 Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0109A|Nota Fiscal>Emissão de NFe]] e aperte no botão <wrap safety round>REALIZAR UMA NOVA EMISSÃO</wrap> para iniciar o assistente de emissão de NFe.\\ 
 <thumbnail>{{:base_de_conhecimento:treinamento:realizar_nova_emissao.png?nolink|}}</thumbnail>
@@ -9,7 +9,8 @@ Na primeira etapa do assistente você deve preencher as informações do cliente
 Ao selecionar o cliente, as informações restantes serão preenchidas automaticamente de acordo com o que foi cadastrado. Clique em continuar no final da tela para prosseguir para a próxima etapa.\\ 
 <wrap tip>Caso o cliente não esteja cadastrado, você pode clicar no ícone {{:base_de_conhecimento:cadastrar1.png?nolink&30x30|}} e fazer o cadastro de um novo usuário sem sair da tela de emissão de nota.</wrap>\\ 
 <wrap important>Verifique se todos os campos <wrap em>obrigatórios*</wrap> estão preenchidos.</wrap>\\ 
-<wrap important>Verifique se o cliente é contribuinte e em caso positivo, preencha corretamente a inscrição estadual.</wrap>
+<wrap important>Verifique se o cliente é contribuinte e em caso positivo, preencha corretamente a inscrição estadual. Caso não saiba qual a inscrição estadual do cliente, [[base_de_conhecimento:fornecedores:inscricao_estadual_de_fornecedor|clique aqui.]]</wrap>
+
 
 ==== Etapa 2: Informações do Produto ====
 A segunda etapa é onde você seleciona os produtos e informações tributarias que farão parte da NF-e.<wrap info round>É nesta etapa que é possível selecionar o cupom de venda que deseja transformar em NF-e.</wrap>\\ 
@@ -49,7 +50,7 @@ Na última etapa da emissão da NFe entre com as informações adicionais e conf
 **//Informações da emissão//**</thumbnail></WRAP>
 <wrap alert round>Não altere manualmente estes campos.</wrap>\\ 
 Se as **informações de emissão** não estiverem corretas, utilize o botão <btn type="link">Voltar</btn>((canto inferior esquerdo da tela)) para arrumar as informações incorretas nas etapas anteriores.<wrap round safety>Não se preocupe, nenhuma das informações é perdida ao voltar para outra etapa.</wrap>\\ 
-No campo //__Documento Fiscal Referenciado__// está referenciado o número do(s) documento(s) selecionado(s) na [[emitir_nfe_de_nfce#Etapa 2: Informações do Produto]]. Caso queira referenciar mais documentos, volte para a Etapa 2.
+No campo //__Documento Fiscal Referenciado__// está referenciado o número do(s) documento(s) selecionado(s) na [[#Etapa 2: Informações do Produto]]. Caso queira referenciar mais documentos, volte para a Etapa 2.
 === Informações complementares ===
 <thumbnail>{{ :base_de_conhecimento:treinamento:nfe_info_comp.png?nolink |}}</thumbnail>
 No campo de //__Informações Complementares__// você poderá complementar o texto com qualquer informação que achar necessário.\\ 

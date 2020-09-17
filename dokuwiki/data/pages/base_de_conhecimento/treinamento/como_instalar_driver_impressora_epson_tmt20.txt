@@ -1,15 +1,13 @@
 ====== Instalação Driver da Impressora Epson TM-T20======
 
-O primeiro passo para instalar o driver da impressora Epson TM-T20 é fazer o download dele clicando [[https://download.epson-biz.com/modules/pos/index.php?page=single_soft&cid=6225&pcat=3&pid=37|Aqui]]. Para realizar o download basta clicar em **Accept** e depois em **Download**.\\
-{{:base_de_conhecimento:treinamento:pagina_download_tmt20.png?nolink|}} \\
- 
-<wrap info round>É importante que seja essa versão do driver pois ela possibilita a customização das margens de impressão quando utilizado com o **CloudCommerce PDV**</wrap>\\ \\
-O nome do arquivo baixado é o **APD_511R1_T20_EWM.zip**, trata-se de um arquivo compactado no formato **ZIP** e dentro dele estarão 4 arquivos:
-  * <wrap important round>**APD_511R1_T20.exe:** Esse é o instalador do driver da impressora e que deve ser executado com privilégios de **Administrador** para o funcionamento da impressora.</wrap>
+O primeiro passo para instalar o driver da impressora Epson TM-T20 é fazer o download dele clicando [[https://download.epson-biz.com/modules/pos/index.php?page=single_soft&cid=6444&scat=31&pcat=3|Aqui]] ou acessando a página de download da Epson no endereço [[https://download.epson-biz.com/modules/pos/index.php?page=single_soft&cid=6444&scat=31&pcat=3|https://download.epson-biz.com/modules/pos/index.php?page=single_soft&cid=6444&scat=31&pcat=3]]. No final da página devemos clicar em **Accept** e depois em **Download...**:<thumbnail>{{:base_de_conhecimento:treinamento:pagina_download_tmt20.png?nolink|}}</thumbnail>\\
+
+O nome do arquivo baixado é o **APD_512_T20_EWM.zip**. Se trata de um arquivo compactado que deve ser extraído. Esse arquivo contém os seguintes arquivos dentro:\\
+  * <wrap important round>**APD_512_T20.exe:** Esse é o instalador do driver da impressora e que deve ser executado com privilégios de **Administrador** para o funcionamento da impressora.</wrap>
   * **APD5_Install_en_revG.pdf:** Esse arquivo é um manual de instalação do Advanced Printer Driver Ver.5 para impressora Epson TM-T20.
   * **APD5_MAN_T20_EN_E.exe:** Esse arquivo é um instalador de manuais e demonstrativos referentes a impressora Epson TM-T20.
   * **APD5_README_EN.TXT:** Esse arquivo traz algumas informações referentes ao conteúdo do download e possíveis erros de instalação.\\
-Quando executado o arquivo **APD_511R1_T20.exe** serão necessários alguns passos para prosseguir com a instalação:\\
+Quando executado o arquivo **APD_512_T20.exe** serão necessários alguns passos para prosseguir com a instalação:\\
  
 Essa tela traz algumas recomendações referente as versões utilizadas e compartilhamento de impressora por outras máquinas. Também recomenda que seja fechado todas as outras aplicações para prosseguir com a instalação do driver. Devemos clicar em **Next**.\\
 {{:base_de_conhecimento:treinamento:driver_tmt20_check_installation.png?nolink|}}\\ \\
@@ -36,7 +34,7 @@ Nessa tela devemos selecionar o tipo de comunicação da impressora sendo elas:
 <wrap info round>A qualquer momento podemos enviar mais testes de impressão clicando em **Test Print**.</wrap>\\
 
 Se tiver sido impresso o teste de impressão, podemos clicar em **Next** e depois em **Close** na próxima janela que será exibida para finalizar a instalação.\\
-<WRAP IMPORTANT ROUND>Normalmente é preciso regular as margens de impressão para o cupom fiscal ser impresso corretamente nessa impressora.</WRAP>\\
+<WRAP IMPORTANT ROUND>**Normalmente é preciso regular as margens de impressão para o cupom fiscal ser impresso corretamente nessa impressora.**</WRAP>\\
 
 =====Cloudfy Blue=====
 No **Cloudfy Blue** isso pode ser feito nas configurações da impressora dentro da aplicação apertando o atalho **F8 > Impressoras > Cadastro da impressora Epson TM-T20 > Informações de Margem**.\\
