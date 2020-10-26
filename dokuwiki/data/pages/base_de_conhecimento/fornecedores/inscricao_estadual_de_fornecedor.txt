@@ -1,0 +1,20 @@
+====== Inscrição estadual ======
+
+No Brasil, a Inscrição Estadual (IE) é o registro do contribuinte no cadastro do ICMS mantido pela Receita Estadual. Com a inscrição, o contribuinte do ICMS passa a ter o registro formal do seu negócio, junto à Receita estadual do estado onde está estabelecido.
+
+===== Como consultar Inscrição Estadual (IE) no SINTEGRA? =====
+
+Para consultar uma Inscrição Estadual (IE) acesse o site da [[http://www.sintegra.gov.br/|SINTEGRA]]
+  * http://www.sintegra.gov.br/
+
+Após acessar o site, um Mapa do Brasil será exibido, clique sobre o Estado (UF) onde a (IE) está cadastrada, ou na lista de Estados à direita:
+
+{{:base_de_conhecimento:fornecedores:mapasintegra.png?nolink&800|}}
+
+A seguir, será exibida uma página para consulta usando o (IE), CNPJ ou CPF. No caso, basta inserir o **CNPJ** do seu fornecedor e o **Número de Controle** que as informações do fornecedor serão exibidas. Por fim, clique em **Consultar Empresa**.\\
+No vídeo a seguir, esta um exemplo de consulta de (IE) no estado do Paraná:
+
+{{:base_de_conhecimento:fornecedores:como_consultar_um_ie.gif?nolink&600|}}
+
+Caso tenha alguma dificuldade para consultar a Inscrição Estadual, você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+

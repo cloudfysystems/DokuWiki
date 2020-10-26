@@ -1,0 +1,23 @@
+======Operação Cloudfy Blue - Terminal======
+A operação do nosso terminal é bem simples e a seguir apresentar todas as funcionalidades e atalhos.\\
+<thumbnail>{{:base_de_conhecimento:operacao:logo_cloudfy_blue_terminal.png?nolink&400|}}</thumbnail> \\
+
+=====Funcionalidades=====
+  * {{:base_de_conhecimento:operacao:dividir_item.png?nolink&35|}} **Dividir itens entre Mesas/Comandas:** Para dividir um item entre mais de uma Mesa/Comanda, você deve selecionar o item, clicar em Dividir com outras comandas e selecionar a comanda destino.\\ \\
+  * {{:base_de_conhecimento:operacao:fechar_mesa.png?nolink&35|}} **Imprimir conta:** Para imprimir a conta você pode selecionar a Mesa/Comanda e clicar em:
+    * **Imprimir conta:** Comandas;
+    * **Fechar mesa:** Mesas;
+Também é possível imprimir a conta de apenas alguns itens selecionando a Mesa/Comanda, clicando no ícone {{:base_de_conhecimento:operacao:maozinha.png?nolink&35|}}, selecionando os itens e clicando em {{:base_de_conhecimento:operacao:imprimir_conta.png?nolink&35|}}.\\ \\
+  * {{:base_de_conhecimento:operacao:excluir_item.png?nolink&35|}} **Detalhe do lançamento:** Para consultar informações sobre um lançamento devemos selecionar o item e depois clicar em **Ver detalhes do lançamento**.\\ \\
+  * {{:base_de_conhecimento:operacao:detalhes.png?nolink&35|}} **Detalhes sobre Mesa/Comanda:** Para consultar detalhes sobre uma Mesa/Comanda aberta, você deve selecioná-la e clicar em **Detalhes**.\\ \\
+  * {{:base_de_conhecimento:operacao:bloquear_comanda.png?nolink&35|}} **Bloquear comanda:** Para bloquear comandas você deve selecionar a comanda e clicar em **Bloquear comanda**.\\ \\
+  * {{:base_de_conhecimento:operacao:nova_posicao_mesa.png?nolink&40|}} **Controle de consumo de mesa por posição:** Caso trabalhe com mesas, é possível controlar o consumo da mesa por posição, definindo  quantidade de posições na mesa no momento da abertura dela ou ainda clicando no ícone {{:base_de_conhecimento:operacao:nova_posicao_mesa.png?nolink&40|}} para adicionar uma nova posição.\\ \\
+  * {{:base_de_conhecimento:operacao:push_comandas.png?nolink&35|}} **Lançamento de perdas/transferências e entrada de estoque:** Depois de criado a Mesa/Comanda para essa finalidade, é possível lançar os itens de perda/transferência/entrada na mesa/comanda, clicar no ícone {{:base_de_conhecimento:operacao:push_comandas.png?nolink&35|}} ou ainda pressionar a **tecla F11** para enviar os produtos para a retaguarda e realizar a movimentação.\\ \\
+  * {{:base_de_conhecimento:operacao:transferir_itens.png?nolink&35|}} **Transferência de itens entre comandas:** Para transferir um item de uma Mesa/Comanda para outra, devemos selecionar a Mesa/Comanda ou item e clicar em **Transferir itens**. Depois de selecionar a Mesa/Comanda de destino e os itens a serem transferidos devemos clicar no ícone {{:base_de_conhecimento:operacao:transferencias_verde.png?nolink&35|}} ou pressionar a tecla **Enter** para concluir a transferência.\\ \\
+  * {{:base_de_conhecimento:operacao:lancar_itens.png?nolink&35|}} **Lançamento de produtos:** Para lançar um produto primeiro devemos selecionar uma **Mesa/Comanda** digitando seu número ou a selecionando no mapa de Mesas/Comandas, então devemos digitar o código do produto ou o seu nome no campo de **Busca**.\\ \\
+  * {{:base_de_conhecimento:operacao:excluir_item.png?nolink&35|}} **Excluir itens:** Para excluir o item de uma Mesa/Comanda devemos selecionar o item e depois clicar em **Excluir item**.\\ \\
+  * {{:base_de_conhecimento:operacao:reabrir_mesa.png?nolink&35|}} **Reabrir Mesa:** Para reabrir uma **mesa** devemos selecionar uma que se encontre fechada e clicar em **Reabrir Mesa**, então será perguntado se você deseja:
+    * **Apenas reabrir a mesa:** reabre a mesa com os itens e valores dos clientes anteriores;
+    * **Iniciar no movimento:** abre a mesa para novos clientes e uma nova venda e salva a venda anterior para cobrança no caixa.\\ \\
+
+Caso tenha alguma dificuldade para a utilização do PDV, você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

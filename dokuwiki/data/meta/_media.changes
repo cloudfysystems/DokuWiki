@@ -1,32 +1,20 @@
-1599142657	177.204.211.183	C	base_de_conhecimento:relatorios:rel_vend_periodo_caixa.gif	johny.ramos	criada		23179
-1599143604	177.204.211.183	C	base_de_conhecimento:relatorios:rel_vend_grupo_sint.gif	johny.ramos	criada		20603
-1599224222	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_grupo_anali.gif	johny.ramos	criada		25213
-1599224744	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_prod_kg.gif	johny.ramos	criada		27179
-1599229627	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_grup_kg.gif	johny.ramos	criada		26421
-1599230236	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_pag_dia.gif	johny.ramos	criada		28555
-1599231191	187.59.25.139	C	base_de_conhecimento:relatorios:rel_vend_pag_per.gif	johny.ramos	criada		30507
-1600199403	189.114.188.1	C	base_de_conhecimento:compras:tele_imp_fin.png	johny.ramos	criada		20823
-1600269821	189.114.188.1	C	base_de_conhecimento:compras:bt_import_fin.png	johny.ramos	criada		826
-1600270508	189.114.188.1	C	base_de_conhecimento:compras:bt_lupa_entr_mer.png	johny.ramos	criada		296
-1600270508	189.114.188.1	C	base_de_conhecimento:compras:bt_edit_entr_mer.png	johny.ramos	criada		296
-1600271363	189.114.188.1	C	base_de_conhecimento:compras:alterando_lanc_entrad_merc.gif	johny.ramos	criada		345455
-1600274644	189.114.188.1	C	base_de_conhecimento:treinamento:promo02.png.png	gabriela.henriques	criada		35787
-1600275702	189.114.188.1	E	base_de_conhecimento:treinamento:promo02.png	gabriela.henriques			4068
-1600275854	189.114.188.1	C	base_de_conhecimento:treinamento:promo03.1.png	gabriela.henriques	criada		3307
-1600275903	189.114.188.1	C	base_de_conhecimento:treinamento:promo04.1.gif	gabriela.henriques	criada		121729
-1600276665	189.114.188.1	C	base_de_conhecimento:treinamento:promo05.1.png	gabriela.henriques	criada		3307
-1600349191	189.114.188.1	C	base_de_conhecimento:compras:alterando_lac_det_entrad_merc.gif	johny.ramos	criada		1216410
-1600350665	189.114.188.1	C	base_de_conhecimento:compras:add_lac_entr.png	johny.ramos	criada		209
-1600352502	189.114.188.1	C	base_de_conhecimento:compras:add_lanc_entr_merc.gif	johny.ramos	criada		70759
-1600367093	186.212.32.125	C	base_de_conhecimento:fornecedores:mapasintegra.png	renata.farago	criada		139610
-1600370118	186.212.32.125	C	base_de_conhecimento:compras:baixar_arquivo_balanca.gif	johny.ramos	criada		1676316
-1600370900	186.212.32.125	C	base_de_conhecimento:treinamento:categorias.gif	gabriela.henriques	criada		898884
-1600371045	186.212.32.125	C	base_de_conhecimento:treinamento:categorias02.gif	gabriela.henriques	criada		38643
-1600371381	186.212.32.125	E	base_de_conhecimento:treinamento:categorias02.gif	gabriela.henriques			7216
-1600371593	186.212.32.125	C	base_de_conhecimento:fornecedores:como_consultar_um_ie.gif	renata.farago	criada		127044
-1600371626	186.212.32.125	C	base_de_conhecimento:treinamento:mgv5-1.png.png	johny.ramos	criada		25424
-1600371709	186.212.32.125	E	base_de_conhecimento:treinamento:mgv5-1.png	johny.ramos			-83407
-1600372008	186.212.32.125	C	base_de_conhecimento:treinamento:import_mgv5.png	johny.ramos	criada		1545
-1600372725	186.212.32.125	C	base_de_conhecimento:treinamento:tela_import_mgv5.png	johny.ramos	criada		45240
-1600375020	186.212.32.125	C	base_de_conhecimento:treinamento:comunicacao_mgv5.png	johny.ramos	criada		1052
-1600375454	186.212.32.125	C	base_de_conhecimento:treinamento:tela_sel_comunic.png	johny.ramos	criada		35177
+1600964540	177.204.216.220	C	base_de_conhecimento:treinamento:pracas02.png	gabriela.henriques	criada		5269
+1600964842	177.204.216.220	C	base_de_conhecimento:treinamento:pracas03.png	gabriela.henriques	criada		8740
+1600965242	177.204.216.220	C	base_de_conhecimento:treinamento:praca02.gif	gabriela.henriques	criada		102306
+1600966427	177.204.216.220	E	base_de_conhecimento:treinamento:pracas02.png	gabriela.henriques			-3353
+1600971182	177.204.216.220	C	base_de_conhecimento:treinamento:praca03.gif	gabriela.henriques	criada		103315
+1600971416	177.204.216.220	C	base_de_conhecimento:treinamento:add_novo.png	gabriela.henriques	criada		578
+1600971594	177.204.216.220	C	base_de_conhecimento:treinamento:adicionar.png	gabriela.henriques	criada		1410
+1600972426	177.204.216.220	C	base_de_conhecimento:treinamento:pracas04.png	gabriela.henriques	criada		2835
+1600976893	177.204.216.220	C	base_de_conhecimento:treinamento:pracas05.png	gabriela.henriques	criada		3308
+1601043255	177.204.216.220	C	base_de_conhecimento:treinamento:pracas06.gif	gabriela.henriques	criada		91841
+1601045082	177.204.216.220	C	base_de_conhecimento:treinamento:pracas07.png	gabriela.henriques	criada		3431
+1601045415	177.204.216.220	C	base_de_conhecimento:treinamento:pracas08.png	gabriela.henriques	criada		8820
+1601046382	177.204.216.220	C	base_de_conhecimento:treinamento:pracas09.gif	gabriela.henriques	criada		182972
+1601047424	177.204.216.220	C	base_de_conhecimento:treinamento:pracas10.png	gabriela.henriques	criada		18057
+1601056258	177.204.216.220	C	base_de_conhecimento:treinamento:excluir.png	gabriela.henriques	criada		1159
+1601057588	177.204.216.220	C	base_de_conhecimento:treinamento:pracas00.png	gabriela.henriques	criada		37558
+1601058228	177.204.216.220	C	base_de_conhecimento:treinamento:pracas11.png	gabriela.henriques	criada		21588
+1601058439	177.204.216.220	C	base_de_conhecimento:treinamento:pracas12.png	gabriela.henriques	criada		43189
+1602085223	177.156.77.21	C	base_de_conhecimento:treinamento:alterarpreco01.png	gabriela.henriques	criada		18071
+1602086397	177.156.77.21	C	base_de_conhecimento:treinamento:alterarpreco00.png	gabriela.henriques	criada		11611

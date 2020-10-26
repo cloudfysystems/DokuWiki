@@ -5,6 +5,9 @@ Para configurar o Certificado Digital, certifique-se de fez o **download** dele 
 Tendo o certificado você deve seguir para o menu [[https://app.padariananuvem.com/site/#/H02SF0109C|Nota Fiscal>Configuração de emissão]].
 <thumbnail>{{:base_de_conhecimento:treinamento:certificado00.png?nolink|}}</thumbnail>
 Aqui você pode arrastar o seu certificado ou clicar no botão <button type="primary" size="xs">SELECIONE O ARQUIVO</button> para procurar em sua máquina.
+<WRAP round important 70%>
+O arquivo não pode ter um nome com mais de sessenta (60) caracteres no nome.
+</WRAP>
 <thumbnail>{{:base_de_conhecimento:treinamento:certificado01.png?nolink|}}</thumbnail>
 Após selecionar o arquivo, você deve colocar a senha do mesmo na seguinte tela:
 <thumbnail>{{:base_de_conhecimento:treinamento:certificado02.png?nolink|}}</thumbnail>

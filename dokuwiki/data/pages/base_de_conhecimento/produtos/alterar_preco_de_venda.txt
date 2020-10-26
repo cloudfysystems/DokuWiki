@@ -1,0 +1,25 @@
+====== Alterar Preço de Venda ======
+Alterar o preço de Venda é bem simples e a seguir iremos explicar passo a passo todo o processo.\\
+Para fazer essa alteração, navegue para o Menu [[https://app.cloudfy.net.br/site/#/H02SF0106O|Produtos > Alterar Preço de Venda]].\\
+
+{{:base_de_conhecimento:treinamento:alterarpreco00.png|}}
+
+===== Filtrar produtos =====
+Primeiro passo é escolher a forma que deseja filtrar os produtos para melhor visualização.\\
+
+{{:base_de_conhecimento:treinamento:alterarpreco01.png?1000|}}\\
+
+Podendo filtrar por **Grupo de produtos**, por **Fornecedor** ou até mesmo por **Grupo de produtos e Fornecedor** combinados. Basta clicar sobre a caixa e selecionar os itens desejados.\\
+
+Em seguida temos mais algumas opções de filtragem:
+  * **Markup atual do produto**: 
+    * **Todos**: Seleciona todos os produtos não importando o Markup dos mesmos.
+    * **Produtos Abaixo do Markup desejado**: Seleciona os produtos que o preço está abaixo do Markup desejado em relação ao //custo utilizado//.
+    * **Produtos Acima do Markup desejado**: Seleciona os produtos que o preço está acima do Markup desejado em relação ao //custo utilizado//.
+  * **Custo utilizado**:
+    * **Custo da última compra**: Utiliza como base para selecionar os produtos o custo da última compra.
+    * **Custo médio**: Utiliza como base para selecionar os produtos o custo médio do mesmo.
+  * **Data da última compra**: Seleciona os produtos adquiridos na data da compra selecionada.
+\\
+\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

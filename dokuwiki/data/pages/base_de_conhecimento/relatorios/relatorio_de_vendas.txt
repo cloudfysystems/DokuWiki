@@ -1,0 +1,67 @@
+======Relatório de vendas======
+Nesse tutorial iremos ensinar como gerar um relatório de vendas pelo sistema e apresentar os diferentes tipos de relatórios\\
+O primeiro passo é acessar a tela de emissão do relatório de venda em **Relatórios gerais > Vendas > Relatório de vendas** conforme mostrado abaixo.\\ <thumbnail>{{:base_de_conhecimento:treinamento:tela_relatorio_vendas.gif?nolink|}}</thumbnail>\\
+<WRAP INFO ROUND>
+  * Nessa tela podemos filtrar as vendas por **Período**, **Filial**, **Grupo de produtos**, **Caixa** e **Centro administrativo**.
+  * {{:base_de_conhecimento:treinamento:consolidar_filiais.gif?nolink|}}: Essa opção agrupa as informações de todas as filiais da empresa, com isso elas <wrap em>NÃO</wrap> são exibidas separadamente no relatório.
+</WRAP>\\
+=====Tipos de relatório de venda=====
+====Relatório de vendas por data====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_data.gif?nolink&300|}} O **Relatório de vendas por data** exibe todas as vendas no período selecionado separadas por <wrap em>**DIA**</wrap>, trazendo valores e quantidades de cada produto vendido e os totais.
+</WRAP>\\
+====Relatório de vendas data/caixa====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_data_caixa.gif?nolink&300|}} O **Relatório de vendas por data/caixa** exibe todas as vendas no período selecionado separadas por <wrap em>**DIA**</wrap> e por <wrap em>**CAIXA**</wrap>, trazendo valores e quantidades de cada produto vendido e os totais.\\
+<wrap important round>Nesse relatório deve ser selecionado todos os caixas que quer listado no relatório utilizando o filtro **Caixa**, caso contrário irá separar apenas por <wrap em>**DIA**</wrap> </wrap>.
+</WRAP>\\
+====Relatório de vendas por período====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_periodo.gif?nolink&300|}} O **Relatório de vendas por período** exibe todas as vendas consolidadas no período selecionado, trazendo valores e quantidades de cada produto vendido e totais.
+</WRAP>\\
+====Relatório de vendas por período/caixa====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_periodo_caixa.gif?nolink&300|}} O **Relatório de vendas por período/caixa** exibe todas as vendas consolidadas no período selecionado separadas por <wrap em>**CAIXA**</wrap>, trazendo valores e quantidades de cada produto vendido e os totais.\\
+<wrap important round>Nesse relatório deve ser selecionado todos os caixas que quer listado no relatório utilizando o filtro **Caixa**, caso contrário o relatório irá apenas exibir as vendas consolidadas no período selecionado.</wrap>
+</WRAP>\\
+====Relatório de vendas por grupo sintético====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_grupo_sint.gif?nolink&300|}} O **Relatório de vendas por grupo sintético** exibe todas as vendas no período selecionado separadas por **Grupo de produto**, trazendo o <wrap em>**CUSTO**</wrap>, valores e quantidades vendida de cada grupo e seus totais.\\
+<WRAP IMPORTANT ROUND>Quando selecionado esse relatório, é possível selecionar na mesma tela até qual nível de grupos quer que seja exibido no relatório, por padrão vem selecionado a opção **Todos**, por exemplo:\\
+  * Produtos de revenda** (Nível 1)**
+    * Bebidas** (Nível 2)**
+      * Refrigerantes** (Nível 3)**
+
+Também á possível selecionar qual custo quer que seja exibido no relatório, sendo as opções **Custo médio** e **Custo da última compra**.
+</WRAP>
+</WRAP>\\
+====Relatório de vendas por grupo analítico====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_grupo_anali.gif?nolink&300|}} O **Relatório de vendas por grupo analítico** exibe todas as vendas no período selecionado separadas por **Grupo de produto** e **Produto**, trazendo o <wrap em>**CUSTO**</wrap>, valores e quantidades vendida de cada grupo, produto e seus totais.\\
+<WRAP IMPORTANT ROUND>Quando selecionado esse relatório, é possível selecionar na mesma tela até qual nível de grupos quer que seja exibido no relatório, por padrão vem selecionado a opção **Todos**, por exemplo:\\
+  * Produtos de revenda** (Nível 1)**
+    * Bebidas** (Nível 2)**
+      * Refrigerantes** (Nível 3)**
+
+Também á possível selecionar qual custo quer que seja exibido no relatório, sendo as opções **Custo médio** e **Custo da última compra**.
+</WRAP>
+</WRAP>\\
+====Relatório de vendas por produto KG====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_prod_kg.gif?nolink&300|}} O **Relatório de vendas por produto KG** exibe todas as vendas no período selecionado separadas por produto exibindo valor de venda, <wrap em>**CUSTO**</wrap> e quantidades por **Quilo(KG)** vendido.\\
+</WRAP>\\
+====Relatório de vendas por grupo KG====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_grup_kg.gif?nolink&300|}} O **Relatório de vendas por grupo KG** exibe todas as vendas no período selecionado separadas por grupo exibindo valor de venda, <wrap em>**CUSTO**</wrap> e quantidades por **Quilo(KG)** vendido.\\
+</WRAP>\\
+====Relatório de vendas por forma de pagamento - por dia====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_pag_dia.gif?nolink&300|}} O **Relatório de vendas por forma de pagamento - por dia** exibe os valores de venda no período selecionado separados por **Forma de pagamento** e por **Data**.\\
+<WRAP IMPORTANT ROUND>Esse relatório <wrap em>**NÃO**</wrap> exibe as vendas separado por bandeira, caso queira essa informação, deve ser acessado o menu **[[https://app.cloudfy.net.br/site/#/H02SF0111B|Vendas > Cartões > Dashboard de cartões]]**.</WRAP>
+</WRAP>\\
+====Relatório de vendas por forma de pagamento - por período====
+<WRAP INFO ROUND>
+{{ :base_de_conhecimento:relatorios:rel_vend_pag_per.gif?nolink&300|}} O **Relatório de vendas por forma de pagamento - por período** exibe os valores de venda no período selecionado separados por **Forma de pagamento**.\\
+<WRAP IMPORTANT ROUND>Esse relatório <wrap em>**NÃO**</wrap> exibe as vendas separado por bandeira, caso queira essa informação, deve ser acessado o menu **[[https://app.cloudfy.net.br/site/#/H02SF0111B|Vendas > Cartões > Dashboard de cartões]]**.</WRAP>
+</WRAP>\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

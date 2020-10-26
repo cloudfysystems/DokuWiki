@@ -1,0 +1,22 @@
+======Relatório Demonstrativo financeiro======
+O relatório de demonstrativo financeiro do sistema exibe todas as receitas e despesas lançadas no sistema com base no período e demais filtros selecionados separadas por **Categoria Financeira** e é importante para que se saiba em quais áreas da empresa se está gastando ou recebendo mais.\\
+O primeiro passo é acessar a tela do relatório em **[[https://app.cloudfy.net.br/site/#/H02SF0201M|Financeiro > Relatórios > Demonstrativo financeiro]]** conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:relatorios:acessa_demons_fin.gif?nolink}}</thumbnail>\\
+<WRAP INFO ROUND>
+Nessa tela tem alguns filtros que devemos nos atentar para gerar o relatório da maneira que desejamos:
+  * **Contas:** Seleciona quais contas quer que sejam consideradas no relatório.\\ <wrap info round>As contas podem ser configuradas em **[[https://app.cloudfy.net.br/site/#/H02SF0201A|Financeiro > Configurações > Contas bancárias]]**.</wrap>\\ \\
+  * **Previsto e Realizado**
+    * **Previsto:** Gera o relatório considerando também os lançamentos financeiros em aberto no sistema.
+    * **Realizado:** Gera o relatório considerando <wrap em>**SOMENTE**</wrap> os lançamentos **Recebidos/Pagos** no sistema.
+    * <wrap info round>Para gerenciar os lançamentos financeiros você deve acessar a tela **[[https://app.cloudfy.net.br/site/#/H02SF0201E|Financeiro > Gerenciador Financeiro]]**. Qualquer dúvida temos um guia para a utilização da tela em **[[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:financeiro:gerenciador_financeiro|https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:financeiro:gerenciador_financeiro]]**.</wrap>\\ \\
+  * **Periodicidade**
+    * **Periodicidade Mensal:** Gera o relatório com os valores separados por mês.
+    * **Periodicidade Diária:** Gera o relatório com os valores separados por dia.\\ \\
+  * **Regime**
+    * **Regime de caixa:** Gera o relatório considerando a data de **Vencimento/Pagamento/Recebimento** dos lançamentos financeiros.
+    * **Regime de competência:** Gera os relatórios considerando a **Data do documento** dos lançamentos financeiros, ou seja a data a que o lançamento é referente.
+    *  <wrap info round>Para gerenciar os lançamentos financeiros você deve acessar a tela **[[https://app.cloudfy.net.br/site/#/H02SF0201E|Financeiro > Gerenciador Financeiro]]**. Qualquer dúvida temos um guia para a utilização da tela em **[[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:financeiro:gerenciador_financeiro|https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:financeiro:gerenciador_financeiro]]**.</wrap>\\ \\
+  * **Período:** Define qual período será considerado para gerar o relatório.\\ <wrap info round>Como padrão o sistema seleciona o mês atual.</wrap>\\ \\
+</WRAP>\\
+=====Gerar e exportar relatório=====
+Depois de selecionado os filtros corretamente devemos clicar no botão {{base_de_conhecimento:relatorios:bt_ger_rel.png?nolink&100}}. Caso queira exportar o relatório devemos clicar em {{base_de_conhecimento:relatorios:exportar.png?nolink&75}} e depois selecionar o formato desejado. Por último devemos selecionar as configurações desejadas do relatório de clicar no botão localizado na parte inferior da tela conforme mostrado.\\ <thumbnail>{{base_de_conhecimento:relatorios:export_demons_fin.gif?nolink}}</thumbnail>\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

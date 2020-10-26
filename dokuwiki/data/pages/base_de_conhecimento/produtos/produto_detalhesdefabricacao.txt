@@ -1,0 +1,27 @@
+======Cadastrar detalhes de fabricação do produto======
+
+O cadastro dos **Detalhes de fabricação** de um produto é bem simples e a seguir iremos explicar passo a passo todo o processo.\\ \\
+O cadastro dos **Detalhes de fabricação** é importante para que se possa controlar os insumos dos produtos fabricados, além de possuir as receitas e instruções de preparo no sistema para consulta.\\ \\
+=====Acessar tela de cadastro de detalhes de fabricação do produto=====
+Para cadastrar, editar ou excluir um cadastro de detalhe de fabricação, navegue para a tela **[[https://app.cloudfy.net.br/site/#/H02SF0102B|Produtos > Produtos]]**. Nessa tela devemos criar ou selecionar um produto já existente no cadastro, então clicar na aba **Detalhes de fabricação** e no campo Tipo de produto selecionar a opção **Produto composto** conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:produtos:acess_detalhe_fabric.gif?nolink}}</thumbnail>\\
+Nessa tela devemos preencher alguns campos que aparecerão quando alterado o tipo do produto, são eles:\\
+  * **Centro produtivo:** Esse campo indica onde é produzido o produto e é utilizado no planejamento da produção.\\ <wrap info round>Para cadastrar **Centros produtivos** você pode acessar a tela em **[[https://app.cloudfy.net.br/site/#/H00SF0405A|Configurações > Centro de custo]]**.</wrap>
+  * **Baixar estoque dos insumos na venda/perda:** Esse campo indica se você deseja que os insumos listados na receita sejam baixados automaticamente do estoque quando o produto fabricado é vendido ou lançado como perda.\\ <wrap info round>Caso movimente o estoque dos insumos manualmente **Desabilite** essa opção.</wrap>
+  * **Complexidade:** Esse campo classifica a receita com base na complexidade relativa dela.
+
+=====Adicionando insumos a receita=====
+Para adicionar os insumos da receita, devemos clicar no ícone {{base_de_conhecimento:treinamento:lupa_circ.png?nolink&35}} ao lado direito do campo **Produto**, usar a ferramenta de pesquisa para localizar o insumo e clicar em cima dele, então depois de selecioná-lo devemos preencher a quantidade que será utilizada na receita e se ele é o produto principal dessa receita. Por último devemos clicar no ícone {{base_de_conhecimento:treinamento:bt_mais_green.png?nolink&35}} para adicioná-lo conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:produtos:adic_insumo_detalh_fabric.gif?nolink}}</thumbnail>\\
+<WRAP INFO ROUND>
+  * Os insumos selecionados na receita devem estar cadastrados como **Matéria prima** ou **Ambos**, caso contrário não serão exibidos nessa tela. Caso tenha alguma dúvida sobre como cadastrar um produto pode consultar nosso tutorial no link **[[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:produtos:cadastro_de_produtos#cadastrar_produtos|https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:produtos:cadastro_de_produtos#cadastrar_produtos]]**.
+  * O **Produto principal** da receita é utilizado depois para gerar receitas com rendimentos diferentes se necessário e só é permitido um por receita.
+</WRAP>\\
+=====Informar rendimento e salvar=====
+Por último devemos informar o rendimento da receita no campo **Rendimento** e salvar a receita do produto no ícone de salvar localizado na parte de cima da página conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:produtos:info_rend_save.gif?nolink}}</thumbnail>\\
+<WRAP INFO ROUND>
+  * Se desejado, também é possível informar as **Instruções de preparo** logo abaixo e adicionar receitas com rendimentos diferentes na sessão **Fragmentação** nessa mesma página com base na receita informada.
+  * É possível informar caso deseje o rendimento em uma unidade de medida secundária no campo **Rendimento und. sec.**
+</WRAP>
+=====Imprimir receita=====
+Para imprimir a receita você pode clicar nessa tela no botão {{base_de_conhecimento:produtos:imp_receit.png?nolink&110}} ou ainda em {{base_de_conhecimento:produtos:imp_demons_fin_prod.png?nolink&200}} para um relatório de custos dessa receita.\\ <wrap info round>Também é possível imprimir as receitas por grupo de produto em **Produção > Relatórios > Detalhes de fabricação**.</wrap>\\ \\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

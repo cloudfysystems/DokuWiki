@@ -1,0 +1,33 @@
+======Cadastrar Cardápio no Cloudfy App======
+
+O cadastro do cardápio do seu aplicativo de delivery **[[https://delivery.cloudfy.net.br|Cloudfy Delivery]]** é bem simples e a seguir iremos explicar passo a passo todo o processo.\\ \\
+
+=====Criando o cardápio=====
+O primeiro passo é acessar a página de configuração do aplicativo no site **[[https://delivery.cloudfy.net.br|delivery.cloudfy.net.br]]** e autenticar-se com o seu usuário e senha.\\
+Feito isso você deve visualizar a tela inicial da página de configuração, primeiro devemos clicar em {{base_de_conhecimento:delivery:menu_card.png?nolink&100|}} para abrir a página de cadastro de cardápio e então nessa página devemos clicar em {{base_de_conhecimento:treinamento:bt_cad_card.png?nolink&100|}}. Por último depois de preenchido o nome do cardápio podemos clicar em {{base_de_conhecimento:treinamento:bt_salvar_prod.png?nolink&75|}} conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:treinamento:cadastrando_cardapio.gif?nolink|}}</thumbnail>\\
+<WRAP INFO ROUND>{{ base_de_conhecimento:treinamento:des_int_erp.gif?nolink|}}Se você não possui nosso sistema ERP ou não deseja que o cardápio tenha integração com ele deve desmarcar a opção **Cardapio integrado ao ERP Cloudfy**</WRAP>\\ 
+
+=====Criando uma categoria=====
+Depois de cadastrado o cardápio devemos criar uma **Categoria** dentro do cardápio clicando em {{base_de_conhecimento:treinamento:bt_add_cat.png?nolink&125|}} e depois de preenchido as informações necessárias devemos clicar em {{base_de_conhecimento:treinamento:bt_confirm.png?nolink&100|}} conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:treinamento:cad_cat_card.gif?nolink|}}</thumbnail>\\
+
+=====Cadastrando os produtos=====
+====Importando um produto do sistema Cloudfy====
+Caso já utilize nosso sistema ERP na sua loja, é possível importar o produto cadastrado para o cardápio do aplicativo, para isso basta clicar em {{base_de_conhecimento:treinamento:bt_add_prod.png?nolink&125|}}, depois em {{base_de_conhecimento:treinamento:bt_busc_prod_cfy.png?nolink&150|}} e depois selecionar o produto a ser importado. Feito isso basta clicar em {{base_de_conhecimento:treinamento:bt_salvar_prod.png?nolink&75|}} localizado na parte de cima da página conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:treinamento:import_prod_cfy.gif?nolink|}}</thumbnail>\\
+<WRAP INFO ROUND>Essa opção já importa o produto do seu sistema e todas as demais configurações dele, como **Adicionais** e **Acompanhamentos** por exemplo.</WRAP>\\
+
+====Importando produtos do sistema Cloudfy em lote====
+Caso já utilize nosso sistema ERP na sua loja, é possível importar os produtos do sistema em lote para o cardápio. Para isso você deve posicionar o mouse em cima de {{base_de_conhecimento:treinamento:acoes_cat_delivery.png?nolink&100|}} na categoria que quer adicionar os produtos, depois clicar em {{base_de_conhecimento:treinamento:opc_add_prod_cfy.png?nolink&125|}}. Então será aberta uma tela com todos os produtos do sistema, deverão ser selecionados os desejados e depois clicado no botão {{base_de_conhecimento:treinamento:bt_sel_prod_lote.png?nolink&100|}}. Por último devemos confirmar a operação clicando em {{base_de_conhecimento:treinamento:bt_ok_delivery.png?nolink&50|}} conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:treinamento:cad_prod_cfy_lote.gif?nolink|}}</thumbnail>\\
+<WRAP INFO ROUND>Essa opção já importa o produto do seu sistema e todas as demais configurações dele, como **Adicionais** e **Acompanhamentos** por exemplo.</WRAP>\\
+
+====Cadastrando produto manualmente====
+Também é possível cadastrar um produto manualmente clicando em {{base_de_conhecimento:treinamento:bt_add_prod.png?nolink&125|}}. Então depois de preencher as informações necessárias basta clicar em {{base_de_conhecimento:treinamento:bt_salvar_prod.png?nolink&75|}}.\\
+<WRAP IMPORTANT ROUND>Se o cardápio que estiver cadastrando ter integração com o sistema Cloudfy, então será obrigatório o preenchimento do campo **Código do produto no seu sistema**</WRAP>\\
+
+====Importando cardápio do Ifood====
+Por último, também é possível importar o seu cardápio direto do **[[https://www.ifood.com.br/|Ifood]]** para o sistema, para isso você deve clicar em {{base_de_conhecimento:treinamento:bt_import_card_ifood.png?nolink&175|}} logo depois de cadastrar o cardápio.\\
+<WRAP IMPORTANT ROUND>Para iportar o o seu cardápio do **[[https://www.ifood.com.br/|Ifood]]** para o nosso sistema, é preciso primeiro parametrizar a integração da sua conta **[[https://www.ifood.com.br/|Ifood]]** com o nosso sistema. Caso tenha dúvidas sobre esse processo pode consultar nosso guia em **[[https://wiki.padariananuvem.com/doku.php?id=base_de_conhecimento:delivery:ifood|Ifood Delivery]]**.</WRAP>\\
+
+=====Consultando cardápio no aplicativo=====
+Você pode consultar o cardápio no seu aplicativo digitando o link dele em qualquer dispositivo. Para consultar o link do seu aplicativo você pode navegar pelo menu até [[https://delivery.cloudfy.net.br/app/H03SF0101A|Configurações > Aplicativos]]. Então deve clicar em cima do seu aplicativo e logo no começo da página é possível copiar o link ou abri-lo.\\ <thumbnail>{{base_de_conhecimento:treinamento:consult_link_app.png?nolink|}}</thumbnail>\\ \\
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy que um de nossos colaboradores terá o prazer em lhe auxiliar!

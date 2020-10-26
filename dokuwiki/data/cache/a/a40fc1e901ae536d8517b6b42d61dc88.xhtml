@@ -1,0 +1,128 @@
+
+<h1 class="sectionedit1" id="lancamento_de_perdas_por_comanda_automatizado">Lançamento de perdas por comanda automatizado</h1>
+<div class="level1">
+
+<p>
+O lançamento de perdas é importante para que se possa ter controle dos produtos descartados e atualizar os valores dos produtos em estoque. O lançamento automatizado de perdas por comanda permite que os produtos sejam lançados direto por um <strong>Terminal de atendimento</strong> e criado um lote de perdas na retaguarda do sistema.<br/>
+
+Nesse tutorial ensinaremos como configurar seu estabelecimento para que possa ser utilizada essa funcionalidade.<br/>
+
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Lan\u00e7amento de perdas por comanda automatizado&quot;,&quot;hid&quot;:&quot;lancamento_de_perdas_por_comanda_automatizado&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-502&quot;} -->
+<h2 class="sectionedit2" id="habilitar_automatizacao_de_movimentacao_de_estoque_por_lancamento_em_comanda">Habilitar automatização de movimentação de estoque por lançamento em comanda</h2>
+<div class="level2">
+
+<p>
+Para habilitar a automatização de movimentação de estoque por lançamento em comanda devemos acessar a tela <strong><a href="https://app.cloudfy.net.br/site/#/H02SF0101L" class="urlextern" title="https://app.cloudfy.net.br/site/#/H02SF0101L" rel="nofollow">Configurações &gt; Parâmetros da filial</a></strong> e então nessa tela descer a página até achar a opção <strong>Automatizar movimentação de estoque por lançamento em comanda</strong>, por último devemos habilitar essa opção, retornar ao topo da página e salvar conforme mostrado abaixo.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:estoque:hab_auto_mov_estoq_comand.gif" class="media" alt="" /></div>
+<p>
+<br/>
+
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Habilitar automatiza\u00e7\u00e3o de movimenta\u00e7\u00e3o de estoque por lan\u00e7amento em comanda&quot;,&quot;hid&quot;:&quot;habilitar_automatizacao_de_movimentacao_de_estoque_por_lancamento_em_comanda&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;503-1132&quot;} -->
+<h2 class="sectionedit3" id="criar_comanda_de_perda">Criar comanda de perda</h2>
+<div class="level2">
+
+<p>
+Para criar a comanda de perda devemos acessar a tela <strong><a href="https://app.cloudfy.net.br/site/#/H02SF0101C" class="urlextern" title="https://app.cloudfy.net.br/site/#/H02SF0101C" rel="nofollow">Configurações &gt; Mesas/Comandas</a></strong>, então nessa tela devemos clicar no botão <img src="/lib/exe/fetch.php?w=75&amp;tok=115022&amp;media=base_de_conhecimento:estoque:bt_novo.png" class="media" alt="" width="75" /> e na tela de criação de comanda preencher as seguintes informações:<br/>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Cód. Barras:</strong> Caso possua a comanda fisicamente com código de barras para ser utilizada com <strong>Leitor de código de barras</strong> no terminal, o código deve ser informado aqui.<br/>
+<span class="wrap_info wrap_round ">Caso não possua a comanda fisicamente, pode deixar esse campo em branco.</span></div>
+</li>
+<li class="level1"><div class="li"> <strong>Nr. da comanda:</strong> Número da comanda que será utilizada;</div>
+</li>
+<li class="level1"><div class="li"> <strong>Finalidade da comanda:</strong> Alterar a finalidade da comanda para <strong>Perdas</strong>;</div>
+</li>
+<li class="level1"><div class="li"> <strong>Motivo do descarte:</strong> Seleciona o motivo do descarte para os produtos lançados nessa comanda.<br/>
+<span class="wrap_info wrap_round ">Os motivos de descarte podem ser cadastrados na tela <strong><a href="https://app.cloudfy.net.br/site/#/H02SF0101D" class="urlextern" title="https://app.cloudfy.net.br/site/#/H02SF0101D" rel="nofollow">Estoque &gt; Motivo de descarte</a></strong>.</span></div>
+</li>
+<li class="level1"><div class="li"> <strong>Centro de estoque:</strong> Seleciona de qual estoque será descontado os produtos lançados como perda.<br/>
+<span class="wrap_info wrap_round ">Os centros de estoque podem ser cadastrados na tela <strong><a href="https://app.cloudfy.net.br/site/#/H00SF0405A" class="urlextern" title="https://app.cloudfy.net.br/site/#/H00SF0405A" rel="nofollow">Configurações &gt; Centro de custo</a></strong>.</span></div>
+</li>
+</ul>
+
+<p>
+Por último devemos clicar no ícone de salvar na parte superior da página conforme mostrado abaixo.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:estoque:cad_comand_perd.gif" class="media" alt="" /></div>
+<p>
+<br/>
+
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Criar comanda de perda&quot;,&quot;hid&quot;:&quot;criar_comanda_de_perda&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:3,&quot;range&quot;:&quot;1133-2625&quot;} -->
+<h2 class="sectionedit4" id="configurar_terminal_para_lancamento_de_perdas">Configurar terminal para lançamento de perdas</h2>
+<div class="level2">
+
+<p>
+Para configurar o terminal que será utilizado para lançamento das perdas, devemos acessar a tela de configuração dele clicando no ícone de opções localizado no lado esquerdo superior e depois em <strong>Configurações(F8)</strong>. Nessa tela devemos descer até localizar a opção <strong>Habilitar push de comandas servidor</strong> e habilitá-la. Por último devemos salvar as configurações clicando no ícone salvar <img src="/lib/exe/fetch.php?w=50&amp;tok=2bef47&amp;media=base_de_conhecimento:estoque:bt_save_blue.png" class="media" alt="" width="50" /> localizado no canto superior direito da tela conforme mostrado abaixo.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:estoque:habilit_push_term.gif" class="media" alt="" /></div>
+<p>
+<br/>
+
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Configurar terminal para lan\u00e7amento de perdas&quot;,&quot;hid&quot;:&quot;configurar_terminal_para_lancamento_de_perdas&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:4,&quot;range&quot;:&quot;2626-3309&quot;} -->
+<h2 class="sectionedit5" id="enviar_a_comanda_para_o_servidor">Enviar a comanda para o servidor</h2>
+<div class="level2">
+
+<p>
+Depois de lançados todas as perdas na comanda criada, devemos enviar os produtos para o servidor para que depois seja aprovado o lote de perdas. Para isso com a comanda aberta devemos clicar no ícone <img src="/lib/exe/fetch.php?w=35&amp;tok=c8b852&amp;media=base_de_conhecimento:operacao:push_comandas.png" class="media" alt="" width="35" /> ou apertar a tecla de atalho <strong>F11</strong> e depois confirmar clicando no botão <img src="/lib/exe/fetch.php?w=40&amp;tok=843323&amp;media=base_de_conhecimento:treinamento:bt_ok_delivery.png" class="media" alt="" width="40" />
+ conforme mostrado abaixo. Esse processo cria um lote de perdas na retaguarda na tela <strong><a href="https://app.cloudfy.net.br/site/#/H02SF0106M/21" class="urlextern" title="https://app.cloudfy.net.br/site/#/H02SF0106M/21" rel="nofollow">Estoque &gt; Movimentar estoque &gt; Lançar perdas</a></strong> do sistema que fica pendente de aprovação para ser movimentado o estoque.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:estoque:push_comand.gif" class="media" alt="" /></div>
+<p>
+<br/>
+
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Enviar a comanda para o servidor&quot;,&quot;hid&quot;:&quot;enviar_a_comanda_para_o_servidor&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:5,&quot;range&quot;:&quot;3310-4105&quot;} -->
+<h2 class="sectionedit6" id="aprovar_lote_de_perdas">Aprovar lote de perdas</h2>
+<div class="level2">
+
+<p>
+Para aprovar o lote de perdas gerado você deve ir até a tela <strong><a href="https://app.cloudfy.net.br/site/#/H02SF0106M/21" class="urlextern" title="https://app.cloudfy.net.br/site/#/H02SF0106M/21" rel="nofollow">Estoque &gt; Movimentar estoque &gt; Lançar perdas</a></strong> e localizar o lote gerado. Depois basta posicionar o mouse em cima do lote desejado, clicar em <img src="/lib/exe/fetch.php?w=25&amp;tok=293009&amp;media=base_de_conhecimento:estoque:aprov_mov.png" class="media" alt="" width="25" /> <strong>Aprovar (Movimentar)</strong> e confirmar a operação conforme mostrado abaixo.<br/>
+
+</p>
+<div class="bs-wrap bs-wrap-thumbnail thumbnail"><img src="/lib/exe/fetch.php?media=base_de_conhecimento:estoque:aprov_lote_perda.gif" class="media" alt="" /></div>
+<p>
+<br/>
+
+</p>
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:7,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_info wrap_round plugin_wrap">
+<p>
+É preciso se atentar ao período selecionado logo acima, alterá-lo se necessário e clicar em <img src="/lib/exe/fetch.php?w=75&amp;tok=659fbf&amp;media=base_de_conhecimento:treinamento:botao_pesquisar.png" class="media" alt="" width="75" /> para que filtre o novo período selecionado.
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:8,&quot;range&quot;:&quot;0-&quot;} -->
+<p>
+<br/>
+
+</p>
+<!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;secid&quot;:9,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_info wrap_round plugin_wrap">
+<p>
+Para imprimir o <strong>Relatório de perdas</strong> você pode acessar a menu <strong>Estoque &gt; Relatórios &gt; Relatório de perdas</strong>.
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;secid&quot;:10,&quot;range&quot;:&quot;0-&quot;} -->
+<p>
+<br/>
+
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Aprovar lote de perdas&quot;,&quot;hid&quot;:&quot;aprovar_lote_de_perdas&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:6,&quot;range&quot;:&quot;4106-&quot;} -->

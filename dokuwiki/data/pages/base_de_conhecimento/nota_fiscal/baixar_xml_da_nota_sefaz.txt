@@ -1,0 +1,52 @@
+====== Baixar XML da Nota na SEFAZ ======
+Para baixar o XML da nota fiscal direto pela SEFAZ acesse a página [[http://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8=|Consultar NF-e]] do Portal da Nota Fiscal Eletrônica.\\ 
+<wrap important round>Para baixar o XML da nota é necessário que o certificado digital A1 esteja instalado no navegador!</wrap>\\
+  * [[#Mozilla Firefox|Instalar o Certificado digital no Firefox]]
+  * [[#Google Chrome|Instalar o Certificado digital no Chrome]]
+
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:sefaz_consultar_nfe.png?nolink|}}</thumbnail>
+\\
+  * Digite a chave de acesso, de 44 dígitos, da NFe no campo correspondente;
+  * Clique no checkbox **Não sou um robô**;
+  * Clique no botão **Continuar** para visualizar os dados da NFe;
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:sefaz_download_xml.png?nolink|}}</thumbnail>
+\\
+  * Clique no botão **Download do documento** para fazer o download do XML; <wrap important round>Para baixar o XML da nota é necessário que o certificado digital A1 esteja instalado no navegador!</wrap>
+<WRAP tip round>Com o XML da NFe no computador, é possível fazer a entrada de mercadoria importando o documento para o sistema seguindo os passos para [[base_de_conhecimento:compras:entrada_de_mercadoria#importar_nota_fiscal_via_xml|Importar Nota Fiscal via XML]]</WRAP>
+
+====== Instalação do certificado digital no navegador ======
+===== Google Chrome =====
+  * **1)** Copie e cole o link **__''[[chrome://settings/security?search=certificado]]''__** na barra de endereços do chrome;
+  * **2)** Na tela que irá abrir, clique na opção **Gerenciar certificados**
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:chrome_gerenciar_cert.png?nolink|}}</thumbnail>
+  * **3)** Clique no botão __importar__ na janela que irá se abrir
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:chrome_cert_instalar.png?nolink|}}</thumbnail>
+  * **4)** Na tela inicial do __Asistente para Importação de Certificados__, clique em **Avançar**
+  * <thumbnail>{{:base_de_conhecimento:nota_fiscal:cert_wizard1.png?nolink|}}</thumbnail>
+  * **5)** Clique no botão **Procurar** e selecione o certificado digital
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:cert_wizard2.png?nolink|}}</thumbnail>
+  * **6)** Selecione a opção **Todos os arquivos** e navegue até a pasta do certificado para o certificado aparecer.
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:cert_wizard2_select.png?nolink|}}</thumbnail>
+  * **7)** Clique no botão **Avançar**
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:cert_wizard2_next.png?nolink|}}</thumbnail>
+  * **8)** Digite a **Senha** e clique no botão **Avançar**
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:cert_wizard3.png?nolink|}}</thumbnail>
+  * **9)** Clique no botão **Avançar**
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:cert_wizard4.png?nolink|}}</thumbnail>
+  * **10)** Clique no botão **Concluir**
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:cert_wizard5.png?nolink|}}</thumbnail>
+
+<WRAP tip round>Pronto! Já é possível fazer o [[#Baixar XML da Nota na SEFAZ|download do XML da NFe]] através do Google Chrome.</WRAP>
+
+===== Mozilla Firefox =====
+  * **1)** Copie e cole o link **__''about:preferences#privacy''__** na barra de endereços do firefox;
+  * **2)** Na tela que irá abrir, navegue até a seção **Certificados** e clique no botão **Ver certificados**
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:firefox_cert.png?nolink|}}</thumbnail>
+  * **3)** No __Gerenciador de certificados__, clique na aba **Seus certificados** e clique no botão **Importar...**
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:firefox_cert_gerenc.png?nolink|}}</thumbnail>
+  * **4)** Selecione a opção **Todos os arquivos** e navegue até a pasta do certificado para o certificado aparecer.
+<thumbnail>{{:base_de_conhecimento:nota_fiscal:cert_wizard2_select.png?nolink|}}</thumbnail>
+  * **5)** Digite a **Senha** e clique em **OK**
+  * <thumbnail>{{:base_de_conhecimento:nota_fiscal:firefox_cert_senha.png?nolink|}}</thumbnail>
+
+<WRAP tip round>Pronto! Já é possível fazer o [[#Baixar XML da Nota na SEFAZ|download do XML da NFe]] através do Mozilla Firefox.</WRAP>

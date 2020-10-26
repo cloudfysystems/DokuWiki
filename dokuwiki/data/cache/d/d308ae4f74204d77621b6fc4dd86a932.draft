@@ -1,0 +1,71 @@
+a:6:{s:2:"id";s:49:"base_de_conhecimento:estoque:lancamento_de_perdas";s:6:"prefix";s:0:"";s:4:"text";s:7549:"====== Lançamento de Perdas ======
+O processo de lançamento de perdas serve para dar baixa em produtos inutilizados do estoque.\\
+É um processo simples e abordaremos o passo a passo a seguir:\\
+
+==== Cadastrar lançamento de perdas ====
+Navegue para o Menu [[https://app.padariananuvem.com/site/#/H02SF0106M/21|Estoque>Movimentar estoque>Lançar perdas]] e uma nova tela se abrirá.\\
+Nesta tela é apresentado todos lançamentos de perdas já realizados no período. Para comodidade do cliente o período é preenchido automaticamente com a **data inicial** no primeiro dia do mês corrente e a **data final** 
+como o dia atual.
+
+<thumbnail>{{ :base_de_conhecimento:treinamento:percasgerais.png?nolink |}}</thumbnail>
+
+É possível pesquisar por períodos específicos os lançamentos de perdas alterando a **data iniciai** e a **data final** e clicar no botão <wrap round notice>PESQUISAR</wrap>.\\
+Na seção localizada à direita da página é apresentado um resumo quantitativo de todos os lançamentos de perdas encontrados para o período pesquisado, sendo categorizado entre:\\
+  * **Solicitado** 
+  * **Movimentado** 
+  * **Negado**
+  * **Cancelado** 
+  * **Atualizado** 
+Após selecionado um dos **Status** os lançamentos são listados ao lado.\\
+Você pode usar os filtros da tabela para localizar rapidamente o lançamento que deseja localizar.\\
+Caso desejar é possível exportar a relação de Lançamentos de perdas encontrados através do botão <wrap danger round>EXPORTAR</wrap>.
+
+{{ :base_de_conhecimento:treinamento:exportarlanperdas.gif?nolink |}}
+
+Para lançar um novo lote de perdas basta clicar no botão <wrap round safety>NOVO LOTE</wrap>.\\
+
+=== Novo Lote ===
+A tela de cadastro para um novo lançamento de perdas é divida em etapas e iremos abordá-las individualmente.\\
+Começaremos com as informações de **Movimentação de estoque**, apresentada a seguir:
+<thumbnail>{{ :base_de_conhecimento:treinamento:percas.png?nolink |}}</thumbnail>
+Os campos a serem preenchidos são:
+  * **Data** - neste campo preencha a data em que a solicitação de lançamento de perda estará sendo realizada. Para sua comodidade o sistema Cloudy já preenche com a data atual.
+  * **Descrição** - neste campo preencha uma descrição que facilite a identificação do lançamento de perda posteriormente.
+  * **Solicitante** - neste campo entre com o colaborador solicitante do lançamento de perda, é possível localizar o colaborador através do seu código ou nome cadastrado no sistema. Para uma busca avançada é possível clicar no ícone da lupa, que abrirá uma nova tela de pesquisa.
+  * **Autorizado por** - neste campo preencha com o colaborador que autorizou o lançamento de perda, é possível localizar o colaborador através do seu código ou nome cadastrado no sistema. Para uma busca avançada é possível clicar no ícone da lupa, que abrirá uma nova tela de pesquisa.
+  * **Resp. pela movimentação** - neste campo preencha com o colaborador responsável pela movimentação do lançamento de perdas, é possível localizar o colaborador através do seu código ou nome cadastrado no sistema. Para uma busca avançada é possível clicar no ícone da lupa, que abrirá uma nova tela de pesquisa.
+  * **Nr. do documento** - neste campo é possível informar o número de um documento para relacionar com o lançamento de perdas, podendo ser por exemplo o número de uma nota fiscal ou qualquer outro documento desejado.
+  * **Observações** - neste campo é possível informar anotações, instruções ou avisos gerais.
+
+Após fornecer todas as informações necessárias o próximo passo inicia-se ao clicar no botão <wrap round notice>PRODUTOS</wrap>.
+
+=== Produtos ===
+Nesta tela iremos localizar os produtos que irão fazer parte do lançamento de perdas.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:produtoslancperdas.png?nolink |}}</thumbnail>
+É possível baixar perdas referente a produtos lançados em comandas. Para isso basta clicar no botão <wrap round notice>BUSCAR PRODUTOS DE COMANDAS</wrap> que abrirá uma nova tela.\\
+Na tela aberta existe o procedimento descrito que é necessário utilizar o **Terminal de lançamentos**, selecionar uma comanda, realizar os lançamentos dos produtos e clicar em opções (atalho **F5**) e Enviar produtos para estoque (atalho **F11**).\\
+Após realizar esse procedimento no **Terminal de lançamentos** surgirá nesta tela uma relação de lotes que foram gerados.
+É possível utilizar os filtros de pesquisa disponibilizados na tabela, sendo:
+  * **Dt. do envio** - este campo apresenta a informação da data de envio para o estoque dos produtos lançados na comanda.
+  * **Documento** - este campos apresenta a informação do número da comanda utilizada para realizar o lançamento.
+  * **Qtd. total de itens** - este campo apresenta a informação da quantidade total de itens lançados.
+  * **Custo total** - este campo apresenta a totalização de custos da relação de produtos baixados na comanda.
+  * **Usuário** - este campo apresenta o colaborador que realizou a baixa dos produtos.
+\\
+Outra comodidade que o sistema Cloudfy possibilita é a importação do arquivo **CSV** do Coletor de dados, basta clicar no botão <wrap round safety>LER ARQUIVO DO COLETOR</wrap>.\\
+Uma nova janela surgirá e nela você arrastará o arquivo para realizar a importação, também é possível clicar no botão <wrap round notice>SELECIONAR ARQUIVO</wrap> para navegar pelas janelas do Windows Explorer para localizar o arquivo.\\
+\\
+Além destas opções, que visam agilizar o processo de lançamento de perdas, é possível localizar os produtos individualmente pelo campo **Cód de barras / Produto** onde você pode fornecer estas informações para localizá-lo. Caso deseje uma busca avançada é possível através do ícone da lupa, que abrirá uma nova janela de busca possibilitando a localização do produto através dos filtros:\\
+  * **Nome do produto** - neste campo é apresentado o nome do produto cadastrado.
+  * **Código de barras** - neste campo é apresentado o número do código de barras.
+  * **Cód ref** - neste campo é apresentado o código de referência utilizado para o produto.
+  * **Grupo** - neste campo é apresentado o Grupo de produtos a qual ele foi cadastrado.
+  * **Características** - neste campo é apresentado características cadastradas para o produto.
+\\
+Após escolher o produto que será baixado, entre com a informação referente a quantidade e após isso clique no botão {{:base_de_conhecimento:treinamento:addlancperdas.png?nolink}}\\
+O produto será lançado na tabela localizada logo abaixo.\\
+Além de localizar o produto é necessário informar o **Motivo da perda**, caso o motivo não seja localizado é possível cadastrar um novo clicando no ícone {{:base_de_conhecimento:treinamento:addmotivolancperdas.png?nolink}}\\
+Para finalizar ainda é necessário localizar a **Filial** e o **Centro de estoque** a qual esse lançamento de perdas será realizado.\\
+Após realizar todos os lançamentos de produtos é possível <wrap round safety>SALVAR</wrap> o lançamento de perda ou ainda já é possível <wrap round notice>APROVAR/MOVIMENTAR</wrap>, bastando clicar o botão correspondente desejado.\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar! 
+";s:6:"suffix";s:0:"";s:4:"date";i:1589401855;s:6:"client";s:18:"gabriela.henriques";}

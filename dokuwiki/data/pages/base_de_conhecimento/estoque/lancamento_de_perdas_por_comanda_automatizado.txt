@@ -1,0 +1,27 @@
+======Lançamento de perdas por comanda automatizado======
+O lançamento de perdas é importante para que se possa ter controle dos produtos descartados e atualizar os valores dos produtos em estoque. O lançamento automatizado de perdas por comanda permite que os produtos sejam lançados direto por um **Terminal de atendimento** e criado um lote de perdas na retaguarda do sistema.\\
+Nesse tutorial ensinaremos como configurar seu estabelecimento para que possa ser utilizada essa funcionalidade.\\
+=====Habilitar automatização de movimentação de estoque por lançamento em comanda=====
+Para habilitar a automatização de movimentação de estoque por lançamento em comanda devemos acessar a tela **[[https://app.cloudfy.net.br/site/#/H02SF0101L|Configurações > Parâmetros da filial]]** e então nessa tela descer a página até achar a opção **Automatizar movimentação de estoque por lançamento em comanda**, por último devemos habilitar essa opção, retornar ao topo da página e salvar conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:estoque:hab_auto_mov_estoq_comand.gif?nolink}}</thumbnail>\\
+
+=====Criar comanda de perda=====
+Para criar a comanda de perda devemos acessar a tela **[[https://app.cloudfy.net.br/site/#/H02SF0101C|Configurações > Mesas/Comandas]]**, então nessa tela devemos clicar no botão {{base_de_conhecimento:estoque:bt_novo.png?nolink&75}} e na tela de criação de comanda preencher as seguintes informações:\\
+  * **Cód. Barras:** Caso possua a comanda fisicamente com código de barras para ser utilizada com **Leitor de código de barras** no terminal, o código deve ser informado aqui.\\ <wrap info round>Caso não possua a comanda fisicamente, pode deixar esse campo em branco.</wrap>
+  * **Nr. da comanda:** Número da comanda que será utilizada;
+  * **Finalidade da comanda:** Alterar a finalidade da comanda para **Perdas**;
+  * **Motivo do descarte:** Seleciona o motivo do descarte para os produtos lançados nessa comanda.\\ <wrap info round>Os motivos de descarte podem ser cadastrados na tela **[[https://app.cloudfy.net.br/site/#/H02SF0101D|Estoque > Motivo de descarte]]**.</wrap>
+  * **Centro de estoque:** Seleciona de qual estoque será descontado os produtos lançados como perda.\\ <wrap info round>Os centros de estoque podem ser cadastrados na tela **[[https://app.cloudfy.net.br/site/#/H00SF0405A|Configurações > Centro de custo]]**.</wrap>
+Por último devemos clicar no ícone de salvar na parte superior da página conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:estoque:cad_comand_perd.gif?nolink}}</thumbnail>\\
+
+=====Configurar terminal para lançamento de perdas=====
+Para configurar o terminal que será utilizado para lançamento das perdas, devemos acessar a tela de configuração dele clicando no ícone de opções localizado no lado esquerdo superior e depois em **Configurações(F8)**. Nessa tela devemos descer até localizar a opção **Habilitar push de comandas servidor** e habilitá-la. Por último devemos salvar as configurações clicando no ícone salvar {{base_de_conhecimento:estoque:bt_save_blue.png?nolink&50}} localizado no canto superior direito da tela conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:estoque:habilit_push_term.gif?nolink}}</thumbnail>\\
+
+=====Enviar a comanda para o servidor=====
+Depois de lançados todas as perdas na comanda criada, devemos enviar os produtos para o servidor para que depois seja aprovado o lote de perdas. Para isso com a comanda aberta devemos clicar no ícone {{base_de_conhecimento:operacao:push_comandas.png?nolink&35}} ou apertar a tecla de atalho **F11** e depois confirmar clicando no botão {{base_de_conhecimento:treinamento:bt_ok_delivery.png?nolink&40}}
+ conforme mostrado abaixo. Esse processo cria um lote de perdas na retaguarda na tela **[[https://app.cloudfy.net.br/site/#/H02SF0106M/21|Estoque > Movimentar estoque > Lançar perdas]]** do sistema que fica pendente de aprovação para ser movimentado o estoque.\\ <thumbnail>{{base_de_conhecimento:estoque:push_comand.gif?nolink}}</thumbnail>\\
+
+=====Aprovar lote de perdas=====
+Para aprovar o lote de perdas gerado você deve ir até a tela **[[https://app.cloudfy.net.br/site/#/H02SF0106M/21|Estoque > Movimentar estoque > Lançar perdas]]** e localizar o lote gerado. Depois basta posicionar o mouse em cima do lote desejado, clicar em {{base_de_conhecimento:estoque:aprov_mov.png?nolink&25}} **Aprovar (Movimentar)** e confirmar a operação conforme mostrado abaixo.\\ <thumbnail>{{base_de_conhecimento:estoque:aprov_lote_perda.gif?nolink}}</thumbnail>\\
+<WRAP INFO ROUND>É preciso se atentar ao período selecionado logo acima, alterá-lo se necessário e clicar em {{base_de_conhecimento:treinamento:botao_pesquisar.png?nolink&75}} para que filtre o novo período selecionado.</WRAP>\\
+<WRAP INFO ROUND>Para imprimir o **Relatório de perdas** você pode acessar a menu **Estoque > Relatórios > Relatório de perdas**.</WRAP>\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!

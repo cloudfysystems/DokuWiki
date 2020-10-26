@@ -1,0 +1,38 @@
+a:6:{s:2:"id";s:46:"base_de_conhecimento:produtos:carga_de_balanca";s:6:"prefix";s:0:"";s:4:"text";s:4946:"====== Carga de Balança ======
+A carga de balança é um processo simples e a seguir iremos explicar o passo a passo que deve ser seguido.\\ \\
+A carga de balança é um processo importante para atualizar o cadastro de produtos do sistema com as balanças para que não ocorra divergências na hora de passar os produtos pesados na balança no sistema ou ficar com preços desatualizados.\\
+
+===== Exportar arquivo =====
+Para exportar os arquivos que serão utilizados para dar carga na balança, navegue para o Menu **[[https://app.padariananuvem.com/site/#/H02SF0102H|Produtos > Balança > Exportar produtos para balança]]**, escolha o modelo da balança e aperte o botão **<wrap round caution>EXPORTAR</wrap>**. Será feito o download de um arquivo compactado que deverá ser descompactado e importado para o sistema gerenciador da balança para que depois seja dado carga nelas.\\
+<thumbnail>{{:base_de_conhecimento:compras:baixar_arquivo_balanca.gif}}</thumbnail>\\
+<WRAP INFO ROUND>
+  * Recomendamos criar uma pasta padrão na área de trabalho do sistema operacional chamada **BALANÇA** onde possa ser salvo e descompactado o arquivo baixado.
+  * Dependendo da versão do sistema operacional utilizado, será necessário baixar e instalar um programa para descompactar o arquivo baixado. Alguns deles são o **[[https://www.win-rar.com/start.html?&L=0|Winrar]]** ou **[[https://www.7-zip.org/download.html|7-Zip]]**.
+  * Se o sistema perguntar se deseja substituir os arquivos com o mesmo nome, pode clicar em **Substituir**
+</WRAP>\\
+Depois de feito esse processo podemos abrir o sistema que gerencia as balanças para importar os arquivos e dar carga nas balanças.\\
+
+===== Balança Toledo =====
+
+==== Software MGV5 ====
+===Importar arquivos===
+Com o MGV5 aberto devemos clicar em **Manipulação de arquivo** {{:base_de_conhecimento:treinamento:import_mgv5.png?nolink&25}}.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:mgv5-1.png?nolink }}</thumbnail>\\
+
+Na tela **Importação**, selecione **Arquivo de Itens** e clique em **Importar**. Feito isso será aberta outra tela para seleção da pasta onde foi descompactado os arquivos baixados. Selecione o arquivo **Itensmgv.txt** e clique em **Abrir**.\\ <thumbnail>{{ :base_de_conhecimento:treinamento:tela_import_mgv5.png?nolink&300 }}</thumbnail>\\
+
+===Dar carga na balança===
+Depois de importar os produtos é necessário dar a carga para atualizar as informações nas balanças, para isso devemos clicar em **Comunicação** {{:base_de_conhecimento:treinamento:comunicacao_mgv5.png?nolink&25}}.\\
+<thumbnail>{{ :base_de_conhecimento:treinamento:tela_sel_comunic.png?nolink&900 }}</thumbnail>\\
+Na tela de transmissão escolha as opções desejadas para a comunicação e clique em **Enviar**\\ <thumbnail>{{ :base_de_conhecimento:treinamento:tela_comunic_mgv5.png?nolink&300 }}</thumbnail>\\
+Após dar a carga, testar para ver se os produtos foram alterados/adicionados corretamente.\\
+<wrap info round>Caso tara, informações nutricionais, informações extras não tenham sido alteradas o sistema da balança mostrará uma mensagem de erro, porém isto é normal pois os arquivos com estas informações estarão em branco.</wrap>\\
+
+==== Software MGV6 ====
+===Importar arquivos===
+No software MGV6, é possível fazer a importação de todos os campos (tara, informações nutricionais, informações extras e itens) de uma só vez. Clique em **Importação**, selecione os campos que quer importado e depois em **Importar**. Feito isso será aberta outra tela para seleção da pasta onde foi descompactado os arquivos baixados. Selecione a pasta e  clique em **Abrir**.\\ <thumbnail>{{ :base_de_conhecimento:treinamento:200011.png?nolink |}}</thumbnail>\\
+===Dar carga na balança===
+Após isso, devemos clicar em **Carga** conforme mostrado abaixo: <thumbnail>{{ :base_de_conhecimento:treinamento:mgv6_2.png?nolink |}}</thumbnail>\\ Depois selecione as configurações que deseja atualizar e clique em **Enviar** e aguarde o fim do processo. Em seguida, verifique se os produtos foram cadastrados/alterados corretamente.\\ <thumbnail>{{ :base_de_conhecimento:treinamento:tela_carga_mgv6.png?nolink&700 |}}</thumbnail>\\
+<WRAP INFO ROUND>{{ :base_de_conhecimento:treinamento:mgv6_acomp_carga.png?nolink}} Ainda é possível clicar em **Acompanhar** de pois de clicar em Enviar para verificar se ocorreu a comunicação com sucesso e não houve nenhum problema de conexão.</WRAP>\\
+<wrap info round>Caso tara, informações nutricionais, informações extras não tenham sido alteradas o sistema da balança mostrará uma mensagem de erro, porém isto é normal pois os arquivos com estas informações estão vazias.</wrap>\\ \\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a Cloudfy e algum de nossos colaboradores terá o prazer em lhe auxiliar!";s:6:"suffix";s:0:"";s:4:"date";i:1600698603;s:6:"client";s:18:"gabriela.henriques";}

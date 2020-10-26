@@ -1,0 +1,108 @@
+====== Praças de Terminais ======
+As praças são utilizadas para a organização dos produtos no seu terminal.\\ 
+É uma maneira de facilitar na hora de adicionar tanto os produtos quanto promoções na sua tela do terminal.\\
+{{:base_de_conhecimento:treinamento:pracas00.png?1000|}}
+
+===== Como criar uma Nova Praça =====
+Para criar uma Praça de Terminal acesse o Menu [[https://app.padariananuvem.com/site/#/H02SF0101R|Configurações>Praças de terminais]] e clique no botão {{:base_de_conhecimento:estoque:bt_novo.png?80|}} para ser redirecionado para uma nova janela.\\
+Preencha com o nome que irá pertencer ao título do card da sua praça no campo {{:base_de_conhecimento:treinamento:pracas02.png?200|}}, clique no ícone para salvar {{:base_de_conhecimento:treinamento:salvar.png?100|}}.\\ 
+Em seguida, clique no botão de voltar {{:base_de_conhecimento:treinamento:voltar.png?nolink25|}} para ser redirecionado novamente para a listagem de praças cadastradas e confirmar que o processo de criação do praça ocorreu corretamente.\\
+{{:base_de_conhecimento:treinamento:pracas01.png?1000|}}\\
+
+==== Cadastrar Grupos e Produtos de uma Praça ====
+Entre na Praça que deseja adicionar os grupos e produtos e clique sobre o botão {{:base_de_conhecimento:treinamento:add_novo.png?30|}} para adicionar um novo item.\\
+
+=== Grupos ===
+Irá aparecer uma tela de alterações para colocar as informações do novo grupo.\\
+
+{{:base_de_conhecimento:treinamento:praca02.gif?1000|}}\\
+
+**Descrição**: Nome que deseja colocar no grupo.\\
+**Cor**: Cor que irá aparecer no terminal.\\
+**Ícone**: Ícone que irá aparecer no terminal.\\
+
+Em seguida é só clicar em {{:base_de_conhecimento:treinamento:adicionar.png|}} que o grupo irá aparecer na listagem de grupos.\\
+
+=== Produtos ===
+Para adicionar os produtos dentro do grupo, selecione o grupo que deseja adicionar os produtos e clique em {{:base_de_conhecimento:treinamento:add_novo.png?30|}} para adicionar um item.\\
+
+{{:base_de_conhecimento:treinamento:praca03.gif?1000|}}\\
+
+**Descrição**: Nome que deseja colocar no item.\\
+**Cor**: Cor que irá aparecer no terminal.\\
+**Ícone**: Ícone que irá aparecer no terminal.\\
+**Tipo**:\\
+    * **Grupo**: Cria um grupo dentro do grupo principal. __Ex__: Grupo: BEBIDAS. Subgrupo: SUCOS.
+    * **Produto**: Inclui um produto ao grupo. 
+
+<WRAP INFO ROUND>
+Você deve selecionar o produto que estará atrelado ao card.
+Para isso você pode ser buscado utilizando: {{:base_de_conhecimento:treinamento:pracas04.png|}}\\
+Podendo digitar o nome do produto no campo editável ou buscar pela {{:base_de_conhecimento:treinamento:lupa_circ.png|}}.
+</WRAP>
+
+    * **Adicionar todos os produtos de um grupo**: Inclui todos os produtos pertencentes a um grupo de produtos.
+
+<WRAP INFO ROUND> 
+O grupo de produtos pode ser buscado utilizando: {{:base_de_conhecimento:treinamento:pracas05.png|}}\\
+Podendo digitar o nome do grupo no campo editável ou buscar pela {{:base_de_conhecimento:treinamento:lupa_circ.png|}}.
+</WRAP>
+
+Em seguida é só clicar em {{:base_de_conhecimento:treinamento:adicionar.png|}} que o item ou itens selecionados irão aparecer na listagem de produtos.\\
+
+{{:base_de_conhecimento:treinamento:pracas06.gif?1000|}}\\
+
+<wrap info roud> Ao final não esqueça de salvar a sua praça no {{:base_de_conhecimento:treinamento:salvar.png?nolink100|}}. </wrap>\\
+
+===== Editar uma Praça =====
+Para editar uma praça basta acessar o Menu [[https://app.padariananuvem.com/site/#/H02SF0101R|Configurações>Praças de terminais]] e acessar a praça que deseja editar.\\
+
+=== Nome da Praça ===
+Você pode editar o nome da Praça no campo:\\
+
+{{:base_de_conhecimento:treinamento:pracas07.png|}}
+
+=== Grupo ===
+Você pode mudar todas as informações do grupo clicando no grupo que deseja editar:\\
+
+{{:base_de_conhecimento:treinamento:pracas08.png|}}\\
+
+  * **Nome do Grupo**: Se quiser um novo nome, pode editar no campo 'Descrição'.
+  * **Cor do Grupo**: Alterar a cor, no campo 'Cor'.
+  * **Ícone do Grupo**: Alterar o ícone, no campo 'Ícone'.
+  * **Ordem dos produtos**: Pode alterar a ordem dos cards dos Produtos arrastando o card para a posição que deseja.
+
+{{:base_de_conhecimento:treinamento:pracas09.gif|}}\\
+
+Para excluir o grupo, basta clicar no botão: {{:base_de_conhecimento:treinamento:excluir.png|}} que o grupo e os produtos dele serão excluídos.
+
+=== Produtos ===
+Os produtos também podem ser editados. Para isso clique no card do produto que deseja editar.\\
+
+{{:base_de_conhecimento:treinamento:pracas10.png|}}\\
+
+**Nome do Produto**: Pode alterar para o nome que quer que apareça no terminal para facilitar a visualização.\\
+**Cor do Produto**: Pode alterar a cor para que fique mais fácil a visualização e identificação dos produtos.\\
+**Ícone do Produto**: Pode remover o ícone ou deixar o ícone que mais se assemelha ao produto para facilitar.\\
+**Tipo**: É o tipo do card selecionado, podendo ser um produto ou grupo.\\
+**Produto atrelado**: Caso o card seja um produto, você deve selecionar qual o produto que está atrelado a ele.\\
+
+<wrap info roud> O **Tipo** e o **Produto atrelado** devem ser alterados somente quando for realmente necessário.</wrap>\\
+
+Para excluir o produto, basta clicar no botão: {{:base_de_conhecimento:treinamento:excluir.png|}} que o produtos será excluídos.\\
+\\
+\\
+<wrap info roud> Ao final não esqueça de salvar a sua praça no {{:base_de_conhecimento:treinamento:salvar.png?nolink100|}}. </wrap>\\
+\\
+
+===== Excluir uma Praça =====
+Existem 2 maneiras de excluir uma praça:
+  * No Menu [[https://app.padariananuvem.com/site/#/H02SF0101R|Configurações>Praças de terminais]], clicando no ícone: {{:base_de_conhecimento:treinamento:excluirinvent.png|}}.\\
+{{:base_de_conhecimento:treinamento:pracas11.png?1000|}}
+  * Acessando a praça que deseja excluir e clicando no ícone: {{:base_de_conhecimento:treinamento:icone_excluir_cadastro.png|}}.\\
+{{:base_de_conhecimento:treinamento:pracas12.png?1000|}}
+\\
+\\
+\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar! \\
+

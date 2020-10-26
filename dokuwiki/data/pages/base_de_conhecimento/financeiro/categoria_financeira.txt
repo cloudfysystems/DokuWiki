@@ -1,0 +1,45 @@
+====== Categoria Financeira ======
+A categoria financeira é usada para: organizar suas receitas e despesas dentro do sistema. Com ela sua empresa pode extrair estatísticas de gastos em determinada categoria. Como por exemplo: saber quanto representa a folha de pagamento sobre suas despesas mensais, ou até cortar gastos em uma determinada categoria.
+
+===== Como adicionar uma categoria financeira? =====
+
+Para adicionar uma categoria financeira, acesse o menu [[https://app.padariananuvem.com/site/#/H02SF0201D|Financeiro > Configurações > Plano de contas financeiros]]  e selecione a opção 'Fluxo de Caixa'.\\
+
+Realizando essa operação serão apresentadas todas as categorias financeiras já cadastradas no sistema.\\
+
+<wrap info round>As categorias financeiras são divididas entre Receitas ou Despesas.</wrap>\\
+
+{{:base_de_conhecimento:treinamento:categorias.gif?400|}}\\
+
+\\
+
+Ao selecionar uma categoria financeira, irá aparecer as seguintes opções:\\
+
+{{:base_de_conhecimento:treinamento:categorias02.gif?400|}}\\
+
+  * **Adicionar Nova Categoria:** Para adicionar uma categoria financeira dentro da categoria selecionada.\\
+<WRAP INFO ROUND> 
+        * **Categoria**: Digite o nome da nova Categoria Financeira\\
+        * **Incluir como filha de**: Verifique se o nome que aparece é o nome da Categoria Financeira que deseja que a nova categoria seja incluída. {{:base_de_conhecimento:treinamento:categorias03.png?400|}}
+</WRAP>\\
+
+  * **Editar Categoria:** Para mudar o nome da categoria financeira selecionada.\\
+<WRAP INFO ROUND> 
+        * **Insira a nova descrição**: Digite o novo nome da Categoria Financeira\\
+        {{:base_de_conhecimento:treinamento:categorias04.png?400|}}
+</WRAP>\\
+
+\\
+===== Como remover uma Categoria Financeira adicionada? =====
+
+As Categorias Financeiras que forem adicionadas por você podem ser removidas. Para isso ao clicar sobre a categoria desejada irá aparecer o ícone {{:base_de_conhecimento:treinamento:categorias05.png?nolink&30x30|}} que te levará a seguinte tela:\\
+
+{{:base_de_conhecimento:treinamento:categorias06.png?400|}}\\
+\\
+
+Essa tela irá te auxiliar a transferir tudo que esta ligado a Categoria Financeira a ser excluída para outra Categoria Financeira escolhida na opção "Categoria financeira destino", antes que a mesma seja removida. Você pode digitar o nome da categoria ou buscar através do ícone {{:base_de_conhecimento:treinamento:lupa_circ.png?nolink&30x30|}} .
+\\
+<wrap important round>**No sistema existem Categorias Financeiras que estão associadas a lançamentos automáticos, essas não irão aparecer o ícone de exclusão.**</wrap>\\
+\\
+\\
+Caso tenha alguma dificuldade ou dúvida após a leitura desse tutorial você pode entrar em contato, através do chat, com a **Cloudfy** e algum de nossos colaboradores terá o prazer em lhe auxiliar!

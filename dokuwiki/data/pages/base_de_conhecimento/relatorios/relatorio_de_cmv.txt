@@ -1,0 +1,12 @@
+====== Relatório de CMV ======
+
+O relatório CMV ou Custo da Mercadoria Vendida apresenta o custo dos produtos que foram vendidos no período. Esses valores são apresentados no momento de apurar a lucratividade da sua empresa ou filial.
+
+Nesse tutorial iremos ensinar como gerar um relatório de CMV pelo sistema e apresentar os diferentes tipos de relatórios.
+O primeiro passo é acessar a tela de emissão do relatório de CMV no menu **Relatórios Gerais → CMV (Custo da Mercadoria Vendida)** conforme mostrado abaixo.
+
+{{:base_de_conhecimento:relatorios:como_acessar_cmv.gif?nolink&800}}
+
+<WRAP INFO ROUND>
+  * Nessa tela podemos filtrar as vendas por **Período** (Data Inicial e Data Final), **Filial**, **Centro administrativo** e **Grupo de produtos**,.
+</WRAP>\\
