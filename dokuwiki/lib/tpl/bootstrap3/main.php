@@ -186,6 +186,19 @@ header('X-UA-Compatible: IE=edge,chrome=1');
         </div>
 
     </main>
+    <?php
+    //show tagging only if user has access to page. Works on wikis with disabled acl too.
+    if (auth_quickaclcheck(getID()) >= AUTH_READ ) {
+        //check if sqlite plugin exists, tagging plugin requires it.
+        if (!plugin_isdisabled('sqlite')) {
+            //Tagging
+            $tagging = plugin_load('helper','tagging');
+            if ($tagging) {
+                $tagging->tpl_tags();
+            }
+        }
+    }
+?>
 
     <footer id="dw__footer" class="dw-container py-5 dokuwiki container<?php echo ($TPL->getConf('fluidContainer')) ? '-fluid' : '' ?>">
         <?php
