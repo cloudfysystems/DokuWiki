@@ -1,0 +1,3 @@
+===== Limpar tag database =====
+
+Aqui você pode deletar todas as tags inválidas (tags apontando para páginas inexistentes). Nenhuma tag válida será removida.

@@ -1,0 +1,3 @@
+====== Visualizar e Editar Tags ======
+
+Esta página lista todas as tags usada na sua wiki. Você pode filtrar e ordenar a lista e usar as ações para renomear ou deletar uma tag. Clique em uma tag para ver a lista de páginas onde ela é utilizada.
