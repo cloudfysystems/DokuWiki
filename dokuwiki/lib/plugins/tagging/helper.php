@@ -1,4 +1,7 @@
 <?php
+
+use dokuwiki\Form\Form;
+
 /**
  * Tagging Plugin (hlper component)
  *
@@ -30,11 +33,12 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
         $db->create_function('CLEANTAG', array($this, 'cleanTag'), 1);
         $db->create_function('GROUP_SORT',
             function ($group, $newDelimiter) {
-                $ex = explode(',', $group);
+                $ex = array_filter(explode(',', $group));
                 sort($ex);
 
                 return implode($newDelimiter, $ex);
             }, 2);
+        $db->create_function('GET_NS', 'getNS', 1);
 
         return $db;
     }
@@ -65,7 +69,7 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
      * @return string
      */
     public function cleanTag($tag) {
-        $tag = str_replace(array(' ', '-', '_'), '', $tag);
+        $tag = str_replace(array(' ', '-', '_', '#'), '', $tag);
         $tag = utf8_strtolower($tag);
 
         return $tag;
@@ -79,7 +83,7 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
      * @return string
      */
     public function globNamespace($namespace) {
-        return cleanId($namespace) . '%';
+        return cleanId($namespace) . '*';
     }
 
     /**
@@ -131,88 +135,22 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
      * @return array associative array in form of value => count
      */
     public function findItems($filter, $type, $limit = 0) {
-        $db = $this->getDB();
-        if (!$db) {
-            return array();
-        }
 
-        // create WHERE clause
-        $where = '1=1';
-        foreach ($filter as $field => $value) {
-            // compare clean tags only
-            if ($field === 'tag') {
-                $field = 'CLEANTAG(tag)';
-                $q = 'CLEANTAG(?)';
-            } else {
-                $q = '?';
-            }
+        global $INPUT;
 
-            if (substr($field, 0, 6) === 'notpid') {
-                $field = 'pid';
+        /** @var helper_plugin_tagging_querybuilder $queryBuilder */
+        $queryBuilder = new \helper_plugin_tagging_querybuilder();
 
-                // detect LIKE filters
-                if ($this->useLike($value)) {
-                    $where .= " AND $field NOT LIKE $q";
-                } else {
-                    $where .= " AND $field != $q";
-                }
-            } else {
-                // detect LIKE filters
-                if ($this->useLike($value)) {
-                    $where .= " AND $field LIKE $q";
-                } else {
-                    $where .= " AND $field = $q";
-                }
-            }
-        }
-        $where .= ' AND GETACCESSLEVEL(pid) >= ' . AUTH_READ;
+        $queryBuilder->setField($type);
+        $queryBuilder->setLimit($limit);
+        $queryBuilder->setTags($this->extractFromQuery($filter));
+        if (isset($filter['ns'])) $queryBuilder->includeNS($filter['ns']);
+        if (isset($filter['notns'])) $queryBuilder->excludeNS($filter['notns']);
+        if (isset($filter['tagger'])) $queryBuilder->setTagger($filter['tagger']);
+        if (isset($filter['pid'])) $queryBuilder->setPid($filter['pid']);
 
-        // group and order
-        if ($type === 'tag') {
-            $groupby = 'CLEANTAG(tag)';
-            $orderby = 'CLEANTAG(tag)';
-        } else {
-            $groupby = $type;
-            $orderby = "cnt DESC, $type";
-        }
+        return $this->queryDb($queryBuilder->getQuery());
 
-        // limit results
-        if ($limit) {
-            $limit = " LIMIT $limit";
-        } else {
-            $limit = '';
-        }
-
-        // create SQL
-        $sql = "SELECT $type AS item, COUNT(*) AS cnt
-                  FROM taggings
-                 WHERE $where
-              GROUP BY $groupby
-              ORDER BY $orderby
-                $limit
-              ";
-
-        // run query and turn into associative array
-        $res = $db->query($sql, array_values($filter));
-        $res = $db->res2arr($res);
-
-        $ret = array();
-        foreach ($res as $row) {
-            $ret[$row['item']] = $row['cnt'];
-        }
-
-        return $ret;
-    }
-
-    /**
-     * Check if the given string is a LIKE statement
-     *
-     * @param string $value
-     *
-     * @return bool
-     */
-    private function useLike($value) {
-        return strpos($value, '%') === 0 || strrpos($value, '%') === strlen($value) - 1;
     }
 
     /**
@@ -224,13 +162,7 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
      * @return string
      */
     public function getTagSearchURL($tag, $ns = '') {
-        // wrap tag in quotes if non clean
-        $ctag = utf8_stripspecials($this->cleanTag($tag));
-        if ($ctag != utf8_strtolower($tag)) {
-            $tag = '"' . $tag . '"';
-        }
-
-        $ret = '?do=search&id=' . rawurlencode($tag);
+        $ret = '?do=search&sf=1&q=' . rawurlencode('#' . $this->cleanTag($tag));
         if ($ns) {
             $ret .= rawurlencode(' @' . $ns);
         }
@@ -327,6 +259,34 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
     }
 
     /**
+     * Display a List of Page Links
+     *
+     * @param array    $pids   list of pids => count
+     * @return string
+     */
+    public function html_page_list($pids) {
+        $ret = '<div class="search_quickresult">';
+        $ret .= '<ul class="search_quickhits">';
+
+        if (count($pids) === 0) {
+            // Produce valid XHTML (ul needs a child)
+            $ret .= '<li><div class="li">' . $this->lang['js']['nopages'] . '</div></li>';
+        } else {
+            foreach (array_keys($pids) as $val) {
+                $ret .= '<li><div class="li">';
+                $ret .= html_wikilink(":$val");
+                $ret .= '</div></li>';
+            }
+        }
+
+        $ret .= '</ul>';
+        $ret .= '</div>';
+        $ret .= '<div class="clearer"></div>';
+
+        return $ret;
+    }
+
+    /**
      * Get the link to a search for the given tag
      *
      * @param string $tag search for this tag
@@ -366,7 +326,9 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
             $ret .= '<div id="tagging__edit_buttons_group">';
             $ret .= html_btn('tagging_edit', $INFO['id'], '', array());
             if (auth_isadmin()) {
-                $ret .= '<label>' . $this->getLang('toggle admin mode') . '<input type="checkbox" id="tagging__edit_toggle_admin" /></label>';
+                $ret .= '<label>'
+                    . $this->getLang('toggle admin mode')
+                    . '<input type="checkbox" id="tagging__edit_toggle_admin" /></label>';
             }
             $ret .= '</div>';
             $form = new dokuwiki\Form\Form();
@@ -377,7 +339,10 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
                 'pid'    => $INFO['id'],
                 'tagger' => $this->getUser(),
             ), 'tag');
-            $form->addTextarea('tagging[tags]')->val(implode(', ', array_keys($tags)))->addClass('edit');
+            $form->addTextarea('tagging[tags]')
+                ->val(implode(', ', array_keys($tags)))
+                ->addClass('edit')
+                ->attr('rows', 4);
             $form->addButton('', $lang['btn_save'])->id('tagging__edit_save');
             $form->addButton('', $lang['btn_cancel'])->id('tagging__edit_cancel');
             $ret .= $form->toHTML();
@@ -394,31 +359,39 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
     /**
      * @param string $namespace empty for entire wiki
      *
+     * @param string $order_by
+     * @param bool $desc
+     * @param array $filters
      * @return array
      */
-    public function getAllTags($namespace = '', $order_by = 'tag', $desc = false) {
-        $order_fields = array('pid', 'tid', 'orig', 'taggers', 'count');
+    public function getAllTags($namespace = '', $order_by = 'tid', $desc = false, $filters = []) {
+        $order_fields = array('pid', 'tid', 'taggers', 'ns', 'count');
         if (!in_array($order_by, $order_fields)) {
             msg('cannot sort by ' . $order_by . ' field does not exists', -1);
             $order_by = 'tag';
         }
 
-        $db = $this->getDb();
+        list($having, $params) = $this->getFilterSql($filters);
+
+        $db = $this->getDB();
 
         $query = 'SELECT    "pid",
                             CLEANTAG("tag") AS "tid",
-                            GROUP_SORT(GROUP_CONCAT("tag"), \', \') AS "orig",
                             GROUP_SORT(GROUP_CONCAT("tagger"), \', \') AS "taggers",
+                            GROUP_SORT(GROUP_CONCAT(GET_NS("pid")), \', \') AS "ns",
+                            GROUP_SORT(GROUP_CONCAT("pid"), \', \') AS "pids",
                             COUNT(*) AS "count"
                         FROM "taggings"
-                        WHERE "pid" LIKE ?
-                        GROUP BY "tid"
-                        ORDER BY ' . $order_by;
+                        WHERE "pid" GLOB ? AND GETACCESSLEVEL(pid) >= ' . AUTH_READ
+                        . ' GROUP BY "tid"';
+        $query .= $having;
+        $query .=      'ORDER BY ' . $order_by;
         if ($desc) {
             $query .= ' DESC';
         }
 
-        $res = $db->query($query, $this->globNamespace($namespace));
+        array_unshift($params, $this->globNamespace($namespace));
+        $res = $db->query($query, $params);
 
         return $db->res2arr($res);
     }
@@ -448,29 +421,69 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
      * Renames a tag
      *
      * @param string $formerTagName
-     * @param string $newTagName
+     * @param string $newTagNames
      */
-    public function renameTag($formerTagName, $newTagName) {
+    public function renameTag($formerTagName, $newTagNames) {
 
-        if (empty($formerTagName) || empty($newTagName)) {
+        if (empty($formerTagName) || empty($newTagNames)) {
             msg($this->getLang("admin enter tag names"), -1);
-
             return;
         }
 
-        $db = $this->getDb();
+        $keepFormerTag = false;
 
-        $res = $db->query('SELECT pid FROM taggings WHERE CLEANTAG(tag) = ?', $this->cleanTag($formerTagName));
-        $check = $db->res2arr($res);
+        // enable splitting tags on rename
+        $newTagNames = array_map(function ($tag) {
+            return $this->cleanTag($tag);
+        }, explode(',', $newTagNames));
 
-        if (empty($check)) {
-            msg($this->getLang("admin tag does not exists"), -1);
+        $db = $this->getDB();
 
-            return;
+        // non-admins can rename only their own tags
+        if (!auth_isadmin()) {
+            $queryTagger =' AND tagger = ?';
+            $tagger = $this->getUser();
+        } else {
+            $queryTagger = '';
+            $tagger = '';
         }
 
-        $res = $db->query("UPDATE taggings SET tag = ? WHERE CLEANTAG(tag) = ?", $newTagName, $this->cleanTag($formerTagName));
-        $db->res2arr($res);
+        $insertQuery = 'INSERT INTO taggings ';
+        $insertQuery .= 'SELECT pid, ?, tagger, lang FROM taggings';
+        $where = ' WHERE CLEANTAG(tag) = ?';
+        $where .= ' AND GETACCESSLEVEL(pid) >= ' . AUTH_EDIT;
+        $where .= $queryTagger;
+
+        $db->query('BEGIN TRANSACTION');
+
+        // insert new tags first
+        foreach ($newTagNames as $newTag) {
+            if ($newTag === $this->cleanTag($formerTagName)) {
+                $keepFormerTag = true;
+                continue;
+            }
+            $params = [$newTag, $this->cleanTag($formerTagName)];
+            if ($tagger) array_push($params, $tagger);
+            $res = $db->query($insertQuery . $where, $params);
+            if ($res === false) {
+                $db->query('ROLLBACK TRANSACTION');
+                return;
+            }
+            $db->res_close($res);
+        }
+
+        // finally delete the renamed tags
+        if (!$keepFormerTag) {
+            $deleteQuery = 'DELETE FROM taggings';
+            $params = [$this->cleanTag($formerTagName)];
+            if ($tagger) array_push($params, $tagger);
+            if ($db->query($deleteQuery . $where, $params) === false) {
+                $db->query('ROLLBACK TRANSACTION');
+                return;
+            }
+        }
+
+        $db->query('COMMIT TRANSACTION');
 
         msg($this->getLang("admin renamed"), 1);
 
@@ -490,7 +503,11 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
 
         $db = $this->getDb();
 
-        $res = $db->query('SELECT pid FROM taggings WHERE CLEANTAG(tag) = ? AND pid = ?', $this->cleanTag($formerTagName), $pid);
+        $res = $db->query(
+            'SELECT pid FROM taggings WHERE CLEANTAG(tag) = ? AND pid = ?',
+            $this->cleanTag($formerTagName),
+            $pid
+        );
         $check = $db->res2arr($res);
 
         if (empty($check)) {
@@ -498,9 +515,18 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
         }
 
         if (empty($newTagName)) {
-            $res = $db->query('DELETE FROM taggings WHERE pid = ? AND CLEANTAG(tag) = ?', $pid, $this->cleanTag($formerTagName));
+            $res = $db->query(
+                'DELETE FROM taggings WHERE pid = ? AND CLEANTAG(tag) = ?',
+                $pid,
+                $this->cleanTag($formerTagName)
+            );
         } else {
-            $res = $db->query('UPDATE taggings SET tag = ? WHERE pid = ? AND CLEANTAG(tag) = ?', $newTagName, $pid, $this->cleanTag($formerTagName));
+            $res = $db->query(
+                'UPDATE taggings SET tag = ? WHERE pid = ? AND CLEANTAG(tag) = ?',
+                $newTagName,
+                $pid,
+                $this->cleanTag($formerTagName)
+            );
         }
         $db->res2arr($res);
 
@@ -522,11 +548,16 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
 
         $db = $this->getDB();
 
-        $queryBody = 'FROM taggings WHERE pid LIKE ? AND (' .
+        $queryBody = 'FROM taggings WHERE pid GLOB ? AND (' .
             implode(' OR ', array_fill(0, count($tags), 'CLEANTAG(tag) = ?')) . ')';
         $args = array_map(array($this, 'cleanTag'), $tags);
         array_unshift($args, $this->globNamespace($namespace));
 
+        // non-admins can delete only their own tags
+        if (!auth_isadmin()) {
+            $queryBody .= ' AND tagger = ?';
+            array_push($args, $this->getUser());
+        }
 
         $affectedPagesQuery= 'SELECT DISTINCT pid ' . $queryBody;
         $resAffectedPages = $db->query($affectedPagesQuery, $args);
@@ -536,5 +567,441 @@ class helper_plugin_tagging extends DokuWiki_Plugin {
         $db->query($deleteQuery, $args);
 
         msg(sprintf($this->getLang("admin deleted"), count($tags), $numAffectedPages), 1);
+    }
+
+    /**
+     * Delete taggings of nonexistent pages
+     */
+    public function deleteInvalidTaggings()
+    {
+        $db = $this->getDB();
+        $query = 'DELETE    FROM "taggings"
+                            WHERE NOT PAGEEXISTS(pid)
+                 ';
+        $res = $db->query($query);
+        $db->res_close($res);
+    }
+
+    /**
+     * Updates tags with a new page name
+     *
+     * @param string $oldName
+     * @param string $newName
+     */
+    public function renamePage($oldName, $newName) {
+        $db = $this->getDB();
+        $db->query('UPDATE taggings SET pid = ? WHERE pid = ?', $newName, $oldName);
+    }
+
+    /**
+     * Extracts tags from search query
+     *
+     * @param array $parsedQuery
+     * @return array
+     */
+    public function extractFromQuery($parsedQuery)
+    {
+        $tags = [];
+        if (isset($parsedQuery['phrases'][0])) {
+            $tags = $parsedQuery['phrases'];
+        } elseif (isset($parsedQuery['and'][0])) {
+            $tags = $parsedQuery['and'];
+        } elseif (isset($parsedQuery['tag'])) {
+            // handle autocomplete call
+            $tags[] = $parsedQuery['tag'];
+        }
+        return $tags;
+    }
+
+    /**
+     * Search for tagged pages
+     *
+     * @param array $tagFiler
+     * @return array
+     */
+    public function searchPages($tagFiler)
+    {
+        global $INPUT;
+        global $QUERY;
+        $parsedQuery = ft_queryParser(new Doku_Indexer(), $QUERY);
+
+        /** @var helper_plugin_tagging_querybuilder $queryBuilder */
+        $queryBuilder = new \helper_plugin_tagging_querybuilder();
+
+        $queryBuilder->setField('pid');
+        $queryBuilder->setTags($tagFiler);
+        $queryBuilder->setLogicalAnd($INPUT->str('tagging-logic') === 'and');
+        if (isset($parsedQuery['ns'])) $queryBuilder->includeNS($parsedQuery['ns']);
+        if (isset($parsedQuery['notns'])) $queryBuilder->excludeNS($parsedQuery['notns']);
+        if (isset($parsedQuery['tagger'])) $queryBuilder->setTagger($parsedQuery['tagger']);
+        if (isset($parsedQuery['pid'])) $queryBuilder->setPid($parsedQuery['pid']);
+
+        return $this->queryDb($queryBuilder->getPages());
+    }
+
+    /**
+     * Syntax to allow users to manage tags on regular pages, respects ACLs
+     * @param string $ns
+     * @return string
+     */
+    public function manageTags($ns)
+    {
+        global $INPUT;
+
+        $this->setDefaultSort();
+
+        // initially set namespace filter to what is defined in syntax
+        if ($ns && !$INPUT->has('tagging__filters')) {
+            $INPUT->set('tagging__filters', ['ns' => $ns]);
+        }
+
+        return $this->html_table();
+    }
+
+    /**
+     * HTML list of tagged pages
+     *
+     * @param string $tid
+     * @return string
+     */
+    public function getPagesHtml($tid)
+    {
+        $html = '';
+
+        $db = $this->getDB();
+        $sql = 'SELECT pid from taggings where CLEANTAG(tag) = CLEANTAG(?)';
+        $res =  $db->query($sql, $tid);
+        $pages = $db->res2arr($res);
+
+        if ($pages) {
+            $html .= '<ul>';
+            foreach ($pages as $page) {
+                $pid = $page['pid'];
+                $html .= '<li><a href="' . wl($pid) . '" target="_blank">' . $pid . '</li>';
+            }
+            $html .= '</ul>';
+        }
+
+        return $html;
+    }
+
+    /**
+     * Display tag management table
+     */
+    public function html_table() {
+        global $ID, $INPUT;
+
+        $headers = array(
+            array('value' => $this->getLang('admin tag'), 'sort_by' => 'tid'),
+            array('value' => $this->getLang('admin occurrence'), 'sort_by' => 'count')
+        );
+
+        if (!$this->conf['hidens']) {
+            array_push(
+                $headers,
+                ['value' => $this->getLang('admin namespaces'), 'sort_by' => 'ns']
+            );
+        }
+
+        array_push($headers,
+            array('value' => $this->getLang('admin taggers'), 'sort_by' => 'taggers'),
+            array('value' => $this->getLang('admin actions'), 'sort_by' => false)
+        );
+
+        $sort = explode(',', $this->getParam('sort'));
+        $order_by = $sort[0];
+        $desc = false;
+        if (isset($sort[1]) && $sort[1] === 'desc') {
+            $desc = true;
+        }
+        $filters = $INPUT->arr('tagging__filters');
+
+        $tags = $this->getAllTags($INPUT->str('filter'), $order_by, $desc, $filters);
+
+        $form = new \dokuwiki\Form\Form();
+        // required in admin mode
+        $form->setHiddenField('page', 'tagging');
+        $form->setHiddenField('id', $ID);
+        $form->setHiddenField('[tagging]sort', $this->getParam('sort'));
+
+        /**
+         * Actions dialog
+         */
+        $form->addTagOpen('div')->id('tagging__action-dialog')->attr('style', "display:none;");
+        $form->addTagClose('div');
+
+        /**
+         * Tag pages dialog
+         */
+        $form->addTagOpen('div')->id('tagging__taggedpages-dialog')->attr('style', "display:none;");
+        $form->addTagClose('div');
+
+        /**
+         * Tag management table
+         */
+        $form->addTagOpen('table')->addClass('inline plugin_tagging');
+
+        $nscol = $this->conf['hidens'] ? '' : '<col class="wide-col"></col>';
+        $form->addHTML(
+            '<colgroup>
+                <col></col>
+                <col class="narrow-col"></col>'
+                . $nscol .
+                '<col></col>
+                <col class="narrow-col"></col>
+            </colgroup>'
+        );
+
+        /**
+         * Table headers
+         */
+        $form->addTagOpen('tr');
+        foreach ($headers as $header) {
+            $form->addTagOpen('th');
+            if ($header['sort_by'] !== false) {
+                $param = $header['sort_by'];
+                $icon = 'arrow-both';
+                $title = $this->getLang('admin sort ascending');
+                if ($header['sort_by'] === $order_by) {
+                    if ($desc === false) {
+                        $icon = 'arrow-up';
+                        $title = $this->getLang('admin sort descending');
+                        $param .= ',desc';
+                    } else {
+                        $icon = 'arrow-down';
+                    }
+                }
+                $form->addButtonHTML(
+                    "tagging[sort]",
+                    $header['value'] . ' ' . inlineSVG(__DIR__ . "/images/$icon.svg"))
+                    ->addClass('plugin_tagging sort_button')
+                    ->attr('title', $title)
+                    ->val($param);
+            } else {
+                $form->addHTML($header['value']);
+            }
+            $form->addTagClose('th');
+        }
+        $form->addTagClose('tr');
+
+        /**
+         * Table filters for all sortable columns
+         */
+        $form->addTagOpen('tr');
+        foreach ($headers as $header) {
+            $form->addTagOpen('th');
+            if ($header['sort_by'] !== false) {
+                $field = $header['sort_by'];
+                $input = $form->addTextInput("tagging__filters[$field]");
+                $input->addClass('full-col');
+            }
+            $form->addTagClose('th');
+        }
+        $form->addTagClose('tr');
+
+
+        foreach ($tags as $taginfo) {
+            $tagname = $taginfo['tid'];
+            $taggers = $taginfo['taggers'];
+            $ns = $taginfo['ns'];
+            $pids = explode(',',$taginfo['pids']);
+
+            $form->addTagOpen('tr');
+            $form->addHTML('<td>');
+            $form->addHTML('<a class="tagslist" href="#" data-tid="' . $taginfo['tid'] . '">');
+            $form->addHTML( hsc($tagname) . '</a>');
+            $form->addHTML('</td>');
+            $form->addHTML('<td>' . $taginfo['count'] . '</td>');
+            if (!$this->conf['hidens']) {
+                $form->addHTML('<td>' . hsc($ns) . '</td>');
+            }
+            $form->addHTML('<td>' . hsc($taggers) . '</td>');
+
+            /**
+             * action buttons
+             */
+            $form->addHTML('<td>');
+
+            // check ACLs
+            $userEdit = false;
+            /** @var \helper_plugin_sqlite $sqliteHelper */
+            $sqliteHelper = plugin_load('helper', 'sqlite');
+            foreach ($pids as $pid) {
+                if ($sqliteHelper->_getAccessLevel($pid) >= AUTH_EDIT) {
+                    $userEdit = true;
+                    continue;
+                }
+            }
+
+            if ($userEdit) {
+                $form->addButtonHTML(
+                    'tagging[actions][rename][' . $taginfo['tid'] . ']',
+                    inlineSVG(__DIR__ . '/images/edit.svg'))
+                    ->addClass('plugin_tagging action_button')
+                    ->attr('data-action', 'rename')
+                    ->attr('data-tid', $taginfo['tid']);
+                $form->addButtonHTML(
+                    'tagging[actions][delete][' . $taginfo['tid'] . ']',
+                    inlineSVG(__DIR__ . '/images/delete.svg'))
+                    ->addClass('plugin_tagging action_button')
+                    ->attr('data-action', 'delete')
+                    ->attr('data-tid', $taginfo['tid']);
+            }
+
+            $form->addHTML('</td>');
+            $form->addTagClose('tr');
+        }
+
+        $form->addTagClose('table');
+        return '<div class="table">' . $form->toHTML() . '</div>';
+    }
+
+    /**
+     * Display tag cleaner
+     *
+     * @return string
+     */
+    public function html_clean()
+    {
+        $invalid = $this->getInvalidTaggings();
+
+        if (!$invalid) {
+            return '<p><strong>' . $this->getLang('admin no invalid') . '</strong></p>';
+        }
+
+        $form = new Form();
+        $form->setHiddenField('do', 'admin');
+        $form->setHiddenField('page', $this->getPluginName());
+        $form->addButton('cmd[clean]', $this->getLang('admin clean'));
+
+        $html = $form->toHTML();
+
+        $html .= '<div class="table"><table class="inline plugin_tagging">';
+        $html .= '<thead><tr><th>' .
+            $this->getLang('admin nonexistent page') .
+            '</th><th>' .
+            $this->getLang('admin tags') .
+            '</th></tr></thead><tbody>';
+
+        foreach ($invalid as $row) {
+            $html .= '<tr><td>' . $row['pid'] . '</td><td>' . $row['tags'] . '</td></tr>';
+        }
+
+        $html .= '</tbody></table></div>';
+
+        return $html;
+    }
+
+    /**
+     * Returns all tagging parameters from the query string
+     *
+     * @return mixed
+     */
+    public function getParams()
+    {
+        global $INPUT;
+        return $INPUT->param('tagging', []);
+    }
+
+    /**
+     * Get a tagging parameter, empty string if not set
+     *
+     * @param string $name
+     * @return mixed
+     */
+    public function getParam($name)
+    {
+        $params = $this->getParams();
+        if ($params) {
+            return $params[$name] ?: '';
+        }
+    }
+
+    /**
+     * Sets a tagging parameter
+     *
+     * @param string $name
+     * @param string|array $value
+     */
+    public function setParam($name, $value)
+    {
+        global $INPUT;
+        $params = $this->getParams();
+        $params = array_merge($params, [$name => $value]);
+        $INPUT->set('tagging', $params);
+    }
+
+    /**
+     * Default sorting by tag id
+     */
+    public function setDefaultSort()
+    {
+        if (!$this->getParam('sort')) {
+            $this->setParam('sort', 'tid');
+        }
+    }
+
+    /**
+     * Executes the query and returns the results as array
+     *
+     * @param array $query
+     * @return array
+     */
+    protected function queryDb($query)
+    {
+        $db = $this->getDB();
+        if (!$db) {
+            return [];
+        }
+
+        $res = $db->query($query[0], $query[1]);
+        $res = $db->res2arr($res);
+
+        $ret = [];
+        foreach ($res as $row) {
+            $ret[$row['item']] = $row['cnt'];
+        }
+        return $ret;
+    }
+
+    /**
+     * Construct the HAVING part of the search query
+     *
+     * @param array $filters
+     * @return array
+     */
+    protected function getFilterSql($filters)
+    {
+        $having = '';
+        $parts = [];
+        $params = [];
+        $filters = array_filter($filters);
+        if (!empty($filters)) {
+            $having = ' HAVING ';
+            foreach ($filters as $filter => $value) {
+                $parts[] = " $filter LIKE ? ";
+                $params[] = "%$value%";
+            }
+            $having .= implode(' AND ', $parts);
+        }
+        return [$having, $params];
+    }
+
+    /**
+     * Returns taggings of nonexistent pages
+     *
+     * @return array
+     */
+    protected function getInvalidTaggings()
+    {
+        $db = $this->getDB();
+        $query = 'SELECT    "pid",
+                            GROUP_CONCAT(CLEANTAG("tag")) AS "tags"
+                            FROM "taggings"
+                            WHERE NOT PAGEEXISTS(pid)
+                            GROUP BY pid
+                 ';
+        $res = $db->query($query);
+        return $db->res2arr($res);
     }
 }

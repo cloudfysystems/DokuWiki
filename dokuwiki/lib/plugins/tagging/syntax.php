@@ -45,9 +45,19 @@ class syntax_plugin_tagging extends DokuWiki_Syntax_Plugin {
                     $data['user'] = trim($matches[2]);
                 }
                 break;
+            case 'tag':
+                if (count($matches) > 2) {
+                    $data['tag'] = trim($matches[2]);
+                }
+                break;
             case 'ns':
                 if (count($matches) > 2) {
                     $data['ns'] = trim($matches[2]);
+                }
+                break;
+            case 'manage':
+                if (count($matches) > 2) {
+                    $data['manage'] = trim($matches[2]);
                 }
                 break;
         }
@@ -70,8 +80,17 @@ class syntax_plugin_tagging extends DokuWiki_Syntax_Plugin {
                     $data['user'] = $_SERVER['REMOTE_USER'];
                 }
                 $tags = $hlp->findItems(array('tagger' => $data['user']), 'tag', $data['limit']);
+                
                 $renderer->doc .= $hlp->html_cloud($tags, 'tag', array($hlp, 'linkToSearch'), true, true);
 
+                break;
+            case 'tag':
+                $renderer->info['cache'] = false;
+                
+                $pids = $hlp->findItems(array('tag' => $data['tag']), 'pid', $data['limit']);
+
+                $renderer->doc .= $hlp->html_page_list($pids);
+               
                 break;
             case 'ns':
                 $renderer->info['cache'] = false;
@@ -85,13 +104,18 @@ class syntax_plugin_tagging extends DokuWiki_Syntax_Plugin {
                     // Do not match nsbla, only ns:bla
                     $data['ns'] .= ':';
                 }
-                $tags = $hlp->findItems(array('pid' => $data['ns'] . '%'), 'tag', $data['limit']);
+                $tags = $hlp->findItems(['pid' => $hlp->globNamespace($data['ns'])], 'tag', $data['limit']);
                 $renderer->doc .= $hlp->html_cloud($tags, 'tag', array($hlp, 'linkToSearch'), true, true, $data['ns']);
 
                 break;
             case 'input':
                 $renderer->nocache();
                 $renderer->doc .= $hlp->tpl_tags(false);
+                break;
+            case 'manage':
+                $renderer->nocache();
+                $ns = $data['manage'] ?: '';
+                $renderer->doc .= $hlp->manageTags($ns);
                 break;
         }
 

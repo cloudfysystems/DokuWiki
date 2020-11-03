@@ -1,5 +1,3 @@
-====== Schlagworte suchen und bearbeiten ======
+====== Tags anzeigen und ändern ======
 
-Auf dieser Seite stehen alle im Wiki genutzten Schlagworte.
-Das Formular erlaubt einzelne Schlagworte umzubenennen.
-Schlagworte können verschmolzen werden, indem ein Schlagwort zu einem anderen existierenden Schlagwort umbenannt wird.
+Diese Seite listet alle in Ihrem Wiki benutzten Tags auf. Sie können die Liste filtern und sortieren, sowie Tags umbenennen und entfernen. Klicken Sie auf einen Tag um zu sehen, auf welchen Seiten er verwendet wird. 
